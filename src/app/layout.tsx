@@ -8,7 +8,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "SoluTek IT Services",
+  title: "Pinnacle Systems IT Services",
   description: "The Beauty Behind IT Services",
 };
 

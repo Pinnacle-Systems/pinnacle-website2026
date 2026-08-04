@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronDown, ArrowRight, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -28,23 +29,21 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "absolute top-0 left-0 right-0 z-50 transition-all duration-300 py-5",
-        isScrolled ? "fixed top-4 left-4 right-4 max-w-[1600px] mx-auto bg-navy-900/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.3)] border border-white/10 rounded-2xl" : "bg-transparent border-b border-white/5"
+        "absolute top-0 left-0 right-0 z-50 transition-all duration-300",
+        isScrolled ? "fixed py-4 bg-navy-900/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.3)] border-b border-white/10" : "py-5 bg-transparent border-b border-white/5"
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 relative group">
-          <div className="text-primary group-hover:scale-105 transition-transform">
-            {/* Logo icon matching the design (cluster of dots) */}
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="6" stroke="currentColor" strokeWidth="2" strokeDasharray="1 3" />
-              <path d="M12 2V4M12 20V22M2 12H4M20 12H22M5.92893 5.92893L7.34315 7.34315M16.6569 16.6569L18.0711 18.0711M5.92893 18.0711L7.34315 16.6569M16.6569 7.34315L18.0711 5.92893" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-              <circle cx="12" cy="12" r="3" fill="currentColor" />
-              <circle cx="8" cy="8" r="1.5" fill="currentColor" />
-            </svg>
+        <Link href="/" className="relative group block">
+          <div className="relative h-12 w-48 lg:w-56 group-hover:scale-105 transition-transform">
+            <Image 
+              src="/pinnacleblacklogo.png" 
+              alt="Pinnacle Systems Logo" 
+              fill 
+              className="object-contain object-left" 
+            />
           </div>
-          <span className="text-[26px] font-bold text-white tracking-tight">SoluTek</span>
         </Link>
 
         {/* Desktop Nav */}
