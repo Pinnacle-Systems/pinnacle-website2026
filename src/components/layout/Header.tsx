@@ -38,7 +38,7 @@ export default function Header() {
         <Link href="/" className="relative group block">
           <div className="relative h-12 w-48 lg:w-56 group-hover:scale-105 transition-transform">
             <Image 
-              src="/pinnacleblacklogo.png" 
+              src="/pinaclefinallogo.png" 
               alt="Pinnacle Systems Logo" 
               fill 
               className="object-contain object-left" 

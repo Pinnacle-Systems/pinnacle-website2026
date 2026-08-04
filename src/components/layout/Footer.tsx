@@ -37,7 +37,7 @@ export default function Footer() {
                    {/* Logo */}
                    <div className="relative h-14 w-56 mb-8">
                      <Image 
-                     src="/pinnacleblacklogo.png" 
+                     src="/pinaclefinallogo.png" 
                        alt="Pinnacle Systems Logo" 
                        fill 
                        className="object-contain object-left" 
