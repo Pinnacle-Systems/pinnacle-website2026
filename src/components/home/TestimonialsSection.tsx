@@ -24,7 +24,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative pt-24 pb-32 bg-[#0b132a] overflow-hidden">
+    <section className="relative py-12 lg:py-16 bg-[#0b132a] overflow-hidden">
        {/* Background Map Graphic Placeholder */}
        <div 
          className="absolute inset-0 opacity-[0.05] pointer-events-none bg-center bg-no-repeat bg-contain" 
@@ -39,12 +39,12 @@ export default function TestimonialsSection() {
        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
          {/* Header */}
          <div className="flex flex-col items-center text-center mb-16">
-            <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-white/10 mb-6 bg-white/5 shadow-sm">
+             <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-white/10 mb-6 bg-white/5 shadow-sm">
               <div className="w-4 h-[3px] bg-primary rounded-full"></div>
-              <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">TESTIMONIALS</span>
+              <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Google My Business Reviews</span>
             </div>
-            <h2 className="text-4xl lg:text-[46px] leading-[1.2] font-extrabold text-white">
-              What Our Customer <span className="text-primary">Says</span>
+            <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-white">
+              What Our <span className="text-primary"> Clients Say</span>
             </h2>
          </div>
          

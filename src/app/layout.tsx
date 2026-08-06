@@ -10,6 +10,9 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Pinnacle Systems",
   description: "The Beauty Behind IT Services",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

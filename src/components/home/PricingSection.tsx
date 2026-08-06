@@ -50,7 +50,7 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <section className="relative pt-20 lg:pt-32 pb-20 bg-white">
+    <section className="relative py-12 lg:py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Area */}

@@ -4,7 +4,7 @@ import { Calendar, MessageSquare, ArrowRight } from 'lucide-react';
 
 export default function BlogSection() {
   return (
-    <section className="relative pt-24 pb-24 bg-[#f8f9fa]">
+    <section className="relative py-12 lg:py-16 bg-[#f8f9fa]">
        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
          
          {/* Header */}
@@ -17,7 +17,7 @@ export default function BlogSection() {
                </div>
                
                {/* Heading */}
-               <h2 className="text-3xl lg:text-[36px] leading-[1.2] font-extrabold text-[#0b132a] max-w-xl">
+               <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] ">
                  Exploring Its Potential in Various <span className="text-primary">Industries.</span>
                </h2>
             </div>

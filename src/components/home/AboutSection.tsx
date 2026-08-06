@@ -28,14 +28,14 @@ const RadarBackground = () => (
 
 export default function AboutSection() {
   return (
-    <section className="relative py-20 lg:py-32 overflow-hidden bg-white">
+    <section className="relative py-12 lg:py-20 overflow-hidden bg-white">
       {/* Background Decorative Radar SVG */}
       <div className="absolute top-1/2 -translate-y-1/2 -right-[15%] lg:-right-[10%] w-[600px] h-[600px] lg:w-[800px] lg:h-[800px] opacity-[0.04] pointer-events-none">
         <RadarBackground />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-24 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12 lg:gap-16 items-center">
           
           {/* Left Column - Image */}
           <motion.div
@@ -62,7 +62,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-[540px] lg:-ml-4 xl:-ml-10"
+            className="max-w-[750px] w-full lg:-ml-4 xl:-ml-10"
           >
             {/* Subtitle Pill */}
             <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-red-100/60 mb-6 bg-white shadow-sm">
@@ -71,32 +71,49 @@ export default function AboutSection() {
             </div>
 
             {/* Heading */}
-            <h2 className="text-3xl lg:text-[42px] leading-[1.15] font-extrabold text-[#0b132a] mb-6">
-              Essential IT Solutions For <br className="hidden sm:block" />
-              Modern <span className="text-primary">Businesses.</span>
+            <h2 className="text-3xl lg:text-[32px] leading-[1.15] font-extrabold text-[#0b132a] mb-6">
+              Your One-Stop <span className="text-primary">Technology Partner</span>
             </h2>
 
-            {/* Paragraph */}
-            <p className="text-gray-500 text-[15.5px] leading-relaxed mb-10 pr-4">
-              Monotonectally repurpose maintainable infrastruct whereas Pinnacle Systems in fermentum quis tempo sapien maximus design.
-            </p>
-
-            {/* Feature Block */}
-            <div className="flex items-start gap-5 mb-10">
-              <div className="w-[72px] h-[72px] shrink-0 flex items-center justify-center rounded-[20px] bg-[#fff3ef] text-primary">
-                <CloudCog className="w-9 h-9 stroke-[1.5]" />
+            {/* Paragraphs */}
+            <div className="space-y-6 mb-10 pr-4 pl-5">
+              <div className="flex items-start gap-4">
+                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+                  We specialize in delivering innovative AI-driven, cloud-based, mobile, and web application development services tailored for different industry verticals. 
+                </p>
               </div>
-              <div className="pt-1.5">
-                <h4 className="text-[20px] font-bold text-[#0b132a] mb-2.5">Cloud Based Solution</h4>
-                <p className="text-gray-500 text-[15px] leading-[1.7] pr-2">
-                  Monotonectally repurpose maintainable infrastruct whereas Pinnacle Systems in fermentum quis tempo sapien maximus design.
+              <div className="flex items-start gap-4">
+                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+                  Our deep-experienced team of professionals is dedicated to transforming ideas into scalable digital solutions with rapid delivery and exceptional quality.
+                </p>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+                  Our presence in the region and our commitment to excellence allow us to analyze the local market&apos;s dynamics and provide solutions that help drive growth.
+                </p>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+                  We prioritize cutting-edge technology adoption and agile methodologies to meet client objectives efficiently.
+                </p>
+              </div>
+                <div className="flex items-start gap-4">
+                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+                  At PINNACLE, we don’t just build software — we create competitive advantages that position our clients for sustainable success in an evolving digital landscape.
                 </p>
               </div>
             </div>
 
+        
+
             {/* Button */}
             <button className="bg-primary hover:bg-orange-600 text-white font-bold text-[14px] px-9 py-4 rounded-full transition-colors duration-300 tracking-wide shadow-md shadow-primary/20">
-              EXPLORE MORE
+              Call Now
             </button>
           </motion.div>
 

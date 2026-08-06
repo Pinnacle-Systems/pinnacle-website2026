@@ -22,7 +22,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-xl pt-0 -mt-12 lg:-mt-24 ml-10 lg:ml-20"
+            className="max-w-5xl pt-0 -mt-12 lg:-mt-24 ml-10 lg:ml-20"
           >
             {/* Tagline */}
             <div className="inline-flex items-center gap-3 mb-6 border border-white/20 rounded-full py-1.5 px-4 bg-white/5 backdrop-blur-sm">
@@ -31,25 +31,31 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 relative">
-              The Beauty Behind <br /> IT Services.
+            <h1 className="text-3xl lg:text-4xl font-bold text-white leading-[1.1] mb-6 relative">
+              Custom ERP Software &    Digital  Transformation Services
             </h1>
 
             {/* Description */}
-            <p className="text-gray-400 text-lg mb-10 leading-relaxed pr-8">
-              Where your interests international networks intersect provid custom software solutions for any value software.
+            <p className="text-gray-400 text-lg mb-10 leading-relaxed text-justify">
+             Pinnacle Systems delivers custom ERP software, web development, mobile application development, digital marketing, Software & Hardware Integration and AI Automation that help businesses automate operations with defined business rules and accelerate growth.
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-wrap items-center gap-8">
+            <div className="flex items-center gap-4 xl:gap-5 flex-wrap xl:flex-nowrap">
               <Link
                 href="/explore"
-                className="bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1"
+                className="bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[15px]"
               >
-                EXPLORE MORE
+                Get a Free Consultation
+              </Link>
+              <Link
+                href="/explore"
+                className="bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[15px]"
+              >
+                Explore Our Services
               </Link>
 
-              <button className="flex items-center gap-4 group">
+              <button className="flex items-center gap-3 group whitespace-nowrap">
                 <div className="w-14 h-14 rounded-full border border-gray-600 flex items-center justify-center transition-colors relative">
                   <div className="absolute inset-1 rounded-full bg-primary flex items-center justify-center group-hover:bg-primary-hover transition-colors">
                     <Play className="w-5 h-5 text-white ml-1 relative z-10" fill="currentColor" />

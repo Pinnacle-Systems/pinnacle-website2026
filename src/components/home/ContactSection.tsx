@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function ContactSection() {
   return (
-    <section className="relative pt-24 pb-24 bg-white overflow-hidden">
+    <section className="relative py-12 lg:py-20 bg-white overflow-hidden">
        {/* Decorative Left Background */}
        <div className="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-gray-50 to-transparent -z-10"></div>
        

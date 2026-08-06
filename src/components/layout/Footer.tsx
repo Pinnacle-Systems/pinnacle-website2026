@@ -23,7 +23,7 @@ export default function Footer() {
                    <Phone className="text-white" size={24} strokeWidth={1.5} />
                 </div>
                 <div className="bg-[#0b132a] text-white px-8 py-4 rounded-full font-bold text-[15px] tracking-wide whitespace-nowrap shadow-md">
-                   +44 920 090 505
+                   + 91 9994610733
                 </div>
              </div>
           </div>

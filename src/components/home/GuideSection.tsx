@@ -4,24 +4,33 @@ import Image from 'next/image';
 
 const faqs = [
   {
-    question: 'What Medical Services Do You Provide?',
-    answer: 'Appropriately promote enterprise-wide vortals throuh innovative information evolve go forward markets whereas synergistic applications power full sound quality vectors without equity invested best practices revolutionize enterprise-wide vortals through innovative.'
+    question: 'What services does Pinnacle Systems offer?',
+    answer: 'Pinnacle Systems provides end-to-end technology solutions, including custom ERP software development, website development, mobile app development, digital marketing, and system integration services. We help businesses streamline operations, improve productivity, and accelerate digital transformation.'
   },
   {
-    question: 'What is your customer geography?',
-    answer: 'Appropriately promote enterprise-wide vortals throuh innovative information evolve go forward markets whereas synergistic applications power full sound quality vectors without equity invested best practices revolutionize enterprise-wide vortals through innovative.'
+    question: 'Which industries do you serve?',
+    answer: 'We collaborate with companies across many different industries, including manufacturing, healthcare, textiles, retail, logistics, education, commercial real estate and also startups. Each solution is designed to meet specific industry requirements.'
   },
   {
-    question: 'What are the main industries we serve?',
-    answer: 'Appropriately promote enterprise-wide vortals throuh innovative information evolve go forward markets whereas synergistic applications power full sound quality vectors without equity invested best practices revolutionize enterprise-wide vortals through innovative.'
-  }
+    question: 'Do you create customized software to meet specific business requirements?',
+    answer: 'Yes. We are experts in the development of custom software that matches your workflow, processes and growth targets. Our solutions are designed to increase efficiency, decrease the manual labor involved, and ensure long-term capacity.'
+  },
+  {
+    question: 'Do you have the ability to integrate our existing software with your newer systems?',
+    answer: 'Yes. We offer system integration services that connect ERP software, accounting software, CRM platforms, payment channels, eCommerce platforms, and third-party software to ensure that data flows seamlessly throughout your company.'
+  },
+  {
+    question: 'Do you create mobile applications and websites?',
+    answer: 'Absolutely. We create and design user-friendly websites and mobile applications that work on Android as well as iOS. Our solutions are focused on speed, safety, user experience, and the ability to scale.'
+  },
+  
 ];
 
 export default function GuideSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="relative pt-24 pb-24 bg-[#f8f9fa] overflow-hidden">
+    <section className="relative py-12 lg:py-20 bg-[#f8f9fa] overflow-hidden">
       {/* Decorative background shapes */}
       <div className="absolute left-0 top-1/4 w-64 h-64 border border-dashed border-primary/40 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute left-1/4 bottom-0 w-32 h-32 border border-dashed border-primary/40 rounded-full translate-y-1/2"></div>
@@ -38,7 +47,7 @@ export default function GuideSection() {
             </div>
             
             {/* Heading */}
-            <h2 className="text-3xl lg:text-[40px] leading-[1.2] font-extrabold text-[#0b132a] mb-12 max-w-lg">
+            <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-12 max-w-lg">
               Keeping Your Business Safe and <span className="text-primary">Available.</span>
             </h2>
             
@@ -60,7 +69,7 @@ export default function GuideSection() {
 
           {/* Right Column */}
           <div className="w-full lg:w-1/2 pt-4">
-            <h2 className="text-3xl lg:text-[36px] font-extrabold text-[#0b132a] mb-4">
+            <h2 className="text-3xl lg:text-[32px] font-extrabold text-[#0b132a] mb-4">
               A Comprehensive <span className="text-primary">Guide.</span>
             </h2>
             

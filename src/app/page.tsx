@@ -3,6 +3,11 @@ import Hero from "@/components/home/Hero";
 import FeatureCards from "@/components/home/FeatureCards";
 import AboutSection from "@/components/home/AboutSection";
 import ServicesSection from "@/components/home/ServicesSection";
+import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
+import TechnologiesSection from "@/components/home/TechnologiesSection";
+import MethodologySection from "@/components/home/MethodologySection";
+import IndustriesSection from "@/components/home/IndustriesSection";
+import CtaSection from "@/components/home/CtaSection";
 import ProjectsSection from "@/components/home/ProjectsSection";
 import PricingSection from "@/components/home/PricingSection";
 import GuideSection from "@/components/home/GuideSection";
@@ -32,17 +37,32 @@ export default function Home() {
         {/* Services Section */}
         <ServicesSection />
 
+        {/* Why Choose Us Section */}
+        <WhyChooseUsSection />
+
+        {/* Technologies Section */}
+        <TechnologiesSection />
+
+        {/* Methodology Section */}
+        <MethodologySection />
+
+        {/* Industries Section */}
+        <IndustriesSection />
+
+        {/* Testimonials Section */}
+        <TestimonialsSection />
+
+        {/* CTA Section */}
+        <CtaSection />
+
         {/* Projects Section */}
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
         
         {/* Pricing Section */}
-        <PricingSection />
+        {/* <PricingSection /> */}
         
         {/* Guide Section */}
         <GuideSection />
-        
-        {/* Testimonials Section */}
-        <TestimonialsSection />
         
         {/* Contact Section */}
         <ContactSection />
