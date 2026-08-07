@@ -31,7 +31,7 @@ export default function CtaSection() {
             transition={{ delay: 0.1 }}
             className="text-white/90 text-[17px] md:text-[19px] leading-relaxed mb-10 max-w-3xl mx-auto"
           >
-            Whether you need a custom ERP system, a new mobile app, a modern website, or a marketing strategy that delivers results — Pinnacle Systems is ready to help you get there.
+            Whether you need a Custom ERP system, a new Mobile App, a Modern Website, or a Marketing Strategy that delivers results — Pinnacle Systems is ready to help you get there.
           </motion.p>
           
           <motion.div

@@ -80,31 +80,31 @@ export default function AboutSection() {
               <div className="flex items-start gap-4">
                 <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
                 <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
-                  We specialize in delivering innovative AI-driven, cloud-based, mobile, and web application development services tailored for different industry verticals. 
+                  We specialize in delivering innovative AI-driven, Cloud-based, Mobile, and Web Application Development services tailored for different Industry verticals. 
                 </p>
               </div>
               <div className="flex items-start gap-4">
                 <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
                 <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
-                  Our deep-experienced team of professionals is dedicated to transforming ideas into scalable digital solutions with rapid delivery and exceptional quality.
+                  Our deep-experienced team of professionals is dedicated to transforming ideas into Scalable Digital Solutions with Rapid Delivery and Exceptional Quality.
                 </p>
               </div>
               <div className="flex items-start gap-4">
                 <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
                 <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
-                  Our presence in the region and our commitment to excellence allow us to analyze the local market&apos;s dynamics and provide solutions that help drive growth.
+                  Our presence in the region and our commitment to excellence allow us to analyze the Local Market&apos;s Dynamics and provide Solutions that help drive growth.
                 </p>
               </div>
               <div className="flex items-start gap-4">
                 <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
                 <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
-                  We prioritize cutting-edge technology adoption and agile methodologies to meet client objectives efficiently.
+                  We prioritize Cutting-Edge Technology Adoption and Agile Methodologies to meet Client objectives Efficiently.
                 </p>
               </div>
                 <div className="flex items-start gap-4">
                 <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
                 <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
-                  At PINNACLE, we don’t just build software — we create competitive advantages that position our clients for sustainable success in an evolving digital landscape.
+                  At Pinnacle Systems, we don’t just build Software — we create Competitive Advantages that position our Clients for sustainable Success in an evolving Digital landscape.
                 </p>
               </div>
             </div>

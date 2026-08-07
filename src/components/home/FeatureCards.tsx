@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ShieldCheck, Megaphone, MessageSquare, CloudCog, Cpu, Server, Target, Code } from "lucide-react";
+import { ShieldCheck, Megaphone, MessageSquare, CloudCog, Cpu, Server, Target, Code, Globe, Smartphone } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 function AnimatedNumber({ value, duration = 2000 }: { value: number, duration?: number }) {
@@ -40,33 +40,30 @@ const features = [
 
   {
     icon: ShieldCheck,
-    title: "Customized ERP Solution",
+    title: "Custom Erp Software",
     description: "AI-powered ERP tailored to your business workflow",
   },
-  
-  
- 
- 
   {
     icon: Code,
-    title: "Web Development",
-    description: "Fast, secure websites that convert visitors into customers",
+    title: "Web Application",
+    description: "Scalable and interactive Web Applications built to streamline business operations",
   },
   {
-    icon: Code,
+    icon: Globe,
+    title: "Website Development",
+    description: "Fast, secure Websites that convert visitors into Customers",
+  },
+  {
+    icon: Smartphone,
     title: "Mobile App Development",
-    description: "Native and cross-platform apps for iOS and Android",
+    description: "Native and cross platform Apps for IOS and Android",
   },
    {
     icon: Target,
     title: "Digital Marketing",
-    description: "AI-driven SEO, ads, and content that grow you",
+    description: "AI-driven SEO, Ads, and Content that grows you",
   },
-   {
-    icon: Target,
-    title: "Integration Services",
-    description: "Connect your systems into one seamless data ecosystem",
-  },
+  
 ];
 
 const containerVariants = {

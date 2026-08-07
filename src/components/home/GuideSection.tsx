@@ -70,15 +70,13 @@ export default function GuideSection() {
           {/* Right Column */}
           <div className="w-full lg:w-1/2 pt-4">
             <h2 className="text-3xl lg:text-[32px] font-extrabold text-[#0b132a] mb-4">
-              A Comprehensive <span className="text-primary">Guide.</span>
+              FAQ.
             </h2>
             
-            <p className="text-[#64748b] text-[15px] leading-relaxed mb-10 max-w-md">
-              Alternative innovation network environmental whiteboard pursue for premier methods empowerment go forward opportunities
-            </p>
+           
             
             {/* Accordion */}
-            <div className="space-y-4">
+            <div className="space-y-4 mt-12">
               {faqs.map((faq, index) => {
                 const isOpen = openIndex === index;
                 

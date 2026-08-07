@@ -6,27 +6,27 @@ import { Layers, Wrench, Globe, Shield, Users } from "lucide-react";
 const reasons = [
   {
     title: "End-to-End Expertise",
-    description: "From software development to marketing, we cover every stage of your digital growth under one roof.",
+    description: "From Software Development to Marketing, we cover every stage of your Digital Growth under one roof.",
     icon: Layers,
   },
   {
     title: "Custom-Built",
-    description: "We design solutions around your business, not the other way around.",
+    description: "We Design Solutions around your Business, not the other way around.",
     icon: Wrench,
   },
   {
     title: "Local Knowledge",
-    description: "We blend local market knowledge with international development as well as quality benchmarks.",
+    description: "We blend Local market knowledge with International Development as well as Quality Benchmarks.",
     icon: Globe,
   },
   {
     title: "Transparent Process",
-    description: "Clear timelines, transparent communication, and no unexpected costs.",
+    description: "Clear Timelines, Transparent Communication, and no unexpected Costs.",
     icon: Shield,
   },
   {
     title: "Long-Term Partnership",
-    description: "We don't just deliver projects; we support and scale with you as your business grows.",
+    description: "We don't just deliver Projects. We Support and Scale with you as your Business Grows.",
     icon: Users,
   },
 ];
@@ -55,7 +55,7 @@ export default function WhyChooseUsSection() {
             </div>
             
             <h2 className="text-3xl lg:text-[36px] leading-[1.2] font-extrabold text-white mb-6">
-              Why Businesses Choose <br className="md:hidden" /><span className="text-primary relative inline-block">
+              Why Business Choose <br className="md:hidden" /><span className="text-primary relative inline-block">
                 Pinnacle Systems
                 <svg className="absolute -bottom-2 left-0 w-full h-3 text-primary/40" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
@@ -63,7 +63,7 @@ export default function WhyChooseUsSection() {
               </span>
             </h2>
             <p className="text-gray-400 text-[17px] max-w-2xl mx-auto">
-              We bring technical excellence, industry expertise, and a partner-first approach to every project we undertake.
+              We bring Technical Excellence, Industry Expertise, and a Partner-First approach to every project we undertake.
             </p>
           </motion.div>
         </div>

@@ -1,17 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Factory, ShoppingCart, HeartPulse, Truck, GraduationCap, Building, Briefcase, Rocket } from "lucide-react";
+import { Factory, Shirt, TestTube, HeartPulse, GraduationCap, Building, Sparkles, Store } from "lucide-react";
 
 const industries = [
+  { name: "Textile", icon: Shirt },
   { name: "Manufacturing", icon: Factory },
-  { name: "Retail & E-commerce", icon: ShoppingCart },
+  { name: "Textile Testing Lab", icon: TestTube },
   { name: "Healthcare", icon: HeartPulse },
-  { name: "Logistics & Supply Chain", icon: Truck },
   { name: "Education", icon: GraduationCap },
-  { name: "Real Estate", icon: Building },
-  { name: "Professional Services", icon: Briefcase },
-  { name: "Startups", icon: Rocket },
+  { name: "Construction", icon: Building },
+  { name: "Fire Works", icon: Sparkles },
+  { name: "Retails", icon: Store },
 ];
 
 export default function IndustriesSection() {

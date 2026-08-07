@@ -3,22 +3,22 @@ import Image from 'next/image';
 
 const testimonials = [
   {
-    name: 'M.Kamrul Islam',
+    name: 'Vairamuthu Vairam',
     role: 'DEVELOPER',
     image: '/per1.png',
-    text: 'paradigms. Monotonectally extend open-source mvia competitive methods of empowerment dri revolutionize stand- business'
+    text: 'Good experience with Technical Persons.Customized ERP for Garment Industry. Latest Cloud Technology.'
   },
   {
-    name: 'Alberta Infantino',
+    name: 'Vivek Bharath',
     role: 'DEVELOPER',
     image: '/per2.png',
-    text: 'paradigms. Monotonectally extend open-source mvia competitive methods of empowerment dri revolutionize stand- business'
+    text: 'Very Customized ERP Solutions... On-Time Delivery... Very Good Customer Support and Service... Customer Satisfactions is their Satisfaction...'
   },
   {
-    name: 'Hosain Al-Amin',
+    name: 'Shwetha',
     role: 'DEVELOPER',
     image: '/per3.png',
-    text: 'paradigms. Monotonectally extend open-source mvia competitive methods of empowerment dri revolutionize stand- business'
+    text: 'Great and quick response to the Clients.Looking frwd to have more projects with this team.All the best Pinnacle team👍 '
   }
 ];
 
@@ -76,14 +76,14 @@ export default function TestimonialsSection() {
                  
                  <div className="flex items-center justify-center gap-2 mb-2 w-full">
                     <h4 className="text-white font-bold text-[16px]">{t.name}</h4>
-                    <span className="text-primary text-[12px] uppercase font-extrabold tracking-wider">{t.role}</span>
+                    {/* <span className="text-primary text-[12px] uppercase font-extrabold tracking-wider">{t.role}</span> */}
                  </div>
                  
                  {/* Bottom orange line gradient */}
                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[70%] h-[2px] bg-gradient-to-r from-transparent via-primary/80 to-transparent"></div>
                  
                  {/* Avatar */}
-                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[68px] h-[68px] rounded-full border-4 border-[#0b132a] bg-[#1a233a] flex items-center justify-center overflow-hidden z-20">
+                 {/* <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[68px] h-[68px] rounded-full border-4 border-[#0b132a] bg-[#1a233a] flex items-center justify-center overflow-hidden z-20">
                     <Image 
                       src={t.image} 
                       alt={t.name} 
@@ -91,7 +91,7 @@ export default function TestimonialsSection() {
                       className="object-cover"
                     />
                     <span className="text-gray-500 text-xs">img</span>
-                 </div>
+                 </div> */}
               </div>
             ))}
          </div>

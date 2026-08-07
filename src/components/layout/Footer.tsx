@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Headset, Phone, Send } from 'lucide-react';
+import { Headset, Phone, Send, MapPin, Mail } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -45,9 +45,37 @@ export default function Footer() {
                      />
                    </div>
                    
-                   <p className="text-[#8c98a4] text-[15px] leading-[1.8] mb-10 max-w-sm">
-                      Globally monetize plug-and-play data it solu monotonectally disseminate oriented busine multifunctional mind design.
-                   </p>
+                   <div className="flex flex-col gap-4 mb-10 max-w-sm">
+                     {/* Email 1 */}
+                     <div className="flex items-center gap-3">
+                       <Mail className="text-primary shrink-0" size={18} />
+                       <a href="mailto:manoj@pinnaclesystems.co.in" className="text-[#8c98a4] hover:text-primary transition-colors text-[15px]">manoj@pinnaclesystems.co.in</a>
+                     </div>
+                     
+                     {/* Email 2 */}
+                     <div className="flex items-center gap-3">
+                       <Mail className="text-primary shrink-0" size={18} />
+                       <a href="mailto:info@pinnaclesystems.co.in" className="text-[#8c98a4] hover:text-primary transition-colors text-[15px]">info@pinnaclesystems.co.in</a>
+                     </div>
+                     
+                     {/* Address */}
+                     <div className="flex items-start gap-3">
+                       <MapPin className="text-primary shrink-0 mt-1" size={18} />
+                       <p className="text-[#8c98a4] text-[15px] leading-[1.8]">
+                         65/108 - First Floor, MurungaPalayam First Street,Tirupur - 641603
+                       </p>
+                     </div>
+                     
+                     {/* Phones */}
+                     <div className="flex items-center gap-3">
+                       <Phone className="text-primary shrink-0" size={18} />
+                       <div className="flex items-center gap-2">
+                         <a href="tel:+919994610733" className="text-[#8c98a4] hover:text-primary transition-colors text-[15px]">+91 9994610733</a>
+                         <span className="text-[#8c98a4]">,</span>
+                         <a href="tel:+919042762263" className="text-[#8c98a4] hover:text-primary transition-colors text-[15px]">+91 9042762263</a>
+                       </div>
+                     </div>
+                   </div>
                    
                    {/* Social Links */}
                    <div className="flex items-center gap-5">

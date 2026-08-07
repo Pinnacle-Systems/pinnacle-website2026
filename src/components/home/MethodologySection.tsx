@@ -5,23 +5,23 @@ import { motion } from "framer-motion";
 const steps = [
   {
     title: "Discovery & Consultation",
-    description: "We understand your business, challenges, and goals.",
+    description: "We understand your Business, Challenges, and Goals.",
   },
   {
     title: "Strategy & Planning",
-    description: "We design a tailored solution roadmap and timeline.",
+    description: "We design a tailored Solution Roadmap and Timeline.",
   },
   {
     title: "Design & Development",
-    description: "Our team builds your solution with regular check-ins and updates.",
+    description: "Our Team builds your Solution with regular check-Ins and Updates.",
   },
   {
     title: "Testing & Quality Assurance",
-    description: "Every solution is rigorously tested before launch.",
+    description: "Every Solution is rigorously tested before Launch.",
   },
   {
     title: "Go Live & Support",
-    description: "We deploy your solution and provide ongoing support as you scale.",
+    description: "We deploy your Solution and provide ongoing Support as you Scale.",
   },
 ];
 

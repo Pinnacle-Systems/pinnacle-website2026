@@ -32,12 +32,12 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-3xl lg:text-4xl font-bold text-white leading-[1.1] mb-6 relative">
-              Custom ERP Software &    Digital  Transformation Services
+              Custom ERP Software & Digital Transformation Services
             </h1>
 
             {/* Description */}
             <p className="text-gray-400 text-lg mb-10 leading-relaxed text-justify">
-             Pinnacle Systems delivers custom ERP software, web development, mobile application development, digital marketing, Software & Hardware Integration and AI Automation that help businesses automate operations with defined business rules and accelerate growth.
+             Pinnacle Systems delivers Custom ERP Software, Web Development, Mobile Application Development, Digital Marketing, Software & Hardware Integration and AI Automation that help Businesses Automate Operations with defined Business Rules and Accelerate Growth.
             </p>
 
             {/* Buttons */}
