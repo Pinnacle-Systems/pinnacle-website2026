@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import Link from 'next/link';
 
 const plans = [
   {
@@ -106,9 +107,9 @@ export default function PricingSection() {
                  </ul>
                  
                  <div className="mt-auto w-full relative z-10">
-                   <button className="w-full bg-[#fff0eb] text-primary font-bold text-[13px] py-4 rounded-full transition-colors duration-300 hover:bg-primary hover:text-white tracking-wider uppercase">
+                   <Link href="/under-construction" className="w-full block bg-[#fff0eb] text-primary font-bold text-[13px] py-4 rounded-full transition-colors duration-300 hover:bg-primary hover:text-white tracking-wider uppercase text-center">
                      CHOOSE PLAN
-                   </button>
+                   </Link>
                  </div>
               </div>
             </div>

@@ -40,7 +40,25 @@ export default function MethodologySection() {
         <div className="max-w-[1400px] mx-auto w-full">
           <div className="relative">
             {/* Center Horizontal Line (hidden on small screens, shown on md+) */}
-            <div className="absolute top-[114px] left-[10%] right-[10%] h-1 bg-gray-100 hidden md:block rounded-full z-0"></div>
+            <div className="absolute top-[114px] left-[10%] right-[10%] h-1 bg-gray-100 hidden md:block rounded-full z-0 overflow-hidden">
+               {/* Animated fill line */}
+               <motion.div 
+                 initial={{ width: 0 }}
+                 whileInView={{ width: "100%" }}
+                 viewport={{ once: true, margin: "-50px" }}
+                 transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
+                 className="absolute top-0 left-0 h-full bg-primary/30 rounded-full"
+               ></motion.div>
+
+               {/* Continuous Traveling Pulse */}
+               <motion.div 
+                 initial={{ left: "-25%" }}
+                 whileInView={{ left: "100%" }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 2.5, repeat: Infinity, ease: "linear", delay: 1 }}
+                 className="absolute top-0 w-1/4 h-full bg-gradient-to-r from-transparent via-primary to-transparent"
+               ></motion.div>
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 lg:gap-8">
               {steps.map((step, index) => {
@@ -65,11 +83,20 @@ export default function MethodologySection() {
                       {index + 1}
                     </div>
 
-                    {/* Bottom: Description Card */}
-                    <div className="bg-[#f8f9fa] rounded-[24px] p-5 lg:p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 border border-gray-100 hover:border-primary/20 hover:-translate-y-1 w-full flex-grow flex items-start justify-center">
-                      <p className="text-gray-500 text-[14.5px] leading-relaxed">
-                        {step.description}
-                      </p>
+                    {/* Bottom: Description Card (Speech Bubble) */}
+                    <div className="relative w-full flex-grow mt-2 filter drop-shadow-[0_4px_15px_rgba(0,0,0,0.06)] group-hover:drop-shadow-[0_15px_35px_rgba(255,90,0,0.12)] transition-all duration-300 group-hover:-translate-y-1.5">
+                      {/* Triangle Pointer */}
+                      <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-white rotate-45 rounded-tl-[4px]"></div>
+                      
+                      {/* Card Body */}
+                      <div className="bg-white rounded-2xl p-5 lg:p-6 h-full flex flex-col items-center justify-start relative z-10 overflow-hidden">
+                        {/* Animated bottom border line on hover */}
+                        <div className="absolute bottom-0 left-0 h-[3px] bg-primary w-0 group-hover:w-full transition-all duration-500 ease-out"></div>
+                        
+                        <p className="text-gray-600 group-hover:text-[#0b132a] text-[14.5px] leading-relaxed font-medium transition-colors duration-300">
+                          {step.description}
+                        </p>
+                      </div>
                     </div>
                   </motion.div>
                 );

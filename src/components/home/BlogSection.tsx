@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Calendar, MessageSquare, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function BlogSection() {
   return (
@@ -23,9 +24,9 @@ export default function BlogSection() {
             </div>
             
             <div className="w-full md:w-[40%] flex justify-start md:justify-end md:pt-16 pb-2 relative z-10">
-               <button className="bg-primary hover:bg-orange-600 text-white font-bold text-[13px] tracking-wider px-8 py-4 rounded-full transition-colors shadow-md shadow-primary/20 uppercase md:-mt-1">
+               <Link href="/under-construction" className="bg-primary hover:bg-orange-600 text-white font-bold text-[13px] tracking-wider px-8 py-4 rounded-full transition-colors shadow-md shadow-primary/20 uppercase md:-mt-1 inline-block">
                   VIEW ALL POST
-               </button>
+               </Link>
             </div>
             
             {/* Divider Line */}
@@ -68,9 +69,9 @@ export default function BlogSection() {
                        Appropriatel promote enterprise-wide through in information without equity best revolutioniz
                      </p>
                      <div className="mt-auto">
-                        <a href="#" className="inline-flex items-center gap-2 text-gray-500 font-bold text-[13px] tracking-wider uppercase hover:text-primary transition-colors">
+                        <Link href="/under-construction" className="inline-flex items-center gap-2 text-gray-500 font-bold text-[13px] tracking-wider uppercase hover:text-primary transition-colors">
                            READ MORE <ArrowRight size={16} strokeWidth={2.5} />
-                        </a>
+                        </Link>
                      </div>
                   </div>
                </div>
@@ -109,9 +110,9 @@ export default function BlogSection() {
                        Appropriatel promote enterprise-wide through in information without best revolutioniz
                      </p>
                      <div className="mt-auto">
-                        <a href="#" className="inline-flex items-center gap-2 text-gray-500 font-bold text-[12px] tracking-wider uppercase hover:text-primary transition-colors">
+                        <Link href="/under-construction" className="inline-flex items-center gap-2 text-gray-500 font-bold text-[12px] tracking-wider uppercase hover:text-primary transition-colors">
                            READ MORE <ArrowRight size={16} strokeWidth={2.5} />
-                        </a>
+                        </Link>
                      </div>
                   </div>
                </div>
@@ -146,9 +147,9 @@ export default function BlogSection() {
                        Appropriatel promote enterprise-wide through in information without best revolutioniz
                      </p>
                      <div className="mt-auto">
-                        <a href="#" className="inline-flex items-center gap-2 text-gray-500 font-bold text-[12px] tracking-wider uppercase hover:text-primary transition-colors">
+                        <Link href="/under-construction" className="inline-flex items-center gap-2 text-gray-500 font-bold text-[12px] tracking-wider uppercase hover:text-primary transition-colors">
                            READ MORE <ArrowRight size={16} strokeWidth={2.5} />
-                        </a>
+                        </Link>
                      </div>
                   </div>
                </div>

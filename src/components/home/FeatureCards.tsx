@@ -107,10 +107,13 @@ export default function FeatureCards() {
               whileHover={{ 
                 zIndex: 10,
               }}
-              className="group relative flex flex-col items-center justify-start text-center px-2 py-2 bg-[#f4f5f7] hover:bg-primary rounded-[24px] shadow-sm w-full h-full border border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-2 transition-all duration-400 overflow-hidden"
+              className="group relative flex flex-col items-center justify-start text-center px-2 py-2 bg-[#f4f5f7] rounded-[24px] shadow-sm w-full h-full border border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-2 transition-all duration-400 overflow-hidden"
             >
+              {/* Hover fill animation (bottom to top) */}
+              <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out pointer-events-none rounded-[inherit]"></div>
+
               {/* Background pattern */}
-              <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover bg-no-repeat bg-center opacity-[0.35] group-hover:opacity-20 transition-opacity duration-300 pointer-events-none rounded-[inherit]"></div>
+              <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover bg-no-repeat bg-center opacity-[0.35] group-hover:opacity-20 transition-opacity duration-300 pointer-events-none rounded-[inherit] z-[1]"></div>
               
               <div className="relative z-10 w-full flex flex-col items-center">
                

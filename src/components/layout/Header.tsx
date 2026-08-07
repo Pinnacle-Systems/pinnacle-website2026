@@ -7,12 +7,12 @@ import { ChevronDown, ArrowRight, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "Home", href: "/", hasDropdown: true },
-  { name: "Company", href: "/company", hasDropdown: true },
-  { name: "Portfolio", href: "/portfolio", hasDropdown: false },
-  { name: "Service", href: "/service", hasDropdown: true },
-  { name: "Blog", href: "/blog", hasDropdown: true },
-  { name: "Contact", href: "/contact", hasDropdown: false },
+  { name: "Home", href: "/", hasDropdown: false },
+  { name: "Company", href: "/under-construction", hasDropdown: true },
+  { name: "Portfolio", href: "/under-construction", hasDropdown: false },
+  { name: "Service", href: "/under-construction", hasDropdown: true },
+  { name: "Blog", href: "/under-construction", hasDropdown: true },
+  { name: "Contact", href: "/under-construction", hasDropdown: false },
 ];
 
 export default function Header() {
@@ -65,7 +65,7 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden md:flex items-center">
           <Link
-            href="/quote"
+            href="/under-construction"
             className="text-primary hover:text-white font-bold text-[14px] tracking-wide flex items-center gap-2 transition-colors group uppercase"
           >
             GET A QUOTE NOW

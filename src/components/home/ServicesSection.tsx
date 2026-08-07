@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MonitorDot, MonitorCog, Rocket, Cpu, CheckCircle2, ArrowRight, Network } from "lucide-react";
+import Link from "next/link";
 
 const servicesData = [
   {
@@ -151,10 +152,10 @@ export default function ServicesSection() {
                 </div>
 
                 <div className="mt-auto pt-6 border-t border-gray-100">
-                  <button className="flex items-center gap-2 text-primary font-bold text-[15px] hover:text-orange-600 transition-colors group">
+                  <Link href="/under-construction" className="flex items-center gap-2 text-primary font-bold text-[15px] hover:text-orange-600 transition-colors group w-max">
                     {service.cta}
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             );

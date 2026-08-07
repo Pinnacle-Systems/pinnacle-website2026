@@ -35,7 +35,7 @@ export default function Home() {
         <AboutSection />
         
         {/* Services Section */}
-        <ServicesSection />
+        {/* <ServicesSection /> */}
 
         {/* Why Choose Us Section */}
         <WhyChooseUsSection />

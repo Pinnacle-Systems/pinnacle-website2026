@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { CloudCog } from "lucide-react";
+import Link from "next/link";
 
 const RadarBackground = () => (
   <motion.svg 
@@ -112,9 +112,9 @@ export default function AboutSection() {
         
 
             {/* Button */}
-            <button className="bg-primary hover:bg-orange-600 text-white font-bold text-[14px] px-9 py-4 rounded-full transition-colors duration-300 tracking-wide shadow-md shadow-primary/20">
+            <Link href="/under-construction" className="inline-block bg-primary hover:bg-orange-600 text-white font-bold text-[14px] px-9 py-4 rounded-full transition-colors duration-300 tracking-wide shadow-md shadow-primary/20">
               Call Now
-            </button>
+            </Link>
           </motion.div>
 
         </div>

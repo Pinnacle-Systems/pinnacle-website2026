@@ -43,13 +43,13 @@ export default function Hero() {
             {/* Buttons */}
             <div className="flex items-center gap-4 xl:gap-5 flex-wrap xl:flex-nowrap">
               <Link
-                href="/explore"
+                href="/under-construction"
                 className="bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[15px]"
               >
                 Get a Free Consultation
               </Link>
               <Link
-                href="/explore"
+                href="/under-construction"
                 className="bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[15px]"
               >
                 Explore Our Services

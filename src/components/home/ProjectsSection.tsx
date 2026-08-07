@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ArrowUp } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 const projects = [
   { title: "CMC Softwar Solution", tag: "SOFTWARE", image: "/exploreomg1.png" },
@@ -47,9 +48,9 @@ export default function ProjectsSection() {
             Explore Our Recent <span className="text-primary">Projects.</span>
           </h2>
         </div>
-        <button className="bg-primary hover:bg-orange-600 text-white font-bold text-[13px] tracking-wider px-8 py-4 rounded-full transition-colors duration-300 shadow-md shadow-primary/20 uppercase whitespace-nowrap shrink-0">
+        <Link href="/under-construction" className="bg-primary hover:bg-orange-600 text-white font-bold text-[13px] tracking-wider px-8 py-4 rounded-full transition-colors duration-300 shadow-md shadow-primary/20 uppercase whitespace-nowrap shrink-0 inline-block">
           VIEW PROJECT DETAIL
-        </button>
+        </Link>
       </div>
 
       {/* Cards Area */}
