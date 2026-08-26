@@ -33,7 +33,7 @@ export default function Home() {
 
         {/* About Section */}
         <AboutSection />
-        
+
         {/* Services Section */}
         {/* <ServicesSection /> */}
 
@@ -55,21 +55,15 @@ export default function Home() {
         {/* CTA Section */}
         <CtaSection />
 
-        {/* Projects Section */}
-        {/* <ProjectsSection /> */}
-        
-        {/* Pricing Section */}
-        {/* <PricingSection /> */}
-        
         {/* Guide Section */}
         <GuideSection />
-        
+
         {/* Contact Section */}
         <ContactSection />
-        
+
         {/* Blog Section */}
         <BlogSection />
-        
+
         {/* Footer */}
         <Footer />
       </div>

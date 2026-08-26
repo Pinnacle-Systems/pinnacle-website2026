@@ -4,6 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ShieldCheck, Megaphone, MessageSquare, CloudCog, Cpu, Server, Target, Code, Globe, Smartphone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 function AnimatedNumber({ value, duration = 2000 }: { value: number, duration?: number }) {
   const [count, setCount] = useState(0);
@@ -18,7 +19,7 @@ function AnimatedNumber({ value, duration = 2000 }: { value: number, duration?: 
       const animate = (timestamp: number) => {
         if (!startTime) startTime = timestamp;
         const progress = (timestamp - startTime) / duration;
-        
+
         if (progress < 1) {
           const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
           setCount(Math.floor(easeProgress * value));
@@ -27,7 +28,7 @@ function AnimatedNumber({ value, duration = 2000 }: { value: number, duration?: 
           setCount(value);
         }
       };
-      
+
       animationFrame = requestAnimationFrame(animate);
       return () => cancelAnimationFrame(animationFrame);
     }
@@ -42,28 +43,33 @@ const features = [
     icon: ShieldCheck,
     title: "Custom Erp Software",
     description: "AI-powered ERP tailored to your business workflow",
+    link: "/erp-software"
   },
   {
     icon: Code,
     title: "Web Application",
     description: "Scalable and interactive Web Applications built to streamline business operations",
+    link: "/services/web-application"
   },
   {
     icon: Globe,
     title: "Website Development",
     description: "Fast, secure Websites that convert visitors into Customers",
+    link: "/services/website-development"
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
     description: "Native and cross platform Apps for IOS and Android",
+    link: "/services/mobile-app-development"
   },
-   {
+  {
     icon: Target,
     title: "Digital Marketing",
     description: "AI-driven SEO, Ads, and Content that grows you",
+    link: "/services/digital-marketing"
   },
-  
+
 ];
 
 const containerVariants = {
@@ -78,8 +84,8 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: { duration: 0.5, ease: "easeOut" }
   },
@@ -98,43 +104,44 @@ export default function FeatureCards() {
         {features.map((feature, index) => {
           const Icon = feature.icon;
           return (
-            <motion.div
-              key={index}
-              variants={cardVariants}
-              whileHover={{ 
-                zIndex: 10,
-              }}
-              className="group relative flex flex-col items-center justify-start text-center px-2 py-2 bg-[#f4f5f7] rounded-[24px] shadow-sm w-full h-full border border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-2 transition-all duration-400 overflow-hidden"
-            >
-              {/* Hover fill animation (bottom to top) */}
-              <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out pointer-events-none rounded-[inherit]"></div>
+            <Link href={feature.link} key={index} className="contents">
+              <motion.div
+                variants={cardVariants}
+                whileHover={{
+                  zIndex: 10,
+                }}
+                className="group relative flex flex-col items-center justify-start text-center px-2 py-2 bg-[#f4f5f7] rounded-[24px] shadow-sm w-full h-full border border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-2 transition-all duration-400 overflow-hidden cursor-pointer"
+              >
+                {/* Hover fill animation (bottom to top) */}
+                <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out pointer-events-none rounded-[inherit]"></div>
 
-              {/* Background pattern */}
-              <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover bg-no-repeat bg-center opacity-[0.35] group-hover:opacity-20 transition-opacity duration-300 pointer-events-none rounded-[inherit] z-[1]"></div>
-              
-              <div className="relative z-10 w-full flex flex-col items-center">
-               
-                {/* White ring around the icon */}
-                <div className="w-[72px] h-[72px] flex items-center justify-center mx-auto mb-3 rounded-full border-[2px] border-white shadow-[0_0_15px_rgba(255,255,255,0.7)] bg-transparent group-hover:bg-[#0b132a] group-hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] group-hover:scale-110 transition-all duration-300">
-                  <Icon className="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300 stroke-[1.5]" />
+                {/* Background pattern */}
+                <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover bg-no-repeat bg-center opacity-[0.35] group-hover:opacity-20 transition-opacity duration-300 pointer-events-none rounded-[inherit] z-[1]"></div>
+
+                <div className="relative z-10 w-full flex flex-col items-center">
+
+                  {/* White ring around the icon */}
+                  <div className="w-[72px] h-[72px] flex items-center justify-center mx-auto mb-3 rounded-full border-[2px] border-white shadow-[0_0_15px_rgba(255,255,255,0.7)] bg-transparent group-hover:bg-[#0b132a] group-hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] group-hover:scale-110 transition-all duration-300">
+                    <Icon className="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300 stroke-[1.5]" />
+                  </div>
+
+                  <h3 className="text-[16px] py-1 font-semibold text-[#0b132a] group-hover:text-white transition-colors duration-300 mb-3">
+                    {feature.title}
+                  </h3>
+
+                  <p className="text-[#64748b] px-2 group-hover:text-white transition-colors duration-300 text-[15px] leading-relaxed">
+                    {feature.description}
+                  </p>
+
                 </div>
-                
-                <h3 className="text-[16px] py-1 font-semibold text-[#0b132a] group-hover:text-white transition-colors duration-300 mb-3">
-                  {feature.title}
-                </h3>
-                
-                <p className="text-[#64748b] px-2 group-hover:text-white transition-colors duration-300 text-[15px] leading-relaxed">
-                  {feature.description}
-                </p>
-                
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           );
         })}
       </div>
 
       {/* Trust Bar */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -145,7 +152,7 @@ export default function FeatureCards() {
         <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover opacity-[0.05] pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] pointer-events-none"></div>
-        
+
         {/* Stat 1 */}
         <div className="text-center flex-1 relative z-10 group">
           <div className="text-5xl font-extrabold text-white mb-2 group-hover:text-primary transition-colors duration-300 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
@@ -153,9 +160,9 @@ export default function FeatureCards() {
           </div>
           <div className="text-gray-300 font-bold tracking-widest uppercase text-[13px]">Years of Experience</div>
         </div>
-        
+
         <div className="w-full md:w-px h-px md:h-20 bg-white/10 relative z-10"></div>
-        
+
         {/* Stat 2 */}
         <div className="text-center flex-1 relative z-10 group">
           <div className="text-5xl font-extrabold text-white mb-2 group-hover:text-primary transition-colors duration-300 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
@@ -163,9 +170,9 @@ export default function FeatureCards() {
           </div>
           <div className="text-gray-300 font-bold tracking-widest uppercase text-[13px]">Happy Clients</div>
         </div>
-        
+
         <div className="w-full md:w-px h-px md:h-20 bg-white/10 relative z-10"></div>
-        
+
         {/* Stat 3 */}
         <div className="text-center flex-1 relative z-10 group">
           <div className="text-5xl font-extrabold text-white mb-2 group-hover:text-primary transition-colors duration-300 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
@@ -173,9 +180,9 @@ export default function FeatureCards() {
           </div>
           <div className="text-gray-300 font-bold tracking-widest uppercase text-[13px]">Projects Delivered</div>
         </div>
-        
+
         <div className="w-full md:w-px h-px md:h-20 bg-white/10 relative z-10"></div>
-        
+
         {/* Stat 4 */}
         <div className="text-center flex-1 relative z-10 group">
           <div className="text-5xl font-extrabold text-white mb-2 group-hover:text-primary transition-colors duration-300 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
