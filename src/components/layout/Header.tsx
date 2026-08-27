@@ -13,6 +13,7 @@ const navLinks = [
   { name: "Service", href: "/under-construction", hasDropdown: true },
   { name: "Blog", href: "/under-construction", hasDropdown: true },
   { name: "Contact", href: "/under-construction", hasDropdown: false },
+  { name: "About Us", href: "/about-us", hasDropdown: false },
 ];
 
 export default function Header() {
