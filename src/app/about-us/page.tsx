@@ -19,28 +19,28 @@ export default function AboutUsPage() {
               About <span className="text-primary">Pinnacle Systems</span>
             </h1>
             <p className="text-xl md:text-2xl text-[#8c98a4] font-medium leading-relaxed whitespace-nowrap pb-10">
-              Custom ERP Software for Manufacturing & Textile
+              Custom ERP Software for  Textile & Manufacturing
             </p>
           </div>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="py-12 md:py-16 bg-[#11192F] rounded-[40px] mx-4 md:mx-12 lg:mx-20 mt-10 shadow-2xl">
-        <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
+      <div className="py-12 md:py-16 bg-[#11192F] rounded-[40px] mx-4 md:mx-8 lg:mx-20 mt-10 shadow-2xl">
+        <div className="max-w-[1300px] mx-auto px-6 lg:px-8">
           
           {/* Introduction */}
           <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl ">
            
-            <div className="w-full md:w-3/5 text-center md:text-left">
+            <div className="w-full md:w-[55%] text-center md:text-left">
               {/* Subtitle Pill style from home */}
               <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-red-100/60 mb-6 bg-white shadow-sm">
                 <div className="w-4 h-[3px] bg-primary rounded-full"></div>
                 <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Our Story</span>
               </div>
               
-              <h2 className="text-3xl lg:text-4xl leading-[1.2] font-extrabold text-white mb-8">
-                ERP should adapt to your business, <span className="text-primary block mt-2">not the other way around.</span>
+              <h2 className="text-3xl lg:text-[32px] xl:text-4xl leading-[1.2] font-extrabold text-white mb-8">
+                <span className="xl:whitespace-nowrap">ERP should adapt to your business,</span> <span className="text-primary block mt-2">not the other way around.</span>
               </h2>
 
               <div className="space-y-6">
@@ -59,14 +59,14 @@ export default function AboutUsPage() {
               </div>
             </div>
             
-             <div className="w-full md:w-2/5 flex justify-center items-center">
-              <div className="w-full  rounded-[24px] overflow-hidden border-4 border-primary/20 shadow-xl shrink-0">
+             <div className="w-full md:w-[45%] flex justify-center items-center md:translate-x-16 lg:translate-x-20">
+              <div className="w-full rounded-[24px] overflow-hidden border-4 border-primary/20 shadow-xl shrink-0">
                 <Image 
-                  src="/images/pages2/sir.jpg" 
+                  src="/images/pages2/Sir.WebP.webp" 
                   alt="Mr Manoj Padmanabhan, Founder & CEO" 
-                  width={900}
+                  width={890}
                   height={1000}
-                  className="w-full h-auto object-cover" 
+                  className="w-full h-[320px] md:h-[380px] lg:h-[420px] object-cover object-center" 
                 />
               </div>
             </div>
