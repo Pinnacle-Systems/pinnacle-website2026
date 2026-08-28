@@ -43,7 +43,7 @@ const features = [
     icon: ShieldCheck,
     title: "Custom Erp Software",
     description: "AI-powered ERP tailored to your business workflow",
-    link: "/erp-software"
+    link: "/custom-erp-software"
   },
   {
     icon: Code,

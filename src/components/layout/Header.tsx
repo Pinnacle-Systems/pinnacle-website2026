@@ -8,12 +8,18 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "Home", href: "/", hasDropdown: false },
-  { name: "Company", href: "/under-construction", hasDropdown: true },
-  { name: "Portfolio", href: "/under-construction", hasDropdown: false },
-  { name: "Service", href: "/under-construction", hasDropdown: true },
-  { name: "Blog", href: "/under-construction", hasDropdown: true },
-  { name: "Contact", href: "/under-construction", hasDropdown: false },
   { name: "About Us", href: "/about-us", hasDropdown: false },
+  { 
+    name: "Services", 
+    href: "#", 
+    hasDropdown: true,
+    dropdownItems: [
+      { name: "Custom Erp Software", href: "/custom-erp-software" }
+    ]
+  },
+  { name: "Contact Us", href: "/under-construction", hasDropdown: false },
+  { name: "Blog", href: "/under-construction", hasDropdown: false },
+  { name: "FAQ", href: "/under-construction", hasDropdown: false },
 ];
 
 export default function Header() {
@@ -50,16 +56,34 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-10">
           {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-[15px] font-semibold text-gray-200 hover:text-white transition-colors flex items-center gap-1.5 group"
-            >
-              {link.name}
-              {link.hasDropdown && (
-                <ChevronDown className="w-3.5 h-3.5 text-gray-400 group-hover:text-white transition-colors" />
+            <div key={link.name} className="relative group">
+              <Link
+                href={link.href}
+                onClick={(e) => link.hasDropdown && e.preventDefault()}
+                className="text-[15px] font-semibold text-gray-200 hover:text-white transition-colors flex items-center gap-1.5 py-2 group-hover:text-white"
+              >
+                {link.name}
+                {link.hasDropdown && (
+                  <ChevronDown className="w-3.5 h-3.5 text-gray-400 group-hover:text-white transition-colors" />
+                )}
+              </Link>
+              
+              {link.hasDropdown && link.dropdownItems && (
+                <div className="absolute top-full -left-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[220px] bg-white border border-gray-100 rounded-xl shadow-xl translate-y-2 group-hover:translate-y-0">
+                  <div className="py-2">
+                    {link.dropdownItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className="block px-4 py-2.5 text-[14px] font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               )}
-            </Link>
+            </div>
           ))}
         </nav>
 
