@@ -39,47 +39,57 @@ const features = [
   {
     title: "Tally Integration",
     description: "Integrate your yarn procurement, fabric selling, and billing of job-work directly to Tally; no need for any data entry between your fabric manufacturing plant and your accountancy.",
-    icon: Calculator
+    icon: Calculator,
+    image: "/images/erp-software/SeamlessIntegration.webp"
   },
   {
     title: "E-Way Bill & E-Invoice Integration",
     description: "Generate your GST-approved E-Way Bills and E-Invoices for your fabrics and garments shipping through ERP itself; no separate software for the purpose.",
-    icon: Receipt
+    icon: Receipt,
+    image: "/images/erp-software/feature_integration.jpg"
   },
   {
     title: "Mobile App",
     description: "Check your spinning, knitting, and garment manufacturing process from your shop floor and on the go; no need to be confined to your desktop only.",
-    icon: Smartphone
+    icon: Smartphone,
+    image: "/images/erp-software/RealtimeTracking.webp"
   },
   {
     title: "In-built Approval Process",
     description: "Integrate the approval of the fabric quality, shade, and stage through a digital process; no more chasing your supervisors throughout different departments for getting a signature.",
-    icon: FileCheck
+    icon: FileCheck,
+    image: "/images/erp-software/BuiltinApprovalSystem.webp"
   },
   {
     title: "SMS Integration",
     description: "Receive SMS alerts for your machine breakdown, production, and delivery date for your time-critical export orders.",
-    icon: MessageSquare
+    icon: MessageSquare,
+    image: "/images/erp-software/IntegrationwithSMS.webp"
   },
   {
     title: "Schedule Email Alerts",
     description: "Automate the sending of order confirmation, dispatch confirmation, and reminders for billing for your export clients.",
-    icon: Mail
+    icon: Mail,
+    image: "/images/erp-software/ScheduledMailShooting.webp"
   },
   {
     title: "WhatsApp Integration",
     description: "Production Updates, Shipping Confirmation & Payment Reminders – All on WhatsApp, because your customers and suppliers will keep themselves busy there.",
-    icon: MessageCircle
+    icon: MessageCircle,
+    image: "/images/erp-software/whatsapp_logo.svg",
+    imageClass: "object-contain p-4"
   },
   {
     title: "Action Dashboard",
     description: "Check pending approvals for fabric, delayed machines, imminent orders – all in one dashboard, sorted by their priority.",
-    icon: LayoutDashboard
+    icon: LayoutDashboard,
+    image: "/images/erp-software/ActionDashboard.webp"
   },
   {
     title: "Graphical Reports",
     description: "Convert spindle volume as well as yarn usage and information about the production of garments into reports. You can see the trends shift-wise as well as machine-wise.",
-    icon: BarChart3
+    icon: BarChart3,
+    image: "/images/erp-software/GraphicalReports.webp"
   }
 ];
 
@@ -88,7 +98,7 @@ const erpModules = [
     title: "Spinning Management Solution",
     description: "Track machine-wise yarn consumption, manage mixing ratios, and monitor lot-wise waste in real-time.",
     linkText: "Explore Spinning Software",
-    href: "/textile-erp-software/spinning",
+    href: "/textile-erp-software/spinning-management-software",
     icon: RotateCw
   },
   {
@@ -213,17 +223,16 @@ export default function TextileErpSoftwarePage() {
       </div>
       
       {/* Hero Content */}
-      <div className="pt-12 md:pt-20 px-4 sm:px-6 lg:px-8 relative z-10 mb-16 lg:mb-24 bg-white">
+      <div className=" px-4 sm:px-6 lg:px-8 relative z-10 mb-16 lg:mb-24 bg-white">
         <div className="max-w-[1400px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             
             {/* Left Content */}
             <div className="w-full lg:w-1/2 text-center lg:text-left pt-6 lg:pt-10">
-              <h1 className="text-3xl lg:text-4xl xl:text-[44px] leading-[1.15] font-extrabold text-[#0b132a] mb-6">
+              <h1 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-6">
                 Textile ERP Software for <span className="text-primary block mt-2">End-to-End Manufacturing Control</span>
               </h1>
-              <p className="text-xl md:text-[22px] text-[#64748b] font-medium leading-relaxed mb-10 max-w-2xl mx-auto lg:mx-0">
-                Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production, and dispatch in one connected textile ERP system.
+  <p className="text-black text-lg mb-10 leading-relaxed text-justify">                Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production, and dispatch in one connected textile ERP system.
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
@@ -237,7 +246,7 @@ export default function TextileErpSoftwarePage() {
             </div>
 
             {/* Right Image */}
-            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10">
               <div className="relative w-full max-w-[650px] aspect-[4/3]">
                 <Image 
                   src="/images/textile-erp/TextileERP.webp"
@@ -267,22 +276,24 @@ export default function TextileErpSoftwarePage() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, idx) => (
-            <div key={idx} className="group relative flex flex-col justify-start px-8 py-10 bg-[#f4f5f7] rounded-[24px] shadow-sm w-full h-full border border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-2 transition-all duration-400 overflow-hidden cursor-pointer">
-              <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out pointer-events-none rounded-[inherit]"></div>
-              <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover bg-no-repeat bg-center opacity-[0.35] group-hover:opacity-20 transition-opacity duration-300 pointer-events-none rounded-[inherit] z-[1]"></div>
-              
-              <div className="relative z-10 w-full flex flex-col">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 shrink-0 flex items-center justify-center rounded-full border-[2px] border-white shadow-[0_0_15px_rgba(255,255,255,0.7)] bg-transparent group-hover:bg-[#0b132a] group-hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] group-hover:scale-110 transition-all duration-300">
-                    <feature.icon className="w-7 h-7 text-primary group-hover:text-white transition-colors duration-300 stroke-[1.5]" />
-                  </div>
-                  <h3 className="text-[20px] font-semibold text-[#0b132a] group-hover:text-white transition-colors duration-300 leading-tight m-0">
-                    {feature.title}
-                  </h3>
-                </div>
-                <p className="text-[#64748b] group-hover:text-white transition-colors duration-300 text-[15px] leading-relaxed text-justify">
+            <div
+              key={idx}
+              className="group rounded-2xl bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col cursor-pointer"
+            >
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image src={feature.image} alt={feature.title} fill className={`${(feature as any).imageClass || 'object-cover'} group-hover:scale-105 transition-transform duration-500`} />
+                <div className="absolute inset-0 bg-[#0b132a]/10 group-hover:bg-transparent transition-colors duration-300"></div>
+              </div>
+              <div className="p-6 flex-1 flex flex-col relative">
+                {/* <div className="absolute -top-10 right-6 w-12 h-12 rounded-xl bg-white text-primary flex items-center justify-center shadow-lg border border-gray-50">
+                  <feature.icon className="w-6 h-6" />
+                </div> */}
+                <h3 className="text-xl font-bold text-[#0b132a] mb-3 pr-8">
+                  {feature.title}
+                </h3>
+                <p className="text-[#64748b] text-[15px] leading-relaxed flex-1 text-justify">
                   {feature.description}
                 </p>
               </div>
