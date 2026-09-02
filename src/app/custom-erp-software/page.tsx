@@ -16,18 +16,16 @@ export const metadata = {
 
 export default function ErpSoftwarePage() {
     return (
-        <main className="min-h-screen bg-white pt-4 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-[1600px] mx-auto bg-white shadow-2xl rounded-t-[40px] overflow-hidden">
-                <Header />
-                <ErpHero />
-                <ErpComparison />
-                <ErpIndustries />
-                <ErpBenefits />
-                <ErpFeatures />
-                <ErpProcess />
-                <ErpFaq />
-                <Footer />
-            </div>
+        <main className="min-h-screen bg-white">
+            <Header />
+            <ErpHero />
+            <ErpComparison />
+            <ErpIndustries />
+            <ErpBenefits />
+            <ErpFeatures />
+            <ErpProcess />
+            <ErpFaq />
+            <Footer />
         </main>
     );
 }

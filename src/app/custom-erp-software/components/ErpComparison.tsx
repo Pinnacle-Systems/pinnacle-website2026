@@ -64,7 +64,7 @@ export default function ErpComparison() {
 
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 items-center">
-            
+
             {/* Left Column - Off the Shelf */}
             <div className="order-2 lg:order-1 space-y-8 bg-red-50/50 p-8 rounded-3xl border border-red-100 h-full">
               <h3 className="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
@@ -73,10 +73,10 @@ export default function ErpComparison() {
                 </div>
                 Generic ERP Solutions
               </h3>
-              
+
               <div className="space-y-6">
                 {comparisonData.map((item, index) => (
-                  <motion.div 
+                  <motion.div
                     key={`left-${index}`}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -100,26 +100,26 @@ export default function ErpComparison() {
 
             {/* Middle Column - Graphic */}
             <div className="order-1 lg:order-2 relative flex flex-col items-center justify-center">
-              <motion.div 
+              <motion.div
                 initial={{ scale: 0.9, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 viewport={{ once: true }}
                 className="relative w-full max-w-sm aspect-square rounded-full overflow-hidden shadow-2xl border-[12px] border-white z-10"
               >
-                <Image 
-                  src="/images/erp-software/custom_ai_erp.jpg" 
-                  alt="AI Custom ERP Core" 
-                  fill 
-                  className="object-cover" 
+                <Image
+                  src="/images/erp-software/custom_ai_erp.jpg"
+                  alt="AI Custom ERP Core"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-blue-900/10 mix-blend-overlay"></div>
               </motion.div>
-              
+
               {/* Decorative background circles */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] aspect-square rounded-full border border-gray-200 -z-10"></div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] aspect-square rounded-full border border-gray-100 -z-10"></div>
 
-              <motion.div 
+              <motion.div
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -139,12 +139,12 @@ export default function ErpComparison() {
                 <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600">
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
-                Our Custom AI ERP
+                Our Custom ERP Software
               </h3>
-              
+
               <div className="space-y-6">
                 {comparisonData.map((item, index) => (
-                  <motion.div 
+                  <motion.div
                     key={`right-${index}`}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
