@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { theme } from "@/theme";
 
 const RadarBackground = () => (
   <motion.svg
@@ -43,7 +44,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="relative lg:-ml-10 xl:-ml-20"
+            className="relative ml-0 lg:-ml-10 xl:-ml-20"
           >
             <div className="relative w-full aspect-[4/3] lg:aspect-[1.1/1] max-w-2xl mx-auto">
               <Image
@@ -62,57 +63,55 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-[750px] w-full lg:-ml-4 xl:-ml-10"
+            className="max-w-[750px] w-full mx-auto lg:mx-0 lg:-ml-4 xl:-ml-10"
           >
             {/* Subtitle Pill */}
-            <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-red-100/60 mb-6 bg-white shadow-sm">
+            <div className="inline-flex items-center gap-3 px-4 sm:px-5 py-2 rounded-full border border-red-100/60 mb-5 sm:mb-6 bg-white shadow-sm">
               <div className="w-4 h-[3px] bg-primary rounded-full"></div>
-              <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Pinnacle Systems COMPANY</span>
+              <span className="text-primary font-bold text-[12px] sm:text-[13px] tracking-[0.15em] uppercase">Pinnacle Systems COMPANY</span>
             </div>
 
             {/* Heading */}
-            <h2 className="text-3xl lg:text-[32px] leading-[1.15] font-extrabold text-[#0b132a] mb-6">
+            <h2 className={`${theme.h2} mb-5 sm:mb-6`}>
               Your One-Stop <span className="text-primary">Technology Partner</span>
             </h2>
 
             {/* Paragraphs */}
-            <div className="space-y-6 mb-10 pr-4 pl-5">
-              <div className="flex items-start gap-4">
-                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+            <div className="space-y-4 sm:space-y-5 mb-8 lg:mb-10">
+              <div className="flex items-start gap-3.5">
+                <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
                   We specialize in delivering innovative AI-driven, Cloud-based, Mobile, and Web Application Development services tailored for different Industry verticals.
                 </p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+              <div className="flex items-start gap-3.5">
+                <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
                   Our deep-experienced team of professionals is dedicated to transforming ideas into Scalable Digital Solutions with Rapid Delivery and Exceptional Quality.
                 </p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+              <div className="flex items-start gap-3.5">
+                <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
                   Our presence in the region and our commitment to excellence allow us to analyze the Local Market&apos;s Dynamics and provide Solutions that help drive growth.
                 </p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+              <div className="flex items-start gap-3.5">
+                <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
                   We prioritize Cutting-Edge Technology Adoption and Agile Methodologies to meet Client objectives Efficiently.
                 </p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-500 text-[17px] leading-relaxed text-justify m-0">
+              <div className="flex items-start gap-3.5">
+                <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
+                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
                   At Pinnacle Systems, we don’t just build Software — we create Competitive Advantages that position our Clients for sustainable Success in an evolving Digital landscape.
                 </p>
               </div>
             </div>
 
-
-
             {/* Button */}
-            <Link href="/under-construction" className="inline-block bg-primary hover:bg-orange-600 text-white font-bold text-[14px] px-9 py-4 rounded-full transition-colors duration-300 tracking-wide shadow-md shadow-primary/20">
+            <Link href="/under-construction" className="inline-block bg-primary hover:bg-orange-600 text-white font-bold text-[14px] px-8 sm:px-9 py-3.5 sm:py-4 rounded-full transition-colors duration-300 tracking-wide shadow-md shadow-primary/20 text-center">
               Explore Our Services
             </Link>
           </motion.div>

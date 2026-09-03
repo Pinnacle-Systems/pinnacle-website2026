@@ -1,9 +1,10 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Target, Lock, Blocks, TrendingUp } from 'lucide-react';
+import { Target, Lock, Blocks, TrendingUp, ChevronDown, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
+import { theme } from "@/theme";
 
 const benefits = [
   {
@@ -29,37 +30,66 @@ const benefits = [
 ];
 
 export default function ErpBenefits() {
+  const [expandedCards, setExpandedCards] = useState<{ [key: number]: boolean }>({});
+
+  const toggleCard = (index: number) => {
+    setExpandedCards((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
+
   return (
-    <section className="py-10 bg-gray-50">
+    <section className="pt-6 pb-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-navy-900 mb-6"
+            className={`${theme.h2} mb-6`}
           >
             Why Businesses Trust Our Custom ERP Software
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 max-w-7xl mx-auto mb-12">
-          {benefits.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-            >
-              <div className="w-16 h-16 rounded-2xl bg-gray-50 flex items-center justify-center mb-6">
-                {item.icon}
-              </div>
-              <h3 className="text-2xl font-bold text-navy-900 mb-4">{item.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{item.desc}</p>
-            </motion.div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto mb-12 items-stretch">
+          {benefits.map((item, index) => {
+            const isExpanded = !!expandedCards[index];
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-white p-6 sm:p-7 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-all flex flex-col justify-between h-full"
+              >
+                <div>
+                  <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center mb-5">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-navy-900 mb-3 leading-snug min-h-[56px] flex items-center">
+                    {item.title}
+                  </h3>
+                  <p className={`text-gray-600 text-sm leading-relaxed ${isExpanded ? '' : 'line-clamp-3'}`}>
+                    {item.desc}
+                  </p>
+                </div>
+
+                <div className="pt-4 mt-4 border-t border-gray-100 flex items-center">
+                  <button
+                    onClick={() => toggleCard(index)}
+                    className="inline-flex items-center gap-1.5 text-primary hover:text-primary-hover font-semibold text-xs uppercase tracking-wider transition-colors cursor-pointer group"
+                  >
+                    <span>{isExpanded ? 'Read Less' : 'Read More'}</span>
+                    {isExpanded ? (
+                      <ChevronUp className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
+                    ) : (
+                      <ChevronDown className="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform" />
+                    )}
+                  </button>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
 
         <div className="text-center">

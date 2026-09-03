@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Image from 'next/image';
 import Link from 'next/link';
 import { TrendingUp, Activity, AlertCircle, Files, Truck, CheckCircle2, ChevronDown } from 'lucide-react';
+import { theme } from "@/theme";
 
 const challenges = [
   {
@@ -158,22 +159,21 @@ export default function SpinningManagementSoftwarePage() {
       <div className="bg-[#0b132a] relative overflow-hidden pb-24">
         <Header />
       </div>
-      
+
       {/* Hero Content */}
       <div className="flex-1 px-4 sm:px-6 lg:px-8 relative z-10 py-16 bg-white">
         <div className="max-w-[1400px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            
+
             {/* Left Content */}
             <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <h1 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-6">
-               Spinning Mill ERP Software  Real-Time Control from Cotton to Yarn
-
+              <h1 className={theme.h1}>
+                Spinning Mill ERP Software  Real-Time Control from Cotton to Yarn
               </h1>
-              <p className="text-black text-lg mb-10 leading-relaxed text-justify">  
-Track production, inventory, quality, and billing in one system — built for spinning mills that need real numbers, not next-day reports.
+              <p className={`${theme.p} text-black mb-10 text-justify`}>
+                Track production, inventory, quality, and billing in one system — built for spinning mills that need real numbers, not next-day reports.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
                 <Link href="/contact" className="inline-block bg-primary hover:bg-orange-600 text-white font-bold text-[14px] px-9 py-4 rounded-full transition-colors duration-300 tracking-wide shadow-md shadow-primary/20 uppercase w-full sm:w-auto text-center">
                   Request a Free Demo
@@ -187,7 +187,7 @@ Track production, inventory, quality, and billing in one system — built for sp
             {/* Right Image Banner */}
             <div className="w-full lg:w-1/2 flex justify-center mt-8 lg:mt-0">
               <div className="relative w-full aspect-[4/3] max-w-[700px] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100">
-                <Image 
+                <Image
                   src="/images/erp-software/Spinning_management_hero.webp"
                   alt="Spinning Management Software Banner"
                   fill
@@ -209,7 +209,7 @@ Track production, inventory, quality, and billing in one system — built for sp
               <div className="w-4 h-[3px] bg-primary rounded-full"></div>
               <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Industry Pain Points</span>
             </div>
-            <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-6 max-w-3xl mx-auto">
+            <h2 className={`${theme.h2} mb-6 max-w-3xl mx-auto`}>
               Common Challenges in Spinning Mills — And How <span className="text-primary">ERP Software Solves Them</span>
             </h2>
           </div>
@@ -248,11 +248,11 @@ Track production, inventory, quality, and billing in one system — built for sp
                 className="group rounded-[24px] bg-white overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 border border-gray-100 flex flex-col cursor-pointer hover:border-primary/30 hover:-translate-y-1"
               >
                 <div className="relative h-56 w-full overflow-hidden">
-                  <Image 
-                    src={module.image} 
-                    alt={module.title} 
-                    fill 
-                    className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                  <Image
+                    src={module.image}
+                    alt={module.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-[#0b132a]/10 group-hover:bg-transparent transition-colors duration-300"></div>
                 </div>
@@ -289,7 +289,7 @@ Track production, inventory, quality, and billing in one system — built for sp
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-16">
-            
+
             {/* Left Content: 5 rows */}
             <div className="w-full lg:w-1/2 flex flex-col gap-5">
               {whyChooseUs.map((item, idx) => (
@@ -308,7 +308,7 @@ Track production, inventory, quality, and billing in one system — built for sp
             {/* Right Content: Image */}
             <div className="w-full lg:w-1/2 flex justify-center">
               <div className="relative w-full aspect-[4/5] max-w-[550px] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-gray-100">
-                <Image 
+                <Image
                   src="/images/erp-software/whychoosepinnacle.webp"
                   alt="Why Choose Pinnacle ERP"
                   fill

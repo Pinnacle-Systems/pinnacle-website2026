@@ -15,7 +15,7 @@ const industries = [
 
 export default function ErpIndustries() {
   return (
-    <section className="py-24 bg-white relative">
+    <section className="pt-24 pb-8 bg-white relative">
       <div className="container mx-auto px-4">
 
         {/* General Industries */}

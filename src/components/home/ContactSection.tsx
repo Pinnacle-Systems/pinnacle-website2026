@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
+import { theme } from "@/theme";
 
 export default function ContactSection() {
   return (
@@ -20,7 +21,7 @@ export default function ContactSection() {
                </div>
                
                {/* Heading */}
-               <h2 className="text-2xl lg:text-[32px] leading-[1.25] font-semibold text-[#0b132a] mb-10 max-w-lg">
+               <h2 className={`${theme.h2} font-semibold mb-10 max-w-lg`}>
                  Make an Online Appointment Booking For Business Planning.
                </h2>
                

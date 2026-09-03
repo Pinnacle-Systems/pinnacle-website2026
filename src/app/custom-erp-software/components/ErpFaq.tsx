@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import Link from 'next/link';
+import { theme } from "@/theme";
 
 const faqs = [
   {
@@ -35,7 +36,7 @@ export default function ErpFaq() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-navy-900 mb-6"
+            className={`${theme.h2} mb-6`}
           >
             Frequently Asked Questions
           </motion.h2>

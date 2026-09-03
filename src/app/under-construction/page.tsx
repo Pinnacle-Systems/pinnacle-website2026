@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Hammer } from "lucide-react";
+import { theme } from "@/theme";
 
 export default function UnderConstruction() {
   return (
@@ -10,7 +11,7 @@ export default function UnderConstruction() {
             <Hammer className="w-12 h-12 text-primary animate-bounce" />
           </div>
         </div>
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+        <h1 className={theme.h1}>
           Under <span className="text-primary">Construction</span>
         </h1>
         <p className="text-gray-400 text-lg md:text-xl">

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { MonitorDot, MonitorCog, Rocket, Cpu, CheckCircle2, ArrowRight, Network } from "lucide-react";
 import Link from "next/link";
+import { theme } from "@/theme";
 
 const servicesData = [
   {
@@ -83,7 +84,7 @@ const BackgroundDecorations = () => (
     <svg className="absolute top-0 left-0 w-64 h-64 text-primary/20 pointer-events-none" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M 0,0 C 50,100 150,100 200,200" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
     </svg>
-    
+
     {/* Right Bottom Shape */}
     <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white rounded-bl-[100px] opacity-40 pointer-events-none transform translate-x-32 -translate-y-32"></div>
   </>
@@ -95,13 +96,13 @@ export default function ServicesSection() {
       <BackgroundDecorations />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-24 relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center w-full mx-auto mb-16 overflow-visible">
-          <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] whitespace-nowrap">
+          <h2 className={theme.h2}>
             Enterprise-Grade Software & <span className="text-primary">Digital Marketing Solutions</span>
           </h2>
-          <p className="text-gray-500 text-[17px] leading-relaxed text-center max-w-3xl mx-auto mt-4">
+          <p className={`${theme.p} max-w-3xl mx-auto mt-4`}>
             We provide a full range of marketing and technology solutions designed to assist your business in being efficient, reaching the right people, and growing without fear.
           </p>
         </div>
@@ -112,7 +113,7 @@ export default function ServicesSection() {
             const Icon = service.icon;
             // Center the 5th item
             const isLast = index === 4;
-            
+
             return (
               <motion.div
                 key={index}
@@ -120,9 +121,8 @@ export default function ServicesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`bg-white rounded-[32px] p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:border-primary/20 hover:shadow-[0_8px_30px_rgba(255,90,0,0.08)] transition-all duration-300 flex flex-col ${
-                  isLast ? "md:col-span-2 lg:max-w-4xl mx-auto" : ""
-                }`}
+                className={`bg-white rounded-[32px] p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:border-primary/20 hover:shadow-[0_8px_30px_rgba(255,90,0,0.08)] transition-all duration-300 flex flex-col ${isLast ? "md:col-span-2 lg:max-w-4xl mx-auto" : ""
+                  }`}
               >
                 <div className="flex items-center gap-5 mb-6">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
@@ -132,7 +132,7 @@ export default function ServicesSection() {
                     {service.title}
                   </h3>
                 </div>
-                
+
                 <p className="text-gray-500 text-[16.5px] leading-relaxed mb-8 text-justify">
                   {service.description}
                 </p>

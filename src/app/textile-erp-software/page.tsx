@@ -3,15 +3,15 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Link from 'next/link';
 import Image from 'next/image';
-import { 
-  Calculator, 
-  Receipt, 
-  Smartphone, 
-  FileCheck, 
-  MessageSquare, 
-  Mail, 
-  MessageCircle, 
-  LayoutDashboard, 
+import {
+  Calculator,
+  Receipt,
+  Smartphone,
+  FileCheck,
+  MessageSquare,
+  Mail,
+  MessageCircle,
+  LayoutDashboard,
   BarChart3,
   RotateCw,
   Droplets,
@@ -29,6 +29,7 @@ import {
   Globe,
   Lock
 } from "lucide-react";
+import { theme } from "@/theme";
 
 export const metadata = {
   title: 'Textile ERP Software - Pinnacle Systems',
@@ -218,112 +219,114 @@ export default function TextileErpSoftwarePage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Unified Hero Section with Dark Background & Header */}
-      <section className="relative overflow-hidden bg-[#0b132a] rounded-b-[40px] lg:rounded-b-[56px] pt-32 pb-20 lg:pb-28 mb-16 lg:mb-24">
-        {/* Background Ambient Glows & Accents */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[140px] -translate-y-1/2 translate-x-1/4" />
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4" />
-        </div>
-
-        {/* Header */}
-        <Header />
-
-        {/* Hero Content */}
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
-            
-            {/* Left Column: All Text Content & CTAs */}
-            <div className="lg:col-span-7 flex flex-col text-left">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-primary text-xs sm:text-sm font-bold tracking-wider mb-6 w-fit uppercase">
-                <Shirt className="w-4 h-4 text-primary" />
-                <span>Textile ERP Platform</span>
-              </div>
-
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-[1.15] tracking-tight mb-6">
-                Textile ERP Software for{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-amber-400 block mt-2">
-                  End-to-End Manufacturing Control
-                </span>
-              </h1>
-
-              <p className="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 max-w-2xl font-normal">
-                Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production, and dispatch in one connected textile ERP system.
-              </p>
-
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
-                <Link 
-                  href="/contact" 
-                  className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide shadow-lg shadow-primary/25 hover:shadow-primary/40 uppercase text-center"
-                >
-                  Request a Free Demo
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <Link 
-                  href="/contact" 
-                  className="group inline-flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 text-white font-bold text-sm px-8 py-4 rounded-full border border-white/15 backdrop-blur-sm transition-all duration-300 tracking-wide uppercase text-center"
-                >
-                  Talk to a Textile ERP Expert
-                </Link>
-              </div>
-
-              {/* Trust & Highlight Badges */}
-              <div className="pt-6 border-t border-white/10 flex flex-wrap items-center gap-6 text-gray-300 text-sm font-medium">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span>90+ Textile Implementations</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span>Tally & GST Integrated</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span>Real-Time Shopfloor Visibility</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column: Hero Visual Image */}
-            <div className="lg:col-span-5 relative w-full">
-              <div className="relative mx-auto max-w-lg lg:max-w-none">
-                {/* Outer Ambient Glow */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary to-orange-500 rounded-[28px] blur-xl opacity-30 hover:opacity-50 transition duration-500"></div>
-
-                {/* Main Card Image */}
-                <div className="relative rounded-[24px] overflow-hidden shadow-2xl bg-[#11192F] border border-white/15">
-                  <Image 
-                    src="/images/textile-erp/TextileERP.webp"
-                    alt="Textile ERP Dashboard"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
-                    priority
-                  />
-                </div>
-
-                {/* Floating Card 1 */}
-                <div className="absolute -bottom-5 -left-5 hidden sm:flex items-center gap-3 bg-[#0b132a]/95 backdrop-blur-md border border-white/15 p-3.5 px-4 rounded-2xl shadow-2xl z-20">
-                  <div className="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center font-bold">
-                    <BarChart3 className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="text-[11px] text-gray-400 uppercase font-semibold tracking-wider">Live Control</div>
-                    <div className="text-xs font-bold text-white">Yarn to Garment Tracking</div>
-                  </div>
-                </div>
-
-                {/* Floating Card 2 */}
-                <div className="absolute -top-5 -right-5 hidden sm:flex items-center gap-2 bg-[#0b132a]/95 backdrop-blur-md border border-white/15 p-3 px-4 rounded-2xl shadow-2xl z-20">
-                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
-                  <div className="text-xs font-semibold text-white">Real-Time Shopfloor Sync</div>
-                </div>
-              </div>
-            </div>
-
+      <div className="p-2 sm:p-4 lg:p-6">
+        <section className="relative overflow-hidden bg-[#0b132a] rounded-[32px] sm:rounded-[40px] lg:rounded-[48px] pt-32 pb-20 lg:pb-28 shadow-2xl border border-white/5">
+          {/* Background Ambient Glows & Accents */}
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[140px] -translate-y-1/2 translate-x-1/4" />
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4" />
           </div>
-        </div>
-      </section>
+
+          {/* Header */}
+          <Header />
+
+          {/* Hero Content */}
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+              {/* Left Column: All Text Content & CTAs */}
+              <div className="lg:col-span-7 flex flex-col text-left">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-primary text-xs sm:text-sm font-bold tracking-wider mb-6 w-fit uppercase">
+                  <Shirt className="w-4 h-4 text-primary" />
+                  <span>Textile ERP Platform</span>
+                </div>
+
+                <h1 className={theme.h1}>
+                  Textile ERP Software for{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-amber-400 block mt-2">
+                    End-to-End Manufacturing Control
+                  </span>
+                </h1>
+
+                <p className={`${theme.p} text-gray-300 mb-8 max-w-2xl font-normal`}>
+                  Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production, and dispatch in one connected textile ERP system.
+                </p>
+
+                {/* CTAs */}
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
+                  <Link
+                    href="/contact"
+                    className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide shadow-lg shadow-primary/25 hover:shadow-primary/40 uppercase text-center"
+                  >
+                    Request a Free Demo
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="group inline-flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 text-white font-bold text-sm px-8 py-4 rounded-full border border-white/15 backdrop-blur-sm transition-all duration-300 tracking-wide uppercase text-center"
+                  >
+                    Talk to a Textile ERP Expert
+                  </Link>
+                </div>
+
+                {/* Trust & Highlight Badges */}
+                <div className="pt-6 border-t border-white/10 flex flex-wrap items-center gap-6 text-gray-300 text-sm font-medium">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-primary" />
+                    <span>90+ Textile Implementations</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-primary" />
+                    <span>Tally & GST Integrated</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-primary" />
+                    <span>Real-Time Shopfloor Visibility</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column: Hero Visual Image */}
+              <div className="lg:col-span-5 relative w-full">
+                <div className="relative mx-auto max-w-lg lg:max-w-none">
+                  {/* Outer Ambient Glow */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-primary to-orange-500 rounded-[28px] blur-xl opacity-30 hover:opacity-50 transition duration-500"></div>
+
+                  {/* Main Card Image */}
+                  <div className="relative rounded-[24px] overflow-hidden shadow-2xl bg-[#11192F] border border-white/15">
+                    <Image
+                      src="/images/textile-erp/TextileERP.webp"
+                      alt="Textile ERP Dashboard"
+                      width={800}
+                      height={600}
+                      className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+                      priority
+                    />
+                  </div>
+
+                  {/* Floating Card 1 */}
+                  <div className="absolute -bottom-5 -left-5 hidden sm:flex items-center gap-3 bg-[#0b132a]/95 backdrop-blur-md border border-white/15 p-3.5 px-4 rounded-2xl shadow-2xl z-20">
+                    <div className="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center font-bold">
+                      <BarChart3 className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="text-[11px] text-gray-400 uppercase font-semibold tracking-wider">Live Control</div>
+                      <div className="text-xs font-bold text-white">Yarn to Garment Tracking</div>
+                    </div>
+                  </div>
+
+                  {/* Floating Card 2 */}
+                  <div className="absolute -top-5 -right-5 hidden sm:flex items-center gap-2 bg-[#0b132a]/95 backdrop-blur-md border border-white/15 p-3 px-4 rounded-2xl shadow-2xl z-20">
+                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
+                    <div className="text-xs font-semibold text-white">Real-Time Shopfloor Sync</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
 
       {/* Features Grid Section */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 mt-10 mb-28">
@@ -332,7 +335,7 @@ export default function TextileErpSoftwarePage() {
             <div className="w-4 h-[3px] bg-primary rounded-full"></div>
             <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Core Capabilities</span>
           </div>
-          <h2  className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-6">
+          <h2 className={`${theme.h2} mb-6`}>
             Every Key Feature Built for <span className="text-primary">Textile Production</span>
           </h2>
         </div>
@@ -438,11 +441,11 @@ export default function TextileErpSoftwarePage() {
                 <div className="w-4 h-[3px] bg-primary rounded-full"></div>
                 <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">What We Offer</span>
               </div>
-              
+
               <h2 className="text-3xl lg:text-[32px] xl:text-4xl leading-[1.2] font-extrabold text-white mb-6">
                 Your Trusted Partner <span className="text-primary block mt-2">for Digital Transformation</span>
               </h2>
-              
+
               <p className="text-gray-300 text-[18px] leading-relaxed">
                 From concept to implementation, Pinnacle Systems is your trusted partner. We combine agile project management with efficient execution to bring your textile operations into the digital age.
               </p>

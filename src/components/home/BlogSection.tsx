@@ -34,11 +34,11 @@ export default function BlogSection() {
          </div>
          
          {/* Grid Layout */}
-         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mx-12 lg:gap-16">
+         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
             
             {/* Featured Large Card (Left) */}
             <div className="lg:col-span-5 h-full">
-               <div className="bg-white p-5 rounded-[24px] shadow-sm flex flex-col h-full group hover:shadow-md transition-shadow">
+               <div className="bg-white p-4 sm:p-5 rounded-[24px] shadow-sm flex flex-col h-full group hover:shadow-md transition-shadow">
                   <div className="relative w-full aspect-[16/11] rounded-t-[16px] overflow-hidden">
                      <Image 
                        src="/grid1img.png" 
@@ -48,25 +48,25 @@ export default function BlogSection() {
                      />
                   </div>
                   {/* Orange Meta Bar */}
-                  <div className="w-full bg-primary text-white flex items-center justify-between px-6 py-4 rounded-b-[16px] mb-6 shadow-md shadow-primary/20">
+                  <div className="w-full bg-primary text-white flex items-center justify-between px-4 sm:px-6 py-3.5 sm:py-4 rounded-b-[16px] mb-5 sm:mb-6 shadow-md shadow-primary/20">
                      <div className="flex items-center gap-2">
-                        <Calendar size={16} /> 
-                        <span className="text-[14px] font-medium">20 June 2024</span>
+                        <Calendar size={15} /> 
+                        <span className="text-[13px] sm:text-[14px] font-medium">20 June 2024</span>
                      </div>
                      <div className="w-[1px] h-4 bg-white/40"></div>
                      <div className="flex items-center gap-2">
-                        <MessageSquare size={16} /> 
-                        <span className="text-[14px] font-medium">Comment-05</span>
+                        <MessageSquare size={15} /> 
+                        <span className="text-[13px] sm:text-[14px] font-medium">Comment-05</span>
                      </div>
                   </div>
                   
                   {/* Content */}
                   <div className="px-2 pt-2 pb-4 flex flex-col flex-grow">
-                     <h3 className="text-2xl font-semibold text-[#0b132a] leading-tight mb-4 group-hover:text-primary transition-colors cursor-pointer">
+                     <h3 className="text-xl sm:text-2xl font-semibold text-[#0b132a] leading-tight mb-3 sm:mb-4 group-hover:text-primary transition-colors cursor-pointer">
                        Leveraging Descriptive Solutions for Business Growth.
                      </h3>
-                     <p className="text-[#64748b] text-[15px] leading-relaxed mb-8 flex-grow">
-                       Appropriatel promote enterprise-wide through in information without equity best revolutioniz
+                     <p className="text-[#64748b] text-[14px] sm:text-[15px] leading-relaxed mb-6 sm:mb-8 flex-grow">
+                       Appropriately promote enterprise-wide technology solutions through innovation without compromising quality.
                      </p>
                      <div className="mt-auto">
                         <Link href="/under-construction" className="inline-flex items-center gap-2 text-gray-500 font-bold text-[13px] tracking-wider uppercase hover:text-primary transition-colors">
@@ -81,7 +81,7 @@ export default function BlogSection() {
             <div className="lg:col-span-7 flex flex-col gap-6 h-full">
                
                {/* Card 1 */}
-               <div className="bg-white p-5 rounded-[24px] shadow-sm flex flex-col sm:flex-row gap-6 group hover:shadow-md transition-shadow flex-1">
+               <div className="bg-white p-4 sm:p-5 rounded-[24px] shadow-sm flex flex-col sm:flex-row gap-5 sm:gap-6 group hover:shadow-md transition-shadow flex-1">
                   <div className="relative w-full sm:w-[45%] lg:w-[40%] aspect-[4/3] rounded-[16px] overflow-hidden shrink-0 my-auto">
                      <Image 
                        src="/gridimg2.png" 
@@ -90,24 +90,24 @@ export default function BlogSection() {
                        className="object-cover group-hover:scale-105 transition-transform duration-500" 
                      />
                   </div>
-                  <div className="flex flex-col justify-center w-full py-2">
+                  <div className="flex flex-col justify-center w-full py-1 sm:py-2">
                      {/* Meta Bar */}
-                     <div className="bg-[#f8f9fa] flex items-center gap-4 px-4 py-2.5 rounded-[10px] mb-5 w-max border border-gray-100">
-                        <div className="flex items-center gap-2 text-primary">
-                           <Calendar size={15} /> 
-                           <span className="text-gray-500 text-[13px] font-medium">20 June 2024</span>
+                     <div className="bg-[#f8f9fa] flex items-center gap-3 sm:gap-4 px-3.5 sm:px-4 py-2 rounded-[10px] mb-4 sm:mb-5 w-max border border-gray-100">
+                        <div className="flex items-center gap-1.5 text-primary">
+                           <Calendar size={14} /> 
+                           <span className="text-gray-500 text-[12px] sm:text-[13px] font-medium">20 June 2024</span>
                         </div>
                         <div className="w-[1px] h-3 bg-gray-300"></div>
-                        <div className="flex items-center gap-2 text-primary">
-                           <MessageSquare size={15} /> 
-                           <span className="text-gray-500 text-[13px] font-medium">Comment-05</span>
+                        <div className="flex items-center gap-1.5 text-primary">
+                           <MessageSquare size={14} /> 
+                           <span className="text-gray-500 text-[12px] sm:text-[13px] font-medium">Comment-05</span>
                         </div>
                      </div>
-                     <h3 className="text-xl font-semibold text-[#0b132a] leading-tight mb-3 group-hover:text-primary transition-colors cursor-pointer">
+                     <h3 className="text-lg sm:text-xl font-semibold text-[#0b132a] leading-tight mb-2 sm:mb-3 group-hover:text-primary transition-colors cursor-pointer">
                        How to Create Modern Web Site For Your Business..
                      </h3>
-                     <p className="text-[#64748b] text-[14px] leading-relaxed mb-6">
-                       Appropriatel promote enterprise-wide through in information without best revolutioniz
+                     <p className="text-[#64748b] text-[13.5px] sm:text-[14px] leading-relaxed mb-4 sm:mb-6">
+                       Appropriately promote enterprise-wide through in information without best revolutionizing digital workflows.
                      </p>
                      <div className="mt-auto">
                         <Link href="/under-construction" className="inline-flex items-center gap-2 text-gray-500 font-bold text-[12px] tracking-wider uppercase hover:text-primary transition-colors">
@@ -118,7 +118,7 @@ export default function BlogSection() {
                </div>
                
                {/* Card 2 */}
-               <div className="bg-white p-5 rounded-[24px] shadow-sm flex flex-col sm:flex-row gap-6 group hover:shadow-md transition-shadow flex-1">
+               <div className="bg-white p-4 sm:p-5 rounded-[24px] shadow-sm flex flex-col sm:flex-row gap-5 sm:gap-6 group hover:shadow-md transition-shadow flex-1">
                   <div className="relative w-full sm:w-[45%] lg:w-[40%] aspect-[4/3] rounded-[16px] overflow-hidden shrink-0 my-auto">
                      <Image 
                        src="/gridimg3.png" 
@@ -127,24 +127,24 @@ export default function BlogSection() {
                        className="object-cover group-hover:scale-105 transition-transform duration-500" 
                      />
                   </div>
-                  <div className="flex flex-col justify-center w-full py-2">
+                  <div className="flex flex-col justify-center w-full py-1 sm:py-2">
                      {/* Meta Bar */}
-                     <div className="bg-[#f8f9fa] flex items-center gap-4 px-4 py-2.5 rounded-[10px] mb-5 w-max border border-gray-100">
-                        <div className="flex items-center gap-2 text-primary">
-                           <Calendar size={15} /> 
-                           <span className="text-gray-500 text-[13px] font-medium">20 June 2024</span>
+                     <div className="bg-[#f8f9fa] flex items-center gap-3 sm:gap-4 px-3.5 sm:px-4 py-2 rounded-[10px] mb-4 sm:mb-5 w-max border border-gray-100">
+                        <div className="flex items-center gap-1.5 text-primary">
+                           <Calendar size={14} /> 
+                           <span className="text-gray-500 text-[12px] sm:text-[13px] font-medium">20 June 2024</span>
                         </div>
                         <div className="w-[1px] h-3 bg-gray-300"></div>
-                        <div className="flex items-center gap-2 text-primary">
-                           <MessageSquare size={15} /> 
-                           <span className="text-gray-500 text-[13px] font-medium">Comment-05</span>
+                        <div className="flex items-center gap-1.5 text-primary">
+                           <MessageSquare size={14} /> 
+                           <span className="text-gray-500 text-[12px] sm:text-[13px] font-medium">Comment-05</span>
                         </div>
                      </div>
-                     <h3 className="text-xl font-semibold text-[#0b132a] leading-tight mb-3 group-hover:text-primary transition-colors cursor-pointer">
+                     <h3 className="text-lg sm:text-xl font-semibold text-[#0b132a] leading-tight mb-2 sm:mb-3 group-hover:text-primary transition-colors cursor-pointer">
                        How to Create Modern Web Site For Your Business..
                      </h3>
-                     <p className="text-[#64748b] text-[14px] leading-relaxed mb-6">
-                       Appropriatel promote enterprise-wide through in information without best revolutioniz
+                     <p className="text-[#64748b] text-[13.5px] sm:text-[14px] leading-relaxed mb-4 sm:mb-6">
+                       Appropriately promote enterprise-wide through in information without best revolutionizing digital workflows.
                      </p>
                      <div className="mt-auto">
                         <Link href="/under-construction" className="inline-flex items-center gap-2 text-gray-500 font-bold text-[12px] tracking-wider uppercase hover:text-primary transition-colors">

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { theme } from "@/theme";
 
 const steps = [
   {
@@ -31,7 +32,7 @@ export default function MethodologySection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-24 relative z-10">
         
         <div className="text-center max-w-4xl mx-auto mb-2 lg:mb-4">
-          <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-6">
+          <h2 className={`${theme.h2} mb-6`}>
             Implementation <span className="text-primary">& Methodology</span>
           </h2>
           <div className="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
@@ -69,31 +70,31 @@ export default function MethodologySection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="relative flex flex-col items-center text-center group mb-8 md:mb-0"
+                    className="relative flex flex-col items-center text-center group mb-6 md:mb-0"
                   >
                     {/* Top: Title */}
-                    <div className="h-16 flex items-end justify-center mb-6 w-full">
-                      <h3 className="text-[15px] md:text-[13px] lg:text-[15px] xl:text-[16px] font-bold text-[#0b132a] leading-tight px-2 whitespace-nowrap tracking-tight">
+                    <div className="h-12 md:h-16 flex items-center md:items-end justify-center mb-4 md:mb-6 w-full">
+                      <h3 className="text-[15px] md:text-[13px] lg:text-[15px] xl:text-[16px] font-bold text-[#0b132a] leading-snug px-1 whitespace-normal tracking-tight">
                         {step.title}
                       </h3>
                     </div>
 
                     {/* Middle: Timeline Dot */}
-                    <div className="w-14 h-14 bg-white border-4 border-primary rounded-full flex items-center justify-center font-bold text-xl text-primary shadow-[0_0_0_4px_rgba(255,255,255,1)] z-10 mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <div className="w-12 h-12 md:w-14 md:h-14 bg-white border-4 border-primary rounded-full flex items-center justify-center font-bold text-lg md:text-xl text-primary shadow-[0_0_0_4px_rgba(255,255,255,1)] z-10 mb-4 md:mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                       {index + 1}
                     </div>
 
                     {/* Bottom: Description Card (Speech Bubble) */}
-                    <div className="relative w-full flex-grow mt-2 filter drop-shadow-[0_4px_15px_rgba(0,0,0,0.06)] group-hover:drop-shadow-[0_15px_35px_rgba(255,90,0,0.12)] transition-all duration-300 group-hover:-translate-y-1.5">
+                    <div className="relative w-full flex-grow mt-1 md:mt-2 filter drop-shadow-[0_4px_15px_rgba(0,0,0,0.06)] group-hover:drop-shadow-[0_15px_35px_rgba(255,90,0,0.12)] transition-all duration-300 group-hover:-translate-y-1.5">
                       {/* Triangle Pointer */}
-                      <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-white rotate-45 rounded-tl-[4px]"></div>
+                      <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 md:w-5 md:h-5 bg-white rotate-45 rounded-tl-[4px]"></div>
                       
                       {/* Card Body */}
-                      <div className="bg-white rounded-2xl p-5 lg:p-6 h-full flex flex-col items-center justify-start relative z-10 overflow-hidden">
+                      <div className="bg-white rounded-2xl p-4 md:p-5 lg:p-6 h-full flex flex-col items-center justify-start relative z-10 overflow-hidden">
                         {/* Animated bottom border line on hover */}
                         <div className="absolute bottom-0 left-0 h-[3px] bg-primary w-0 group-hover:w-full transition-all duration-500 ease-out"></div>
                         
-                        <p className="text-gray-600 group-hover:text-[#0b132a] text-[14.5px] leading-relaxed font-medium transition-colors duration-300">
+                        <p className="text-gray-600 group-hover:text-[#0b132a] text-[13.5px] md:text-[14.5px] leading-relaxed font-medium transition-colors duration-300">
                           {step.description}
                         </p>
                       </div>

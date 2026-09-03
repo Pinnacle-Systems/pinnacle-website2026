@@ -8,19 +8,19 @@ import Image from 'next/image';
 const features = [
   {
     icon: <Cloud />,
-    image: "/images/erp-software/feature_cloud.jpg",
+    image: "/images/erp-software/CloudTechnology.webp",
     title: "Cloud Technology",
     desc: "Anywhere access with secure cloud technology: Access your ERP anytime, anywhere with secure, reliable cloud technology."
   },
   {
     icon: <Activity />,
-    image: "/images/erp-software/feature_tracking.jpg",
+    image: "/images/erp-software/RealtimeTracking.webp",
     title: "Real-time Tracking",
     desc: "Monitor live business data and access accurate reports for faster, smarter decisions."
   },
   {
     icon: <PackageCheck />,
-    image: "/images/erp-software/feature_inventory.jpg",
+    image: "/images/erp-software/Production&Inventory.webp",
     title: "Production & Inventory",
     desc: "Track production progress and inventory in real time for better planning, control, and efficiency."
   },
@@ -32,31 +32,31 @@ const features = [
   },
   {
     icon: <ScanLine />,
-    image: "/images/erp-software/feature_barcode.jpg",
+    image: "/images/erp-software/BarcodeScanning.webp",
     title: "Barcode Scanning",
     desc: "Faster data entry, reduced manual errors, accurate stock tracking, and improved inventory control."
   },
   {
     icon: <LinkIcon />,
-    image: "/images/erp-software/feature_integration.jpg",
+    image: "/images/erp-software/SeamlessIntegration.webp",
     title: "Seamless Integration",
     desc: "Connect your finance operations to the E-Way Bill and E-Invoice platforms for speedier processing and improved conformity."
   },
   {
     icon: <CheckCircle />,
-    image: "/images/erp-software/feature_approval.jpg",
+    image: "/images/erp-software/BuiltinApprovalSystem.webp",
     title: "Built-in Approval System",
     desc: "Route purchase orders, expenses, and requests through role-based approval workflows for faster and controlled decision-making."
   },
   {
     icon: <Bell />,
-    image: "/images/erp-software/feature_sms.jpg",
+    image: "/images/erp-software/IntegrationwithSMS.webp",
     title: "Integration with SMS",
     desc: "Send automatic SMS alerts that are intelligently generated for updates to orders as well as payment reminders."
   },
   {
     icon: <Mail />,
-    image: "/images/erp-software/feature_mail.jpg",
+    image: "/images/erp-software/ScheduledMailShooting.webp",
     title: "Scheduled Mail Shooting",
     desc: "Set up automated, scheduled email campaigns and reports sent to customers, vendors, or internal teams."
   },
@@ -69,13 +69,13 @@ const features = [
   },
   {
     icon: <LayoutDashboard />,
-    image: "/images/erp-software/feature_dashboard.jpg",
+    image: "/images/erp-software/ActionDashboard.webp",
     title: "Action Dashboard",
     desc: "A single dashboard showing pending approvals, overdue tasks, and items that need attention so nothing slips through."
   },
   {
     icon: <BarChart3 />,
-    image: "/images/erp-software/feature_reports.jpg",
+    image: "/images/erp-software/GraphicalReports.webp",
     title: "Graphical Reports",
     desc: "Visual, real-time reports on sales, inventory, finance, and operations built for quick decision-making."
   }

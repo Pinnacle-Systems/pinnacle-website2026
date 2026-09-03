@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Play } from "lucide-react";
 import { motion } from "framer-motion";
+import { theme } from "@/theme";
 
 export default function Hero() {
   return (
@@ -31,12 +32,12 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-3xl lg:text-4xl font-bold text-white leading-[1.1] mb-6 relative">
+            <h1 className={theme.h1}>
               Custom ERP Software & Digital Transformation Services
             </h1>
 
             {/* Description */}
-            <p className="text-gray-400 text-lg mb-10 leading-relaxed text-justify">
+            <p className="text-gray-400 text-lg mb-10 leading-relaxed text-justify indent-6 sm:indent-8">
               Pinnacle Systems delivers Custom ERP Software, Web Development,
               Mobile Application Development, Digital Marketing, Software &
               Hardware Integration and AI Automation that help Businesses
