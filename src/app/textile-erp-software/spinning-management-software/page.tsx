@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { TrendingUp, Activity, AlertCircle, Files, Truck, CheckCircle2, ChevronDown } from 'lucide-react';
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const challenges = [
   {
@@ -170,7 +171,7 @@ export default function SpinningManagementSoftwarePage() {
               <h1 className={theme.h1}>
                 Spinning Mill ERP Software  Real-Time Control from Cotton to Yarn
               </h1>
-              <p className={`${theme.p} text-black mb-10 text-justify`}>
+              <p className={theme.p}>
                 Track production, inventory, quality, and billing in one system — built for spinning mills that need real numbers, not next-day reports.
               </p>
 
@@ -209,7 +210,7 @@ export default function SpinningManagementSoftwarePage() {
               <div className="w-4 h-[3px] bg-primary rounded-full"></div>
               <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Industry Pain Points</span>
             </div>
-            <h2 className={`${theme.h2} mb-6 max-w-3xl mx-auto`}>
+            <h2 className={cn(theme.h2, "mb-6 max-w-3xl mx-auto")}>
               Common Challenges in Spinning Mills — And How <span className="text-primary">ERP Software Solves Them</span>
             </h2>
           </div>
@@ -223,7 +224,7 @@ export default function SpinningManagementSoftwarePage() {
                 <h3 className="text-[19px] font-bold text-[#0b132a] mb-4 leading-snug">
                   {challenge.title}
                 </h3>
-                <p className="text-[#64748b] text-[15px] leading-relaxed flex-grow">
+                <p className={theme.p}>
                   {challenge.desc}
                 </p>
               </div>
@@ -236,7 +237,7 @@ export default function SpinningManagementSoftwarePage() {
       <div className="bg-white py-20 lg:py-24 relative">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-6 max-w-3xl mx-auto">
+            <h2 className={cn(theme.h2, "mb-6 max-w-3xl mx-auto")}>
               Spinning Mill ERP Software Modules — <span className="text-primary">Complete Mill Management in One Platform</span>
             </h2>
           </div>
@@ -260,7 +261,7 @@ export default function SpinningManagementSoftwarePage() {
                   <h3 className="text-[19px] font-bold text-[#0b132a] mb-4 leading-snug">
                     {module.title}
                   </h3>
-                  <p className="text-[#64748b] text-[15px] leading-relaxed flex-1 text-justify">
+                  <p className={theme.p}>
                     {module.description}
                   </p>
                 </div>
@@ -274,7 +275,7 @@ export default function SpinningManagementSoftwarePage() {
       <div className="bg-[#f8f9fa] py-20 lg:py-24 relative">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="text-center mb-14">
-            <h2 className="text-3xl lg:text-[36px] leading-[1.2] font-extrabold text-[#0b132a] mb-6">
+            <h2 className={cn(theme.h2, "mb-6")}>
               Why Spinning Mills Choose <span className="text-primary">Pinnacle ERP?</span>
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-6 text-[#64748b] font-bold text-[14px] uppercase tracking-wide">
@@ -299,7 +300,7 @@ export default function SpinningManagementSoftwarePage() {
                   </div>
                   <div>
                     <h3 className="text-[19px] font-bold text-[#0b132a] mb-1.5 leading-snug">{item.title}</h3>
-                    <p className="text-[#64748b] text-[15px] leading-relaxed">{item.desc}</p>
+                    <p className={theme.p}>{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -330,7 +331,7 @@ export default function SpinningManagementSoftwarePage() {
       <div className="bg-white py-20 lg:py-24 relative">
         <div className="max-w-[900px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-[36px] leading-[1.2] font-extrabold text-[#0b132a] mb-6">
+            <h2 className={cn(theme.h2, "mb-6")}>
               Frequently Asked Questions About <span className="text-primary">Spinning Mill ERP Software</span>
             </h2>
           </div>

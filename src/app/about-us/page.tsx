@@ -5,6 +5,7 @@ import { ArrowRight, Settings, Users, Server, CheckCircle2, Lightbulb, LineChart
 import Link from 'next/link';
 import Image from 'next/image';
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 export default function AboutUsPage() {
   return (
@@ -21,7 +22,7 @@ export default function AboutUsPage() {
             <h1 className={theme.h1}>
               About <span className="text-primary">Pinnacle Systems</span>
             </h1>
-            <p className={`${theme.p} text-[#8c98a4] font-medium text-center pb-10`}>
+            <p className={theme.p}>
               Custom ERP Software for  Textile & Manufacturing
             </p>
           </div>
@@ -42,20 +43,20 @@ export default function AboutUsPage() {
                 <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Our Story</span>
               </div>
 
-              <h2 className={`${theme.h2} text-white mb-8`}>
+              <h2 className={cn(theme.h2, "text-white mb-8")}>
                 <span className="xl:whitespace-nowrap">ERP should adapt to your business,</span> <span className="text-primary block mt-2">not the other way around.</span>
               </h2>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                  <p className="text-white text-[18px] leading-relaxed text-justify m-0">
+                  <p className={theme.p}>
                     Established in 2018, Pinnacle Systems was Founded by Mr Manoj Padmanabhan, Founder & CEO, with over 25 years of experience helping fashion companies implement Technology Solutions. A recognised thought Leader in the fashion industry.
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="mt-2.5 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                  <p className="text-white text-[18px] leading-relaxed text-justify m-0">
+                  <p className={theme.p}>
                     We deliver tailor-made ERP systems for the manufacturing sector, especially the clothing and textile sector. We strive to ensure that companies are able to operate efficiently, control expenses and inventories and make decisions faster.
                   </p>
                 </div>
@@ -86,7 +87,7 @@ export default function AboutUsPage() {
             <div className="w-4 h-[3px] bg-primary rounded-full"></div>
             <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Why Choose Us</span>
           </div>
-          <h2 className="text-3xl md:text-4xl  font-extrabold text-[#0b132a]">
+          <h2 className={theme.h2}>
             Our Core <span className="text-primary">Values</span>
           </h2>
         </div>
@@ -106,7 +107,7 @@ export default function AboutUsPage() {
                   Built Around Your Business
                 </h3>
               </div>
-              <p className="text-[#64748b] group-hover:text-white transition-colors duration-300 text-[15px] leading-relaxed text-justify">
+              <p className={theme.p}>
                 Our ERP integrates Purchase, Sales, Inventory, Production, Quality, Financing, Costing and dispatch on the single platform. For manufacturers of Textiles and Clothing, we offer to manage the Orders, Raw Materials Planning, Production Tracking, T&A, Subcontracting, Costing and Shipping Management.
               </p>
             </div>
@@ -125,7 +126,7 @@ export default function AboutUsPage() {
                   Industry-Focused Expertise
                 </h3>
               </div>
-              <p className="text-[#64748b] group-hover:text-white transition-colors duration-300 text-[15px] leading-relaxed text-justify">
+              <p className={theme.p}>
                 Not only does Manufacturing require an array of Technology, but it also involves a detailed Knowledge of the Production Process, Cost Management, Planning, and Logistics. In collaboration with our Clients, we carefully analyze the gap in the process right from order to dispatch and develop Customized Solutions that help reduce manual Efforts.
               </p>
             </div>
@@ -144,7 +145,7 @@ export default function AboutUsPage() {
                   One Integrated Platform, End-to-End Support
                 </h3>
               </div>
-              <p className="text-[#64748b] group-hover:text-white transition-colors duration-300 text-[15px] leading-relaxed text-justify">
+              <p className={theme.p}>
                 Pinnacle&apos;s ERP connects your Internal Departments into one system with integrations for Accounting, E-Invoice, E-Way Bill, Barcode, Banking, and WhatsApp. Our relationship doesn't end at Go-live — we support Implementation, Training, Enhancements, and Scaling as your Business grows.
               </p>
             </div>
@@ -163,7 +164,7 @@ export default function AboutUsPage() {
                   Beyond ERP
                 </h3>
               </div>
-              <p className="text-[#64748b] group-hover:text-white transition-colors duration-300 text-[15px] leading-relaxed text-justify">
+              <p className={theme.p}>
                 We also help Businesses establish their Online Presence by providing Web Development, Website Development, Mobile App Development and Digital Marketing Services.
               </p>
             </div>
@@ -177,7 +178,7 @@ export default function AboutUsPage() {
             <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Our Approach</span>
           </div>
 
-          <h2 className="text-3xl lg:text-[32px] leading-[1.15] font-extrabold text-[#0b132a] mb-12">
+          <h2 className={cn(theme.h2, "mb-12")}>
             How we <span className="text-primary">Deliver Success</span>
           </h2>
           <div className="relative max-w-6xl mx-auto mt-16 px-4">
@@ -213,11 +214,11 @@ export default function AboutUsPage() {
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] pointer-events-none"></div>
 
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-6">Our Commitment</h2>
-            <p className="text-[17px] text-gray-300 mb-4 italic leading-relaxed">
+            <h2 className={cn(theme.h2, "text-white mb-6")}>Our Commitment</h2>
+            <p className={theme.p}>
               &quot;Our goal is simple — make ERP work for your business, not the other way around.&quot;
             </p>
-            <p className="text-[17px] text-gray-400 mb-10 leading-relaxed">
+            <p className={theme.p}>
               Pinnacle Systems – Custom ERP Solutions for Modern Manufacturing<br />
               <span className="text-primary font-medium mt-2 block">Built around your processes. Designed for your industry. Ready to grow with your business.</span>
             </p>

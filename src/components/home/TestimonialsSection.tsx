@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
@@ -43,7 +45,7 @@ export default function TestimonialsSection() {
               <div className="w-4 h-[3px] bg-primary rounded-full"></div>
               <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Google My Business Reviews</span>
             </div>
-            <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-white">
+            <h2 className={cn(theme.h2, "text-white")}>
               What Our <span className="text-primary"> Clients Say</span>
             </h2>
          </div>
@@ -62,7 +64,7 @@ export default function TestimonialsSection() {
                     </svg>
                  </div>
                  
-                 <p className="text-[#94a3b8] text-[15px] leading-relaxed mb-8 max-w-[280px]">
+                 <p className={theme.p}>
                    {t.text}
                  </p>
                  

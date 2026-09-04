@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowUp } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { theme } from "@/theme";
 
 const projects = [
   { title: "CMC Softwar Solution", tag: "SOFTWARE", image: "/exploreomg1.png" },
@@ -44,7 +45,7 @@ export default function ProjectsSection() {
             <div className="w-4 h-[3px] bg-primary rounded-full"></div>
             <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Pinnacle Systems PROJECT</span>
           </div>
-          <h2 className="text-3xl lg:text-[42px] leading-[1.2] font-extrabold text-[#0b132a]">
+          <h2 className={theme.h2}>
             Explore Our Recent <span className="text-primary">Projects.</span>
           </h2>
         </div>

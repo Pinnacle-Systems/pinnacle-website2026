@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Target, Lock, Blocks, TrendingUp, ChevronDown, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const benefits = [
   {
@@ -44,7 +45,7 @@ export default function ErpBenefits() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className={`${theme.h2} mb-6`}
+            className={cn(theme.h2, "mb-6")}
           >
             Why Businesses Trust Our Custom ERP Software
           </motion.h2>
@@ -69,7 +70,7 @@ export default function ErpBenefits() {
                   <h3 className="text-xl font-bold text-navy-900 mb-3 leading-snug min-h-[56px] flex items-center">
                     {item.title}
                   </h3>
-                  <p className={`text-gray-600 text-sm leading-relaxed ${isExpanded ? '' : 'line-clamp-3'}`}>
+                  <p className={theme.p}>
                     {item.desc}
                   </p>
                 </div>

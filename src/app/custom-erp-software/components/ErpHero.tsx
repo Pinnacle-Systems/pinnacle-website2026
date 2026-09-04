@@ -38,7 +38,7 @@ export default function ErpHero() {
               </span>
             </h1>
 
-            <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl font-normal text-justify indent-6 sm:indent-8">
+            <p className={theme.p}>
               Off-the-shelf ERP software often forces businesses to change their workflows to fit the system. Our AI-powered custom ERP software is built around your business processes, connecting Sales, Inventory, Production, Finance, HR, and Operations on one intelligent platform. From workflow automation and real-time reporting to AI-driven insights and predictive capabilities, we develop ERP solutions that adapt to how your business actually works.
             </p>
 

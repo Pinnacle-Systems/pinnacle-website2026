@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { Factory, Shirt, TrendingUp, ShoppingCart, HardHat, Cog, ShieldCheck, Zap } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const industries = [
   { name: "Manufacturing", icon: <Factory className="w-6 h-6" />, image: "/images/erp-software/manufacturing.jpg" },
@@ -25,7 +27,7 @@ export default function ErpIndustries() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-bold text-navy-900 mb-6"
+              className={cn(theme.h2, "text-navy-900 mb-6")}
             >
               Other Industries We Serve
             </motion.h2>
@@ -74,13 +76,13 @@ export default function ErpIndustries() {
                 <Shirt className="w-4 h-4" />
                 Industry Focus
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+              <h2 className={cn(theme.h2, "mb-6")}>
                 We specialize in ERP Software for the <span className="text-blue-400">Textile Industry</span>
               </h2>
-              <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+              <p className={theme.p}>
                 We specialize exclusively in AI-powered ERP solutions engineered specifically for the textile industry. Unlike generic software retrofitted for manufacturing, our systems are meticulously designed around the actual operational realities of textile businesses.
               </p>
-              <p className="text-gray-300 mb-8 text-lg leading-relaxed">
+              <p className={theme.p}>
                 We support the entire production lifecycle from initial yarn procurement and knitting to dyeing, finishing, and final dispatch, equipping your operations with purpose-built tools.
               </p>
               <Link
@@ -108,7 +110,7 @@ export default function ErpIndustries() {
                     {feature.icon}
                   </div>
                   <h4 className="font-semibold text-xl mb-2">{feature.title}</h4>
-                  <p className="text-gray-400 text-sm">{feature.desc}</p>
+                  <p className={theme.p}>{feature.desc}</p>
                 </div>
               ))}
             </motion.div>

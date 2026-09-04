@@ -13,6 +13,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const businessTypes = [
   {
@@ -78,7 +79,7 @@ export default function DigitalGrowthStrategiesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className={`${theme.h2} mb-6`}
+            className={cn(theme.h2, "mb-6")}
           >
             Digital Growth Strategies Built for{" "}
             <span className="bg-gradient-to-r from-primary via-[#ff7b00] to-orange-500 bg-clip-text text-transparent">
@@ -91,7 +92,7 @@ export default function DigitalGrowthStrategiesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className={`${theme.p} font-normal`}
+            className={theme.p}
           >
             Tiruppur has a strong and diverse business community, from textile and garment companies to manufacturers, exporters, B2B businesses, e-commerce brands, and local service providers.
           </motion.p>
@@ -130,7 +131,7 @@ export default function DigitalGrowthStrategiesSection() {
                   </h3>
 
                   {/* Card Description */}
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                  <p className={theme.p}>
                     {item.desc}
                   </p>
                 </div>

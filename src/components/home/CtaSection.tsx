@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 export default function CtaSection() {
   return (
@@ -19,7 +21,7 @@ export default function CtaSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-white mb-6"
+            className={cn(theme.h2, "text-white mb-6")}
           >
             Let's Build Something <span className="text-white underline decoration-white/30 underline-offset-8">Great Together</span>
           </motion.h2>
@@ -29,7 +31,7 @@ export default function CtaSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white/90 text-[17px] md:text-[19px] leading-relaxed mb-10 max-w-3xl mx-auto"
+            className={theme.p}
           >
             Whether you need a Custom ERP system, a new Mobile App, a Modern Website, or a Marketing Strategy that delivers results — Pinnacle Systems is ready to help you get there.
           </motion.p>

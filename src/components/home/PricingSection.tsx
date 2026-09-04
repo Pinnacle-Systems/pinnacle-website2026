@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
+import { theme } from "@/theme";
 
 const plans = [
   {
@@ -62,14 +63,14 @@ export default function PricingSection() {
               <div className="w-4 h-[3px] bg-primary rounded-full"></div>
               <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">START BUSINESS</span>
             </div>
-            <h2 className="text-4xl lg:text-[46px] leading-[1.2] font-extrabold text-[#0b132a]">
+            <h2 className={theme.h2}>
               Choose Your Best Plan
             </h2>
           </div>
           
           <div className="lg:w-1/2 flex items-center lg:pl-12">
             <div className="w-[2px] h-20 bg-orange-100 hidden lg:block mr-8 shrink-0"></div>
-            <p className="text-[#64748b] text-[16px] leading-relaxed max-w-lg">
+            <p className={theme.p}>
               paradigms. Monotonectally extend open-source mvia competitive methods of empowerment dri revolutionize stand- business.
             </p>
           </div>
@@ -83,7 +84,7 @@ export default function PricingSection() {
               <div className="bg-[#fff9f8] p-2 rounded-[16px] rounded-tr-[50px] mb-2">
                  <div className="border border-dashed border-gray-400/70 rounded-[12px] rounded-tr-[42px] py-8 px-6 text-center transition-colors group-hover:border-primary/60">
                     <h3 className="text-primary text-[42px] font-extrabold leading-none mb-3">{plan.price}</h3>
-                    <p className="text-[#0b132a] font-bold text-[18px]">{plan.name}</p>
+                    <p className={theme.p}>{plan.name}</p>
                  </div>
               </div>
               

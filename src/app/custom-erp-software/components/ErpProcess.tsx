@@ -3,6 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Search, PenTool, Code2, ShieldAlert, Rocket, Headset } from 'lucide-react';
+import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const processSteps = [
   {
@@ -48,7 +50,7 @@ export default function ErpProcess() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold mb-6"
+            className={cn(theme.h2, "mb-6")}
           >
             How We Build Your Custom ERP System
           </motion.h2>
@@ -72,7 +74,7 @@ export default function ErpProcess() {
                 {React.cloneElement(step.icon as React.ReactElement, { className: "w-7 h-7" })}
               </div>
               <h3 className="text-2xl font-bold mb-4 relative z-10 text-white">{step.title}</h3>
-              <p className="text-gray-400 leading-relaxed relative z-10">{step.desc}</p>
+              <p className={theme.p}>{step.desc}</p>
             </motion.div>
           ))}
         </div>

@@ -7,6 +7,7 @@ import { FaReact, FaAngular, FaNodeJs, FaPython, FaDatabase, FaGitAlt, FaServer 
 import { SiJavascript, SiPostgresql, SiNextdotjs, SiPhp } from "react-icons/si";
 import { GrOracle } from "react-icons/gr";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const technologies = [
   { name: "React", Icon: FaReact, brand: "text-[#61DAFB]" },
@@ -90,11 +91,11 @@ export default function TechnologiesSection() {
 
           {/* Left Column (Text) */}
           <div>
-            <h2 className={`${theme.h2} mb-4 sm:mb-6`}>
+            <h2 className={cn(theme.h2, "mb-4 sm:mb-6")}>
               Technologies We <span className="text-primary">Work With</span>
             </h2>
             <div className="w-20 sm:w-24 h-1.5 bg-primary rounded-full mb-6 sm:mb-8"></div>
-            <p className={`${theme.p} text-left sm:text-justify`}>
+            <p className={theme.p}>
               We Engineer High-performance Software and Enterprise Web Platforms by leveraging a Modern, highly Scalable Technology Stack. Instead of relying on rigid Templates, we select the precise Frameworks and Architectures required to build Secure, Lightning-fast Digital Solutions tailored to your exact Technical requirements.
               Our Development team utilizes advanced Front-end and Back-end Environments to deploy resilient Applications optimized for Modern Web Standards. By Adhering to strict Coding Practices and robust Data Integration, we build Digital Infrastructure that is Responsive, Secure, and designed for Long-term Scalability.
             </p>

@@ -102,7 +102,7 @@ export default function ServicesSection() {
           <h2 className={theme.h2}>
             Enterprise-Grade Software & <span className="text-primary">Digital Marketing Solutions</span>
           </h2>
-          <p className={`${theme.p} max-w-3xl mx-auto mt-4`}>
+          <p className={theme.p}>
             We provide a full range of marketing and technology solutions designed to assist your business in being efficient, reaching the right people, and growing without fear.
           </p>
         </div>
@@ -133,7 +133,7 @@ export default function ServicesSection() {
                   </h3>
                 </div>
 
-                <p className="text-gray-500 text-[16.5px] leading-relaxed mb-8 text-justify">
+                <p className={theme.p}>
                   {service.description}
                 </p>
 

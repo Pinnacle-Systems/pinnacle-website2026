@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { ShieldCheck, Megaphone, MessageSquare, CloudCog, Cpu, Server, Target, Code, Globe, Smartphone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { theme } from "@/theme";
 
 function AnimatedNumber({ value, duration = 2000 }: { value: number, duration?: number }) {
   const [count, setCount] = useState(0);
@@ -129,7 +130,7 @@ export default function FeatureCards() {
                     {feature.title}
                   </h3>
 
-                  <p className="text-[#64748b] px-1 group-hover:text-white transition-colors duration-300 text-[14px] sm:text-[15px] leading-relaxed">
+                  <p className={cn(theme.p, "text-black")}>
                     {feature.description}
                   </p>
 

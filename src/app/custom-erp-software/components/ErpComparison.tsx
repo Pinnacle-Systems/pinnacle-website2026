@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { X, Check, AlertTriangle, CheckCircle2 } from 'lucide-react';
 import Image from 'next/image';
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const comparisonData = [
   {
@@ -48,7 +49,7 @@ export default function ErpComparison() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className={`${theme.h2} mb-6`}
+            className={cn(theme.h2, "mb-6")}
           >
             Custom ERP vs. Off-the-Shelf: Which Is Right for You?
           </motion.h2>
@@ -92,7 +93,7 @@ export default function ErpComparison() {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">{item.feature}</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">{item.offTheShelf}</p>
+                      <p className={theme.p}>{item.offTheShelf}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -160,7 +161,7 @@ export default function ErpComparison() {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">{item.feature}</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">{item.custom}</p>
+                      <p className={theme.p}>{item.custom}</p>
                     </div>
                   </motion.div>
                 ))}

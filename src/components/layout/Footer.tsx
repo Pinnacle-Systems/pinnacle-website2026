@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import { Headset, Phone, MapPin, Mail, Calendar } from 'lucide-react';
 import Link from 'next/link';
+import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 export default function Footer() {
    return (
@@ -14,7 +16,7 @@ export default function Footer() {
                   <div className="w-[60px] h-[40px] rounded-full border-[1.5px] border-dashed border-white/50 flex items-center justify-center shrink-0">
                      <Headset className="text-white" size={26} strokeWidth={1.5} />
                   </div>
-                  <h2 className="text-white text-2xl md:text-[28px] font-extrabold leading-tight">
+                  <h2 className={cn(theme.h2, "text-white")}>
                      Elevating Customer Experience.
                   </h2>
                </div>
@@ -61,7 +63,7 @@ export default function Footer() {
                         {/* Address */}
                         <div className="flex items-start gap-3">
                            <MapPin className="text-primary shrink-0 mt-1" size={18} />
-                           <p className="text-[#8c98a4] text-[15px] leading-[1.8]">
+                           <p className={theme.p}>
                               65/108 - First Floor, MurungaPalayam First Street,Tirupur - 641603
                            </p>
                         </div>
@@ -179,7 +181,7 @@ export default function Footer() {
 
             {/* Copyright Bar */}
             <div className="border-t border-[#1e253c] mx-8 lg:mx-16 py-8 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
-               <p className="text-[#8c98a4] text-[14px]">
+               <p className={theme.p}>
                   © Copyright 2026 By Pinnacle Systems
                </p>
                <div className="flex gap-8 text-[14px]">

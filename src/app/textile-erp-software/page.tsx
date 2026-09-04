@@ -30,6 +30,7 @@ import {
   Lock
 } from "lucide-react";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 export const metadata = {
   title: 'Textile ERP Software - Pinnacle Systems',
@@ -248,7 +249,7 @@ export default function TextileErpSoftwarePage() {
                   </span>
                 </h1>
 
-                <p className={`${theme.p} text-gray-300 mb-8 max-w-2xl font-normal`}>
+                <p className={theme.p}>
                   Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production, and dispatch in one connected textile ERP system.
                 </p>
 
@@ -335,7 +336,7 @@ export default function TextileErpSoftwarePage() {
             <div className="w-4 h-[3px] bg-primary rounded-full"></div>
             <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Core Capabilities</span>
           </div>
-          <h2 className={`${theme.h2} mb-6`}>
+          <h2 className={cn(theme.h2, "mb-6")}>
             Every Key Feature Built for <span className="text-primary">Textile Production</span>
           </h2>
         </div>
@@ -357,7 +358,7 @@ export default function TextileErpSoftwarePage() {
                 <h3 className="text-xl font-bold text-[#0b132a] mb-3 pr-8">
                   {feature.title}
                 </h3>
-                <p className="text-[#64748b] text-[15px] leading-relaxed flex-1 text-justify">
+                <p className={theme.p}>
                   {feature.description}
                 </p>
               </div>
@@ -374,7 +375,7 @@ export default function TextileErpSoftwarePage() {
               <div className="w-4 h-[3px] bg-primary rounded-full"></div>
               <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Integrated Solutions</span>
             </div>
-            <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-6">
+            <h2 className={cn(theme.h2, "mb-6")}>
               Now Integrated ERP Solutions for the <span className="text-primary">Apparel & Textile Industry</span>
             </h2>
           </div>
@@ -388,7 +389,7 @@ export default function TextileErpSoftwarePage() {
                 <h3 className="text-[19px] font-bold text-[#0b132a] mb-4 leading-snug">
                   {module.title}
                 </h3>
-                <p className="text-[#64748b] text-[15px] leading-relaxed flex-grow mb-6">
+                <p className={theme.p}>
                   {module.description}
                 </p>
                 <Link href={module.href} className="inline-flex items-center gap-2 text-primary font-semibold text-[14px] hover:text-orange-600 transition-colors mt-auto group/link">
@@ -408,7 +409,7 @@ export default function TextileErpSoftwarePage() {
             <div className="w-4 h-[3px] bg-primary rounded-full"></div>
             <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">Why Choose Pinnacle ERP?</span>
           </div>
-          <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-8">
+          <h2 className={cn(theme.h2, "mb-8")}>
             The Pinnacle <span className="text-primary">Advantage</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
@@ -425,7 +426,7 @@ export default function TextileErpSoftwarePage() {
                 <CheckCircle2 className="w-6 h-6 text-primary shrink-0 group-hover:scale-110 transition-transform" />
                 <h3 className="font-bold text-[#0b132a] leading-snug">{reason.title}</h3>
               </div>
-              <p className="text-[#64748b] text-[14.5px] leading-relaxed">{reason.desc}</p>
+              <p className={theme.p}>{reason.desc}</p>
             </div>
           ))}
         </div>
@@ -442,11 +443,11 @@ export default function TextileErpSoftwarePage() {
                 <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">What We Offer</span>
               </div>
 
-              <h2 className="text-3xl lg:text-[32px] xl:text-4xl leading-[1.2] font-extrabold text-white mb-6">
+              <h2 className={cn(theme.h2, "text-white mb-6")}>
                 Your Trusted Partner <span className="text-primary block mt-2">for Digital Transformation</span>
               </h2>
 
-              <p className="text-gray-300 text-[18px] leading-relaxed">
+              <p className={theme.p}>
                 From concept to implementation, Pinnacle Systems is your trusted partner. We combine agile project management with efficient execution to bring your textile operations into the digital age.
               </p>
             </div>
@@ -459,7 +460,7 @@ export default function TextileErpSoftwarePage() {
                       <offer.icon className="w-6 h-6 stroke-[1.5]" />
                     </div>
                     <h3 className="font-bold text-white text-[18px] mb-3">{offer.title}</h3>
-                    <p className="text-gray-400 text-[14.5px] leading-relaxed">{offer.desc}</p>
+                    <p className={theme.p}>{offer.desc}</p>
                   </div>
                 ))}
               </div>
@@ -476,7 +477,7 @@ export default function TextileErpSoftwarePage() {
               <div className="w-4 h-[3px] bg-primary rounded-full"></div>
               <span className="text-primary font-bold text-[13px] tracking-[0.15em] uppercase">FAQ</span>
             </div>
-            <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-6">
+            <h2 className={cn(theme.h2, "mb-6")}>
               Frequently Asked <span className="text-primary">Questions</span>
             </h2>
           </div>
@@ -490,7 +491,7 @@ export default function TextileErpSoftwarePage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-[#0b132a] text-[17px] mb-3 leading-snug">{faq.q}</h3>
-                    <p className="text-[#64748b] text-[15px] leading-relaxed">{faq.a}</p>
+                    <p className={theme.p}>{faq.a}</p>
                   </div>
                 </div>
               </div>

@@ -14,7 +14,7 @@ export default function UnderConstruction() {
         <h1 className={theme.h1}>
           Under <span className="text-primary">Construction</span>
         </h1>
-        <p className="text-gray-400 text-lg md:text-xl">
+        <p className={theme.p}>
           We're working hard to bring you this page. Please check back later!
         </p>
         <div className="pt-8">

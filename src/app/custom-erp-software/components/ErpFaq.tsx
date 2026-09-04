@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const faqs = [
   {
@@ -36,7 +37,7 @@ export default function ErpFaq() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className={`${theme.h2} mb-6`}
+            className={cn(theme.h2, "mb-6")}
           >
             Frequently Asked Questions
           </motion.h2>
@@ -72,7 +73,7 @@ export default function ErpFaq() {
                     className="overflow-hidden"
                   >
                     <div className="p-6 bg-white/50 border border-t-0 border-gray-100 rounded-b-2xl -mt-2">
-                      <p className="text-gray-600 pt-2">{faq.answer}</p>
+                      <p className={theme.p}>{faq.answer}</p>
                     </div>
                   </motion.div>
                 )}

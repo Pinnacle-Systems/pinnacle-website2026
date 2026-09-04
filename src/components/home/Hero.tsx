@@ -37,7 +37,7 @@ export default function Hero() {
             </h1>
 
             {/* Description */}
-            <p className="text-gray-400 text-lg mb-10 leading-relaxed text-justify indent-6 sm:indent-8">
+            <p className={theme.p}>
               Pinnacle Systems delivers Custom ERP Software, Web Development,
               Mobile Application Development, Digital Marketing, Software &
               Hardware Integration and AI Automation that help Businesses

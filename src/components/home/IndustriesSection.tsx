@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Factory, Shirt, TestTube, HeartPulse, GraduationCap, Building, Sparkles, Store } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const industries = [
   { name: "Textile", icon: Shirt, href: "/textile-erp-software" },
@@ -24,7 +25,7 @@ export default function IndustriesSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-24 relative z-10">
         
         <div className="text-center max-w-4xl mx-auto mb-12 lg:mb-16">
-          <h2 className={`${theme.h2} mb-6`}>
+          <h2 className={cn(theme.h2, "mb-6")}>
             Industries We <span className="text-primary">Serve</span>
           </h2>
           <div className="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>

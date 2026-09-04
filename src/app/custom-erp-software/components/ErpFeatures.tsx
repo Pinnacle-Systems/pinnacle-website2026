@@ -4,6 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Cloud, Activity, PackageCheck, Users, ScanLine, Link as LinkIcon, CheckCircle, Bell, Mail, MessageSquare, LayoutDashboard, BarChart3 } from 'lucide-react';
 import Image from 'next/image';
+import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const features = [
   {
@@ -90,7 +92,7 @@ export default function ErpFeatures() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-navy-900 mb-6"
+            className={cn(theme.h2, "text-navy-900 mb-6")}
           >
             Core Features That Power Your Custom ERP
           </motion.h2>
@@ -117,7 +119,7 @@ export default function ErpFeatures() {
                 <h3 className="text-xl font-bold text-navy-900 mb-3 pr-8">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed flex-1">
+                <p className={theme.p}>
                   {feature.desc}
                 </p>
               </div>

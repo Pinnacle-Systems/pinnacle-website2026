@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Layers, Wrench, Globe, Shield, Users } from "lucide-react";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const reasons = [
   {
@@ -55,7 +56,7 @@ export default function WhyChooseUsSection() {
               <span className="text-white font-bold text-[12px] sm:text-[13px] tracking-[0.15em] uppercase">Pinnacle Systems Advantage</span>
             </div>
 
-            <h2 className={`${theme.h2} text-white mb-5 sm:mb-6`}>
+            <h2 className={cn(theme.h2, "text-white mb-5 sm:mb-6")}>
               Why Businesses Choose <br className="hidden sm:inline md:hidden" /><span className="text-primary relative inline-block">
                 Pinnacle Systems
                 <svg className="absolute -bottom-2 left-0 w-full h-3 text-primary/40" viewBox="0 0 100 10" preserveAspectRatio="none">
@@ -63,7 +64,7 @@ export default function WhyChooseUsSection() {
                 </svg>
               </span>
             </h2>
-            <p className={`${theme.p} text-gray-400 max-w-2xl mx-auto`}>
+            <p className={theme.p}>
               We bring Technical Excellence, Industry Expertise, and a Partner-First approach to every project we undertake.
             </p>
           </motion.div>
@@ -98,7 +99,7 @@ export default function WhyChooseUsSection() {
                 <h3 className="relative text-[17px] sm:text-[18px] lg:text-[19px] font-bold text-white mb-3 sm:mb-4 text-center transition-colors duration-300">
                   {reason.title}
                 </h3>
-                <p className="relative text-gray-400 text-[14px] sm:text-[14.5px] leading-relaxed text-center group-hover:text-gray-300 transition-colors duration-300 flex-grow">
+                <p className={theme.p}>
                   {reason.description}
                 </p>
               </motion.div>

@@ -1,6 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const faqs = [
   {
@@ -47,7 +49,7 @@ export default function GuideSection() {
             </div>
 
             {/* Heading */}
-            <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] mb-12 max-w-lg">
+            <h2 className={cn(theme.h2, "mb-12 max-w-lg")}>
               Keeping Your Business Safe and <span className="text-primary">Available.</span>
             </h2>
 
@@ -69,7 +71,7 @@ export default function GuideSection() {
 
           {/* Right Column */}
           <div className="w-full lg:w-1/2 pt-4">
-            <h2 className="text-3xl lg:text-[32px] font-extrabold text-[#0b132a] mb-4">
+            <h2 className={cn(theme.h2, "mb-4")}>
               FAQ.
             </h2>
 
@@ -106,7 +108,7 @@ export default function GuideSection() {
                       <div className="overflow-hidden">
                         <div className="px-5 pb-5">
                           <div className="w-full h-[1px] bg-gray-100 mb-4"></div>
-                          <p className="text-[#64748b] text-[14px] leading-[1.7] text-justify indent-6">
+                          <p className={theme.p}>
                             {faq.answer}
                           </p>
                         </div>

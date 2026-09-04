@@ -43,7 +43,7 @@ export default function DigitalMarketingHero() {
               </span>
             </h1>
 
-            <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl font-normal text-justify indent-6 sm:indent-8">
+            <p className={theme.p}>
               Pinnacle Systems helps businesses in Tiruppur build a stronger presence online and connect with the people who matter to their business. We provide digital marketing services that bring together search, paid advertising, social media, content, and website optimization based on your goals.
             </p>
 
@@ -106,7 +106,7 @@ export default function DigitalMarketingHero() {
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mt-2 mb-3">
                     10x Digital Expansion
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className={theme.p}>
                     Custom tailored digital marketing funnels built for Tirupur
                     enterprises, manufacturers, and commercial brands.
                   </p>

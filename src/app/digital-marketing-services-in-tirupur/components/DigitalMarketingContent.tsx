@@ -27,6 +27,7 @@ import { theme } from "@/theme";
 import DigitalMarketingHero from "./DigitalMarketingHero";
 import DigitalMarketingServicesSection from "./DigitalMarketingServicesSection";
 import DigitalGrowthStrategiesSection from "./DigitalGrowthStrategiesSection";
+import { cn } from "@/lib/utils";
 
 const approachSteps = [
   {
@@ -137,10 +138,10 @@ export default function DigitalMarketingContent() {
               <Sparkles className="w-3.5 h-3.5 text-primary" />
               Strategic Methodology
             </div>
-            <h2 className={`${theme.h2} mb-4`}>
+            <h2 className={cn(theme.h2, "mb-4")}>
               Our Approach to Digital Marketing
             </h2>
-            <p className={`${theme.p} font-normal`}>
+            <p className={theme.p}>
               We feel that for digital marketing to be successful, one needs to understand the business itself, rather than merely picking the right marketing tools.
             </p>
           </div>
@@ -181,7 +182,7 @@ export default function DigitalMarketingContent() {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-slate-600 text-sm leading-relaxed mb-6 relative z-10">
+                    <p className={theme.p}>
                       {item.desc}
                     </p>
                   </div>
@@ -222,11 +223,11 @@ export default function DigitalMarketingContent() {
                 Integrated Tech Advantage
               </div>
 
-              <h2 className={`${theme.h2} mb-4`}>
+              <h2 className={cn(theme.h2, "mb-4")}>
                 Why Work With a Technology-Driven Digital Marketing Company?
               </h2>
 
-              <p className="text-lg sm:text-xl font-semibold text-primary leading-relaxed">
+              <p className={theme.p}>
                 Digital marketing doesn't exist separately from your website and technology.
               </p>
 
@@ -237,7 +238,7 @@ export default function DigitalMarketingContent() {
                 <p>
                   Pinnacle Systems brings together digital marketing, website development, mobile app development, ERP expertise, and technology solutions under one organization.
                 </p>
-                <p className="font-medium text-[#0b132a]">
+                <p className={theme.p}>
                   This allows us to look beyond individual campaigns and consider how your digital presence works as a complete business system.
                 </p>
               </div>
@@ -279,7 +280,7 @@ export default function DigitalMarketingContent() {
                     <h4 className="font-bold text-[#0b132a] text-lg mb-1 group-hover:text-primary transition-colors">
                       {capability.title}
                     </h4>
-                    <p className="text-gray-500 text-xs leading-relaxed">
+                    <p className={theme.p}>
                       {capability.desc}
                     </p>
                   </div>
@@ -294,10 +295,10 @@ export default function DigitalMarketingContent() {
       <section className="py-10 sm:py-14 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0b132a] mb-4">
+            <h2 className={cn(theme.h2, "mb-4")}>
               Frequently Asked Questions
             </h2>
-            <p className="text-gray-600">
+            <p className={theme.p}>
               Got questions about Digital Marketing Services in Tirupur? We have answers.
             </p>
           </div>
@@ -336,10 +337,10 @@ export default function DigitalMarketingContent() {
       {/* 6. Bottom CTA Banner */}
       <section className="py-12 sm:py-16 bg-[#0b132a] text-white">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+          <h2 className={cn(theme.h2, "mb-6")}>
             Ready to Grow Your Brand with Premier Digital Marketing in Tirupur?
           </h2>
-          <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+          <p className={theme.p}>
             Partner with Pinnacle Systems today. Let’s craft a custom digital strategy that generates qualified leads and scales your revenue.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

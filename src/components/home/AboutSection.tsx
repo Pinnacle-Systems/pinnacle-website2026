@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const RadarBackground = () => (
   <motion.svg
@@ -72,7 +73,7 @@ export default function AboutSection() {
             </div>
 
             {/* Heading */}
-            <h2 className={`${theme.h2} mb-5 sm:mb-6`}>
+            <h2 className={cn(theme.h2, "mb-5 sm:mb-6")}>
               Your One-Stop <span className="text-primary">Technology Partner</span>
             </h2>
 
@@ -80,31 +81,31 @@ export default function AboutSection() {
             <div className="space-y-4 sm:space-y-5 mb-8 lg:mb-10">
               <div className="flex items-start gap-3.5">
                 <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
+                <p className={theme.p}>
                   We specialize in delivering innovative AI-driven, Cloud-based, Mobile, and Web Application Development services tailored for different Industry verticals.
                 </p>
               </div>
               <div className="flex items-start gap-3.5">
                 <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
+                <p className={theme.p}>
                   Our deep-experienced team of professionals is dedicated to transforming ideas into Scalable Digital Solutions with Rapid Delivery and Exceptional Quality.
                 </p>
               </div>
               <div className="flex items-start gap-3.5">
                 <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
+                <p className={theme.p}>
                   Our presence in the region and our commitment to excellence allow us to analyze the Local Market&apos;s Dynamics and provide Solutions that help drive growth.
                 </p>
               </div>
               <div className="flex items-start gap-3.5">
                 <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
+                <p className={theme.p}>
                   We prioritize Cutting-Edge Technology Adoption and Agile Methodologies to meet Client objectives Efficiently.
                 </p>
               </div>
               <div className="flex items-start gap-3.5">
                 <div className="mt-2 w-2 h-2 rounded-full bg-primary shrink-0 ring-4 ring-primary/20"></div>
-                <p className="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed text-left m-0">
+                <p className={theme.p}>
                   At Pinnacle Systems, we don’t just build Software — we create Competitive Advantages that position our Clients for sustainable Success in an evolving Digital landscape.
                 </p>
               </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Calendar, MessageSquare, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { theme } from "@/theme";
 
 export default function BlogSection() {
   return (
@@ -18,7 +19,7 @@ export default function BlogSection() {
                </div>
                
                {/* Heading */}
-               <h2 className="text-3xl lg:text-[32px] leading-[1.2] font-extrabold text-[#0b132a] ">
+               <h2 className={theme.h2}>
                  Exploring Its Potential in Various <span className="text-primary">Industries.</span>
                </h2>
             </div>
@@ -65,7 +66,7 @@ export default function BlogSection() {
                      <h3 className="text-xl sm:text-2xl font-semibold text-[#0b132a] leading-tight mb-3 sm:mb-4 group-hover:text-primary transition-colors cursor-pointer">
                        Leveraging Descriptive Solutions for Business Growth.
                      </h3>
-                     <p className="text-[#64748b] text-[14px] sm:text-[15px] leading-relaxed mb-6 sm:mb-8 flex-grow">
+                     <p className={theme.p}>
                        Appropriately promote enterprise-wide technology solutions through innovation without compromising quality.
                      </p>
                      <div className="mt-auto">
@@ -106,7 +107,7 @@ export default function BlogSection() {
                      <h3 className="text-lg sm:text-xl font-semibold text-[#0b132a] leading-tight mb-2 sm:mb-3 group-hover:text-primary transition-colors cursor-pointer">
                        How to Create Modern Web Site For Your Business..
                      </h3>
-                     <p className="text-[#64748b] text-[13.5px] sm:text-[14px] leading-relaxed mb-4 sm:mb-6">
+                     <p className={theme.p}>
                        Appropriately promote enterprise-wide through in information without best revolutionizing digital workflows.
                      </p>
                      <div className="mt-auto">
@@ -143,7 +144,7 @@ export default function BlogSection() {
                      <h3 className="text-lg sm:text-xl font-semibold text-[#0b132a] leading-tight mb-2 sm:mb-3 group-hover:text-primary transition-colors cursor-pointer">
                        How to Create Modern Web Site For Your Business..
                      </h3>
-                     <p className="text-[#64748b] text-[13.5px] sm:text-[14px] leading-relaxed mb-4 sm:mb-6">
+                     <p className={theme.p}>
                        Appropriately promote enterprise-wide through in information without best revolutionizing digital workflows.
                      </p>
                      <div className="mt-auto">

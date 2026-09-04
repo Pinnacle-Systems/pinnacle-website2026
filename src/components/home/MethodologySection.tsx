@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const steps = [
   {
@@ -32,7 +33,7 @@ export default function MethodologySection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-24 relative z-10">
         
         <div className="text-center max-w-4xl mx-auto mb-2 lg:mb-4">
-          <h2 className={`${theme.h2} mb-6`}>
+          <h2 className={cn(theme.h2, "mb-6")}>
             Implementation <span className="text-primary">& Methodology</span>
           </h2>
           <div className="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
@@ -94,7 +95,7 @@ export default function MethodologySection() {
                         {/* Animated bottom border line on hover */}
                         <div className="absolute bottom-0 left-0 h-[3px] bg-primary w-0 group-hover:w-full transition-all duration-500 ease-out"></div>
                         
-                        <p className="text-gray-600 group-hover:text-[#0b132a] text-[13.5px] md:text-[14.5px] leading-relaxed font-medium transition-colors duration-300">
+                        <p className={theme.p}>
                           {step.description}
                         </p>
                       </div>

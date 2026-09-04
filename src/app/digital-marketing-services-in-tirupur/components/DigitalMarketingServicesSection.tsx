@@ -14,6 +14,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 const services = [
   {
@@ -71,10 +72,10 @@ export default function DigitalMarketingServicesSection() {
     <section className="py-10 sm:py-14 bg-white relative">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
-          <h2 className={`${theme.h2} mb-6`}>
+          <h2 className={cn(theme.h2, "mb-6")}>
             Digital Marketing Services That Move Your Business Forward
           </h2>
-          <p className={`${theme.p} font-medium`}>
+          <p className={theme.p}>
             At Pinnacle Systems, we select and coordinate the services that make sense for your business, audience, and objectives.
           </p>
         </div>
@@ -111,7 +112,7 @@ export default function DigitalMarketingServicesSection() {
                     </h3>
                   </div>
 
-                  <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  <p className={theme.p}>
                     {service.desc}
                   </p>
                 </div>
