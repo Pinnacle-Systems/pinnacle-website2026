@@ -14,7 +14,11 @@ const navLinks = [
     href: "#",
     hasDropdown: true,
     dropdownItems: [
-      { name: "Custom Erp Software", href: "/custom-erp-software" }
+      { name: "Custom ERP Software", href: "/custom-erp-software" },
+      { name: "Web Application", href: "/services/web-application" },
+      { name: "Website Development", href: "/services/website-development" },
+      { name: "Mobile App Development", href: "/services/mobile-app-development" },
+      { name: "Digital Marketing", href: "/digital-marketing-services-in-tirupur" }
     ]
   },
   { name: "Contact Us", href: "/under-construction", hasDropdown: false },
@@ -72,7 +76,7 @@ export default function Header() {
               </Link>
 
               {link.hasDropdown && link.dropdownItems && (
-                <div className="absolute top-full -left-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[220px] bg-white border border-gray-100 rounded-xl shadow-xl translate-y-2 group-hover:translate-y-0">
+                <div className="absolute z-50 top-full -left-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[250px] bg-white border border-gray-100 rounded-xl shadow-xl translate-y-2 group-hover:translate-y-0">
                   <div className="py-2">
                     {link.dropdownItems.map((item) => (
                       <Link

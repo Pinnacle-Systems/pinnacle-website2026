@@ -36,7 +36,7 @@ export default function DigitalMarketingHero() {
               <span>DIGITAL GROWTH AGENCY</span>
             </div>
 
-            <h1 className={theme.h1}>
+            <h1 className={cn(theme.h1, "text-white")}>
               Digital Marketing Services in Tiruppur{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">
                 That Helps Your Business Grow

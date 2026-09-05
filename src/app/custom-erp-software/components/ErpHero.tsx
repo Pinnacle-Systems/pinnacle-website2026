@@ -31,7 +31,7 @@ export default function ErpHero() {
               <span>SMART ERP PLATFORM</span>
             </div>
 
-            <h1 className={theme.h1}>
+            <h1 className={cn(theme.h1, "text-white")}>
               AI-Powered Custom ERP Software Built for{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">
                 Your Business.

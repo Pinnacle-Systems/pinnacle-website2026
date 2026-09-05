@@ -168,7 +168,7 @@ export default function SpinningManagementSoftwarePage() {
 
             {/* Left Content */}
             <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <h1 className={theme.h1}>
+              <h1 className={cn(theme.h1, "text-white")}>
                 Spinning Mill ERP Software  Real-Time Control from Cotton to Yarn
               </h1>
               <p className={theme.p}>

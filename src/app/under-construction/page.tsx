@@ -11,7 +11,7 @@ export default function UnderConstruction() {
             <Hammer className="w-12 h-12 text-primary animate-bounce" />
           </div>
         </div>
-        <h1 className={theme.h1}>
+        <h1 className={cn(theme.h1, "text-white")}>
           Under <span className="text-primary">Construction</span>
         </h1>
         <p className={theme.p}>

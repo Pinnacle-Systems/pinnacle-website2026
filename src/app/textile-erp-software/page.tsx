@@ -107,14 +107,14 @@ const erpModules = [
     title: "Knitting Management Solution",
     description: "Monitor yarn allocation, track fabric roll output by shift, and measure exact machine efficiency seamlessly.",
     linkText: "Explore Knitting Software",
-    href: "/textile-erp-software/knitting",
+    href: "/textile-erp-software/knitting-manufacturing-software",
     icon: Shirt
   },
   {
     title: "Processing Management Solution",
     description: "Maintain strict shade consistency, manage chemical recipes, and track complex dyeing job-work batches without manual registers.",
     linkText: "Explore Processing Software",
-    href: "/textile-erp-software/processing",
+    href: "/textile-erp-software//textile-dyeing-processing-erp",
     icon: Droplets
   },
   {
@@ -142,7 +142,7 @@ const erpModules = [
     title: "Garments Management Solution",
     description: "Control the entire customer order lifecycle from order placement to production and shipment, for both Make-to-Order (MTO) and Make-to-Stock (MTS).",
     linkText: "Explore Garments Software",
-    href: "/textile-erp-software/garments",
+    href: "/textile-erp-software/garment-erp-software",
     icon: ShoppingBag
   },
   {
@@ -242,7 +242,7 @@ export default function TextileErpSoftwarePage() {
                   <span>Textile ERP Platform</span>
                 </div>
 
-                <h1 className={theme.h1}>
+                <h1 className={cn(theme.h1, "text-white")}>
                   Textile ERP Software for{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-amber-400 block mt-2">
                     End-to-End Manufacturing Control

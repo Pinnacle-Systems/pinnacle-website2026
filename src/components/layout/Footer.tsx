@@ -121,11 +121,11 @@ export default function Footer() {
                      <h4 className="text-white text-[20px] font-bold mb-8">Services</h4>
                      <ul className="space-y-4">
                         {[
-                           { name: 'Custom ERP Software', href: '/under-construction' },
-                           { name: 'Web Application', href: '/under-construction' },
-                           { name: 'Website Development', href: '/under-construction' },
-                           { name: 'Mobile App Development', href: '/under-construction' },
-                           { name: 'Digital Marketing', href: '/under-construction' }
+                           { name: 'Custom ERP Software', href: '/custom-erp-software' },
+                           { name: 'Web Application', href: '/services/web-application' },
+                           { name: 'Website Development', href: '/services/website-development' },
+                           { name: 'Mobile App Development', href: '/services/mobile-app-development' },
+                           { name: 'Digital Marketing', href: '/digital-marketing-services-in-tirupur' }
                         ].map(service => (
                            <li key={service.name}>
                               <Link href={service.href} className="text-[#8c98a4] hover:text-primary transition-colors text-[15px] block">

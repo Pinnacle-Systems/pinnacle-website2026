@@ -4,12 +4,12 @@
 
 export const theme = {
   // Main Heading (H1) Styling
-  h1: "text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0b132a] tracking-tight  text-white leading-[1.15]  mb-6 relative",
+  h1: "text-4xl font-extrabold text-white text-[#0b132a] tracking-tight leading-[1.15] mb-6 relative",
 
   // Reserved slots for future tag and element styling
   h2: "text-3xl sm:text-3xl lg:text-4xl font-bold text-[#0b132a] tracking-tight leading-tight",
   h3: "text-xl sm:text-2xl font-bold text-[#0b132a]",
-  p: "text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl font-normal text-justify indent-6 sm:indent-8",
+  p: "text-gray-300 text-md leading-relaxed mb-8 max-w-2xl font-normal text-justify indent-6 sm:indent-8",
 
   // Buttons & Controls
   buttonPrimary:

@@ -12,19 +12,20 @@ export default function AboutUsPage() {
     <main className="min-h-screen bg-white">
       {/* Dark Hero Section Container */}
       <div className="p-2 sm:p-4 lg:p-6">
-        <div className="bg-[#0b132a] relative rounded-[32px] sm:rounded-[40px] lg:rounded-[48px] overflow-hidden pb-12 shadow-2xl border border-white/5">
+        <div className="bg-[#0b132a] relative rounded-[32px] sm:rounded-[40px] lg:rounded-[48px] overflow-visible shadow-2xl border border-white/5 pt-32 pb-24 px-4 text-center">
           <Header />
-        </div>
-      </div>
-      <div>
-        <div className=" md:pt-[50px] px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="max-w-4xl mx-auto bg-white">
-            <h1 className={theme.h1}>
+          <div className="max-w-4xl mx-auto relative z-10">
+            <h1 className={cn(theme.h1, "text-white")}>
               About <span className="text-primary">Pinnacle Systems</span>
             </h1>
-            <p className={theme.p}>
-              Custom ERP Software for  Textile & Manufacturing
+            <p className={cn(theme.p, "text-gray-300 mt-4 mx-auto max-w-2xl")}>
+              Custom ERP Software for Textile & Manufacturing
             </p>
+          </div>
+          {/* Background Decorative Elements */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-[inherit]">
+             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px]"></div>
+             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px]"></div>
           </div>
         </div>
       </div>

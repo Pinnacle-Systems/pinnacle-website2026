@@ -5,49 +5,66 @@ import { motion, AnimatePresence } from "framer-motion";
 import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, ChevronDown, Layout, Server, Shield, Zap, Search, PenTool, Code, CheckSquare, Rocket, MonitorSmartphone, Settings, Database, RefreshCw, BarChart, Users, DollarSign, MousePointerClick } from "lucide-react";
+import { 
+  ArrowRight, CheckCircle2, ChevronDown, 
+  Smartphone, Apple, LayoutGrid, Rocket, Search, 
+  MonitorSmartphone, PlayCircle, BarChart, Users, DollarSign, MousePointerClick
+} from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-export default function WebApplicationPage() {
+export default function MobileAppDevelopmentPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const faqs = [
-    { q: "What is web application development?", a: "The process of building interactive, browser-based software — like CRMs, dashboards, and SaaS platforms — rather than static websites." },
-    { q: "How is a web application different from a website?", a: "A website is mainly informational, while a web app is interactive, letting users log in, input data, and perform tasks with backend logic." },
-    { q: "How long does it take to build a web application?", a: "Simple apps take 4-8 weeks; complex, enterprise-grade apps can take 3-6 months or more, depending on scope." },
-    { q: "How much does it cost to develop a web application?", a: "Cost depends on features, integrations, and tech stack — reach out for a free consultation and custom quote." },
-    { q: "Which technologies do you use for web application development?", a: "React, Next.js, Node.js, PHP/Laravel, and Python — chosen based on your project's scale and goals." },
-    { q: "Can you upgrade or modernize our existing web application?", a: "Yes, we modernize legacy systems for better performance, security, and scalability without disrupting operations." },
-    { q: "Do you provide support and maintenance after launch?", a: "Yes, including bug fixes, performance monitoring, security updates, and feature enhancements post-launch." },
-    { q: "Is my data secure with a custom-built web application?", a: "Yes, security is built in from day one, including secure authentication, encryption, and data-protection best practices." },
-    { q: "Can you integrate third-party tools and APIs into my web application?", a: "Yes, we regularly integrate payment gateways, CRMs, analytics tools, and other third-party APIs based on your workflow needs." },
-    { q: "Will my web application be scalable as my business grows?", a: "Yes, we design with future growth in mind, using scalable architecture that supports more users, data, and features over time." }
+  const introPoints = [
+    "Pinnacle Systems is a leading mobile app development company, building high-performance Android and iOS mobile apps.",
+    "Apps are designed to be user-centric, performance-oriented designed, flexible, and optimized for speed, UX, and conversions.",
+    "As a professional mobile app development partner, we go beyond simply launching an app — we craft an experience around it.",
+    "Our development team brings deep experience in building business-centric, objective-driven, and performance-based apps tailored to your goals.",
+    "Developers are proficient in Flutter, React Native, native technologies, and other emerging mobile frameworks — allowing us to select the ideal tech stack for every project.",
+    "We prioritize scalability, seamless user experience, and future-ready architecture to ensure long-term app success.",
+    "Over the years, we've delivered a strong portfolio of mobile apps across Android, iOS, Windows, and cross-platform environments."
   ];
 
   const processes = [
-    { title: "Requirement Analysis", icon: Search },
-    { title: "UI/UX Design", icon: PenTool },
-    { title: "Development", icon: Code },
-    { title: "Testing & QA", icon: CheckSquare },
-    { title: "Deployment & Support", icon: Rocket }
+    { title: "Mobile App Strategy", icon: Search },
+    { title: "User Experience Design", icon: LayoutGrid },
+    { title: "Development", icon: Smartphone },
+    { title: "Testing", icon: CheckCircle2 },
+    { title: "Launch", icon: Rocket }
   ];
 
   const services = [
-    "Custom web application development",
-    "SaaS application development",
-    "Enterprise web application development",
-    "CRM & ERP development",
-    "API development & integration",
-    "Web app maintenance & support",
-    "Legacy application modernization"
+    "Enterprise app development",
+    "Android mobile app development",
+    "iOS app development",
+    "iPad application development",
+    "Windows app development",
+    "PhoneGap app development"
+  ];
+
+  const technologies = [
+    "Node.js", "Native Android"
   ];
 
   const whyChooseUs = [
-    { title: "Work Efficiency", desc: "Our skilled team of solution architects, developers, and QA engineers delivers robust web applications built for performance at scale.", icon: BarChart },
-    { title: "Client Satisfaction", desc: "We're committed to our clients' success on every web app project, backed by in-depth business analysis and technical insight.", icon: Users },
-    { title: "Affordable Price", desc: "We deliver enterprise-grade web applications within your budget, quoting competitive pricing without compromising on quality or security.", icon: DollarSign },
-    { title: "Interactive UI/UX", desc: "Our creative designers turn complex workflows into intuitive, easy-to-use interfaces — built to improve efficiency and user adoption.", icon: MousePointerClick }
+    { title: "Work Efficiency", desc: "Our skilled team of app analysts, development strategists, and designers delivers an exceptional user experience — building apps that lead in their respective app stores.", icon: BarChart },
+    { title: "Client Satisfaction", desc: "We're committed to our clients' success on every mobile app project, whether cross-platform or native Android — backed by in-depth research and business insight.", icon: Users },
+    { title: "Affordable Price", desc: "We deliver top-notch mobile apps within your budget, quoting competitive pricing without compromising on quality or functionality.", icon: DollarSign },
+    { title: "Interactive UI/UX", desc: "Our creative designers turn UX concepts into interactive prototypes and apps — customer-centric, enterprise-ready, and built to perform like a sales tool for your business.", icon: MousePointerClick }
+  ];
+
+  const faqs = [
+    { q: "1. How long does it take to build a mobile app?", a: "An MVP can take 4–8 weeks, while full-featured apps with custom backend and integrations typically take 3–6 months, depending on complexity." },
+    { q: "2. How much does it cost to develop a mobile app?", a: "Cost depends on features, platform (iOS, Android, or both), and complexity. We provide a fixed quote after a discovery call — no hidden charges." },
+    { q: "3. Should I build for iOS, Android, or both?", a: "It depends on your target audience. We help you decide based on your users' behavior, and can build natively or cross-platform (e.g., Flutter/React Native) to cover both efficiently." },
+    { q: "4. Will my app be secure?", a: "Yes. We follow industry-standard security practices including encrypted data storage, secure authentication, and secure API handling — especially critical for healthcare, e-commerce, and fintech apps." },
+    { q: "5. Can you redesign or upgrade my existing app?", a: "Yes. We audit your current app's performance and UX, then modernize it — improving speed and usability while preserving your existing user base, data, and app store reviews/ratings." },
+    { q: "6. Will my app work smoothly on all devices?", a: "Yes. We test extensively across device sizes and OS versions to ensure consistent performance, whether built natively or cross-platform." },
+    { q: "7. Do you build e-commerce or on-demand apps?", a: "Yes. We build secure e-commerce apps with in-app checkout, as well as on-demand marketplace apps with real-time tracking and integrated payments." },
+    { q: "8. Can I update app content myself after launch?", a: "Yes, for apps built with a CMS-backed or admin panel structure, your team can update content, listings, or products without needing a developer for every change." },
+    { q: "9. Do you offer app maintenance and support after launch?", a: "Yes. We offer ongoing support for bug fixes, OS updates, security patches, and performance monitoring to keep your app running reliably post-launch." },
+    { q: "10. How do I get started with app development?", a: "Request a Free App Audit or Discovery Call. We'll review your idea or existing app and outline a clear roadmap — features, timeline, and cost — before development begins." }
   ];
 
   return (
@@ -69,8 +86,8 @@ export default function WebApplicationPage() {
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-6"
           >
-            <Zap className="w-4 h-4" />
-            <span>Expert Engineering</span>
+            <Smartphone className="w-4 h-4" />
+            <span>Mobile Innovation</span>
           </motion.div>
           
           <motion.h1 
@@ -79,7 +96,7 @@ export default function WebApplicationPage() {
             transition={{ delay: 0.1 }}
             className={cn(theme.h1, "text-white")}
           >
-            Web Application Development Company
+            Mobile Application Development Company
           </motion.h1>
           
           <motion.p 
@@ -88,7 +105,7 @@ export default function WebApplicationPage() {
             transition={{ delay: 0.2 }}
             className={cn(theme.p, "mx-auto text-gray-300 text-center sm:text-center")}
           >
-            Pinnacle Systems is a trusted web application development company that builds secure, scalable, and high-performing web apps engineered to streamline operations and drive business growth.
+            Pinnacle Systems is a trusted mobile app development company that builds iOS and Android applications engineered to drive brand growth and business engagement.
           </motion.p>
           
           <motion.div
@@ -101,7 +118,7 @@ export default function WebApplicationPage() {
               href="/contact" 
               className={cn(theme.buttonPrimary, "inline-flex items-center gap-3 text-lg group px-10 py-5")}
             >
-              Talk to Our Web App Development Team
+              Talk to Our App Development Team
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
@@ -118,19 +135,11 @@ export default function WebApplicationPage() {
               viewport={{ once: true, margin: "-100px" }}
               className={cn(theme.h2, "text-white mb-8 text-center")}
             >
-              Top-Notch Web Application Development Company
+              Top-Notch Mobile App Development Company
             </motion.h2>
 
             <div className="space-y-6">
-              {[
-                "Pinnacle Systems is a leading web application development company, building robust, scalable web apps tailored to complex business needs.",
-                "Web apps are performance-centric, user-focused, secure, and optimized for speed, functionality, and seamless integration.",
-                "As a professional web application development partner, we go beyond simply building software — we engineer solutions that solve real business problems.",
-                "Our development team brings deep experience in building custom, objective-driven, and enterprise-grade web applications tailored to your goals.",
-                "Developers are proficient in React, Next.js, Node.js, PHP/Laravel, Python, and other modern frameworks — allowing us to select the ideal tech stack for every project.",
-                "We prioritize scalability, data security, and future-ready architecture to ensure long-term application success.",
-                "Over the years, we've delivered a strong portfolio of web apps across SaaS platforms, enterprise systems, CRMs, ERPs, and custom business tools."
-              ].map((text, idx) => (
+              {introPoints.map((text, idx) => (
                 <motion.div 
                   key={idx}
                   initial={{ opacity: 0, x: -20 }}
@@ -187,13 +196,15 @@ export default function WebApplicationPage() {
         </div>
 
         {/* Our Services Include */}
-        <div className="max-w-6xl mx-auto mb-24">
+        <div className="max-w-6xl mx-auto mb-20 bg-white rounded-[3rem] p-8 md:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gray-50 rounded-full blur-[100px] -z-10 pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
+          
           <div className="text-center mb-12">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className={cn(theme.h2, "text-white")}
+              className={cn(theme.h2, "text-[#0b132a]")}
             >
               Our Services Include
             </motion.h2>
@@ -207,12 +218,12 @@ export default function WebApplicationPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 hover:border-primary/50 transition-all flex items-center gap-4"
+                className="bg-gray-50 border border-gray-200 p-6 rounded-2xl hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 transition-all flex items-center gap-4 group"
               >
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                  <MonitorSmartphone className="w-5 h-5 text-primary" />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <MonitorSmartphone className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-[16px] font-semibold text-white">{service}</h3>
+                <h3 className="text-[16px] md:text-[18px] font-semibold text-[#0b132a] group-hover:text-primary transition-colors">{service}</h3>
               </motion.div>
             ))}
           </div>
@@ -230,14 +241,14 @@ export default function WebApplicationPage() {
           </motion.h2>
           
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-            {["React", "Next.js", "Node.js", "Python"].map((tech, idx) => (
+            {technologies.map((tech, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white/5 border border-white/20 px-8 py-4 rounded-xl text-xl font-bold text-gray-300 hover:text-white hover:bg-white/10 hover:border-primary/50 transition-all cursor-default shadow-lg"
+                className="bg-white/5 border border-white/20 px-10 py-5 rounded-xl text-xl font-bold text-gray-300 hover:text-white hover:bg-white/10 hover:border-primary/50 transition-all cursor-default shadow-lg"
               >
                 {tech}
               </motion.div>
@@ -254,7 +265,7 @@ export default function WebApplicationPage() {
               viewport={{ once: true }}
               className={cn(theme.h2, "text-white max-w-3xl mx-auto")}
             >
-              Why Choose Pinnacle Systems for Web Application Development?
+              Why Choose Pinnacle Systems for Mobile App Development?
             </motion.h2>
           </div>
           
@@ -272,7 +283,7 @@ export default function WebApplicationPage() {
                   <item.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
-                <p className={cn(theme.p, "mb-0 indent-0 max-w-none")}>{item.desc}</p>
+                <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-gray-400")}>{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -287,7 +298,7 @@ export default function WebApplicationPage() {
               viewport={{ once: true }}
               className={cn(theme.h2, "text-white")}
             >
-              Frequently Asked Questions
+              FAQs
             </motion.h2>
           </div>
           
@@ -305,8 +316,8 @@ export default function WebApplicationPage() {
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors focus:outline-none"
                 >
-                  <span className="text-[16px] md:text-[18px] font-semibold text-white">{faq.q}</span>
-                  <ChevronDown className={cn("w-5 h-5 text-gray-400 transition-transform duration-300", openFaq === idx ? "transform rotate-180" : "")} />
+                  <span className="text-[16px] md:text-[18px] font-semibold text-white pr-4">{faq.q}</span>
+                  <ChevronDown className={cn("w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0", openFaq === idx ? "transform rotate-180" : "")} />
                 </button>
                 <AnimatePresence>
                   {openFaq === idx && (
