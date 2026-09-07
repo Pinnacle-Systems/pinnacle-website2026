@@ -104,7 +104,7 @@ export default function Footer() {
                            { name: 'About Us', href: '/about-us' },
                            { name: 'Meet Our Team', href: '/under-construction' },
                            { name: 'Latest Blog', href: '/under-construction' },
-                           { name: 'Contact Us', href: '/under-construction' },
+                           { name: 'Contact Us', href: '/contact' },
                            { name: 'FAQ', href: '/under-construction' }
                         ].map(link => (
                            <li key={link.name}>

@@ -128,7 +128,7 @@ const erpModules = [
     title: "Printing Management Solution",
     description: "Manage printing order statuses, track ink and chemical consumption, and monitor lot-wise production accurately.",
     linkText: "Explore Printing Software",
-    href: "/textile-erp-software/printing",
+    href: "/textile-erp-software/textile-printing-erp",
     icon: Printer
   },
   {
@@ -149,7 +149,7 @@ const erpModules = [
     title: "Payroll Management Solution",
     description: "Streamline employee attendance, shift management, piece-rate wages, payroll processing, and production-linked wage calculations.",
     linkText: "Explore Payroll Software",
-    href: "/textile-erp-software/payroll",
+    href: "/textile-erp-software/textile-payroll-software",
     icon: Banknote
   }
 ];

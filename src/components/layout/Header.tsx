@@ -21,7 +21,7 @@ const navLinks = [
       { name: "Digital Marketing", href: "/digital-marketing-services-in-tirupur" }
     ]
   },
-  { name: "Contact Us", href: "/under-construction", hasDropdown: false },
+  { name: "Contact Us", href: "/contact", hasDropdown: false },
   { name: "Blog", href: "/under-construction", hasDropdown: false },
   { name: "FAQ", href: "/under-construction", hasDropdown: false },
 ];

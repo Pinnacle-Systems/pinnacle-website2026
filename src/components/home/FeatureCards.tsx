@@ -130,7 +130,7 @@ export default function FeatureCards() {
                     {feature.title}
                   </h3>
 
-                  <p className={cn(theme.p, "text-black")}>
+                  <p className={cn(theme.p, "text-black text-[16px]")}>
                     {feature.description}
                   </p>
 
