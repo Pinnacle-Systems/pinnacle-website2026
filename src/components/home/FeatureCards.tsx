@@ -111,7 +111,7 @@ export default function FeatureCards() {
                 whileHover={{
                   zIndex: 10,
                 }}
-                className="group relative flex flex-col items-center justify-start text-center p-6 sm:p-5 lg:px-4 lg:py-6 bg-[#f4f5f7] rounded-[24px] shadow-sm w-full h-full border border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-2 transition-all duration-400 overflow-hidden cursor-pointer"
+                className="group relative flex flex-col items-center justify-start text-center p-5 lg:px-3 lg:py-5 bg-[#f4f5f7] rounded-[24px] shadow-sm w-full h-full border border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-2 transition-all duration-400 overflow-hidden cursor-pointer"
               >
                 {/* Hover fill animation (bottom to top) */}
                 <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out pointer-events-none rounded-[inherit]"></div>
@@ -122,15 +122,15 @@ export default function FeatureCards() {
                 <div className="relative z-10 w-full flex flex-col items-center">
 
                   {/* Soft light orange icon circle container */}
-                  <div className="w-[64px] h-[64px] sm:w-[68px] sm:h-[68px] flex items-center justify-center mx-auto mb-4 rounded-full border border-[#ffdbcd] bg-[#ffefe8] group-hover:bg-[#0b132a] group-hover:border-white/20 group-hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] group-hover:scale-110 transition-all duration-300 shrink-0">
-                    <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary group-hover:text-white transition-colors duration-300 stroke-[1.75]" />
+                  <div className="w-[56px] h-[56px] sm:w-[60px] sm:h-[60px] flex items-center justify-center mx-auto mb-3 rounded-full border border-[#ffdbcd] bg-[#ffefe8] group-hover:bg-[#0b132a] group-hover:border-white/20 group-hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] group-hover:scale-110 transition-all duration-300 shrink-0">
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-white transition-colors duration-300 stroke-[1.75]" />
                   </div>
 
-                  <h3 className="text-[16px] py-1 font-semibold text-[#0b132a] group-hover:text-white transition-colors duration-300 mb-2 sm:mb-3">
+                  <h3 className="text-[15px] sm:text-[16px] py-1 font-semibold text-[#0b132a] group-hover:text-white transition-colors duration-300 mb-1 sm:mb-2">
                     {feature.title}
                   </h3>
 
-                  <p className={cn(theme.p, "text-black text-[16px]")}>
+                  <p className={cn(theme.p, "text-black group-hover:text-white transition-colors duration-300 text-[14px] leading-snug  tracking-normal")}>
                     {feature.description}
                   </p>
 

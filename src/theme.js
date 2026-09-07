@@ -7,8 +7,8 @@ export const theme = {
   h1: "text-4xl font-extrabold text-white text-[#0b132a] tracking-tight leading-[1.15] mb-6 relative",
 
   // Reserved slots for future tag and element styling
-  h2: "text-3xl sm:text-3xl lg:text-4xl font-bold text-[#0b132a] tracking-tight leading-tight",
-  h3: "text-xl sm:text-2xl font-bold text-[#0b132a]",
+  h2: " text-3xl font-bold text-[#0b132a] tracking-tight leading-tight",
+  h3: "text-2xl font-bold text-[#0b132a]",
   p: "text-gray-300 text-md leading-relaxed mb-8 max-w-2xl font-normal text-justify indent-6 sm:indent-8",
 
   // Buttons & Controls

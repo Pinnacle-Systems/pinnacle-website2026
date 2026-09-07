@@ -23,7 +23,7 @@ export default function CtaSection() {
             viewport={{ once: true }}
             className={cn(theme.h2, "text-white mb-6")}
           >
-            Let's Build Something <span className="text-white underline decoration-white/30 underline-offset-8">Great Together</span>
+            Let's Build Something <span className=" underline decoration-white/30 text-black underline-offset-8">Great Together</span>
           </motion.h2>
 
           <motion.p
@@ -31,7 +31,7 @@ export default function CtaSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className={theme.p}
+            className={cn(theme.p, "text-white/90 max-w-3xl mx-auto mb-10 !text-center")}
           >
             Whether you need a Custom ERP system, a new Mobile App, a Modern Website, or a Marketing Strategy that delivers results — Pinnacle Systems is ready to help you get there.
           </motion.p>

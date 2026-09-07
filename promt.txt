@@ -1,0 +1,421 @@
+I am working on a **Next.js landing page using Tailwind CSS**.
+
+I want to make the landing page responsive **component by component**.
+
+For this task, **ONLY modify the component/code that I provide below**.
+
+Do NOT modify other components, pages, layouts, global CSS, configuration files, or unrelated code.
+
+### Objective
+
+Make this specific component fully responsive for:
+
+* Mobile: 320px – 480px
+* Large mobile: 481px – 640px
+* Tablet: 641px – 1024px
+* Laptop: 1025px – 1440px
+* Desktop: 1441px+
+* Large screens / 2K / 4K
+
+Use a **mobile-first approach** with Tailwind CSS.
+
+---
+
+### 1. Preserve Existing Design
+
+Keep the existing:
+
+* Content
+* Text
+* Images
+* Colors
+* Fonts
+* Icons
+* Buttons
+* Animations
+* Functionality
+* Event handlers
+* Props
+* State
+* API calls
+* Component logic
+
+Do not redesign the component unnecessarily.
+
+The goal is to make the **existing component responsive**, not to create a completely different design.
+
+---
+
+### 2. Tailwind Responsive Classes
+
+Use Tailwind responsive classes such as:
+
+```text
+sm:
+md:
+lg:
+xl:
+2xl:
+```
+
+Prefer Tailwind classes over custom CSS.
+
+For example:
+
+```jsx
+text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+```
+
+and:
+
+```jsx
+px-4 sm:px-6 md:px-8 lg:px-12
+```
+
+---
+
+### 3. Responsive Layout
+
+Check whether the component needs to change layout depending on screen size.
+
+For example:
+
+```jsx
+flex flex-col md:flex-row
+```
+
+or:
+
+```jsx
+grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+```
+
+Do not force everything into a single layout for all screen sizes.
+
+Use the available screen width intelligently.
+
+---
+
+### 4. Responsive Typography
+
+Make all text responsive:
+
+* Heading
+* Subheading
+* Paragraph
+* Labels
+* Buttons
+* Navigation text
+
+Example:
+
+```jsx
+<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+```
+
+Avoid font sizes that are too large on mobile or too small on desktop.
+
+Also adjust:
+
+```text
+leading-*
+tracking-*
+max-w-*
+```
+
+when necessary.
+
+---
+
+### 5. Responsive Images
+
+Make every image responsive.
+
+For Next.js `Image`, preserve the existing `next/image` implementation whenever possible.
+
+Use appropriate:
+
+```text
+w-full
+max-w-*
+h-auto
+object-contain
+object-cover
+```
+
+Example:
+
+```jsx
+<Image
+  ...
+  className="w-full h-auto object-contain"
+/>
+```
+
+If the image needs different sizes:
+
+```jsx
+className="w-48 sm:w-56 md:w-72 lg:w-96"
+```
+
+Images must never overflow their container.
+
+---
+
+### 6. Responsive Spacing
+
+Adjust:
+
+* Padding
+* Margin
+* Gap
+* Section spacing
+
+Example:
+
+```jsx
+py-8 sm:py-12 md:py-16 lg:py-24
+```
+
+Avoid excessive spacing on mobile.
+
+---
+
+### 7. Responsive Widths
+
+Avoid unnecessary fixed widths such as:
+
+```text
+w-[700px]
+w-[800px]
+w-[1000px]
+```
+
+when they can cause overflow.
+
+Prefer:
+
+```text
+w-full
+max-w-*
+```
+
+For example:
+
+```jsx
+w-full max-w-xl
+```
+
+If a fixed width is required for the design, make it responsive:
+
+```jsx
+w-full sm:w-[400px] lg:w-[500px]
+```
+
+---
+
+### 8. Responsive Height
+
+Avoid fixed heights for content whenever possible.
+
+Do not use something like:
+
+```text
+h-[600px]
+```
+
+if the content can naturally determine the height.
+
+Prefer:
+
+```text
+min-h-*
+h-auto
+```
+
+or responsive heights where genuinely necessary.
+
+Make sure content never gets cut off on smaller screens.
+
+---
+
+### 9. Mobile Layout
+
+On mobile:
+
+* Stack elements when necessary
+* Reduce unnecessary spacing
+* Reduce heading sizes
+* Make images smaller
+* Make buttons easy to tap
+* Make text wrap correctly
+* Keep content inside the viewport
+* Avoid horizontal scrolling
+
+Example:
+
+```jsx
+flex flex-col sm:flex-row
+```
+
+---
+
+### 10. Tablet Layout
+
+For tablets:
+
+* Use available width efficiently
+* Use 1–2 column layouts where appropriate
+* Increase spacing slightly compared with mobile
+* Keep typography readable
+* Prevent excessive empty space
+
+---
+
+### 11. Laptop/Desktop Layout
+
+For larger screens:
+
+* Use multiple columns where appropriate
+* Increase spacing naturally
+* Allow images to become larger
+* Keep content centered
+* Prevent the component from becoming excessively wide
+
+Use:
+
+```text
+max-w-*
+mx-auto
+```
+
+where appropriate.
+
+---
+
+### 12. Prevent Overflow
+
+The component must not create unwanted horizontal scrolling.
+
+Check carefully for:
+
+* Fixed widths
+* Fixed heights
+* Large images
+* Absolute-positioned elements
+* Negative margins
+* `translate-x`
+* Large headings
+* Buttons
+* Long text
+* Decorative elements
+
+Fix the actual overflowing element instead of blindly adding:
+
+```text
+overflow-x-hidden
+```
+
+---
+
+### 13. Responsive Breakpoints
+
+Use breakpoints only when necessary.
+
+Follow this general approach:
+
+```text
+Base → Mobile
+sm   → Large mobile
+md   → Tablet
+lg   → Laptop
+xl   → Desktop
+2xl  → Large desktop
+```
+
+Do not add unnecessary breakpoints everywhere.
+
+---
+
+### 14. Important Constraint
+
+**ONLY modify the component I provide.**
+
+Do not:
+
+❌ Modify other components
+❌ Modify page structure
+❌ Modify global CSS
+❌ Modify Tailwind configuration
+❌ Modify `next.config`
+❌ Modify package files
+❌ Change business logic
+❌ Change APIs
+❌ Change routes
+❌ Change existing functionality
+
+If another component has a responsiveness issue, **do not fix it now**. I will handle components one by one.
+
+---
+
+### 15. Testing
+
+After modifying this component, check it mentally against:
+
+```text
+320px
+360px
+375px
+390px
+430px
+
+768px
+820px
+1024px
+
+1280px
+1366px
+1440px
+
+1920px
+2560px
+```
+
+Specifically check:
+
+* Text overflow
+* Image overflow
+* Horizontal scrolling
+* Button alignment
+* Element overlapping
+* Incorrect spacing
+* Broken grids
+* Incorrect flex direction
+* Content being cut off
+* Mobile readability
+* Desktop spacing
+
+---
+
+### Final Output
+
+Return the **complete updated component code**, not just the changed Tailwind classes.
+
+Before returning it, verify that:
+
+1. The component works on mobile.
+2. The component works on tablet.
+3. The component works on laptop.
+4. The component works on desktop.
+5. Images are responsive.
+6. Font sizes are responsive.
+7. Spacing is responsive.
+8. There is no unwanted horizontal overflow.
+9. Existing functionality is unchanged.
+10. Only this component was modified.
+
+Here is the component to make responsive:
+
+```jsx
+// PASTE COMPONENT HERE
+```

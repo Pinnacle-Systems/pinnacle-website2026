@@ -8,36 +8,36 @@ import { theme } from "@/theme";
 
 export default function Hero() {
   return (
-    <section className="relative pt-24 lg:pt-20 pb-4 lg:pb-0 overflow-hidden">
+    <section className="relative pt-24 lg:pt-20 pb-12 lg:pb-0 overflow-hidden">
       {/* Background patterns */}
-      <div className="absolute inset-0 z-0 rounded-[40px] overflow-hidden">
+      <div className="absolute inset-0 z-0 rounded-b-[40px] sm:rounded-[40px] overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('/circuit-board.svg')] bg-cover bg-no-repeat bg-center mix-blend-overlay"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-5xl pt-0 -mt-12 lg:-mt-24 ml-10 lg:ml-20"
+            className="max-w-3xl mx-auto lg:max-w-5xl pt-0 lg:-mt-24 lg:ml-10 xl:ml-20 flex flex-col items-center lg:items-start text-center lg:text-left"
           >
             {/* Tagline */}
-            <div className="inline-flex items-center gap-3 mb-6 border border-white/20 rounded-full py-1.5 px-4 bg-white/5 backdrop-blur-sm">
-              <span className="w-5 h-[2px] bg-primary"></span>
-              <span className="text-primary font-bold tracking-wider text-[13px] uppercase">
+            <div className="inline-flex items-center gap-2 sm:gap-3 mb-6 border border-white/20 rounded-full py-1.5 px-3 sm:px-4 bg-white/5 backdrop-blur-sm">
+              <span className="w-4 sm:w-5 h-[2px] bg-primary"></span>
+              <span className="text-primary font-bold tracking-wider text-[11px] sm:text-[13px] uppercase">
                 Pinnacle Systems IT Services
               </span>
             </div>
 
             {/* Headline */}
-            <h1 className={theme.h1}>
+            <h1 className={`${theme.h1} text-center lg:text-left`}>
               Custom ERP Software & Digital Transformation Services
             </h1>
 
             {/* Description */}
-            <p className={theme.p}>
+            <p className={`${theme.p} text-center mt-4`}>
               Pinnacle Systems delivers Custom ERP Software, Web Development,
               Mobile Application Development, Digital Marketing, Software &
               Hardware Integration and AI Automation that help Businesses
@@ -46,30 +46,30 @@ export default function Hero() {
             </p>
 
             {/* Buttons */}
-            <div className="flex items-center gap-4 xl:gap-5 flex-wrap xl:flex-nowrap">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 xl:gap-5 mt-8 w-full sm:w-auto">
               <Link
                 href="/under-construction"
-                className="bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[15px]"
+                className="w-full sm:w-auto text-center bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[14px] sm:text-[15px]"
               >
                 + 91 9994610733
               </Link>
               <Link
                 href="/under-construction"
-                className="bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[15px]"
+                className="w-full sm:w-auto text-center bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[14px] sm:text-[15px]"
               >
                 Explore Our Services
               </Link>
 
-              <button className="flex items-center gap-3 group whitespace-nowrap">
-                <div className="w-14 h-14 rounded-full border border-gray-600 flex items-center justify-center transition-colors relative">
+              <button className="flex items-center justify-center gap-3 group whitespace-nowrap mt-2 sm:mt-0">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-gray-600 flex items-center justify-center transition-colors relative shrink-0">
                   <div className="absolute inset-1 rounded-full bg-primary flex items-center justify-center group-hover:bg-primary-hover transition-colors">
                     <Play
-                      className="w-5 h-5 text-white ml-1 relative z-10"
+                      className="w-4 h-4 sm:w-5 sm:h-5 text-white ml-1 relative z-10"
                       fill="currentColor"
                     />
                   </div>
                 </div>
-                <span className="text-gray-300 font-bold text-[13px] tracking-widest uppercase group-hover:text-white transition-colors underline underline-offset-4 decoration-gray-600 group-hover:decoration-gray-400">
+                <span className="text-gray-300 font-bold text-[12px] sm:text-[13px] tracking-widest uppercase group-hover:text-white transition-colors underline underline-offset-4 decoration-gray-600 group-hover:decoration-gray-400">
                   WATCH VIDEO
                 </span>
               </button>
@@ -80,9 +80,9 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="relative hidden lg:block h-[550px] lg:h-[650px] w-full"
+            className="relative h-[300px] sm:h-[450px] lg:h-[650px] w-full mt-8 lg:mt-0"
           >
-            <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] pointer-events-none">
+            <div className="absolute top-1/2 lg:top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[450px] lg:w-[550px] h-[280px] sm:h-[450px] lg:h-[550px] pointer-events-none">
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
@@ -108,7 +108,7 @@ export default function Hero() {
               src="/hero-thumb.png"
               alt="IT Professional using tablet"
               fill
-              className="object-contain object-bottom relative z-10 drop-shadow-2xl scale-[1.15] origin-bottom translate-y-8 mt-10"
+              className="object-contain object-bottom relative z-10 drop-shadow-2xl scale-100 sm:scale-105 lg:scale-[1.15] origin-bottom translate-y-4 lg:translate-y-8 mt-4 lg:mt-10"
               priority
             />
           </motion.div>

@@ -12,6 +12,7 @@ import {
   BarChart3,
 } from "lucide-react";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 export default function DigitalMarketingHero() {
   return (

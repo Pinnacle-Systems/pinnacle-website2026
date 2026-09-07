@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Hammer } from "lucide-react";
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 export default function UnderConstruction() {
   return (

@@ -6,6 +6,7 @@ import { ArrowRight, Phone, CheckCircle2, Zap, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { theme } from "@/theme";
+import { cn } from "@/lib/utils";
 
 export default function ErpHero() {
   return (

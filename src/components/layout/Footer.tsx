@@ -11,12 +11,12 @@ export default function Footer() {
          <div className="bg-[#0b132a] rounded-[40px] overflow-hidden relative">
 
             {/* Top Orange Banner */}
-            <div className="bg-primary px-8 lg:px-16 py-6 flex flex-col md:flex-row justify-between items-center gap-8">
-               <div className="flex items-center gap-5">
+            <div className="bg-primary px-4 sm:px-8 lg:px-16 py-6 flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8">
+               <div className="flex items-center gap-3 sm:gap-5">
                   <div className="w-[60px] h-[40px] rounded-full border-[1.5px] border-dashed border-white/50 flex items-center justify-center shrink-0">
                      <Headset className="text-white" size={26} strokeWidth={1.5} />
                   </div>
-                  <h2 className={cn(theme.h2, "text-white")}>
+                  <h2 className={cn(theme.h2, "text-white text-[22px] sm:text-3xl")}>
                      Elevating Customer Experience.
                   </h2>
                </div>
@@ -63,7 +63,7 @@ export default function Footer() {
                         {/* Address */}
                         <div className="flex items-start gap-3">
                            <MapPin className="text-primary shrink-0 mt-1" size={18} />
-                           <p className={theme.p}>
+                           <p className={cn(theme.p, "text-[#8c98a4] !indent-0 !mb-0 text-[15px]")}>
                               65/108 - First Floor, MurungaPalayam First Street,Tirupur - 641603
                            </p>
                         </div>
@@ -98,7 +98,7 @@ export default function Footer() {
 
                   {/* Column 2 (Quick Links - moved left) */}
                   <div className="lg:col-span-2">
-                     <h4 className="text-white text-[20px] font-bold mb-8">Quick Links</h4>
+                     <h4 className={cn(theme.h3, "text-white text-[20px] mb-8")}>Quick Links</h4>
                      <ul className="space-y-4">
                         {[
                            { name: 'About Us', href: '/about-us' },
@@ -118,7 +118,7 @@ export default function Footer() {
 
                   {/* Column 3 (Services - moved left) */}
                   <div className="lg:col-span-3">
-                     <h4 className="text-white text-[20px] font-bold mb-8">Services</h4>
+                     <h4 className={cn(theme.h3, "text-white text-[20px] mb-8")}>Services</h4>
                      <ul className="space-y-4">
                         {[
                            { name: 'Custom ERP Software', href: '/custom-erp-software' },
@@ -138,7 +138,7 @@ export default function Footer() {
 
                   {/* Column 4 (Recent Blogs) */}
                   <div className="lg:col-span-3">
-                     <h4 className="text-white text-[20px] font-bold mb-8">Recent Blogs</h4>
+                     <h4 className={cn(theme.h3, "text-white text-[20px] mb-8")}>Recent Blogs</h4>
                      <div className="flex flex-col gap-5">
                         {[
                            {
@@ -181,7 +181,7 @@ export default function Footer() {
 
             {/* Copyright Bar */}
             <div className="border-t border-[#1e253c] mx-8 lg:mx-16 py-8 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
-               <p className={theme.p}>
+               <p className={cn(theme.p, "text-[#8c98a4] !indent-0 !mb-0 text-[14px]")}>
                   © Copyright 2026 By Pinnacle Systems
                </p>
                <div className="flex gap-8 text-[14px]">

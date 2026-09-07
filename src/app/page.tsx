@@ -65,7 +65,7 @@ export default function Home() {
       <ContactSection />
 
       {/* Blog Section */}
-      <BlogSection />
+      {/* <BlogSection /> */}
 
       {/* Footer */}
       <Footer />
