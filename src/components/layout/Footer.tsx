@@ -10,26 +10,7 @@ export default function Footer() {
       <footer className="mt-20 pb-4">
          <div className="bg-[#0b132a] rounded-[40px] overflow-hidden relative">
 
-            {/* Top Orange Banner */}
-            <div className="bg-primary px-4 sm:px-8 lg:px-16 py-6 flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8">
-               <div className="flex items-center gap-3 sm:gap-5">
-                  <div className="w-[60px] h-[40px] rounded-full border-[1.5px] border-dashed border-white/50 flex items-center justify-center shrink-0">
-                     <Headset className="text-white" size={26} strokeWidth={1.5} />
-                  </div>
-                  <h2 className={cn(theme.h2, "text-white text-[22px] sm:text-3xl")}>
-                     Elevating Customer Experience.
-                  </h2>
-               </div>
-
-               <div className="flex items-center gap-5">
-                  <div className="w-[60px] h-[60px] rounded-full border-[1.5px] border-dashed border-white/50 flex items-center justify-center shrink-0 hidden sm:flex">
-                     <Phone className="text-white" size={24} strokeWidth={1.5} />
-                  </div>
-                  <div className="bg-[#0b132a] text-white px-8 py-4 rounded-full font-bold text-[15px] tracking-wide whitespace-nowrap shadow-md">
-                     + 91 9994610733
-                  </div>
-               </div>
-            </div>
+       
 
             {/* Main Footer Content */}
             <div className="px-8 lg:px-16 pt-24 pb-16 relative z-10">

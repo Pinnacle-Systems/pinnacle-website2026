@@ -85,20 +85,20 @@ const features = [
 
 export default function ErpFeatures() {
   return (
-    <section className="py-16 bg-white relative">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white relative">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className={cn(theme.h2, "text-navy-900 mb-6")}
+            className={cn(theme.h2, "text-navy-900 mb-4 sm:mb-6")}
           >
             Core Features That Power Your Custom ERP
           </motion.h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 lg:gap-8 max-w-[1600px] mx-auto">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -106,20 +106,20 @@ export default function ErpFeatures() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: (index % 6) * 0.1 }}
-              className="group rounded-2xl bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col"
+              className="group rounded-[20px] sm:rounded-2xl bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col"
             >
-              <div className="relative h-48 w-full overflow-hidden">
+              <div className="relative h-44 sm:h-48 lg:h-52 w-full overflow-hidden">
                 <Image src={feature.image} alt={feature.title} fill className={`${(feature as any).imageClass || 'object-cover'} group-hover:scale-105 transition-transform duration-500`} />
                 <div className="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-300"></div>
               </div>
-              <div className="p-6 flex-1 flex flex-col relative">
-                <div className="absolute -top-10 right-6 w-12 h-12 rounded-xl bg-white text-blue-600 flex items-center justify-center shadow-lg border border-gray-50">
-                  {React.cloneElement(feature.icon as React.ReactElement, { className: "w-6 h-6" })}
+              <div className="p-5 sm:p-6 lg:p-7 flex-1 flex flex-col relative">
+                <div className="absolute -top-8 sm:-top-10 right-5 sm:right-6 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-white text-blue-600 flex items-center justify-center shadow-lg border border-gray-50">
+                  {React.cloneElement(feature.icon as React.ReactElement, { className: "w-5 h-5 sm:w-6 sm:h-6" })}
                 </div>
-                <h3 className="text-xl font-bold text-navy-900 mb-3 pr-8">
+                <h3 className="text-lg sm:text-xl font-bold text-navy-900 mb-2 sm:mb-3 pr-6 sm:pr-8 leading-snug">
                   {feature.title}
                 </h3>
-                <p className={theme.p}>
+                <p className={cn(theme.p, "text-[14px] text-black leading-relaxed !text-left")}>
                   {feature.desc}
                 </p>
               </div>

@@ -9,7 +9,7 @@ export const theme = {
   // Reserved slots for future tag and element styling
   h2: " text-3xl font-bold text-[#0b132a] tracking-tight leading-tight",
   h3: "text-2xl font-bold text-[#0b132a]",
-  p: "text-gray-300 text-md leading-relaxed mb-8 max-w-2xl font-normal text-justify indent-6 sm:indent-8",
+  p: "text-gray-300 text-md leading-relaxed mb-8 max-w-2xl font-normal text-justify ",
 
   // Buttons & Controls
   buttonPrimary:

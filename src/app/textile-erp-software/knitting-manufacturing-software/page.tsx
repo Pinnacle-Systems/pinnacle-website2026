@@ -10,7 +10,7 @@ import {
   Cloud, Activity, Package, UserX, ScanBarcode, Link as LinkIcon,
   CheckSquare, MessageSquare, Mail, MessageCircle, LayoutDashboard,
   BarChart, Settings, Factory, ShieldCheck, TrendingUp, Scissors,
-  Cpu, Rocket, Zap, MonitorSmartphone, Truck, Layers
+  Cpu, Rocket, Zap, MonitorSmartphone, Truck, Layers, Sparkles
 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -96,183 +96,210 @@ export default function KnittingSoftwarePage() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#0b132a] text-white pt-24 pb-16 overflow-hidden">
-      <Header />
-      {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-screen overflow-hidden -z-10 pointer-events-none">
-        <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]"></div>
-        <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[100px]"></div>
-        <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover bg-center opacity-[0.03]"></div>
+    <main className="min-h-screen bg-white text-[#0b132a] overflow-hidden">
+
+      {/* ── HERO (Navy) ── */}
+      <div className="bg-[#0b132a] relative overflow-hidden pt-24 pb-20">
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]"></div>
+          <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[100px]"></div>
+          <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover bg-center opacity-[0.03]"></div>
+        </div>
+        <Header />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-5xl mx-auto text-center mt-12">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-6"
+            >
+              <Factory className="w-4 h-4" />
+              <span>Knitting ERP Solutions</span>
+            </motion.div>
+            
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className={cn(theme.h1, "text-white")}
+            >
+              Knitting ERP Software Built for the Complete Yarn-to-Fabric Process
+            </motion.h1>
+            
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className={cn(theme.p, "mx-auto text-gray-300 text-center max-w-4xl")}
+            >
+              Streamline your entire knitting operations in one place—from yarn management and production planning to machine tracking, quality control, stock, costing, and dispatch. It helps knitting companies reduce wastage, improve machine utilization, track production in real time, minimize manual work, and make faster, data-driven decisions.
+            </motion.p>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="mt-10 flex justify-center gap-4"
+            >
+              <Link 
+                href="/contact" 
+                className={cn(theme.buttonPrimary, "inline-flex items-center gap-3 text-lg group px-10 py-5")}
+              >
+                Book a Free Demo
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </motion.div>
+          </div>
+        </div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        {/* Hero Section */}
-        <div className="max-w-5xl mx-auto text-center mt-12 mb-24">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-6"
-          >
-            <Factory className="w-4 h-4" />
-            <span>Knitting ERP Solutions</span>
-          </motion.div>
-          
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className={cn(theme.h1, "text-white")}
-          >
-            Knitting ERP Software Built for the Complete Yarn-to-Fabric Process
-          </motion.h1>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className={cn(theme.p, "mx-auto text-gray-300 text-center sm:text-center max-w-4xl")}
-          >
-            Streamline your entire knitting operations in one place—from yarn management and production planning to machine tracking, quality control, stock, costing, and dispatch. It helps knitting companies reduce wastage, improve machine utilization, track production in real time, minimize manual work, and make faster, data-driven decisions.
-          </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="mt-10 flex justify-center gap-4"
-          >
-            <Link 
-              href="/contact" 
-              className={cn(theme.buttonPrimary, "inline-flex items-center gap-3 text-lg group px-10 py-5")}
-            >
-              Book a Free Demo
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </motion.div>
-        </div>
-
-        {/* Core Features */}
-        <div className="max-w-7xl mx-auto mb-24">
-          <div className="text-center mb-12">
+      {/* ── CORE FEATURES (White) ── */}
+      <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-10 sm:mb-14">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 sm:mb-6">
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
+              Core Features
+            </div>
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className={cn(theme.h2, "text-white")}
+              className={cn(theme.h2, "text-navy-900")}
             >
               Core Features of Pinnacle Knitting ERP Software
             </motion.h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {features.map((feature, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: (idx % 4) * 0.1 }}
-                className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 hover:border-primary/50 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-5 border border-primary/30 group-hover:scale-110 transition-transform">
-                  <feature.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-[17px] font-bold text-white mb-3">{feature.title}</h3>
-                <p className="text-gray-400 text-[14px] leading-relaxed">
-                  {feature.desc}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
-        {/* One Platform Intro */}
-        <div className="max-w-5xl mx-auto mb-24">
-          <div className="bg-gradient-to-r from-primary/10 to-blue-500/10 border border-white/10 rounded-3xl p-8 md:p-12 lg:p-16 backdrop-blur-sm relative overflow-hidden">
-            <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className={cn(theme.h2, "text-white mb-8 text-center")}
-            >
-              One Platform, From Yarn Store to Fabric Dispatch
-            </motion.h2>
-
-            <div className="space-y-6">
-              {platformPoints.map((text, idx) => (
-                <motion.div 
-                  key={idx}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                  className="flex gap-4 items-start"
-                >
-                  <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-1 border border-primary/30">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
-                  </div>
-                  <p className={cn(theme.p, "mb-0 text-left indent-0 max-w-none text-gray-300 text-[16px] leading-relaxed")}>
-                    {text}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Complete Knitting ERP Modules & Industry Segments */}
-        <div className="max-w-6xl mx-auto mb-24 grid grid-cols-1 lg:grid-cols-2 gap-10">
-          
-          {/* Modules */}
-          <div className="bg-white rounded-[2rem] p-8 md:p-10 shadow-2xl relative overflow-hidden">
-            <h2 className={cn(theme.h2, "text-[#0b132a] mb-8 text-left sm:text-left")}>Complete Knitting ERP Modules</h2>
-            <div className="flex flex-col gap-3">
-              {modules.map((module, idx) => (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.05 }}
-                  className="flex items-center gap-4 bg-gray-50 border border-gray-100 p-4 rounded-xl hover:border-primary/30 hover:bg-gray-100 transition-colors"
-                >
-                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Layers className="w-4 h-4 text-primary" />
-                  </div>
-                  <span className="font-semibold text-gray-800">{module}</span>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Industry Segments */}
-          <div className="bg-white rounded-[2rem] p-8 md:p-10 shadow-2xl relative overflow-hidden flex flex-col justify-center">
-            <h2 className={cn(theme.h2, "text-[#0b132a] mb-8 text-left sm:text-left")}>Built for Every Segment of the Knitting Industry</h2>
-            <div className="flex flex-col gap-5">
-              {segments.map((segment, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 max-w-[1536px] mx-auto">
+            {features.map((feature, idx) => {
+              const IconComp = feature.icon;
+              return (
                 <motion.div
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                  className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-200"
+                  transition={{ delay: (idx % 4) * 0.1 }}
+                  className="bg-gray-50 border border-gray-100 p-6 sm:p-7 rounded-[20px] sm:rounded-3xl hover:border-blue-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300 group"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shrink-0 shadow-lg shadow-primary/30">
-                    <Factory className="w-5 h-5 text-white" />
+                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50/80 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                      <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
                   </div>
-                  <span className="font-bold text-[#0b132a] text-[15px] md:text-[16px]">{segment}</span>
+                  <p className="text-gray-600 text-[14px] leading-relaxed">
+                    {feature.desc}
+                  </p>
                 </motion.div>
-              ))}
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── ONE PLATFORM (Navy) ── */}
+      <section className="py-16 sm:py-24 bg-[#0b132a] relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-gradient-to-r from-primary/10 to-blue-500/10 border border-white/10 rounded-3xl p-8 md:p-12 lg:p-16 backdrop-blur-sm relative overflow-hidden">
+              <motion.h2 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className={cn(theme.h2, "text-white mb-8 text-center")}
+              >
+                One Platform, From Yarn Store to Fabric Dispatch
+              </motion.h2>
+
+              <div className="space-y-6">
+                {platformPoints.map((text, idx) => (
+                  <motion.div 
+                    key={idx}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.1 }}
+                    className="flex gap-4 items-start"
+                  >
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-1 border border-primary/30">
+                      <CheckCircle2 className="w-4 h-4 text-primary" />
+                    </div>
+                    <p className={cn(theme.p, "mb-0 text-left indent-0 max-w-none text-gray-300 text-[16px] leading-relaxed")}>
+                      {text}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
-
         </div>
+      </section>
 
-        {/* Why Choose Us */}
-        <div className="max-w-6xl mx-auto mb-24">
-          <div className="text-center mb-12">
+      {/* ── MODULES & SEGMENTS (White) ── */}
+      <section className="py-12 sm:py-20 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
+            {/* Modules */}
+            <div className="bg-gray-50 rounded-2xl sm:rounded-[2rem] p-5 sm:p-8 md:p-10 border border-gray-100 shadow-sm relative overflow-hidden">
+              <h2 className="text-xl sm:text-2xl font-bold text-navy-900 mb-5 sm:mb-8 text-left">Complete Knitting ERP Modules</h2>
+              <div className="flex flex-col gap-2 sm:gap-3">
+                {modules.map((module, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.05 }}
+                    className="flex items-center gap-3 bg-white border border-gray-100 p-3 sm:p-4 rounded-xl hover:border-primary/30 hover:shadow-sm transition-all duration-200"
+                  >
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                      <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
+                    </div>
+                    <span className="font-semibold text-gray-800 text-[13px] sm:text-[14px] md:text-[15px] leading-snug">{module}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
+            {/* Industry Segments */}
+            <div className="bg-gray-50 rounded-2xl sm:rounded-[2rem] p-5 sm:p-8 md:p-10 border border-gray-100 shadow-sm relative overflow-hidden flex flex-col justify-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-navy-900 mb-5 sm:mb-8 text-left">Built for Every Segment of the Knitting Industry</h2>
+              <div className="flex flex-col gap-3">
+                {segments.map((segment, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.1 }}
+                    className="flex items-center gap-3 sm:gap-4 p-3.5 sm:p-5 rounded-2xl bg-white border border-gray-200 hover:border-primary/30 hover:shadow-sm transition-all duration-200"
+                  >
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-primary flex items-center justify-center shrink-0 shadow-md shadow-primary/30">
+                      <Factory className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                    </div>
+                    <span className="font-bold text-navy-900 text-[13px] sm:text-[15px] md:text-[16px] leading-snug">{segment}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── WHY CHOOSE US (Navy) ── */}
+      <section className="py-16 sm:py-24 bg-[#0b132a] relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-10 sm:mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 sm:mb-6">
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
+              Why Choose Us
+            </div>
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -283,40 +310,51 @@ export default function KnittingSoftwarePage() {
             </motion.h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {whyChooseUs.map((item, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: (idx % 4) * 0.1 }}
-                className="bg-white/5 border border-white/10 p-6 rounded-3xl hover:bg-white/10 transition-colors group flex flex-col"
-              >
-                <div className="w-12 h-12 rounded-2xl bg-primary/20 flex items-center justify-center mb-5 border border-primary/30 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-[17px] font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-gray-400 text-[14.5px] leading-relaxed m-0 flex-grow">{item.desc}</p>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 max-w-[1536px] mx-auto">
+            {whyChooseUs.map((item, idx) => {
+              const IconComp = item.icon;
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: (idx % 4) * 0.1 }}
+                  className="bg-white/5 border border-white/10 p-6 sm:p-7 rounded-[20px] sm:rounded-3xl hover:bg-white/10 hover:border-primary/50 transition-all duration-300 group flex flex-col"
+                >
+                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary transition-all duration-300">
+                      <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                    </div>
+                    <h3 className="text-base sm:text-[17px] font-bold text-white leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
+                  </div>
+                  <p className="text-gray-400 text-[14px] sm:text-[14.5px] leading-relaxed m-0 flex-grow">{item.desc}</p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
+      </section>
 
-        {/* How We Get You Started (Process Flow) */}
-        <div className="max-w-5xl mx-auto mb-24">
-          <div className="text-center mb-16">
+      {/* ── PROCESS FLOW (White) ── */}
+      <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12 sm:mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 sm:mb-6">
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
+              Implementation Process
+            </div>
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className={cn(theme.h2, "text-white")}
+              className={cn(theme.h2, "text-navy-900")}
             >
               How We Get You Started
             </motion.h2>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-12 gap-x-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-10 gap-x-6 max-w-5xl mx-auto">
             {processes.map((process, index) => (
               <motion.div
                 key={index}
@@ -326,31 +364,38 @@ export default function KnittingSoftwarePage() {
                 transition={{ delay: index * 0.05 }}
                 className="flex flex-col items-center text-center relative group"
               >
-                <div className="w-14 h-14 bg-white/10 border border-white/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:border-primary transition-all duration-300 shadow-lg relative z-10 text-xl font-bold text-white">
+                <div className="w-14 h-14 bg-gray-100 border border-gray-200 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:border-primary transition-all duration-300 shadow-sm relative z-10 text-xl font-bold text-navy-900 group-hover:text-white">
                   {index + 1}
                 </div>
-                <h3 className="text-[14px] md:text-[15px] font-medium text-gray-300 group-hover:text-white transition-colors leading-tight">
+                <h3 className="text-[13px] sm:text-[14px] md:text-[15px] font-medium text-gray-600 group-hover:text-primary transition-colors leading-tight">
                   {process}
                 </h3>
               </motion.div>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* FAQ Section */}
-        <div className="max-w-4xl mx-auto mb-24">
-          <div className="text-center mb-12">
+      {/* ── FAQ (Navy) ── */}
+      <section className="py-16 sm:py-24 bg-[#0b132a] relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-10 sm:mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 sm:mb-6">
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
+              FAQ
+            </div>
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className={cn(theme.h2, "text-white")}
             >
-              FAQ
+              Frequently Asked Questions
             </motion.h2>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-4 max-w-4xl mx-auto">
             {faqs.map((faq, idx) => (
               <motion.div
                 key={idx}
@@ -364,7 +409,7 @@ export default function KnittingSoftwarePage() {
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors focus:outline-none"
                 >
-                  <span className="text-[16px] md:text-[18px] font-semibold text-white pr-4">{faq.q}</span>
+                  <span className="text-[15px] md:text-[17px] font-semibold text-white pr-4">{faq.q}</span>
                   <ChevronDown className={cn("w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0", openFaq === idx ? "transform rotate-180" : "")} />
                 </button>
                 <AnimatePresence>
@@ -385,27 +430,35 @@ export default function KnittingSoftwarePage() {
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto text-center bg-primary rounded-[3rem] p-12 md:p-16 shadow-[0_10px_40px_rgba(255,90,0,0.3)] relative overflow-hidden mb-12"
-        >
-          <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover opacity-20"></div>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-8 relative z-10">Bring Every Stage of Your Knitting Operations Onto One Platform.</h2>
-          <Link 
-            href="/contact" 
-            className="inline-flex items-center gap-3 bg-white text-[#0b132a] hover:bg-gray-100 px-10 py-5 rounded-full font-bold text-lg transition-all shadow-xl group relative z-10"
+      {/* ── BOTTOM CTA (Orange) ── */}
+      <section className="py-10 sm:py-14 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto text-center bg-primary rounded-3xl p-8 sm:p-10 shadow-[0_8px_30px_rgba(255,90,0,0.25)] relative overflow-hidden"
           >
-            Book a Free Demo Today
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </motion.div>
+            <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover opacity-20"></div>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white mb-5 relative z-10">Bring Every Stage of Your Knitting Operations Onto One Platform.</h2>
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center gap-2 bg-white text-[#0b132a] hover:bg-gray-100 px-7 py-3.5 rounded-full font-bold text-sm sm:text-base transition-all shadow-lg group relative z-10"
+            >
+              Book a Free Demo Today
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
 
+      <div className="bg-[#11192F]">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </main>
   );
 }

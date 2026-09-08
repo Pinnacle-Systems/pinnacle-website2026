@@ -38,9 +38,9 @@ export default function ErpBenefits() {
   };
 
   return (
-    <section className="pt-6 pb-16 bg-gray-50">
+    <section className="pt-8 sm:pt-12 pb-12 sm:pb-16 lg:pb-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export default function ErpBenefits() {
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto mb-12 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full max-w-[1536px] mx-auto mb-10 sm:mb-14 lg:mb-16 items-stretch">
           {benefits.map((item, index) => {
             const isExpanded = !!expandedCards[index];
             return (
@@ -61,16 +61,18 @@ export default function ErpBenefits() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white p-6 sm:p-7 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-all flex flex-col justify-between h-full"
+                className="bg-white p-5 sm:p-6 lg:p-8 rounded-[24px] sm:rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-all flex flex-col justify-between h-full"
               >
                 <div>
-                  <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center mb-5">
-                    {item.icon}
+                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-blue-50/50 flex items-center justify-center shrink-0 [&>svg]:w-5 [&>svg]:h-5 sm:[&>svg]:w-6 sm:[&>svg]:h-6">
+                      {item.icon}
+                    </div>
+                    <h3 className="text-[17px] sm:text-[18px] font-bold text-navy-900 leading-snug">
+                      {item.title}
+                    </h3>
                   </div>
-                  <h3 className="text-xl font-bold text-navy-900 mb-3 leading-snug min-h-[56px] flex items-center">
-                    {item.title}
-                  </h3>
-                  <p className={theme.p}>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !text-left", !isExpanded && "line-clamp-3")}>
                     {item.desc}
                   </p>
                 </div>
@@ -96,7 +98,7 @@ export default function ErpBenefits() {
         <div className="text-center">
           <Link
             href="tel:+1234567890"
-            className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full font-medium transition-all duration-300"
+            className="inline-flex w-full sm:w-auto items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-medium transition-all duration-300"
           >
             Call us for a free demo
           </Link>

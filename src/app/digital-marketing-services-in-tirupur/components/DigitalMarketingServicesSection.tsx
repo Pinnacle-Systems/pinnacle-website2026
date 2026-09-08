@@ -66,21 +66,31 @@ const services = [
     href: "/contact",
   },
 ];
-
 export default function DigitalMarketingServicesSection() {
   return (
-    <section className="py-10 sm:py-14 bg-white relative">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
-          <h2 className={cn(theme.h2, "mb-6")}>
+    <section className="py-16 sm:py-24 bg-white relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10 sm:mb-16">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className={cn(theme.h2, "text-navy-900 mb-4 max-w-4xl mx-auto")}
+          >
             Digital Marketing Services That Move Your Business Forward
-          </h2>
-          <p className={theme.p}>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className={cn(theme.p, "text-black text-center max-w-3xl mx-auto")}
+          >
             At Pinnacle Systems, we select and coordinate the services that make sense for your business, audience, and objectives.
-          </p>
+          </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-[1536px] mx-auto">
           {services.map((service, idx) => {
             const IconComp = service.icon;
             return (
@@ -90,11 +100,11 @@ export default function DigitalMarketingServicesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-300 flex flex-col justify-between group overflow-hidden"
+                className="bg-gray-50 border border-gray-100 p-5 sm:p-7 rounded-[20px] sm:rounded-3xl hover:border-primary/20 hover:shadow-md transition-all duration-300 flex flex-col justify-between group overflow-hidden"
               >
                 <div>
                   {/* Service Image Banner */}
-                  <div className="relative w-full h-48 rounded-2xl overflow-hidden mb-6 bg-gray-100 border border-gray-100">
+                  <div className="relative w-full h-40 sm:h-48 rounded-[14px] sm:rounded-2xl overflow-hidden mb-5 sm:mb-6 bg-gray-200 border border-gray-200">
                     <Image
                       src={service.image}
                       alt={service.title}
@@ -103,27 +113,27 @@ export default function DigitalMarketingServicesSection() {
                     />
                   </div>
 
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-orange-50 text-primary border border-orange-100 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300 shrink-0">
-                      <IconComp className="w-5 h-5" />
+                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold text-[#0b132a] group-hover:text-primary transition-colors">
+                    <h3 className="text-base sm:text-lg font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">
                       {service.title}
                     </h3>
                   </div>
 
-                  <p className={theme.p}>
+                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-black !text-left")}>
                     {service.desc}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-gray-100">
+                <div className="pt-4 sm:pt-5 mt-4 sm:mt-5 border-t border-gray-200">
                   <Link
                     href={service.href}
-                    className="inline-flex items-center gap-2 font-bold text-sm text-primary hover:text-orange-600 transition-colors"
+                    className="inline-flex items-center gap-2 font-bold text-[14px] sm:text-[15px] text-primary hover:text-orange-600 transition-colors group/link"
                   >
                     <span>Explore {service.title}</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </motion.div>

@@ -22,8 +22,8 @@ const navLinks = [
     ]
   },
   { name: "Contact Us", href: "/contact", hasDropdown: false },
-  { name: "Blog", href: "/under-construction", hasDropdown: false },
-  { name: "FAQ", href: "/under-construction", hasDropdown: false },
+  { name: "Blog", href: "/blog", hasDropdown: false },
+  { name: "FAQ", href: "/faq", hasDropdown: false },
 ];
 
 export default function Header() {

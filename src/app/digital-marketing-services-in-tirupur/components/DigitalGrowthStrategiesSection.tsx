@@ -56,19 +56,19 @@ const businessTypes = [
 
 export default function DigitalGrowthStrategiesSection() {
   return (
-    <section className="py-10 sm:py-14 bg-gradient-to-b from-slate-50 via-white to-slate-50 relative overflow-hidden">
-      {/* Ambient Logo Orange Background Glow Orbs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#ffefe8]/70 rounded-full blur-3xl pointer-events-none -z-0" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-orange-100/50 rounded-full blur-3xl pointer-events-none -z-0" />
+    <section className="py-16 sm:py-24 bg-gray-50 relative overflow-hidden">
+      {/* Ambient Glow Orbs */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none -z-0" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none -z-0" />
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+        <div className="text-center mb-10 sm:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ffefe8] border border-[#ffdbcd] text-primary text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 sm:mb-6"
           >
             <Sparkles className="w-3.5 h-3.5 text-primary" />
             Tailored Industry Solutions
@@ -79,10 +79,10 @@ export default function DigitalGrowthStrategiesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className={cn(theme.h2, "mb-6")}
+            className={cn(theme.h2, "text-navy-900 mb-4 sm:mb-6 max-w-4xl mx-auto")}
           >
             Digital Growth Strategies Built for{" "}
-            <span className="bg-gradient-to-r from-primary via-[#ff7b00] to-orange-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent">
               Tiruppur Businesses
             </span>
           </motion.h2>
@@ -92,14 +92,14 @@ export default function DigitalGrowthStrategiesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className={theme.p}
+            className={cn(theme.p, "text-black text-center max-w-3xl mx-auto")}
           >
             Tiruppur has a strong and diverse business community, from textile and garment companies to manufacturers, exporters, B2B businesses, e-commerce brands, and local service providers.
           </motion.p>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-[1536px] mx-auto">
           {businessTypes.map((item, idx) => {
             const IconComp = item.icon;
             return (
@@ -109,37 +109,33 @@ export default function DigitalGrowthStrategiesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.08, duration: 0.5 }}
-                className="relative bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-2xl hover:border-[#ffdbcd] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group overflow-hidden"
+                className="bg-white border border-gray-100 p-6 sm:p-7 rounded-[20px] sm:rounded-3xl hover:border-blue-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
               >
-                {/* Top Accent Orange Gradient Border on Hover */}
-                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-[#ff7b00] to-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
                 <div>
-                  {/* Top Bar: Icon + Tag Badge */}
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="w-14 h-14 rounded-2xl bg-[#ffefe8] text-primary border border-[#ffdbcd] flex items-center justify-center group-hover:bg-primary group-hover:text-white group-hover:border-primary group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-300">
-                      <IconComp className="w-7 h-7 transition-transform duration-300 group-hover:scale-110" />
-                    </div>
-                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-600 border border-slate-200/60 group-hover:bg-[#ffefe8] group-hover:text-primary group-hover:border-[#ffdbcd] transition-colors">
+                  <div className="flex items-center justify-between mb-4 sm:mb-5">
+                    <span className="text-[11px] sm:text-xs font-semibold px-3 py-1 rounded-full bg-gray-50 text-gray-500 border border-gray-100 group-hover:bg-primary/10 group-hover:text-primary group-hover:border-primary/20 transition-colors uppercase tracking-wider">
                       {item.tag}
                     </span>
                   </div>
 
-                  {/* Card Title */}
-                  <h3 className="text-xl font-bold text-[#0b132a] mb-3 group-hover:text-primary transition-colors duration-200">
-                    {item.title}
-                  </h3>
+                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50/50 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                    </div>
+                    <h3 className="text-base sm:text-lg font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors duration-200">
+                      {item.title}
+                    </h3>
+                  </div>
 
-                  {/* Card Description */}
-                  <p className={theme.p}>
+                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-black !text-left")}>
                     {item.desc}
                   </p>
                 </div>
 
                 {/* Card Footer Arrow Interaction */}
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500 group-hover:text-primary transition-colors">
+                <div className="pt-4 mt-4 border-t border-gray-100 flex items-center justify-between text-[13px] sm:text-sm font-semibold text-gray-500 group-hover:text-primary transition-colors">
                   <span>Explore Strategy</span>
-                  <div className="w-7 h-7 rounded-full bg-slate-100 group-hover:bg-primary text-slate-500 group-hover:text-white flex items-center justify-center transition-all duration-300 group-hover:translate-x-1">
+                  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-gray-50 group-hover:bg-primary/10 text-gray-400 group-hover:text-primary flex items-center justify-center transition-all duration-300 group-hover:translate-x-1">
                     <ArrowRight className="w-3.5 h-3.5" />
                   </div>
                 </div>
@@ -151,5 +147,3 @@ export default function DigitalGrowthStrategiesSection() {
     </section>
   );
 }
-
-

@@ -122,15 +122,15 @@ export default function FeatureCards() {
                 <div className="relative z-10 w-full flex flex-col items-center">
 
                   {/* Soft light orange icon circle container */}
-                  <div className="w-[56px] h-[56px] sm:w-[60px] sm:h-[60px] flex items-center justify-center mx-auto mb-3 rounded-full border border-[#ffdbcd] bg-[#ffefe8] group-hover:bg-[#0b132a] group-hover:border-white/20 group-hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] group-hover:scale-110 transition-all duration-300 shrink-0">
-                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-white transition-colors duration-300 stroke-[1.75]" />
+                  <div className="w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] flex items-center justify-center mx-auto mb-3 rounded-full border border-[#ffdbcd] bg-[#ffefe8] group-hover:bg-[#0b132a] group-hover:border-white/20 group-hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] group-hover:scale-110 transition-all duration-300 shrink-0">
+                    <Icon className="w-5 h-5 sm:w-7 sm:h-7 text-primary group-hover:text-white transition-colors duration-300 stroke-[1.75]" />
                   </div>
 
                   <h3 className="text-[15px] sm:text-[16px] py-1 font-semibold text-[#0b132a] group-hover:text-white transition-colors duration-300 mb-1 sm:mb-2">
                     {feature.title}
                   </h3>
 
-                  <p className={cn(theme.p, "text-black group-hover:text-white transition-colors duration-300 text-[14px] leading-snug  tracking-normal")}>
+                  <p className={cn(theme.p, "text-black group-hover:text-white transition-colors duration-300 text-[14px] leading-relaxed tracking-normal")}>
                     {feature.description}
                   </p>
 

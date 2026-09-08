@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   ArrowRight, CheckCircle2, Zap, Search, MousePointerClick, 
   ShieldCheck, PenTool, Code, CheckSquare, Rocket, ChevronDown,
@@ -14,7 +15,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export default function WebsiteDevelopmentPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const performanceFeatures = [
     { title: "Load fast", desc: "Optimized for Core Web Vitals and mobile-first performance", icon: Zap },
@@ -61,74 +62,110 @@ export default function WebsiteDevelopmentPage() {
   ];
 
   const faqs = [
-    { q: "1. What is the time frame to create and design the website?", a: "A typical website takes 3 to 6 weeks from start to launch, depending on the level of complexity. A landing page may be completed in as short as a couple of weeks, whereas E-commerce or custom CMS builds that have advanced features can take between 6 and 8 weeks." },
-    { q: "2. How much does a professional website cost?", a: "Pricing depends on the type of website, features, and platform (e.g., WordPress, Shopify, or custom-built). We provide a fixed quote after understanding your goals — there are no hidden fees or surprise charges." },
-    { q: "3. Will my website be optimized for Google (SEO)?", a: "Yes. Each website we create is built on clear, SEO-friendly code with speedy loading pages, mobile-first designs, and an appropriate technical structure. This gives you the best foundation to be ranked higher on Google right from the start." },
-    { q: "4. Are you capable of revamping my website without impacting my SEO rankings?", a: "Yes. The process we use to redesign your website includes secure URL redirection and SEO audits for technical SEO to ensure that your rankings, backlinks, and traffic are secure in and after the alteration." },
-    { q: "5. Does my site work for mobile phones?", a: "Absolutely. Every website we build is mobile-friendly by default, and optimized for Core Web Vitals, ensuring speedy loading and seamless navigation across smartphones, tablets, as well as desktops." },
-    { q: "6. Do I have the ability to update the site myself, after it's been constructed?", a: "Yes. We are built on easy-to-use CMS platforms such as WordPress or an individual CMS, and your team can make changes to text, images, pages, and text without coding expertise." },
-    { q: "7. Do you create e-commerce sites?", a: "Yes. We create high-speed, secure e-commerce sites using Shopify or custom platforms that have optimized page layouts for products as well as simplified checkout flows that are created to improve conversion rates." },
-    { q: "8. What makes your websites different from a template-based website?", a: "Our websites are designed around performance and conversions — not just visuals. We focus on speed, SEO structure, and user behavior so your website actively generates leads and sales, rather than just looking good." },
-    { q: "9. Do you offer website support and maintenance after launch?", a: "Yes. We offer ongoing support packages for updates, security monitoring, backups, and performance optimization to keep your website running smoothly after it goes live." },
-    { q: "10. How do I get started with a new website or redesign?", a: "Simply request a Free Website Audit. We'll review your current site (or goals for a new one) and provide a clear breakdown of what's needed to make your website faster, higher-ranking, and more conversion-focused." }
+    { q: "What is the time frame to create and design the website?", a: "A typical website takes 3 to 6 weeks from start to launch, depending on the level of complexity. A landing page may be completed in as short as a couple of weeks, whereas E-commerce or custom CMS builds that have advanced features can take between 6 and 8 weeks." },
+    { q: "How much does a professional website cost?", a: "Pricing depends on the type of website, features, and platform (e.g., WordPress, Shopify, or custom-built). We provide a fixed quote after understanding your goals — there are no hidden fees or surprise charges." },
+    { q: "Will my website be optimized for Google (SEO)?", a: "Yes. Each website we create is built on clear, SEO-friendly code with speedy loading pages, mobile-first designs, and an appropriate technical structure. This gives you the best foundation to be ranked higher on Google right from the start." },
+    { q: "Are you capable of revamping my website without impacting my SEO rankings?", a: "Yes. The process we use to redesign your website includes secure URL redirection and SEO audits for technical SEO to ensure that your rankings, backlinks, and traffic are secure in and after the alteration." },
+    { q: "Does my site work for mobile phones?", a: "Absolutely. Every website we build is mobile-friendly by default, and optimized for Core Web Vitals, ensuring speedy loading and seamless navigation across smartphones, tablets, as well as desktops." },
+    { q: "Do I have the ability to update the site myself, after it's been constructed?", a: "Yes. We are built on easy-to-use CMS platforms such as WordPress or an individual CMS, and your team can make changes to text, images, pages, and text without coding expertise." },
+    { q: "Do you create e-commerce sites?", a: "Yes. We create high-speed, secure e-commerce sites using Shopify or custom platforms that have optimized page layouts for products as well as simplified checkout flows that are created to improve conversion rates." },
+    { q: "What makes your websites different from a template-based website?", a: "Our websites are designed around performance and conversions — not just visuals. We focus on speed, SEO structure, and user behavior so your website actively generates leads and sales, rather than just looking good." },
+    { q: "Do you offer website support and maintenance after launch?", a: "Yes. We offer ongoing support packages for updates, security monitoring, backups, and performance optimization to keep your website running smoothly after it goes live." },
+    { q: "How do I get started with a new website or redesign?", a: "Simply request a Free Website Audit. We'll review your current site (or goals for a new one) and provide a clear breakdown of what's needed to make your website faster, higher-ranking, and more conversion-focused." }
   ];
 
   return (
-    <main className="min-h-screen bg-[#0b132a] text-white pt-24 pb-16 overflow-hidden">
+    <main className="min-h-screen bg-white">
       <Header />
-      {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-screen overflow-hidden -z-10 pointer-events-none">
-        <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]"></div>
-        <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[100px]"></div>
-        <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover bg-center opacity-[0.03]"></div>
-      </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        {/* Hero Section */}
-        <div className="max-w-4xl mx-auto text-center mt-12 mb-24">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-6"
-          >
-            <Rocket className="w-4 h-4" />
-            <span>High-Converting Design</span>
-          </motion.div>
-          
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className={cn(theme.h1, "text-white")}
-          >
-            Website Development Company for Fast, High-Converting Websites
-          </motion.h1>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className={cn(theme.p, "mx-auto text-gray-300 text-center sm:text-center")}
-          >
-            We design and develop websites that load in seconds, rank on Google, and turn visitors into paying customers not just another page on the internet.
-          </motion.p>
+      {/* Hero Section */}
+      <section className="relative pt-32 sm:pt-40 pb-16 sm:pb-24 bg-[#0b132a] text-white overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]"></div>
+          <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[100px]"></div>
         </div>
 
-        {/* Built to Perform */}
-        <div className="max-w-5xl mx-auto mb-20">
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 lg:p-16 backdrop-blur-sm shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[80px] -z-10 transform translate-x-1/2 -translate-y-1/2"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px] -z-10 transform -translate-x-1/2 translate-y-1/2"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center max-w-7xl mx-auto mt-6 sm:mt-12">
             
-            <div className="text-center mb-12 max-w-3xl mx-auto">
+            {/* Text Content */}
+            <div className="text-left order-2 lg:order-1">
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-6 sm:mb-8"
+              >
+                <Rocket className="w-4 h-4" />
+                <span>High-Converting Design</span>
+              </motion.div>
+              
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+                className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left md:text-left")}
+              >
+                Website Development Company for Fast, High-Converting Websites
+              </motion.h1>
+              
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className={cn(theme.p, "text-gray-300 text-left")}
+              >
+                We design and develop websites that load in seconds, rank on Google, and turn visitors into paying customers not just another page on the internet.
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="mt-8 sm:mt-10"
+              >
+                <Link 
+                  href="/contact" 
+                  className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 text-base sm:text-lg group px-8 sm:px-10 py-4 sm:py-5")}
+                >
+                  Get a Free Website Audit
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </motion.div>
+            </div>
+
+            {/* Image Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4 }}
+              className="relative w-full aspect-[4/3] sm:aspect-video lg:aspect-[4/3] max-w-xl mx-auto lg:ml-auto order-1 lg:order-2"
+            >
+              <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl transform rotate-3"></div>
+              <Image 
+                src="/images/page-1/WebsiteDevelopment.webp"
+                alt="Website Development"
+                fill
+                className="object-cover rounded-3xl shadow-2xl relative z-10 border border-white/10"
+                priority
+              />
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Built to Perform */}
+      <section className="py-16 sm:py-24 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto bg-white rounded-[20px] sm:rounded-3xl p-6 sm:p-10 lg:p-16 shadow-lg shadow-gray-200/50 border border-gray-100">
+            <div className="text-center mb-10 sm:mb-12 max-w-3xl mx-auto">
               <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className={cn(theme.h2, "text-white mb-6")}
+                className={cn(theme.h2, "text-navy-900 mb-4 sm:mb-6")}
               >
-                Website Development That's Built to Perform
+                Website Development That&apos;s Built to Perform
               </motion.h2>
 
               <motion.p
@@ -136,13 +173,13 @@ export default function WebsiteDevelopmentPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ delay: 0.1 }}
-                className={cn(theme.p, "text-gray-300 mx-auto text-center sm:text-center")}
+                className={cn(theme.p, "text-black mx-auto text-center")}
               >
-                A great-looking website means nothing if it's slow, hard to navigate, or invisible on Google. As a website development company focused on performance and conversions, we build websites that:
+                A great-looking website means nothing if it&apos;s slow, hard to navigate, or invisible on Google. As a website development company focused on performance and conversions, we build websites that:
               </motion.p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-10 sm:mb-12">
               {performanceFeatures.map((feature, idx) => (
                 <motion.div 
                   key={idx}
@@ -150,14 +187,14 @@ export default function WebsiteDevelopmentPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ delay: idx * 0.1 }}
-                  className="bg-white/5 border border-white/5 p-6 rounded-2xl flex items-start gap-5 hover:bg-white/10 transition-colors group"
+                  className="bg-gray-50 border border-gray-100 p-5 sm:p-6 rounded-[16px] sm:rounded-2xl flex items-start gap-4 hover:border-primary/20 hover:shadow-sm transition-all group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center shrink-0 border border-primary/30 group-hover:scale-110 transition-transform">
-                    <feature.icon className="w-6 h-6 text-primary" />
+                  <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <feature.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
-                    <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-gray-400")}>
+                    <h3 className="text-base sm:text-lg font-bold text-navy-900 mb-1">{feature.title}</h3>
+                    <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-black text-[14px] sm:text-[15px] leading-relaxed !text-left")}>
                       {feature.desc}
                     </p>
                   </div>
@@ -169,14 +206,14 @@ export default function WebsiteDevelopmentPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-center border-t border-white/10 pt-10"
+              className="text-center border-t border-gray-100 pt-8 sm:pt-10"
             >
-              <p className={cn(theme.p, "text-white/90 font-medium mx-auto text-center sm:text-center mb-8")}>
+              <p className={cn(theme.p, "text-black font-medium mx-auto text-center mb-6 sm:mb-8")}>
                 Whether you need a brand-new website or a redesign of an underperforming one, we build with one goal: turning your website into your best-performing sales channel.
               </p>
               <Link 
                 href="/contact" 
-                className={cn(theme.buttonPrimary, "inline-flex items-center gap-3 group px-8 py-4")}
+                className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 group px-7 sm:px-8 py-3.5 sm:py-4")}
               >
                 Get a Free Website Audit
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -184,23 +221,24 @@ export default function WebsiteDevelopmentPage() {
             </motion.div>
           </div>
         </div>
+      </section>
 
-        {/* Website Development Services */}
-        <div className="max-w-6xl mx-auto mb-20 bg-white rounded-[3rem] p-8 md:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gray-50 rounded-full blur-[100px] -z-10 pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
-          
-          <div className="text-center mb-16 max-w-3xl mx-auto">
+      {/* Website Development Services */}
+      <section className="py-16 sm:py-24 bg-navy-900 text-white relative overflow-hidden">
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-[100px]" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-10 sm:mb-16 max-w-3xl mx-auto">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              className={cn(theme.h2, "text-[#0b132a] mb-6")}
+              className={cn(theme.h2, "text-white")}
             >
               Website Development Services
             </motion.h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 lg:gap-8 max-w-[1536px] mx-auto">
             {devServices.map((service, idx) => (
               <motion.div
                 key={idx}
@@ -208,18 +246,20 @@ export default function WebsiteDevelopmentPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-gray-50 border border-gray-200 p-8 rounded-3xl hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:border-primary/20 transition-all duration-300 group flex flex-col h-full"
+                className="bg-white/5 border border-white/10 p-6 sm:p-8 rounded-[20px] sm:rounded-3xl hover:bg-white/10 hover:-translate-y-1 hover:border-primary/40 transition-all duration-300 group flex flex-col"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <CheckCircle2 className="w-6 h-6 text-primary" />
+                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/20 border border-primary/30 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-white leading-snug group-hover:text-primary transition-colors">{service.title}</h3>
                 </div>
-                <h3 className="text-xl font-bold text-[#0b132a] mb-4 group-hover:text-primary transition-colors">{service.title}</h3>
-                <p className={cn(theme.p, "text-gray-600 mb-6 flex-grow")}>
+                <p className={cn(theme.p, "text-gray-300 mb-5 sm:mb-6 flex-grow text-[14px] sm:text-[15px] leading-relaxed !text-left indent-0 max-w-none")}>
                   {service.desc}
                 </p>
                 <Link 
                   href="/contact" 
-                  className="inline-flex items-center gap-2 text-primary font-semibold hover:text-orange-700 transition-colors mt-auto group/link"
+                  className="inline-flex items-center gap-2 text-primary font-semibold hover:text-orange-400 transition-colors mt-auto text-sm sm:text-base group/link"
                 >
                   {service.link}
                   <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
@@ -228,21 +268,23 @@ export default function WebsiteDevelopmentPage() {
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Technology We Work With */}
-        <div className="max-w-5xl mx-auto mb-24">
-          <div className="text-center mb-12">
+      {/* Technology We Work With */}
+      <section className="py-16 sm:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-16">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className={cn(theme.h2, "text-white")}
+              className={cn(theme.h2, "text-navy-900")}
             >
               Technology We Work With
             </motion.h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
             {technologies.map((tech, idx) => (
               <motion.div
                 key={idx}
@@ -250,29 +292,31 @@ export default function WebsiteDevelopmentPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white/5 border border-white/10 p-6 rounded-2xl flex flex-col justify-center items-center text-center hover:bg-white/10 hover:border-primary/50 transition-all duration-300"
+                className="bg-gray-50 border border-gray-100 p-5 sm:p-6 rounded-[16px] sm:rounded-2xl flex flex-col justify-center items-center text-center hover:border-primary/20 hover:shadow-sm transition-all duration-300"
               >
-                <h3 className="text-lg font-bold text-white mb-2">{tech.category}</h3>
-                <p className="text-primary font-medium m-0">{tech.items}</p>
+                <h3 className="text-base sm:text-lg font-bold text-navy-900 mb-1.5 sm:mb-2">{tech.category}</h3>
+                <p className="text-primary font-medium text-sm sm:text-base m-0">{tech.items}</p>
               </motion.div>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Our Process Section */}
-        <div className="max-w-6xl mx-auto mb-24">
-          <div className="text-center mb-12">
+      {/* Our Process Section */}
+      <section className="py-16 sm:py-24 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-16">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className={cn(theme.h2, "text-white")}
+              className={cn(theme.h2, "text-navy-900")}
             >
               Our Process
             </motion.h2>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 max-w-6xl mx-auto">
             {processes.map((process, index) => (
               <motion.div
                 key={index}
@@ -282,21 +326,24 @@ export default function WebsiteDevelopmentPage() {
                 transition={{ delay: index * 0.1 }}
                 className="flex flex-col items-center text-center group"
               >
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:border-primary transition-all duration-300 shadow-lg relative z-10">
-                  <process.icon className="w-8 h-8 text-primary group-hover:text-white transition-colors" />
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-gray-100 rounded-2xl flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-primary group-hover:border-primary transition-all duration-300 shadow-sm relative z-10">
+                  <process.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary group-hover:text-white transition-colors" />
                   {index < processes.length - 1 && (
-                    <div className="hidden md:block absolute -right-6 top-1/2 w-4 h-0.5 bg-primary/50 transform -translate-y-1/2 -z-10" />
+                    <div className="hidden lg:block absolute -right-4 sm:-right-8 top-1/2 w-4 sm:w-6 h-[2px] bg-primary/30 transform -translate-y-1/2 z-0" />
                   )}
                 </div>
-                <h3 className="text-[15px] md:text-[16px] font-bold text-gray-300 group-hover:text-white transition-colors">{process.title}</h3>
+                <h3 className="text-[13px] sm:text-[15px] font-bold text-navy-900 group-hover:text-primary transition-colors leading-snug">{process.title}</h3>
               </motion.div>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Why Choose Us */}
-        <div className="max-w-6xl mx-auto mb-24">
-          <div className="text-center mb-12">
+      {/* Why Choose Us */}
+      <section className="py-16 sm:py-24 bg-navy-900 text-white relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-10 sm:mb-16">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -307,7 +354,7 @@ export default function WebsiteDevelopmentPage() {
             </motion.h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-[1536px] mx-auto">
             {whyChooseUs.map((item, idx) => (
               <motion.div
                 key={idx}
@@ -315,86 +362,99 @@ export default function WebsiteDevelopmentPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 hover:-translate-y-2 transition-all duration-300 group"
+                className="bg-white/5 border border-white/10 p-6 sm:p-7 rounded-[20px] sm:rounded-3xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 group"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-6 border border-primary/30 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-7 h-7 text-primary" />
+                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/20 border border-primary/30 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-white leading-snug">{item.title}</h3>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
-                <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-gray-400")}>{item.desc}</p>
+                <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-gray-300 !text-left")}>{item.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* FAQ Section */}
-        <div className="max-w-4xl mx-auto mb-24">
-          <div className="text-center mb-12">
+      {/* FAQ Section */}
+      <section className="py-16 sm:py-24 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-16">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className={cn(theme.h2, "text-white")}
+              className={cn(theme.h2, "text-navy-900")}
             >
-              FAQ
+              Frequently Asked Questions
             </motion.h2>
           </div>
           
-          <div className="space-y-4">
-            {faqs.map((faq, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.05 }}
-                className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden"
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                  className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors focus:outline-none"
+          <div className="max-w-4xl mx-auto space-y-3 sm:space-y-4">
+            {faqs.map((faq, idx) => {
+              const isOpen = openFaq === idx;
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.04 }}
                 >
-                  <span className="text-[16px] md:text-[18px] font-semibold text-white pr-4">{faq.q}</span>
-                  <ChevronDown className={cn("w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0", openFaq === idx ? "transform rotate-180" : "")} />
-                </button>
-                <AnimatePresence>
-                  {openFaq === idx && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <div className="px-6 pb-6 pt-2">
-                        <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-gray-400")}>{faq.a}</p>
+                  <div
+                    className={`bg-white rounded-[10px] transition-all duration-300 overflow-hidden cursor-pointer ${isOpen ? 'shadow-md shadow-gray-200/50' : 'shadow-sm border border-gray-100 hover:border-gray-200'}`}
+                    onClick={() => setOpenFaq(isOpen ? null : idx)}
+                  >
+                    <div className="flex items-center justify-between p-4 sm:p-5">
+                      <h4 className="text-[#0b132a] font-bold text-[14px] sm:text-[15px] md:text-[16px] leading-snug pr-4">{faq.q}</h4>
+                      <div className="relative w-3.5 h-3.5 flex items-center justify-center shrink-0 ml-1 sm:ml-3">
+                        <div className="absolute w-full h-[2px] sm:h-[2.5px] bg-primary rounded-full transition-transform duration-300"></div>
+                        <div className={`absolute h-full w-[2px] sm:w-[2.5px] bg-primary rounded-full transition-all duration-300 ease-in-out ${isOpen ? 'rotate-90 opacity-0 scale-50' : 'rotate-0 opacity-100 scale-100'}`}></div>
                       </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            ))}
+                    </div>
+
+                    <div
+                      className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
+                    >
+                      <div className="overflow-hidden">
+                        <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-0">
+                          <div className="w-full h-[1px] bg-gray-100 mb-3 sm:mb-4"></div>
+                          <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !text-left")}>
+                            {faq.a}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
+      </section>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto text-center bg-primary rounded-[3rem] p-12 md:p-16 shadow-[0_10px_40px_rgba(255,90,0,0.3)] relative overflow-hidden mb-12"
-        >
-          <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover opacity-20"></div>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-8 relative z-10">Work with Pinnacle Systems Today!</h2>
-          <Link 
-            href="/contact" 
-            className="inline-flex items-center gap-3 bg-white text-[#0b132a] hover:bg-gray-100 px-10 py-5 rounded-full font-bold text-lg transition-all shadow-xl group relative z-10"
+      {/* Bottom CTA */}
+      <section className="py-10 sm:py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto text-center bg-primary rounded-2xl sm:rounded-3xl p-8 sm:p-10"
           >
-            Contact Us
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </motion.div>
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-6 leading-snug">Work with Pinnacle Systems Today!</h2>
+            <Link 
+              href="/contact" 
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-white text-[#0b132a] hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-bold text-sm sm:text-base transition-all group"
+            >
+              Contact Us
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
 
-      </div>
       <Footer />
     </main>
   );

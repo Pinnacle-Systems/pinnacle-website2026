@@ -58,7 +58,7 @@ export default function ContactUsPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0b132a] text-white pt-24 pb-16 overflow-hidden">
+    <main className="min-h-screen bg-[#0b132a] text-white pt-20 sm:pt-24 pb-10 sm:pb-16 overflow-hidden">
       <Header />
       
       {/* Background Elements */}
@@ -71,7 +71,7 @@ export default function ContactUsPage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Hero Section */}
-        <div className="max-w-4xl mx-auto text-center mt-12 mb-16">
+        <div className="max-w-4xl mx-auto text-center mt-8 sm:mt-12 mb-10 sm:mb-16">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ export default function ContactUsPage() {
         </div>
 
         {/* Contact Layout Grid */}
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 items-start">
+        <div className="max-w-[1000px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-16 sm:mb-24 items-start">
           
           {/* Contact Information (Left Column) */}
           <motion.div 
@@ -110,17 +110,17 @@ export default function ContactUsPage() {
             transition={{ delay: 0.3 }}
             className="space-y-8"
           >
-            <div className="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm">
-              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+            <div className="bg-white/5 border border-white/10 p-6 sm:p-8 rounded-[24px] sm:rounded-3xl backdrop-blur-sm">
+              <h3 className="text-xl font-bold text-white mb-5">Contact Information</h3>
               
-              <div className="space-y-6">
+              <div className="space-y-5">
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300">
-                    <MapPin className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300">
+                    <MapPin className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="text-[16px] font-semibold text-white mb-1">Our Headquarters</h4>
-                    <p className="text-gray-400 text-[15px] leading-relaxed m-0 p-0 indent-0">
+                    <h4 className="text-[15px] font-semibold text-white mb-1">Our Headquarters</h4>
+                    <p className="text-gray-400 text-[14px] leading-relaxed m-0 p-0 indent-0">
                       Tirupur, Tamil Nadu<br />
                       India - 641604
                     </p>
@@ -128,12 +128,12 @@ export default function ContactUsPage() {
                 </div>
 
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300">
-                    <Phone className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300">
+                    <Phone className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="text-[16px] font-semibold text-white mb-1">Phone Number</h4>
-                    <p className="text-gray-400 text-[15px] leading-relaxed m-0 p-0 indent-0">
+                    <h4 className="text-[15px] font-semibold text-white mb-1">Phone Number</h4>
+                    <p className="text-gray-400 text-[14px] leading-relaxed m-0 p-0 indent-0">
                       +91 98765 43210<br />
                       Mon-Fri, 9am - 6pm
                     </p>
@@ -141,12 +141,12 @@ export default function ContactUsPage() {
                 </div>
 
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300">
-                    <Mail className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300">
+                    <Mail className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="text-[16px] font-semibold text-white mb-1">Email Address</h4>
-                    <p className="text-gray-400 text-[15px] leading-relaxed m-0 p-0 indent-0">
+                    <h4 className="text-[15px] font-semibold text-white mb-1">Email Address</h4>
+                    <p className="text-gray-400 text-[14px] leading-relaxed m-0 p-0 indent-0">
                       contact@pinnaclesystems.in<br />
                       support@pinnaclesystems.in
                     </p>
@@ -154,12 +154,12 @@ export default function ContactUsPage() {
                 </div>
 
                 <div className="flex items-start gap-4 group">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300">
-                    <Clock className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors duration-300">
+                    <Clock className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="text-[16px] font-semibold text-white mb-1">Business Hours</h4>
-                    <p className="text-gray-400 text-[15px] leading-relaxed m-0 p-0 indent-0">
+                    <h4 className="text-[15px] font-semibold text-white mb-1">Business Hours</h4>
+                    <p className="text-gray-400 text-[14px] leading-relaxed m-0 p-0 indent-0">
                       Monday - Friday: 9:00 AM - 6:00 PM<br />
                       Saturday & Sunday: Closed
                     </p>
@@ -175,47 +175,49 @@ export default function ContactUsPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
           >
-            <div className="bg-white rounded-[2rem] p-8 md:p-10 shadow-2xl relative overflow-hidden">
+            <div className="bg-white rounded-[24px] sm:rounded-[2rem] p-6 sm:p-8 md:p-10 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[80px] -z-10 pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
               
-              <h2 className="text-3xl font-extrabold text-[#0b132a] tracking-tight leading-tight mb-2">Send Us a Message</h2>
-              <p className="text-gray-500 mb-8 m-0 p-0 indent-0">Fill out the form below and we will get back to you as soon as possible.</p>
+              <h2 className="text-2xl font-extrabold text-[#0b132a] tracking-tight leading-tight mb-2">Send Us a Message</h2>
+              <p className="text-gray-500 text-[14px] mb-6 m-0 p-0 indent-0">Fill out the form below and we will get back to you as soon as possible.</p>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 
-                {/* Name Field */}
-                <div>
-                  <label htmlFor="name" className="block text-sm font-bold text-[#0b132a] mb-2 uppercase tracking-wider">
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    placeholder="John Doe"
-                    className="w-full bg-gray-50 border border-gray-200 text-[#0b132a] rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
-                  />
-                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  {/* Name Field */}
+                  <div>
+                    <label htmlFor="name" className="block text-xs font-bold text-[#0b132a] mb-1.5 uppercase tracking-wider">
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="John Doe"
+                      className="w-full bg-gray-50 border border-gray-200 text-[#0b132a] text-sm rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                    />
+                  </div>
 
-                {/* Phone Field */}
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-bold text-[#0b132a] mb-2 uppercase tracking-wider">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    placeholder="+91 98765 43210"
-                    className="w-full bg-gray-50 border border-gray-200 text-[#0b132a] rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
-                  />
+                  {/* Phone Field */}
+                  <div>
+                    <label htmlFor="phone" className="block text-xs font-bold text-[#0b132a] mb-1.5 uppercase tracking-wider">
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      placeholder="+91 98765 43210"
+                      className="w-full bg-gray-50 border border-gray-200 text-[#0b132a] text-sm rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                    />
+                  </div>
                 </div>
 
                 {/* Email Field */}
                 <div>
-                  <label htmlFor="email" className="block text-sm font-bold text-[#0b132a] mb-2 uppercase tracking-wider">
+                  <label htmlFor="email" className="block text-xs font-bold text-[#0b132a] mb-1.5 uppercase tracking-wider">
                     Email Address
                   </label>
                   <input
@@ -224,13 +226,13 @@ export default function ContactUsPage() {
                     name="email"
                     required
                     placeholder="john@company.com"
-                    className="w-full bg-gray-50 border border-gray-200 text-[#0b132a] rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                    className="w-full bg-gray-50 border border-gray-200 text-[#0b132a] text-sm rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
                   />
                 </div>
 
                 {/* Optional Message Field */}
                 <div>
-                  <label htmlFor="message" className="block text-sm font-bold text-[#0b132a] mb-2 uppercase tracking-wider">
+                  <label htmlFor="message" className="block text-xs font-bold text-[#0b132a] mb-1.5 uppercase tracking-wider">
                     Message (Optional)
                   </label>
                   <textarea
@@ -238,7 +240,7 @@ export default function ContactUsPage() {
                     name="message"
                     rows={4}
                     placeholder="Tell us about your project requirements..."
-                    className="w-full bg-gray-50 border border-gray-200 text-[#0b132a] rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 resize-none"
+                    className="w-full bg-gray-50 border border-gray-200 text-[#0b132a] text-sm rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 resize-none"
                   ></textarea>
                 </div>
 
