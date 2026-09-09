@@ -6,8 +6,8 @@ import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  ArrowRight, CheckCircle2, ChevronDown, 
+import {
+  ArrowRight, CheckCircle2, ChevronDown,
   Banknote, AlertTriangle, Users, FileText, Zap, ShieldCheck,
   Calculator, Clock, Gift, Network, CheckSquare, LineChart, Link as LinkIcon,
   Sparkles, AlertCircle
@@ -91,18 +91,18 @@ export default function TextilePayrollSoftwarePage() {
                 <Banknote className="w-4 h-4" />
                 <span>TEXTILE PAYROLL SOLUTIONS</span>
               </div>
-              
+
               <h1 className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left")}>
                 Payroll Software Built for Textile Manufacturing Units
               </h1>
-              
+
               <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 Manage complex wage structures—piece-rate, daily-rate, shift-based, and contract labor accurately and on time, with a payroll system built specifically for textile and garment production floors.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
-                <Link 
-                  href="?contact=true" scroll={false} 
+                <Link
+                  href="?contact=true" scroll={false}
                   className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 text-base sm:text-lg group px-8 sm:px-10 py-4 sm:py-5")}
                 >
                   Book a Free Demo
@@ -143,7 +143,7 @@ export default function TextilePayrollSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{module.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{module.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{module.desc}</p>
                 </motion.div>
               );
             })}
@@ -156,9 +156,9 @@ export default function TextilePayrollSoftwarePage() {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="bg-gradient-to-r from-primary/10 to-blue-500/10 border border-white/10 rounded-3xl p-8 md:p-12 lg:p-16 backdrop-blur-sm relative overflow-hidden">
-              <motion.h2 
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -170,29 +170,29 @@ export default function TextilePayrollSoftwarePage() {
                 Most payroll software is built for fixed-salary office staff—not for the reality of a textile or garment unit, where wages depend on production output, piece rates, shifts, and contract labor.
               </p>
 
-              <div className="space-y-5 mb-8">
-                {challenges.map((text, idx) => (
-                  <motion.div 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+                {challenges.map((text, idx, arr) => (
+                  <motion.div
                     key={idx}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
-                    className="flex gap-4 items-start"
+                    className={`flex gap-4 items-start${idx === arr.length - 1 && arr.length % 2 !== 0 ? ' md:col-span-2 md:max-w-[calc(50%-12px)] md:mx-auto' : ''}`}
                   >
                     <div className="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-0.5 border border-red-500/30">
                       <AlertCircle className="w-3.5 h-3.5 text-red-400" />
                     </div>
-                    <p className={cn(theme.p, "text-white text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}>
-                      {text}
+                    {/* <p className={cn(theme.p, "text-white text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}> */}
+                    <p className={cn(theme.p, "text-white text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>                      {text}
                     </p>
                   </motion.div>
                 ))}
               </div>
 
-              <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-6 flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-0.5" />
-                <p className={cn(theme.p, "mb-0 text-left text-white font-medium")}>
+              <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-6 flex items-center justify-center gap-4">
+                <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0" />
+                <p className={cn(theme.p, "text-white text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0 text-center")}>
                   A textile payroll software connects attendance, production output, and wage rules into one system—so every worker is paid accurately and on time, with full compliance built in.
                 </p>
               </div>
@@ -227,7 +227,7 @@ export default function TextilePayrollSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{item.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{item.desc}</p>
                 </motion.div>
               );
             })}

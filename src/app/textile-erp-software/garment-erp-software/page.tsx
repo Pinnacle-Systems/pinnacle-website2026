@@ -6,8 +6,8 @@ import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  ArrowRight, CheckCircle2, ChevronDown, 
+import {
+  ArrowRight, CheckCircle2, ChevronDown,
   Cloud, Activity, Package, UserX, ScanBarcode, Link as LinkIcon,
   CheckSquare, MessageSquare, Mail, MessageCircle, LayoutDashboard,
   BarChart, Settings, Factory, ShieldCheck, TrendingUp, Scissors,
@@ -129,18 +129,18 @@ export default function GarmentErpSoftwarePage() {
                 <ShoppingBag className="w-4 h-4" />
                 <span>GARMENT ERP SOLUTIONS</span>
               </div>
-              
+
               <h1 className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left")}>
                 Garment ERP Software Built for the Complete Manufacturing Lifecycle
               </h1>
-              
+
               <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 From enquiry and costing to production, quality, and dispatch — Pinnacle ERP brings every stage of garment manufacturing onto one connected platform.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
-                <Link 
-                  href="?contact=true" scroll={false} 
+                <Link
+                  href="?contact=true" scroll={false}
                   className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 text-base sm:text-lg group px-8 sm:px-10 py-4 sm:py-5")}
                 >
                   Book a Free Demo
@@ -178,7 +178,7 @@ export default function GarmentErpSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{feature.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{feature.desc}</p>
                 </motion.div>
               );
             })}
@@ -191,9 +191,9 @@ export default function GarmentErpSoftwarePage() {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="bg-gradient-to-r from-primary/10 to-blue-500/10 border border-white/10 rounded-3xl p-8 md:p-12 lg:p-16 backdrop-blur-sm relative overflow-hidden">
-              <motion.h2 
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -202,21 +202,21 @@ export default function GarmentErpSoftwarePage() {
                 One Platform, From First Enquiry to Final Dispatch
               </motion.h2>
 
-              <div className="space-y-5 mb-8">
-                {introPoints.map((text, idx) => (
-                  <motion.div 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+                {introPoints.map((text, idx, arr) => (
+                  <motion.div
                     key={idx}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
-                    className="flex gap-4 items-start"
+                    className={`flex gap-4 items-start${idx === arr.length - 1 && arr.length % 2 !== 0 ? ' md:col-span-2 md:max-w-[calc(50%-12px)] md:mx-auto' : ''}`}
                   >
                     <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5 border border-primary/30">
                       <CheckCircle2 className="w-3.5 h-3.5 text-primary" />
                     </div>
-                    <p className={cn(theme.p, "text-white text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}>
-                      {text}
+                    {/* <p className={cn(theme.p, "text-white text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}> */}
+                    <p className={cn(theme.p, "text-white text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>                      {text}
                     </p>
                   </motion.div>
                 ))}
@@ -252,7 +252,7 @@ export default function GarmentErpSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{module.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{module.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{module.desc}</p>
                 </motion.div>
               );
             })}
@@ -288,7 +288,7 @@ export default function GarmentErpSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-md font-bold text-white leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{item.desc}</p>
+                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{item.desc}</p>
                 </motion.div>
               );
             })}
@@ -308,7 +308,7 @@ export default function GarmentErpSoftwarePage() {
               How We Get You Started
             </motion.h2>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-6 max-w-5xl mx-auto">
             {processes.map((process, index) => (
               <motion.div

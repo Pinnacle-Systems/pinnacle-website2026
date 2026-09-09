@@ -6,8 +6,8 @@ import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  ArrowRight, CheckCircle2, ChevronDown, 
+import {
+  ArrowRight, CheckCircle2, ChevronDown,
   Cloud, Activity, Package, UserX, ScanBarcode, Link as LinkIcon,
   CheckSquare, MessageSquare, Mail, MessageCircle, LayoutDashboard,
   BarChart, Scissors, Sparkles, AlertCircle, Target, Eye, Ruler, Layers, FileText, PieChart, Box, ArrowRightLeft
@@ -109,18 +109,18 @@ export default function CuttingManagementSoftwarePage() {
                 <Scissors className="w-4 h-4" />
                 <span>CUTTING MANAGEMENT SOFTWARE</span>
               </div>
-              
+
               <h1 className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left")}>
                 Cutting Management Software Built for Accurate, Efficient Fabric Cutting
               </h1>
-              
+
               <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 From marker planning and lay planning to cutting, bundling, and issue tracking — Pinnacle ERP brings complete control to your cutting room.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
-                <Link 
-                  href="?contact=true" scroll={false} 
+                <Link
+                  href="?contact=true" scroll={false}
                   className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 text-base sm:text-lg group px-8 sm:px-10 py-4 sm:py-5")}
                 >
                   Book a Free Demo
@@ -156,9 +156,9 @@ export default function CuttingManagementSoftwarePage() {
                     <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50/80 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                       <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
+                    <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}>{feature.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>                    {feature.desc}</p>
                 </motion.div>
               );
             })}
@@ -173,7 +173,7 @@ export default function CuttingManagementSoftwarePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto">
             <div className="bg-gradient-to-r from-primary/10 to-blue-500/10 border border-white/10 rounded-3xl p-8 md:p-12 lg:p-16 backdrop-blur-sm relative overflow-hidden">
-              <motion.h2 
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -187,7 +187,7 @@ export default function CuttingManagementSoftwarePage() {
 
               <div className="space-y-5 mb-8">
                 {challenges.map((text, idx) => (
-                  <motion.div 
+                  <motion.div
                     key={idx}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -198,15 +198,14 @@ export default function CuttingManagementSoftwarePage() {
                     <div className="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-0.5 border border-red-500/30">
                       <AlertCircle className="w-3.5 h-3.5 text-red-400" />
                     </div>
-                    <p className={cn(theme.p, "mb-0 text-left indent-0 max-w-none text-white text-[15px] sm:text-[16px] leading-relaxed")}>
-                      {text}
+                    <p className={cn(theme.p, "text-white text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>                      {text}
                     </p>
                   </motion.div>
                 ))}
               </div>
 
-              <div className="bg-primary/20 border border-primary/30 rounded-2xl p-6">
-                <p className={cn(theme.p, "text-white font-medium tracking-normal !indent-0 !mb-0 !text-left")}>
+              <div className="bg-primary/20 border border-primary/30 rounded-2xl p-6 flex items-center justify-center">
+                <p className={cn(theme.p, "text-white text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0 text-center")}>
                   A cutting management software connects marker planning, lay execution, and bundle tracking into one system — so every fabric roll is utilized efficiently and every bundle reaches the line accurately.
                 </p>
               </div>
@@ -239,9 +238,9 @@ export default function CuttingManagementSoftwarePage() {
                     <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50/80 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                       <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{module.title}</h3>
+                    <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{module.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{module.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{module.desc}</p>
                 </motion.div>
               );
             })}
@@ -282,9 +281,9 @@ export default function CuttingManagementSoftwarePage() {
                     <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary transition-all duration-300">
                       <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
-                    <h3 className="text-base sm:text-[17px] font-bold text-white leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
+                    <h3 className="text-base sm:text-md font-bold text-white leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{item.desc}</p>
+                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{item.desc}</p>
                 </motion.div>
               );
             })}

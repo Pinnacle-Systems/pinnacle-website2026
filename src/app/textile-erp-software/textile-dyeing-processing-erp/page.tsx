@@ -6,8 +6,8 @@ import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  ArrowRight, CheckCircle2, ChevronDown, 
+import {
+  ArrowRight, CheckCircle2, ChevronDown,
   Cloud, Activity, Package, UserX, ScanBarcode, Link as LinkIcon,
   CheckSquare, MessageSquare, Mail, MessageCircle, LayoutDashboard,
   BarChart, Settings, Factory, ShieldCheck, TrendingUp, Scissors,
@@ -101,18 +101,18 @@ export default function TextileProcessingSoftwarePage() {
                 <Droplets className="w-4 h-4" />
                 <span>TEXTILE PROCESSING ERP</span>
               </div>
-              
+
               <h1 className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left")}>
                 Textile Processing ERP Software Built for Yarn, Dyeing, Weaving &amp; Finishing
               </h1>
-              
+
               <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 Run your entire textile production—from raw material to dispatch—on one system that eliminates manual tracking, reduces waste, and gives you real-time visibility across every process stage.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
-                <Link 
-                  href="?contact=true" scroll={false} 
+                <Link
+                  href="?contact=true" scroll={false}
                   className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 text-base sm:text-lg group px-8 sm:px-10 py-4 sm:py-5")}
                 >
                   Book a Free Demo
@@ -148,9 +148,9 @@ export default function TextileProcessingSoftwarePage() {
                     <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50/80 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                       <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
+                    <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}>{feature.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>                    {feature.desc}</p>
                 </motion.div>
               );
             })}
@@ -185,9 +185,10 @@ export default function TextileProcessingSoftwarePage() {
                     <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary transition-all duration-300">
                       <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
-                    <h3 className="text-base sm:text-[17px] font-bold text-white leading-snug group-hover:text-primary transition-colors">{module.title}</h3>
+                    <h3 className="text-base sm:text-md font-bold text-white leading-snug group-hover:text-primary transition-colors">{module.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{module.desc}</p>
+                  {/* <p className={cn(theme.p, "text-white text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}> */}
+                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>                    {module.desc}</p>
                 </motion.div>
               );
             })}
@@ -227,9 +228,10 @@ export default function TextileProcessingSoftwarePage() {
                     <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-blue-50/80 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                       <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-base sm:text-xl font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
+                    <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-black text-[14px] sm:text-[15px] leading-relaxed !text-left")}>{item.desc}</p>
+                  {/* <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-black text-[14px] sm:text-[15px] leading-relaxed !text-left")}> */}
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>                    {item.desc}</p>
                 </motion.div>
               );
             })}
@@ -272,9 +274,9 @@ export default function TextileProcessingSoftwarePage() {
                 <AnimatePresence>
                   {openFaq === idx && (
                     <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }}>
-                       <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-2">
-                                              <p className={cn(theme.p, "mb-0 indent-0 max-w-none !text-[14px] sm:!text-[15px] !text-gray-300")}>{faq.a}</p>
-                                            </div>
+                      <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-2">
+                        <p className={cn(theme.p, "mb-0 indent-0 max-w-none !text-[14px] sm:!text-[15px] !text-gray-300")}>{faq.a}</p>
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>

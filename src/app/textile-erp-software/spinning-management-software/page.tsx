@@ -186,11 +186,11 @@ export default function SpinningManagementSoftwarePage() {
                 <Sparkles className="w-4 h-4" />
                 <span>SPINNING MANAGEMENT</span>
               </div>
-              
+
               <h1 className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left")}>
                 Spinning Mill ERP Software — Real-Time Control from Cotton to Yarn
               </h1>
-              
+
               <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 Track production, inventory, quality, and billing in one system — built for spinning mills that need real numbers, not next-day reports.
               </p>
@@ -234,7 +234,7 @@ export default function SpinningManagementSoftwarePage() {
                     <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary transition-all duration-300">
                       <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">
+                    <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">
                       {challenge.title}
                     </h3>
                   </div>
@@ -280,7 +280,7 @@ export default function SpinningManagementSoftwarePage() {
                   <h3 className="text-base sm:text-lg font-bold text-navy-900 mb-3 group-hover:text-primary transition-colors">
                     {module.title}
                   </h3>
-                    <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                     {module.description}
                   </p>
                 </div>
