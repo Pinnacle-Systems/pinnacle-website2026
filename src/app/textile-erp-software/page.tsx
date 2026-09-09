@@ -128,7 +128,7 @@ const erpModules = [
     linkText: "Explore Cutting Software",
     href: "/textile-erp-software/cutting-management-software",
     icon: Scissors,
-    image: ""
+    image: "/images/textile-erp/Fabric_Cutting_Standards_-_Textile_School[1].webp"
   },
   {
     title: "Printing Management Solution",
@@ -144,7 +144,7 @@ const erpModules = [
     linkText: "Explore Embroidery Software",
     href: "/textile-erp-software/embroidery-job-work-software",
     icon: Palette,
-    image: "/images/textile-erp/Embroidery Management Solution.webp"
+    image: "/images/textile-erp/emboridary.webp"
   },
   {
     title: "Garments Management Solution",

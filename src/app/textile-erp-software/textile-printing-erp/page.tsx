@@ -164,9 +164,9 @@ export default function TextilePrintingErpPage() {
                     <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50/80 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                       <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
+                    <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
                   </div>
-                  <p className="text-black text-[14px] leading-relaxed flex-grow">{feature.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{feature.desc}</p>
                 </motion.div>
               );
             })}
@@ -203,7 +203,7 @@ export default function TextilePrintingErpPage() {
                     <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5 border border-primary/30">
                       <CheckCircle2 className="w-3.5 h-3.5 text-primary" />
                     </div>
-                    <p className={cn(theme.p, "mb-0 text-left indent-0 max-w-none text-gray-300 text-[15px] sm:text-[16px] leading-relaxed")}>
+                    <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}>
                       {text}
                     </p>
                   </motion.div>
@@ -240,7 +240,7 @@ export default function TextilePrintingErpPage() {
                     </div>
                     <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{module.title}</h3>
                   </div>
-                  <p className="text-black text-[14px] leading-relaxed flex-grow">{module.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{module.desc}</p>
                 </motion.div>
               );
             })}
@@ -276,7 +276,7 @@ export default function TextilePrintingErpPage() {
                     </div>
                     <h3 className="text-base sm:text-[17px] font-bold text-white leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-gray-400 text-[14px] leading-relaxed !text-left flex-grow")}>{item.desc}</p>
+                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{item.desc}</p>
                 </motion.div>
               );
             })}

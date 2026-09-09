@@ -119,7 +119,7 @@ export default function DemoModal() {
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-4">
+            <form onSubmit={handleSubmit} className="px-6 sm:px-8 pb-6 sm:pb-8  space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Name Field */}
                 <div>

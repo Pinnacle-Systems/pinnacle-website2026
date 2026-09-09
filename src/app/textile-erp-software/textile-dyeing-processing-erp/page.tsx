@@ -150,7 +150,7 @@ export default function TextileProcessingSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
                   </div>
-                  <p className="text-black text-[14px] leading-relaxed">{feature.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}>{feature.desc}</p>
                 </motion.div>
               );
             })}
@@ -187,7 +187,7 @@ export default function TextileProcessingSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-[17px] font-bold text-white leading-snug group-hover:text-primary transition-colors">{module.title}</h3>
                   </div>
-                  <p className="text-gray-400 text-[14px] leading-relaxed flex-grow">{module.desc}</p>
+                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{module.desc}</p>
                 </motion.div>
               );
             })}

@@ -280,7 +280,7 @@ export default function SpinningManagementSoftwarePage() {
                   <h3 className="text-base sm:text-lg font-bold text-navy-900 mb-3 group-hover:text-primary transition-colors">
                     {module.title}
                   </h3>
-                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-black !text-left")}>
+                    <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                     {module.description}
                   </p>
                 </div>

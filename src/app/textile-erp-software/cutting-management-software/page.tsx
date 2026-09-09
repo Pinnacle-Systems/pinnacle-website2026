@@ -158,7 +158,7 @@ export default function CuttingManagementSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
                   </div>
-                  <p className="text-black text-[14px] leading-relaxed">{feature.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}>{feature.desc}</p>
                 </motion.div>
               );
             })}
@@ -181,7 +181,7 @@ export default function CuttingManagementSoftwarePage() {
               >
                 The Cutting Room Isn&apos;t Just Cutting Fabric — It&apos;s Where Your Margins Are Won or Lost
               </motion.h2>
-              <p className={cn(theme.p, "text-gray-300 text-center mb-8 max-w-3xl mx-auto")}>
+              <p className={cn(theme.p, "text-white text-center mb-8 max-w-3xl mx-auto")}>
                 Most manufacturing software treats cutting as a single line item, missing the reality that fabric utilization, marker efficiency, and bundle accuracy directly determine your order&apos;s profitability.
               </p>
 
@@ -198,7 +198,7 @@ export default function CuttingManagementSoftwarePage() {
                     <div className="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-0.5 border border-red-500/30">
                       <AlertCircle className="w-3.5 h-3.5 text-red-400" />
                     </div>
-                    <p className={cn(theme.p, "mb-0 text-left indent-0 max-w-none text-gray-300 text-[15px] sm:text-[16px] leading-relaxed")}>
+                    <p className={cn(theme.p, "mb-0 text-left indent-0 max-w-none text-white text-[15px] sm:text-[16px] leading-relaxed")}>
                       {text}
                     </p>
                   </motion.div>
@@ -206,7 +206,7 @@ export default function CuttingManagementSoftwarePage() {
               </div>
 
               <div className="bg-primary/20 border border-primary/30 rounded-2xl p-6">
-                <p className={cn(theme.p, "mb-0 text-center text-white font-medium")}>
+                <p className={cn(theme.p, "text-white font-medium tracking-normal !indent-0 !mb-0 !text-left")}>
                   A cutting management software connects marker planning, lay execution, and bundle tracking into one system — so every fabric roll is utilized efficiently and every bundle reaches the line accurately.
                 </p>
               </div>
@@ -241,7 +241,7 @@ export default function CuttingManagementSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{module.title}</h3>
                   </div>
-                  <p className="text-black text-[14px] leading-relaxed flex-grow">{module.desc}</p>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{module.desc}</p>
                 </motion.div>
               );
             })}
@@ -284,7 +284,7 @@ export default function CuttingManagementSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-[17px] font-bold text-white leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-gray-400 text-[14px] leading-relaxed !text-left flex-grow")}>{item.desc}</p>
+                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{item.desc}</p>
                 </motion.div>
               );
             })}

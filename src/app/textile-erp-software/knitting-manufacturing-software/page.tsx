@@ -191,7 +191,7 @@ export default function KnittingSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-[17px] font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{feature.title}</h3>
                   </div>
-                  <p className="text-gray-600 text-[14px] leading-relaxed">
+                  <p className={cn(theme.p, "text-[14px] text-black leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}>
                     {feature.desc}
                   </p>
                 </motion.div>
@@ -230,7 +230,7 @@ export default function KnittingSoftwarePage() {
                     <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-1 border border-primary/30">
                       <CheckCircle2 className="w-4 h-4 text-primary" />
                     </div>
-                    <p className={cn(theme.p, "mb-0 text-left indent-0 max-w-none text-gray-300 text-[16px] leading-relaxed")}>
+                    <p className={cn(theme.p, "text-gray-300 text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0 !text-left")}>
                       {text}
                     </p>
                   </motion.div>
@@ -330,7 +330,7 @@ export default function KnittingSoftwarePage() {
                     </div>
                     <h3 className="text-base sm:text-[17px] font-bold text-white leading-snug group-hover:text-primary transition-colors">{item.title}</h3>
                   </div>
-                  <p className="text-gray-400 text-[14px] sm:text-[14.5px] leading-relaxed m-0 flex-grow">{item.desc}</p>
+                  <p className={cn(theme.p, "text-white text-[14px] sm:text-[14.5px] leading-relaxed flex-grow tracking-normal !indent-0 !mb-0 !text-left")}>{item.desc}</p>
                 </motion.div>
               );
             })}
