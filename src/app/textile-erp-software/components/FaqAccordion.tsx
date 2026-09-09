@@ -38,7 +38,7 @@ export default function FaqAccordion({ faqs }: FaqAccordionProps) {
               <div className="overflow-hidden">
                 <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-0">
                   <div className="w-full h-[1px] bg-gray-100 mb-3 sm:mb-4"></div>
-                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !text-left")}>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                     {faq.a}
                   </p>
                 </div>

@@ -43,7 +43,8 @@ export default function Header() {
     <header
       className={cn(
         "absolute top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "fixed py-3 lg:py-4 bg-navy-900/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.3)] border-b border-white/10" : "py-4 lg:py-5 bg-transparent border-b border-white/5"
+        isScrolled ? "fixed py-3 lg:py-4 bg-navy-900/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.3)] border-b border-white/10" :
+         "py-4 lg:py-5 bg-navy-900/95"
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
@@ -97,7 +98,7 @@ export default function Header() {
         {/* Desktop CTA Button */}
         <div className="hidden lg:flex items-center">
           <Link
-            href="/under-construction"
+            href="?contact=true" scroll={false}
             className="text-primary hover:text-white font-bold text-[14px] tracking-wide flex items-center gap-2 transition-colors group uppercase"
           >
             GET A QUOTE NOW
@@ -163,7 +164,7 @@ export default function Header() {
 
             <div className="pt-4">
               <Link
-                href="/under-construction"
+                href="?contact=true" scroll={false}
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full bg-primary hover:bg-primary-hover text-white text-center py-3.5 rounded-full font-bold text-[14px] tracking-wider uppercase flex items-center justify-center gap-2 shadow-lg"
               >

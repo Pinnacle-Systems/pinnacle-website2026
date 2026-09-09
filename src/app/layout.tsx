@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import React from "react";
 import Script from "next/script";
+import DemoModal from "@/components/shared/DemoModal";
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -25,6 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} font-sans antialiased bg-white`}>
         {children}
+        <React.Suspense fallback={null}>
+          <DemoModal />
+        </React.Suspense>
       </body>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-9BZQ899W81"

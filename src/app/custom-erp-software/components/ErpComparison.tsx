@@ -52,7 +52,7 @@ export default function ErpComparison() {
             viewport={{ once: true }}
             className={cn(theme.h2, "mb-4 sm:mb-6")}
           >
-            Custom ERP vs. Off-the-Shelf: Which Is Right for You?
+            Custom ERP vs Off-the-Shelf : Which Is Right for You?
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -94,7 +94,7 @@ export default function ErpComparison() {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-800 text-[15px] sm:text-[16px] mb-1">{item.feature}</h4>
-                      <p className={cn(theme.p, "text-[14px] text-black sm:text-[15px] leading-relaxed !text-left")}>{item.offTheShelf}</p>
+                      <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{item.offTheShelf}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -122,18 +122,7 @@ export default function ErpComparison() {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] sm:w-[120%] aspect-square rounded-full border border-gray-200 -z-10"></div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] sm:w-[140%] aspect-square rounded-full border border-gray-100 -z-10"></div>
 
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-                className="mt-8 sm:mt-12"
-              >
-                <button className="bg-primary hover:bg-primary-hover text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-medium text-sm sm:text-base shadow-xl shadow-blue-500/20 transition-all flex items-center gap-2 group">
-                  Upgrade Your Business Now
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
-                </button>
-              </motion.div>
+             
             </div>
 
             {/* Right Column - Custom ERP */}
@@ -162,7 +151,7 @@ export default function ErpComparison() {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-800 text-[15px] sm:text-[16px] mb-1">{item.feature}</h4>
-                      <p className={cn(theme.p, "text-[14px] text-black sm:text-[15px] leading-relaxed !text-left")}>{item.custom}</p>
+                      <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{item.custom}</p>
                     </div>
                   </motion.div>
                 ))}

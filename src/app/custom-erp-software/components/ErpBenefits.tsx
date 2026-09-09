@@ -72,7 +72,7 @@ export default function ErpBenefits() {
                       {item.title}
                     </h3>
                   </div>
-                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !text-left", !isExpanded && "line-clamp-3")}>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0", !isExpanded && "line-clamp-3")}>
                     {item.desc}
                   </p>
                 </div>
@@ -96,12 +96,12 @@ export default function ErpBenefits() {
         </div>
 
         <div className="text-center">
-          <Link
-            href="tel:+1234567890"
+          <a
+            href="tel:+919994610733"
             className="inline-flex w-full sm:w-auto items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-medium transition-all duration-300"
           >
             Call us for a free demo
-          </Link>
+          </a>
         </div>
       </div>
     </section>

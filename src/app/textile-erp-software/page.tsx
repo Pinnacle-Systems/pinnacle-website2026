@@ -103,56 +103,64 @@ const erpModules = [
     description: "Track machine-wise yarn consumption, manage mixing ratios, and monitor lot-wise waste in real-time.",
     linkText: "Explore Spinning Software",
     href: "/textile-erp-software/spinning-management-software",
-    icon: RotateCw
+    icon: RotateCw,
+    image: "/images/textile-erp/spining management solutions.webp"
   },
   {
     title: "Knitting Management Solution",
     description: "Monitor yarn allocation, track fabric roll output by shift, and measure exact machine efficiency seamlessly.",
     linkText: "Explore Knitting Software",
     href: "/textile-erp-software/knitting-manufacturing-software",
-    icon: Shirt
+    icon: Shirt,
+    image: "/images/textile-erp/kniting management solutions.webp"
   },
   {
     title: "Processing Management Solution",
     description: "Maintain strict shade consistency, manage chemical recipes, and track complex dyeing job-work batches without manual registers.",
     linkText: "Explore Processing Software",
     href: "/textile-erp-software/textile-dyeing-processing-erp",
-    icon: Droplets
+    icon: Droplets,
+    image: "/images/textile-erp/processing  management solutions.webp"
   },
   {
     title: "Cutting Management Solution",
     description: "Track material consumption, optimize fabric utilization, and monitor the exact movement of cut panels between departments.",
     linkText: "Explore Cutting Software",
     href: "/textile-erp-software/cutting-management-software",
-    icon: Scissors
+    icon: Scissors,
+    image: ""
   },
   {
     title: "Printing Management Solution",
     description: "Manage printing order statuses, track ink and chemical consumption, and monitor lot-wise production accurately.",
     linkText: "Explore Printing Software",
     href: "/textile-erp-software/textile-printing-erp",
-    icon: Printer
+    icon: Printer,
+    image: "/images/textile-erp/printing maangement solutions.webp"
   },
   {
     title: "Embroidery Management Solution",
     description: "Monitor embroidery machine output per shift, track job allocations, and manage thread consumption for complex designs.",
     linkText: "Explore Embroidery Software",
     href: "/textile-erp-software/embroidery-job-work-software",
-    icon: Palette
+    icon: Palette,
+    image: "/images/textile-erp/Embroidery Management Solution.webp"
   },
   {
     title: "Garments Management Solution",
     description: "Control the entire customer order lifecycle from order placement to production and shipment, for both Make-to-Order (MTO) and Make-to-Stock (MTS).",
     linkText: "Explore Garments Software",
     href: "/textile-erp-software/garment-erp-software",
-    icon: ShoppingBag
+    icon: ShoppingBag,
+    image: "/images/textile-erp/Garment Management solutions.webp"
   },
   {
     title: "Payroll Management Solution",
     description: "Streamline employee attendance, shift management, piece-rate wages, payroll processing, and production-linked wage calculations.",
     linkText: "Explore Payroll Software",
     href: "/textile-erp-software/textile-payroll-software",
-    icon: Banknote
+    icon: Banknote,
+    image: "/images/textile-erp/Payroll Management solutions.webp"
   }
 ];
 
@@ -222,24 +230,36 @@ export default function TextileErpSoftwarePage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Unified Hero Section with Dark Background & Header */}
-      <div className="p-2 sm:p-4 lg:p-6">
-        <section className="relative overflow-hidden bg-[#0b132a] rounded-[32px] sm:rounded-[40px] lg:rounded-[48px] pt-32 pb-20 lg:pb-28 shadow-2xl border border-white/5">
-          {/* Background Ambient Glows & Accents */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[140px] -translate-y-1/2 translate-x-1/4" />
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4" />
-          </div>
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#0b132a] pt-32 pb-10 sm:pb-14">
+        {/* Background Banner Image */}
+        <div className="absolute inset-x-0 bottom-0 top-[90px] lg:top-[100px] z-0">
+          <Image
+            src="/images/textile-erp/TEXTILERPSOFTWARE.webp"
+            alt="Textile ERP Software"
+            fill
+            priority
+            className="content-fit"
+          />
+        </div>
 
-          {/* Header */}
+        {/* Background Ambient Glows & Accents */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[140px] -translate-y-1/2 translate-x-1/4" />
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4" />
+        </div>
+
+        {/* Header */}
+        <div className="absolute top-0 left-0 right-0 z-50">
           <Header />
+        </div>
 
-          {/* Hero Content */}
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        {/* Hero Content */}
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
-              {/* Left Column: All Text Content & CTAs */}
-              <div className="lg:col-span-7 flex flex-col text-left">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-primary text-xs sm:text-sm font-bold tracking-wider mb-6 w-fit uppercase">
+            {/* Left Column: All Text Content & CTAs */}
+            <div className="lg:col-span-7 flex flex-col text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-primary text-xs sm:text-sm font-bold tracking-wider mb-6 w-fit uppercase">
                   <Shirt className="w-4 h-4 text-primary" />
                   <span>Textile ERP Platform</span>
                 </div>
@@ -258,14 +278,14 @@ export default function TextileErpSoftwarePage() {
                 {/* CTAs */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
                   <Link
-                    href="/contact"
+                    href="?contact=true" scroll={false}
                     className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide shadow-lg shadow-primary/25 hover:shadow-primary/40 uppercase text-center"
                   >
                     Request a Free Demo
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <Link
-                    href="/contact"
+                    href="?contact=true" scroll={false}
                     className="group inline-flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 text-white font-bold text-sm px-8 py-4 rounded-full border border-white/15 backdrop-blur-sm transition-all duration-300 tracking-wide uppercase text-center"
                   >
                     Talk to a Textile ERP Expert
@@ -289,47 +309,9 @@ export default function TextileErpSoftwarePage() {
                 </div>
               </div>
 
-              {/* Right Column: Hero Visual Image */}
-              <div className="lg:col-span-5 relative w-full">
-                <div className="relative mx-auto max-w-lg lg:max-w-none">
-                  {/* Outer Ambient Glow */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-primary to-orange-500 rounded-[28px] blur-xl opacity-30 hover:opacity-50 transition duration-500"></div>
-
-                  {/* Main Card Image */}
-                  <div className="relative rounded-[24px] overflow-hidden shadow-2xl bg-[#11192F] border border-white/15">
-                    <Image
-                      src="/images/textile-erp/TextileERP.webp"
-                      alt="Textile ERP Dashboard"
-                      width={800}
-                      height={600}
-                      className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
-                      priority
-                    />
-                  </div>
-
-                  {/* Floating Card 1 */}
-                  <div className="absolute -bottom-5 -left-5 hidden sm:flex items-center gap-3 bg-[#0b132a]/95 backdrop-blur-md border border-white/15 p-3.5 px-4 rounded-2xl shadow-2xl z-20">
-                    <div className="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center font-bold">
-                      <BarChart3 className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-[11px] text-gray-400 uppercase font-semibold tracking-wider">Live Control</div>
-                      <div className="text-xs font-bold text-white">Yarn to Garment Tracking</div>
-                    </div>
-                  </div>
-
-                  {/* Floating Card 2 */}
-                  <div className="absolute -top-5 -right-5 hidden sm:flex items-center gap-2 bg-[#0b132a]/95 backdrop-blur-md border border-white/15 p-3 px-4 rounded-2xl shadow-2xl z-20">
-                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
-                    <div className="text-xs font-semibold text-white">Real-Time Shopfloor Sync</div>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
-        </section>
-      </div>
+      </section>
 
       {/* Features Grid Section */}
       <section className="py-16 sm:py-24 bg-gray-50 relative overflow-hidden">
@@ -344,11 +326,11 @@ export default function TextileErpSoftwarePage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-[1536px] mx-auto">
+          <div className="flex flex-wrap justify-center gap-5 sm:gap-6 max-w-[1536px] mx-auto">
             {features.map((feature, idx) => (
               <div
                 key={idx}
-                className="group bg-white rounded-[20px] sm:rounded-3xl overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col cursor-pointer"
+                className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group bg-white rounded-[20px] sm:rounded-3xl overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col cursor-pointer"
               >
                 <div className="relative h-48 w-full overflow-hidden">
                   <Image src={feature.image} alt={feature.title} fill className={`${(feature as any).imageClass || 'object-cover'} group-hover:scale-105 transition-transform duration-500`} />
@@ -358,7 +340,7 @@ export default function TextileErpSoftwarePage() {
                   <h3 className="text-base sm:text-lg font-bold text-navy-900 mb-3 group-hover:text-primary transition-colors">
                     {feature.title}
                   </h3>
-                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-black !text-left")}>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                     {feature.description}
                   </p>
                 </div>
@@ -377,35 +359,44 @@ export default function TextileErpSoftwarePage() {
               Integrated Solutions
             </div>
             <h2 className={cn(theme.h2, "text-navy-900 mb-4 sm:mb-6 max-w-4xl mx-auto")}>
-              Now Integrated ERP Solutions for the <span className="text-primary">Apparel & Textile Industry</span>
+              Integrated ERP Solutions for the <span className="text-primary">Apparel & Textile Industry</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 max-w-[1536px] mx-auto">
+          <div className="flex flex-wrap justify-center gap-5 sm:gap-6 max-w-[1536px] mx-auto">
             {erpModules.map((module, idx) => {
               const IconComp = module.icon;
               return (
-                <div key={idx} className="bg-gray-50 rounded-[20px] sm:rounded-3xl p-6 sm:p-7 border border-gray-100 hover:border-blue-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group cursor-pointer">
+                <div key={idx} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-gray-50 rounded-[20px] sm:rounded-3xl border border-gray-100 hover:border-blue-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group cursor-pointer overflow-hidden">
                   
-                  <div className="flex items-center gap-3 sm:gap-4 mb-4">
-                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50/50 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                  {module.image && (
+                    <div className="relative h-48 w-full overflow-hidden">
+                      <Image src={module.image} alt={module.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <div className="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-300"></div>
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors duration-200">
-                      {module.title}
-                    </h3>
+                  )}
+
+                  <div className="p-6 sm:p-7 flex-1 flex flex-col">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4">
+                      <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50/50 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                        <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                      </div>
+                      <h3 className="text-base sm:text-lg font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors duration-200">
+                        {module.title}
+                      </h3>
+                    </div>
+                    
+                    <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 mb-4 flex-1")}>
+                      {module.description}
+                    </p>
+                    
+                    <Link href={module.href} className="inline-flex items-center justify-between text-[13px] sm:text-sm font-semibold text-gray-500 hover:text-primary transition-colors mt-auto group/link">
+                      <span>{module.linkText}</span>
+                      <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white group-hover/link:bg-primary/10 text-gray-400 group-hover/link:text-primary flex items-center justify-center transition-all duration-300 group-hover/link:translate-x-1 shadow-sm">
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </div>
+                    </Link>
                   </div>
-                  
-                  <p className={cn(theme.p, "mb-4 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-black !text-left flex-1")}>
-                    {module.description}
-                  </p>
-                  
-                  <Link href={module.href} className="inline-flex items-center justify-between text-[13px] sm:text-sm font-semibold text-gray-500 hover:text-primary transition-colors mt-auto group/link">
-                    <span>{module.linkText}</span>
-                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white group-hover/link:bg-primary/10 text-gray-400 group-hover/link:text-primary flex items-center justify-center transition-all duration-300 group-hover/link:translate-x-1 shadow-sm">
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </div>
-                  </Link>
                 </div>
               );
             })}
@@ -438,9 +429,9 @@ export default function TextileErpSoftwarePage() {
                   <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50/50 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{reason.title}</h3>
+                  <h3 className="text-base sm:text-md font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">{reason.title}</h3>
                 </div>
-                <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-black !text-left")}>
+                <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                   {reason.desc}
                 </p>
               </div>
@@ -470,18 +461,18 @@ export default function TextileErpSoftwarePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-[1536px] mx-auto">
+          <div className="flex flex-wrap justify-center gap-5 sm:gap-6 max-w-[1536px] mx-auto">
             {whatWeOffer.map((offer, idx) => {
               const IconComp = offer.icon;
               return (
-                <div key={idx} className="bg-white/5 border border-white/10 rounded-[20px] sm:rounded-3xl p-6 sm:p-7 hover:bg-white/10 hover:border-primary/50 transition-all duration-300 group">
+                <div key={idx} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white/5 border border-white/10 rounded-[20px] sm:rounded-3xl p-6 sm:p-7 hover:bg-white/10 hover:border-primary/50 transition-all duration-300 group">
                   <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
                     <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white/10 text-white flex items-center justify-center shrink-0 group-hover:bg-primary transition-all duration-300">
                       <IconComp className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
                     <h3 className="text-base sm:text-lg font-bold text-white leading-snug group-hover:text-primary transition-colors">{offer.title}</h3>
                   </div>
-                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-gray-400 !text-left")}>
+                  <p className={cn(theme.p, "text-white text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                     {offer.desc}
                   </p>
                 </div>
@@ -516,7 +507,7 @@ export default function TextileErpSoftwarePage() {
               <h2 className={cn(theme.h2, "text-navy-900 mb-4 sm:mb-6 text-left")}>
                 Frequently Asked <span className="text-primary">Questions</span>
               </h2>
-              <p className={cn(theme.p, "text-black text-left mb-8 max-w-xl")}>
+              <p className={cn(theme.p, "text-black  leading-relaxed tracking-normal !indent-0 mb-8 max-w-xl")}>
                 Got questions about our Textile ERP Software? We have answers to help you understand how our system transforms your manufacturing.
               </p>
 

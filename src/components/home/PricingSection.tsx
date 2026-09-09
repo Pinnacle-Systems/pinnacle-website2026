@@ -108,7 +108,7 @@ export default function PricingSection() {
                  </ul>
                  
                  <div className="mt-auto w-full relative z-10">
-                   <Link href="/under-construction" className="w-full block bg-[#fff0eb] text-primary font-bold text-[13px] py-4 rounded-full transition-colors duration-300 hover:bg-primary hover:text-white tracking-wider uppercase text-center">
+                   <Link href="?contact=true" scroll={false} className="w-full block bg-[#fff0eb] text-primary font-bold text-[13px] py-4 rounded-full transition-colors duration-300 hover:bg-primary hover:text-white tracking-wider uppercase text-center">
                      CHOOSE PLAN
                    </Link>
                  </div>

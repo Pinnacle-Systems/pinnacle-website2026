@@ -175,7 +175,7 @@ export default function DigitalMarketingContent() {
                       </h3>
                     </div>
 
-                    <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-black !text-left")}>
+                    <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                       {item.desc}
                     </p>
                   </div>
@@ -223,17 +223,17 @@ export default function DigitalMarketingContent() {
                 Why Work With a Technology-Driven Digital Marketing Company?
               </h2>
 
-              <div className="space-y-4 text-gray-300 text-[14px] sm:text-base leading-relaxed">
-                <p>
+              <div className="space-y-4 flex flex-col">
+                <p className={cn(theme.p, "text-gray-300 text-[13px] sm:text-[15px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                   Digital marketing doesn&apos;t exist separately from your website and technology.
                 </p>
-                <p>
+                <p className={cn(theme.p, "text-gray-300 text-[13px] sm:text-[15px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                   Your website needs to support search engines, users, lead generation, analytics, and conversions. Your tracking needs to provide useful data. Your landing pages need to communicate your value clearly.
                 </p>
-                <p>
+                <p className={cn(theme.p, "text-gray-300 text-[13px] sm:text-[15px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                   Pinnacle Systems brings together digital marketing, website development, mobile app development, ERP expertise, and technology solutions under one organization.
                 </p>
-                <p>
+                <p className={cn(theme.p, "text-gray-300 text-[13px] sm:text-[15px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                   This allows us to look beyond individual campaigns and consider how your digital presence works as a complete business system.
                 </p>
               </div>
@@ -303,7 +303,7 @@ export default function DigitalMarketingContent() {
                     <div className="overflow-hidden">
                       <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-0">
                         <div className="w-full h-[1px] bg-gray-100 mb-3 sm:mb-4"></div>
-                        <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !text-left")}>
+                        <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                           {faq.a}
                         </p>
                       </div>
@@ -334,7 +334,7 @@ export default function DigitalMarketingContent() {
               Call +91 9994610733
             </Link>
             <Link
-              href="/contact"
+              href="?contact=true" scroll={false}
               className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-sm sm:text-base border border-white/20 transition-all inline-flex items-center justify-center gap-2"
             >
               Book Strategy Session

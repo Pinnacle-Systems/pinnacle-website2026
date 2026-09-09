@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown, Layout, Server, Shield, Zap, Search, PenTool, Code, CheckSquare, Rocket, MonitorSmartphone, Settings, Database, RefreshCw, BarChart, Users, DollarSign, MousePointerClick } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -55,55 +56,56 @@ export default function WebApplicationPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-28 sm:pt-36 pb-16 sm:pb-24 lg:pb-32 bg-[#0b132a] text-white overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#0b132a] pt-32 pb-10 sm:pb-14">
+        
+        {/* Background Banner Image */}
+        <div className="absolute inset-x-0 bottom-0 top-[90px] lg:top-[100px] z-0">
+          <Image
+            src="/images/page-1/WEBAPPLICATION.webp"
+            alt="Web Application Development"
+            fill
+            priority
+            className="object-cover object-right "
+          />
+        </div>
+
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
           <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]"></div>
           <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[100px]"></div>
           <div className="absolute inset-0 bg-[url('/circuit-board-light.svg')] bg-cover bg-center opacity-[0.03]"></div>
         </div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mt-6 sm:mt-12">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full">
+          <div className="grid lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-8 items-center">
+            {/* Left Column: Content */}
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-6 sm:mb-8"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-7 flex flex-col text-left mt-6 sm:mt-12"
             >
-              <Zap className="w-4 h-4" />
-              <span>Expert Engineering</span>
-            </motion.div>
-            
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className={cn(theme.h1, "text-white mb-6 sm:mb-8")}
-            >
-              Web Application Development Company
-            </motion.h1>
-            
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className={cn(theme.p, "max-w-3xl mx-auto text-gray-300 text-center")}
-            >
-              Pinnacle Systems is a trusted web application development company that builds secure, scalable, and high-performing web apps engineered to streamline operations and drive business growth.
-            </motion.p>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="mt-8 sm:mt-10"
-            >
-              <Link 
-                href="/contact" 
-                className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 text-base sm:text-lg group px-8 sm:px-10 py-4 sm:py-5")}
-              >
-                Talk to Our Web App Team
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs sm:text-sm font-semibold tracking-wider mb-6 w-fit">
+                <Zap className="w-4 h-4" />
+                <span>EXPERT ENGINEERING</span>
+              </div>
+              
+              <h1 className={cn(theme.h1, "text-white mb-6 sm:mb-8")}>
+                Web Application Development Company
+              </h1>
+              
+              <p className={cn(theme.p, "text-gray-300")}>
+                Pinnacle Systems is a trusted web application development company that builds secure, scalable, and high-performing web apps engineered to streamline operations and drive business growth.
+              </p>
+              
+              <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                <Link 
+                  href="?contact=true" scroll={false} 
+                  className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 text-base sm:text-lg group px-8 sm:px-10 py-4 sm:py-5")}
+                >
+                  Talk to Our Web App Team
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -145,7 +147,7 @@ export default function WebApplicationPage() {
                   <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5 sm:mt-1 border border-primary/20">
                     <CheckCircle2 className="w-3.5 h-3.5 text-primary" />
                   </div>
-                  <p className={cn(theme.p, "mb-0 text-left indent-0 max-w-none text-black text-[15px] sm:text-[16px] leading-relaxed tracking-normal !text-left")}>
+                  <p className={cn(theme.p, "text-black text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                     {text}
                   </p>
                 </motion.div>
@@ -288,7 +290,7 @@ export default function WebApplicationPage() {
                   </div>
                   <h3 className="text-base sm:text-lg font-bold text-navy-900 leading-snug">{item.title}</h3>
                 </div>
-                <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-black !text-left")}>{item.desc}</p>
+                <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -339,7 +341,7 @@ export default function WebApplicationPage() {
                       <div className="overflow-hidden">
                         <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-0">
                           <div className="w-full h-[1px] bg-gray-100 mb-3 sm:mb-4"></div>
-                          <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !text-left")}>
+                          <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                             {faq.a}
                           </p>
                         </div>
@@ -364,7 +366,7 @@ export default function WebApplicationPage() {
           >
             <h2 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-6 leading-snug">Work with Pinnacle Systems Today!</h2>
             <Link 
-              href="/contact" 
+              href="?contact=true" scroll={false} 
               className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-white text-[#0b132a] hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-bold text-sm sm:text-base transition-all group"
             >
               Contact Us

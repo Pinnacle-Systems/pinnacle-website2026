@@ -79,77 +79,55 @@ export default function WebsiteDevelopmentPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-32 sm:pt-40 pb-16 sm:pb-24 bg-[#0b132a] text-white overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#0b132a] pt-32 pb-10 sm:pb-14">
+        {/* Background Banner Image */}
+        <div className="absolute inset-x-0 bottom-0 top-[90px] lg:top-[100px] z-0">
+          <Image
+            src="/images/page-1/WEBISTEDEVELOPMENT.webp"
+            alt="Website Development"
+            fill
+            priority
+            className="object-cover object-right "
+          />
+        </div>
+
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
           <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]"></div>
           <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[100px]"></div>
         </div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center max-w-7xl mx-auto mt-6 sm:mt-12">
-            
-            {/* Text Content */}
-            <div className="text-left order-2 lg:order-1">
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold mb-6 sm:mb-8"
-              >
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full">
+          <div className="grid lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-8 items-center">
+            {/* Left Column: Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-7 flex flex-col text-left mt-6 sm:mt-12"
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs sm:text-sm font-semibold tracking-wider mb-6 w-fit">
                 <Rocket className="w-4 h-4" />
-                <span>High-Converting Design</span>
-              </motion.div>
+                <span>HIGH-CONVERTING DESIGN</span>
+              </div>
               
-              <motion.h1 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left md:text-left")}
-              >
+              <h1 className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left")}>
                 Website Development Company for Fast, High-Converting Websites
-              </motion.h1>
+              </h1>
               
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className={cn(theme.p, "text-gray-300 text-left")}
-              >
+              <p className={cn(theme.p, "text-gray-300")}>
                 We design and develop websites that load in seconds, rank on Google, and turn visitors into paying customers not just another page on the internet.
-              </motion.p>
+              </p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                className="mt-8 sm:mt-10"
-              >
+              <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
                 <Link 
-                  href="/contact" 
+                  href="?contact=true" scroll={false} 
                   className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 text-base sm:text-lg group px-8 sm:px-10 py-4 sm:py-5")}
                 >
                   Get a Free Website Audit
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
-              </motion.div>
-            </div>
-
-            {/* Image Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4 }}
-              className="relative w-full aspect-[4/3] sm:aspect-video lg:aspect-[4/3] max-w-xl mx-auto lg:ml-auto order-1 lg:order-2"
-            >
-              <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl transform rotate-3"></div>
-              <Image 
-                src="/images/page-1/WebsiteDevelopment.webp"
-                alt="Website Development"
-                fill
-                className="object-cover rounded-3xl shadow-2xl relative z-10 border border-white/10"
-                priority
-              />
+              </div>
             </motion.div>
-
           </div>
         </div>
       </section>
@@ -212,7 +190,7 @@ export default function WebsiteDevelopmentPage() {
                 Whether you need a brand-new website or a redesign of an underperforming one, we build with one goal: turning your website into your best-performing sales channel.
               </p>
               <Link 
-                href="/contact" 
+                href="?contact=true" scroll={false} 
                 className={cn(theme.buttonPrimary, "inline-flex w-full sm:w-auto justify-center items-center gap-3 group px-7 sm:px-8 py-3.5 sm:py-4")}
               >
                 Get a Free Website Audit
@@ -254,11 +232,11 @@ export default function WebsiteDevelopmentPage() {
                   </div>
                   <h3 className="text-base sm:text-lg font-bold text-white leading-snug group-hover:text-primary transition-colors">{service.title}</h3>
                 </div>
-                <p className={cn(theme.p, "text-gray-300 mb-5 sm:mb-6 flex-grow text-[14px] sm:text-[15px] leading-relaxed !text-left indent-0 max-w-none")}>
+                <p className={cn(theme.p, "text-gray-300 mb-5 sm:mb-6 flex-grow text-[14px] leading-relaxed tracking-normal !indent-0")}>
                   {service.desc}
                 </p>
                 <Link 
-                  href="/contact" 
+                  href="?contact=true" scroll={false} 
                   className="inline-flex items-center gap-2 text-primary font-semibold hover:text-orange-400 transition-colors mt-auto text-sm sm:text-base group/link"
                 >
                   {service.link}
@@ -370,7 +348,7 @@ export default function WebsiteDevelopmentPage() {
                   </div>
                   <h3 className="text-base sm:text-lg font-bold text-white leading-snug">{item.title}</h3>
                 </div>
-                <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-gray-300 !text-left")}>{item.desc}</p>
+                <p className={cn(theme.p, "text-gray-300 text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -420,7 +398,7 @@ export default function WebsiteDevelopmentPage() {
                       <div className="overflow-hidden">
                         <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-0">
                           <div className="w-full h-[1px] bg-gray-100 mb-3 sm:mb-4"></div>
-                          <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !text-left")}>
+                          <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                             {faq.a}
                           </p>
                         </div>
@@ -445,7 +423,7 @@ export default function WebsiteDevelopmentPage() {
           >
             <h2 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-6 leading-snug">Work with Pinnacle Systems Today!</h2>
             <Link 
-              href="/contact" 
+              href="?contact=true" scroll={false} 
               className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-white text-[#0b132a] hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-bold text-sm sm:text-base transition-all group"
             >
               Contact Us

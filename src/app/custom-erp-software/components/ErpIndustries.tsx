@@ -88,7 +88,7 @@ export default function ErpIndustries() {
                 </p>
               </div>
               <Link
-                href="/contact"
+                href="?contact=true" scroll={false}
                 className="inline-block w-full sm:w-auto text-center bg-primary hover:bg-primary-hover text-white px-6 py-3.5 sm:py-4 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 text-sm sm:text-[15px]"
               >
                 Book a Free Textile ERP Demo

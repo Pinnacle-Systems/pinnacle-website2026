@@ -21,7 +21,7 @@ const services = [
     icon: Search,
     title: "SEO Services",
     desc: "Improve your visibility in organic search and help potential customers discover your business when they are looking for relevant products or services.",
-    image: "/images/digital-marketing-service-in-tirupru/seo.webp",
+    image: "/images/digital-marketing-service-in-tirupru/seonew.jpg",
     linkText: "Explore SEO Services",
     href: "/contact",
   },
@@ -37,7 +37,7 @@ const services = [
     icon: Share2,
     title: "Social Media Marketing",
     desc: "Build a consistent presence across relevant social platforms with content and communication designed around your audience and brand.",
-    image: "/images/digital-marketing-service-in-tirupru/socilamediamarketing.webp",
+    image: "/images/digital-marketing-service-in-tirupru/Social media marketing.webp",
     linkText: "Explore Social Media Marketing",
     href: "/contact",
   },
@@ -45,7 +45,7 @@ const services = [
     icon: Megaphone,
     title: "Meta Ads",
     desc: "Reach potential customers on Facebook and Instagram with campaigns built around awareness, enquiries, conversions, or sales.",
-    image: "/images/digital-marketing-service-in-tirupru/metaads.webp",
+    image: "/images/digital-marketing-service-in-tirupru/META ADS.webp",
     linkText: "Explore Meta Ads",
     href: "/contact",
   },
@@ -109,7 +109,7 @@ export default function DigitalMarketingServicesSection() {
                       src={service.image}
                       alt={service.title}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="content-fit group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
 
@@ -122,7 +122,7 @@ export default function DigitalMarketingServicesSection() {
                     </h3>
                   </div>
 
-                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-black !text-left")}>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                     {service.desc}
                   </p>
                 </div>

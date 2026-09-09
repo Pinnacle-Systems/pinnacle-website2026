@@ -10,26 +10,15 @@ import { cn } from "@/lib/utils";
 export default function AboutUsPage() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Dark Hero Section Container */}
-      <div className="p-2 sm:p-4 lg:p-6">
-        <div className="bg-[#0b132a] relative rounded-[24px] sm:rounded-[40px] lg:rounded-[48px] overflow-hidden sm:overflow-visible shadow-2xl border border-white/5 pt-24 sm:pt-32 pb-16 sm:pb-24 px-4 text-center">
-          <Header />
-          <div className="max-w-4xl mx-auto relative z-10">
-            <h1 className={cn(theme.h1, "text-white")}>
-              About <span className="text-primary">Pinnacle Systems</span>
-            </h1>
-            <p className={cn(theme.p, "text-gray-300 mt-4 mx-auto max-w-2xl text-center !indent-0")}>
-              Custom ERP Software for Textile & Manufacturing
-            </p>
-          </div>
-          {/* Background Decorative Elements */}
-          <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-[inherit]">
-             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px]"></div>
-             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px]"></div>
-          </div>
-        </div>
+      <Header />
+      
+      {/* Page Header */}
+      <div className="pt-32  px-4 text-center max-w-4xl mx-auto relative z-10">
+        <h1 className={cn(theme.h1, "text-[#0b132a]")}>
+          About <span className="text-primary">Pinnacle Systems</span>
+        </h1>
+     
       </div>
-
       {/* Main Content */}
       <div className="py-10 sm:py-12 md:py-16 bg-[#11192F] rounded-[24px] sm:rounded-[40px] mx-4 sm:mx-8 lg:mx-20 mt-8 sm:mt-10 shadow-2xl overflow-hidden">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-8">

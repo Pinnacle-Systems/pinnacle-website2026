@@ -119,7 +119,7 @@ export default function ErpFeatures() {
                 <h3 className="text-lg sm:text-xl font-bold text-navy-900 mb-2 sm:mb-3 pr-6 sm:pr-8 leading-snug">
                   {feature.title}
                 </h3>
-                <p className={cn(theme.p, "text-[14px] text-black leading-relaxed !text-left")}>
+                <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                   {feature.desc}
                 </p>
               </div>

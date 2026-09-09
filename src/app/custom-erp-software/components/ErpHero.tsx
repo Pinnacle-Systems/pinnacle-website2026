@@ -10,16 +10,26 @@ import { cn } from "@/lib/utils";
 
 export default function ErpHero() {
   return (
-    <section className="relative min-h-[60vh] sm:min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#0b132a] rounded-b-[32px] sm:rounded-b-[40px] lg:rounded-b-[56px] pt-24 sm:pt-32 pb-16 sm:pb-20">
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#0b132a] pt-32 pb-10 sm:pb-14">
+      {/* Background Banner Image */}
+      <div className="absolute inset-x-0 bottom-0 top-[90px] lg:top-[100px] z-0">
+        <Image
+          src="/images/erp-software/CUSTOMERP.webp"
+          alt="AI-Powered Custom ERP Dashboard"
+          fill
+          priority
+          className="content-fit  mix-blend-overlay"
+        />
+      </div>
+
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[140px] -translate-y-1/2 translate-x-1/3" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4" />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full">
         <div className="grid lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-8 items-center">
-
           {/* Left Column: Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -46,7 +56,7 @@ export default function ErpHero() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-8 sm:mb-10 w-full sm:w-auto">
               <Link
-                href="/contact"
+                href="?contact=true" scroll={false}
                 className="group flex w-full sm:w-auto items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-sm tracking-wide transition-all duration-300 shadow-lg shadow-primary/25 hover:shadow-primary/40 uppercase text-center"
               >
                 <span>Book a Demo</span>
@@ -77,59 +87,6 @@ export default function ErpHero() {
               </div>
             </div>
           </motion.div>
-
-          {/* Right Column: Hero Visual / Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, x: 30 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:col-span-5 relative w-full"
-          >
-            <div className="relative mx-auto max-w-lg lg:max-w-none">
-              {/* Outer Glow */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary to-blue-600 rounded-[28px] blur-xl opacity-30 hover:opacity-50 transition duration-500"></div>
-
-              {/* Main Image Container */}
-              <div className="relative rounded-[24px] overflow-hidden shadow-2xl bg-[#11192F] border border-white/15">
-                <Image
-                  src="/erp-dashboard.jpg"
-                  alt="AI-Powered Custom ERP Dashboard"
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
-                  priority
-                />
-              </div>
-
-              {/* Floating Stat Card 1 */}
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-                className="absolute -bottom-4 sm:-bottom-6 -left-2 sm:-left-6 flex items-center gap-2 sm:gap-3 bg-[#0b132a]/90 backdrop-blur-md border border-white/15 p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-xl z-20 scale-90 sm:scale-100 origin-bottom-left"
-              >
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-primary/20 text-primary flex items-center justify-center font-bold">
-                  <BarChart3 className="w-4 h-4 sm:w-5 sm:h-5" />
-                </div>
-                <div>
-                  <div className="text-[10px] sm:text-xs text-gray-400">Workflow Efficiency</div>
-                  <div className="text-xs sm:text-sm font-bold text-white">+48% Productivity</div>
-                </div>
-              </motion.div>
-
-              {/* Floating Stat Card 2 */}
-              <motion.div
-                initial={{ y: -20, opacity: 0 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.5 }}
-                className="absolute -top-4 sm:-top-6 -right-2 sm:-right-6 flex items-center gap-2 sm:gap-3 bg-[#0b132a]/90 backdrop-blur-md border border-white/15 p-2 sm:p-3.5 px-3 sm:px-4 rounded-xl sm:rounded-2xl shadow-xl z-20 scale-90 sm:scale-100 origin-top-right"
-              >
-                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-400 animate-pulse"></div>
-                <div className="text-[10px] sm:text-xs font-semibold text-white">Live AI Analytics</div>
-              </motion.div>
-            </div>
-          </motion.div>
-
         </div>
       </div>
     </section>

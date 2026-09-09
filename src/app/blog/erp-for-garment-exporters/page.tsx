@@ -249,7 +249,7 @@ export default function GarmentExportersArticlePage() {
                 <div className="bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-primary p-8 rounded-r-2xl mt-8">
                   <h3 className="text-xl font-bold text-navy-900 mb-2">Ready to scale your export business?</h3>
                   <p className="text-gray-600 mb-6">See how Pinnacle ERP simplifies compliance and ensures on-time shipments.</p>
-                  <Link href="/contact" className={cn(theme.buttonPrimary, "px-6 py-3 text-sm")}>
+                  <Link href="?contact=true" scroll={false} className={cn(theme.buttonPrimary, "px-6 py-3 text-sm")}>
                     Book a Free Demo
                   </Link>
                 </div>

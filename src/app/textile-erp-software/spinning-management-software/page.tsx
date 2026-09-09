@@ -158,44 +158,51 @@ export const metadata = {
 export default function SpinningManagementSoftwarePage() {
   return (
     <main className="min-h-screen bg-white flex flex-col">
-      <div className="bg-[#0b132a] relative overflow-hidden pb-24">
-        <Header />
-      </div>
+      <Header />
 
-      {/* Hero Content */}
-      <section className="bg-white py-14 sm:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1536px]">
-          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-            {/* Left Content */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <h1 className={cn(theme.h1, "text-navy-900 mb-4")}>
+      {/* Hero Section */}
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#0b132a] pt-32 pb-10 sm:pb-14">
+        {/* Background Banner Image */}
+        <div className="absolute inset-x-0 bottom-0 top-[90px] lg:top-[100px] z-0">
+          <Image
+            src="/images/erp-software/SPINNING.webp"
+            alt="Spinning Mill ERP Software"
+            fill
+            priority
+            className="object-cover object-right-top"
+          />
+        </div>
+
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]"></div>
+          <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[100px]"></div>
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full">
+          <div className="grid lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-8 items-center">
+            {/* Left Column: Content */}
+            <div className="lg:col-span-7 flex flex-col text-left mt-6 sm:mt-12">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs sm:text-sm font-semibold tracking-wider mb-6 w-fit">
+                <Sparkles className="w-4 h-4" />
+                <span>SPINNING MANAGEMENT</span>
+              </div>
+              
+              <h1 className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left")}>
                 Spinning Mill ERP Software — Real-Time Control from Cotton to Yarn
               </h1>
-              <p className={cn(theme.p, "text-black !text-left mb-8")}>
+              
+              <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 Track production, inventory, quality, and billing in one system — built for spinning mills that need real numbers, not next-day reports.
               </p>
 
-              <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-stretch sm:items-center gap-4">
-                <Link href="/contact" className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide shadow-lg shadow-primary/25 uppercase text-center">
+              <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                <Link href="?contact=true" scroll={false} className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide shadow-lg shadow-primary/25 uppercase text-center w-full sm:w-auto">
                   Request a Free Demo
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link href="/contact" className="inline-flex items-center justify-center gap-3 bg-navy-900 hover:bg-gray-800 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide uppercase text-center">
+                <Link href="?contact=true" scroll={false} className="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide uppercase text-center w-full sm:w-auto backdrop-blur-sm border border-white/10">
                   Talk to an Expert
                 </Link>
-              </div>
-            </div>
-
-            {/* Right Image Banner */}
-            <div className="w-full lg:w-1/2 flex justify-center mt-6 lg:mt-0">
-              <div className="relative w-full aspect-[4/3] max-w-[700px] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100">
-                <Image
-                  src="/images/erp-software/Spinning_management_hero.webp"
-                  alt="Spinning Management Software Banner"
-                  fill
-                  className="object-cover"
-                  priority
-                />
               </div>
             </div>
           </div>
@@ -203,35 +210,35 @@ export default function SpinningManagementSoftwarePage() {
       </section>
 
       {/* Challenges Section */}
-      <section className="py-16 sm:py-24 bg-[#0b132a] relative overflow-hidden">
+      <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
         {/* Ambient Glow */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-10 sm:mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 sm:mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 sm:mb-6">
               <Sparkles className="w-3.5 h-3.5 text-primary" />
               Industry Pain Points
             </div>
-            <h2 className={cn(theme.h2, "text-white mb-4 sm:mb-6 max-w-4xl mx-auto")}>
+            <h2 className={cn(theme.h2, "text-navy-900 mb-4 sm:mb-6 max-w-4xl mx-auto")}>
               Common Challenges in Spinning Mills — And How <span className="text-primary">ERP Software Solves Them</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-[1536px] mx-auto">
+          <div className="flex flex-wrap justify-center gap-5 sm:gap-6 max-w-[1536px] mx-auto">
             {challenges.map((challenge, idx) => {
               const IconComp = challenge.icon;
               return (
-                <div key={idx} className="bg-white/5 border border-white/10 rounded-[20px] sm:rounded-3xl p-6 sm:p-7 hover:bg-white/10 hover:border-primary/50 transition-all duration-300 flex flex-col group cursor-pointer">
+                <div key={idx} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-gray-50 border border-gray-100 rounded-[20px] sm:rounded-3xl p-6 sm:p-7 hover:bg-white hover:border-primary/50 hover:shadow-lg transition-all duration-300 flex flex-col group cursor-pointer">
                   <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary transition-all duration-300">
-                      <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary transition-all duration-300">
+                      <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold text-white leading-snug group-hover:text-primary transition-colors">
+                    <h3 className="text-base sm:text-lg font-bold text-navy-900 leading-snug group-hover:text-primary transition-colors">
                       {challenge.title}
                     </h3>
                   </div>
-                  <p className={cn(theme.p, "mb-0 indent-0 max-w-none text-[14px] sm:text-[15px] leading-relaxed text-gray-400 !text-left")}>
+                  <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                     {challenge.desc}
                   </p>
                 </div>
@@ -334,7 +341,7 @@ export default function SpinningManagementSoftwarePage() {
           </div>
 
           <div className="text-center">
-            <Link href="/contact" className="inline-flex items-center gap-3 bg-primary hover:bg-orange-600 text-white font-bold text-sm sm:text-[15px] px-8 sm:px-10 py-4 sm:py-5 rounded-full transition-all duration-300 tracking-wide shadow-xl shadow-primary/20 uppercase hover:scale-105 transform">
+            <Link href="?contact=true" scroll={false} className="inline-flex items-center gap-3 bg-primary hover:bg-orange-600 text-white font-bold text-sm sm:text-[15px] px-8 sm:px-10 py-4 sm:py-5 rounded-full transition-all duration-300 tracking-wide shadow-xl shadow-primary/20 uppercase hover:scale-105 transform">
               See Pinnacle ERP in Action — Book a Free Demo
               <ArrowRight className="w-4 h-4" />
             </Link>
