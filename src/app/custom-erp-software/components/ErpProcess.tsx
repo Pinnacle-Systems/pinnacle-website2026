@@ -20,7 +20,7 @@ const processSteps = [
   {
     icon: <Code2 />,
     title: "Development and Integration",
-    desc: "We design your ERP with an agile method, including AI-driven features. We also provide regular demonstrations as well as seamless integration with existing software."
+    desc: "Build powerful software solutions and connect your existing systems seamlessly to create a unified, efficient, and automated business environment."
   },
   {
     icon: <ShieldAlert />,

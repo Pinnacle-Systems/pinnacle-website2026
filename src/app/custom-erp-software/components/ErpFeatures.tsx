@@ -29,7 +29,7 @@ const features = [
   {
     icon: <Users />,
     image: "/images/erp-software/feature_no3rdparty.jpg",
-    title: "No 3rd Party Involvement",
+    title: "Fully Independent System",
     desc: "Direct sales, implementation and support from our team ensures faster communication, better service and accountability."
   },
   {
@@ -116,7 +116,7 @@ export default function ErpFeatures() {
                 <div className="absolute -top-8 sm:-top-10 right-5 sm:right-6 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-white text-blue-600 flex items-center justify-center shadow-lg border border-gray-50">
                   {React.cloneElement(feature.icon as React.ReactElement, { className: "w-5 h-5 sm:w-6 sm:h-6" })}
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-navy-900 mb-2 sm:mb-3 pr-6 sm:pr-8 leading-snug">
+                <h3 className="text-base sm:text-md font-bold text-navy-900 mb-2 sm:mb-3 pr-6 sm:pr-8 leading-snug">
                   {feature.title}
                 </h3>
                 <p className={cn(theme.p, "text-black text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
