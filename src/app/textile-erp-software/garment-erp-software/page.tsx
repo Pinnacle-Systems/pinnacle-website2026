@@ -134,7 +134,7 @@ export default function GarmentErpSoftwarePage() {
                 Garment ERP Software Built for the Complete Manufacturing Lifecycle
               </h1>
 
-              <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
+              <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 From enquiry and costing to production, quality, and dispatch — Pinnacle ERP brings every stage of garment manufacturing onto one connected platform.
               </p>
 

@@ -122,7 +122,7 @@ export default function TextilePrintingErpPage() {
                 Textile Printing Management Software Built for the Complete Print Production Process
               </h1>
 
-              <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
+              <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 From design and screen planning to print production, quality, and dispatch — Pinnacle ERP connects every stage of your printing unit on one platform.
               </p>
 

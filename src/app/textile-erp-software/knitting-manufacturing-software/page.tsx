@@ -137,7 +137,7 @@ export default function KnittingSoftwarePage() {
                 Knitting ERP Software Built for the Complete Yarn-to-Fabric Process
               </h1>
 
-              <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
+              <p className={cn(theme.p, "text-gray-300 leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 Streamline your entire knitting operations in one place—from yarn management and production planning to machine tracking, quality control, stock, costing, and dispatch. It helps knitting companies reduce wastage, improve machine utilization, track production in real time, minimize manual work, and make faster, data-driven decisions.
               </p>
 

@@ -114,7 +114,7 @@ export default function EmbroiderySoftwarePage() {
                 Embroidery Management Software Built for the Complete Production Process
               </h1>
 
-              <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
+              <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 From design digitizing and thread planning to machine production, quality, and dispatch — Pinnacle ERP connects every stage of your embroidery unit on one platform.
               </p>
 

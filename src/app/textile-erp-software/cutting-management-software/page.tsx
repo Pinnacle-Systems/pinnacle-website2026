@@ -114,7 +114,7 @@ export default function CuttingManagementSoftwarePage() {
                 Cutting Management Software Built for Accurate, Efficient Fabric Cutting
               </h1>
 
-              <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
+              <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 From marker planning and lay planning to cutting, bundling, and issue tracking — Pinnacle ERP brings complete control to your cutting room.
               </p>
 

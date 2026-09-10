@@ -96,7 +96,7 @@ export default function TextilePayrollSoftwarePage() {
                 Payroll Software Built for Textile Manufacturing Units
               </h1>
 
-              <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
+              <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 Manage complex wage structures—piece-rate, daily-rate, shift-based, and contract labor accurately and on time, with a payroll system built specifically for textile and garment production floors.
               </p>
 

@@ -191,7 +191,7 @@ export default function SpinningManagementSoftwarePage() {
                 Spinning Mill ERP Software — Real-Time Control from Cotton to Yarn
               </h1>
 
-              <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
+              <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 Track production, inventory, quality, and billing in one system — built for spinning mills that need real numbers, not next-day reports.
               </p>
 

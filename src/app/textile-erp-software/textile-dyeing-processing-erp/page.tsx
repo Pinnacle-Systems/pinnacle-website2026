@@ -106,7 +106,7 @@ export default function TextileProcessingSoftwarePage() {
                 Textile Processing ERP Software Built for Yarn, Dyeing, Weaving &amp; Finishing
               </h1>
 
-              <p className={cn(theme.p, "text-gray-300 text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
+              <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
                 Run your entire textile production—from raw material to dispatch—on one system that eliminates manual tracking, reduces waste, and gives you real-time visibility across every process stage.
               </p>
 
