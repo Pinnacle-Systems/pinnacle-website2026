@@ -103,7 +103,7 @@ export default function Footer() {
                      <ul className="space-y-4">
                         {[
                            { name: 'Custom ERP Software', href: '/custom-erp-software' },
-                           { name: 'Web Application', href: '/services/web-application' },
+                           { name: 'Web Application', href: '/services/web-application-development-company' },
                            { name: 'Website Development', href: '/services/website-development' },
                            { name: 'Mobile App Development', href: '/services/mobile-app-development' },
                            { name: 'Digital Marketing', href: '/digital-marketing-services-in-tirupur' }

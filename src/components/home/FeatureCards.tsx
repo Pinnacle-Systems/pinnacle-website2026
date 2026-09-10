@@ -50,7 +50,7 @@ const features = [
     icon: Code,
     title: "Web Application",
     description: "Scalable and interactive Web Applications built to streamline business operations",
-    link: "/services/web-application"
+    link: "/services/web-application-development-company"
   },
   {
     icon: Globe,
