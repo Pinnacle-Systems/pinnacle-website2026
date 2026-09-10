@@ -22,21 +22,21 @@ const businessTypes = [
     icon: Shirt,
     tag: "B2B & Exports",
     title: "Textile & Garment Businesses",
-    desc: "Show your products, capabilities, manufacturing strengths, and brand to the right audience. Digital marketing can help textile and garment businesses improve visibility, attract B2B enquiries, and create opportunities beyond traditional sales channels.",
+    desc: "Show your products, capabilities, manufacturing strengths and brand to the right audience. Digital marketing can help textile and garment businesses improve visibility, attract B2B enquiries and create opportunities beyond traditional sales channels.",
     image: "/images/digital-marketing-service-in-tirupru/Textile & Garment Businesses.webp",
   },
   {
     icon: Factory,
     tag: "Industrial Growth",
     title: "Manufacturing Businesses",
-    desc: "Help potential buyers discover your products and capabilities through search, content, paid campaigns, and a website that clearly communicates what your business provides.",
+    desc: "Help potential buyers discover your products and capabilities through search, content, paid campaigns and a website that clearly communicates what your business provides.",
     image: "/images/digital-marketing-service-in-tirupru/Manufacturing Businesses.webp",
   },
   {
     icon: Briefcase,
     tag: "Lead Generation",
     title: "B2B Businesses",
-    desc: "B2B customers often research a company before making contact. We focus on search visibility, useful content, website experience, and lead-generation opportunities that help your business stay visible throughout that research process.",
+    desc: "B2B customers often research a company before making contact. We focus on search visibility, useful content, website experience and lead-generation opportunities that help your business stay visible throughout that research process.",
     image: "/images/digital-marketing-service-in-tirupru/b2b.webp",
   },
   {
@@ -57,7 +57,7 @@ const businessTypes = [
     icon: UserCheck,
     tag: "Client Acquisition",
     title: "Professional & Service Businesses",
-    desc: "Present your expertise clearly, build trust with potential customers, and create more opportunities for enquiries through search, content, advertising, and an effective online presence.",
+    desc: "Present your expertise clearly, build trust with potential customers and create more opportunities for enquiries through search, content, advertising and an effective online presence.",
     image: "/images/digital-marketing-service-in-tirupru/professtional business.webp",
   },
 ];
@@ -102,7 +102,7 @@ export default function DigitalGrowthStrategiesSection() {
             transition={{ delay: 0.2 }}
             className={cn(theme.p, "text-black text-center max-w-3xl mx-auto")}
           >
-            Tiruppur has a strong and diverse business community, from textile and garment companies to manufacturers, exporters, B2B businesses, e-commerce brands, and local service providers.
+            Tiruppur has a strong and diverse business community, from textile and garment companies to manufacturers, exporters, B2B businesses, e-commerce brands and local service providers.
           </motion.p>
         </div>
 

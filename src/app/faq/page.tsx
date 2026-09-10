@@ -22,61 +22,61 @@ const faqsData: Record<string, { q: string; a: string }[]> = {
     { q: "What is custom ERP software?", a: "Custom ERP software is a business management system built around your specific processes, rather than forcing your operations into a generic, one-size-fits-all template." },
     { q: "How is custom ERP different from off-the-shelf ERP?", a: "Off-the-shelf ERP requires you to adapt your workflows to the software; custom ERP is built to match how your business actually operates, including industry-specific processes." },
     { q: "How long does it take to build a custom ERP system?", a: "Timelines depend on the number of modules and complexity, but most custom ERP projects take 2 to 6 months from requirement analysis to go-live." },
-    { q: "Can custom ERP integrate with our existing software and tools?", a: "Yes, custom ERP can be built to integrate with accounting tools like Tally, payment gateways, e-commerce platforms, and other business systems you already use." },
+    { q: "Can custom ERP integrate with our existing software and tools?", a: "Yes, custom ERP can be built to integrate with accounting tools like Tally, payment gateways, e-commerce platforms and other business systems you already use." },
     { q: "Is custom ERP suitable for small and mid-sized businesses?", a: "Yes, ERP systems can be scoped and scaled to match your business size, so you only pay for the modules and complexity you actually need." },
     { q: "Can the ERP be accessed remotely or on mobile devices?", a: "Yes, modern custom ERP systems are typically cloud-based, giving you secure access from anywhere on desktop or mobile." },
-    { q: "What happens if our business processes change after the ERP is built?", a: "Custom ERP is built to be configurable, so workflows, forms, and modules can be updated as your business evolves." },
-    { q: "Do you provide training and support after implementation?", a: "Yes, we provide structured onboarding, staff training, and ongoing technical support after go-live." },
-    { q: "How much does custom ERP software cost?", a: "Cost depends on the modules, number of users, and complexity of your workflows — we provide a detailed quote after understanding your requirements." },
-    { q: "Is our business data secure in a custom ERP system?", a: "Yes, security is built in from the start, including role-based access control, data encryption, and secure hosting practices." }
+    { q: "What happens if our business processes change after the ERP is built?", a: "Custom ERP is built to be configurable, so workflows, forms and modules can be updated as your business evolves." },
+    { q: "Do you provide training and support after implementation?", a: "Yes, we provide structured onboarding, staff training and ongoing technical support after go-live." },
+    { q: "How much does custom ERP software cost?", a: "Cost depends on the modules, number of users and complexity of your workflows — we provide a detailed quote after understanding your requirements." },
+    { q: "Is our business data secure in a custom ERP system?", a: "Yes, security is built in from the start, including role-based access control, data encryption and secure hosting practices." }
   ],
   "Web Application Development": [
-    { q: "What is web application development?", a: "Web application development is the process of building interactive, browser-based software — such as dashboards, portals, and booking systems — rather than static websites." },
-    { q: "How is a web application different from a website?", a: "A website mainly displays information, while a web application lets users log in, input data, and perform tasks through backend logic and databases." },
+    { q: "What is web application development?", a: "Web application development is the process of building interactive, browser-based software — such as dashboards, portals and booking systems — rather than static websites." },
+    { q: "How is a web application different from a website?", a: "A website mainly displays information, while a web application lets users log in, input data and perform tasks through backend logic and databases." },
     { q: "How long does it take to build a web application?", a: "Simple web apps typically take 4 to 8 weeks, while complex, enterprise-grade applications can take 3 to 6 months depending on scope." },
-    { q: "Which technologies do you use for web application development?", a: "We build using modern frameworks including React, Next.js, Node.js, PHP/Laravel, and Python, chosen based on your project's requirements." },
-    { q: "Can you integrate third-party APIs and payment gateways?", a: "Yes, we regularly integrate payment gateways, CRMs, analytics tools, and other third-party APIs into custom web applications." },
-    { q: "Can you upgrade or modernize our existing web application?", a: "Yes, we offer legacy application modernization, improving performance, security, and scalability without disrupting your business operations." },
-    { q: "Will the web application be scalable as our business grows?", a: "Yes, we design with scalable architecture from the start, so the application can support more users, data, and features over time." },
-    { q: "Do you provide post-launch support and maintenance?", a: "Yes, we offer ongoing maintenance, including bug fixes, performance monitoring, security updates, and feature enhancements." },
-    { q: "How much does web application development cost?", a: "Cost depends on features, integrations, and the technology stack — we provide a transparent quote after a free consultation." },
-    { q: "Is our data secure in a custom-built web application?", a: "Yes, security is built in from day one, including secure authentication, encryption, and data protection best practices." }
+    { q: "Which technologies do you use for web application development?", a: "We build using modern frameworks including React, Next.js, Node.js, PHP/Laravel and Python, chosen based on your project's requirements." },
+    { q: "Can you integrate third-party APIs and payment gateways?", a: "Yes, we regularly integrate payment gateways, CRMs, analytics tools and other third-party APIs into custom web applications." },
+    { q: "Can you upgrade or modernize our existing web application?", a: "Yes, we offer legacy application modernization, improving performance, security and scalability without disrupting your business operations." },
+    { q: "Will the web application be scalable as our business grows?", a: "Yes, we design with scalable architecture from the start, so the application can support more users, data and features over time." },
+    { q: "Do you provide post-launch support and maintenance?", a: "Yes, we offer ongoing maintenance, including bug fixes, performance monitoring, security updates and feature enhancements." },
+    { q: "How much does web application development cost?", a: "Cost depends on features, integrations and the technology stack — we provide a transparent quote after a free consultation." },
+    { q: "Is our data secure in a custom-built web application?", a: "Yes, security is built in from day one, including secure authentication, encryption and data protection best practices." }
   ],
   "Website Development": [
-    { q: "What is included in your website development service?", a: "Our website development service includes design, development, content structuring, mobile responsiveness, and on-page SEO setup." },
+    { q: "What is included in your website development service?", a: "Our website development service includes design, development, content structuring, mobile responsiveness and on-page SEO setup." },
     { q: "How long does it take to build a website?", a: "A standard business website typically takes 2 to 4 weeks, while larger or e-commerce websites can take 6 to 10 weeks." },
-    { q: "Do you build websites using WordPress, or custom code?", a: "We build using both — WordPress and CMS platforms for content-driven sites, and Next.js/React for custom, high-performance websites." },
+    { q: "Do you build websites using WordPress, or custom code?", a: "We build using both — WordPress and CMS platforms for content-driven sites and Next.js/React for custom, high-performance websites." },
     { q: "Will my website be mobile-friendly and fast-loading?", a: "Yes, every website we build is fully responsive and optimized for speed, which also supports better search engine rankings." },
-    { q: "Can you redesign my existing website instead of building a new one?", a: "Yes, we offer website redesign services that improve design, performance, and SEO while retaining your existing content and branding." },
-    { q: "Will my website be optimized for SEO?", a: "Yes, we implement on-page SEO fundamentals — clean URLs, proper heading structure, meta tags, and fast load times — as part of development." },
-    { q: "Can I update the website content myself after launch?", a: "Yes, if built on a CMS like WordPress, you'll have an easy-to-use dashboard to update content, images, and pages without coding." },
-    { q: "Do you provide hosting and domain support?", a: "Yes, we can assist with hosting setup, domain configuration, and ongoing website maintenance." },
-    { q: "How much does website development cost?", a: "Cost depends on design complexity, number of pages, and functionality required — we provide a clear quote after understanding your needs." },
-    { q: "Do you offer ongoing website maintenance after launch?", a: "Yes, we offer maintenance packages covering updates, security patches, backups, and performance monitoring." }
+    { q: "Can you redesign my existing website instead of building a new one?", a: "Yes, we offer website redesign services that improve design, performance and SEO while retaining your existing content and branding." },
+    { q: "Will my website be optimized for SEO?", a: "Yes, we implement on-page SEO fundamentals — clean URLs, proper heading structure, meta tags and fast load times — as part of development." },
+    { q: "Can I update the website content myself after launch?", a: "Yes, if built on a CMS like WordPress, you'll have an easy-to-use dashboard to update content, images and pages without coding." },
+    { q: "Do you provide hosting and domain support?", a: "Yes, we can assist with hosting setup, domain configuration and ongoing website maintenance." },
+    { q: "How much does website development cost?", a: "Cost depends on design complexity, number of pages and functionality required — we provide a clear quote after understanding your needs." },
+    { q: "Do you offer ongoing website maintenance after launch?", a: "Yes, we offer maintenance packages covering updates, security patches, backups and performance monitoring." }
   ],
   "Mobile App Development": [
     { q: "Do you build apps for both Android and iOS?", a: "Yes, we develop native Android and iOS apps, as well as cross-platform apps using Flutter and React Native." },
     { q: "How long does it take to build a mobile app?", a: "A basic app typically takes 6 to 10 weeks, while feature-rich or enterprise apps can take 3 to 6 months depending on complexity." },
     { q: "Should I build a native app or a cross-platform app?", a: "It depends on your budget and requirements — native apps offer the best performance, while cross-platform apps are faster and more cost-effective to build for both platforms." },
-    { q: "Can you integrate payment gateways and third-party APIs into the app?", a: "Yes, we integrate payment gateways, maps, chat, push notifications, and other third-party APIs as needed." },
+    { q: "Can you integrate payment gateways and third-party APIs into the app?", a: "Yes, we integrate payment gateways, maps, chat, push notifications and other third-party APIs as needed." },
     { q: "Will you help publish the app on the Play Store and App Store?", a: "Yes, we handle the complete app submission process, including store listing setup and compliance with platform guidelines." },
     { q: "Can you upgrade or add features to an existing app?", a: "Yes, we offer app enhancement services, adding new features or improving performance on apps you've already built." },
-    { q: "Do you provide app maintenance and support after launch?", a: "Yes, we offer ongoing maintenance, including bug fixes, OS-update compatibility, and feature updates." },
-    { q: "How much does mobile app development cost?", a: "Cost depends on platform choice, features, and complexity — we provide a detailed quote after a free consultation." },
-    { q: "Will the app be secure and protect user data?", a: "Yes, we implement secure authentication, encrypted data storage, and follow platform security best practices." },
+    { q: "Do you provide app maintenance and support after launch?", a: "Yes, we offer ongoing maintenance, including bug fixes, OS-update compatibility and feature updates." },
+    { q: "How much does mobile app development cost?", a: "Cost depends on platform choice, features and complexity — we provide a detailed quote after a free consultation." },
+    { q: "Will the app be secure and protect user data?", a: "Yes, we implement secure authentication, encrypted data storage and follow platform security best practices." },
     { q: "Can the app scale as our user base grows?", a: "Yes, we architect apps with scalable backend infrastructure to handle growing users and data without performance issues." }
   ],
   "Digital Marketing Services": [
-    { q: "What digital marketing services do you offer?", a: "We offer SEO, social media marketing, PPC/Google Ads, content marketing, and website analytics as part of our digital marketing services." },
+    { q: "What digital marketing services do you offer?", a: "We offer SEO, social media marketing, PPC/Google Ads, content marketing and website analytics as part of our digital marketing services." },
     { q: "How long does it take to see results from SEO?", a: "SEO typically takes 3 to 6 months to show measurable ranking and traffic improvements, depending on competition and starting point." },
-    { q: "Do you manage Google Ads and social media ads?", a: "Yes, we plan, set up, and manage paid campaigns across Google Ads, Facebook, and Instagram based on your target audience and budget." },
-    { q: "Can you create content for our website and social media?", a: "Yes, we provide content creation services including blog posts, social media posts, and website copy aligned with your SEO strategy." },
-    { q: "Will I get reports on my campaign performance?", a: "Yes, we provide regular performance reports covering traffic, rankings, ad spend, and conversions, so you can track ROI." },
+    { q: "Do you manage Google Ads and social media ads?", a: "Yes, we plan, set up and manage paid campaigns across Google Ads, Facebook and Instagram based on your target audience and budget." },
+    { q: "Can you create content for our website and social media?", a: "Yes, we provide content creation services including blog posts, social media posts and website copy aligned with your SEO strategy." },
+    { q: "Will I get reports on my campaign performance?", a: "Yes, we provide regular performance reports covering traffic, rankings, ad spend and conversions, so you can track ROI." },
     { q: "Do you offer local SEO for businesses targeting a specific city or region?", a: "Yes, we optimize for local search, including Google Business Profile management and location-based keyword targeting." },
-    { q: "Can digital marketing help increase leads for my business?", a: "Yes, a combination of SEO, paid ads, and content marketing is designed to drive targeted traffic that converts into leads and sales." },
+    { q: "Can digital marketing help increase leads for my business?", a: "Yes, a combination of SEO, paid ads and content marketing is designed to drive targeted traffic that converts into leads and sales." },
     { q: "Do you work with businesses of all sizes and industries?", a: "Yes, we tailor digital marketing strategies to fit businesses ranging from small local businesses to larger enterprises across industries." },
-    { q: "How much does digital marketing cost?", a: "Cost depends on the services selected, ad budget, and campaign scope — we provide a customized quote based on your goals." },
-    { q: "Can you manage both our website SEO and social media together?", a: "Yes, we offer integrated digital marketing packages combining SEO, social media, and paid advertising for consistent results." }
+    { q: "How much does digital marketing cost?", a: "Cost depends on the services selected, ad budget and campaign scope — we provide a customized quote based on your goals." },
+    { q: "Can you manage both our website SEO and social media together?", a: "Yes, we offer integrated digital marketing packages combining SEO, social media and paid advertising for consistent results." }
   ]
 };
 
@@ -128,7 +128,7 @@ export default function FAQPage() {
               transition={{ delay: 0.2 }}
               className={cn(theme.p, "mx-auto text-gray-300 max-w-2xl text-center mb-12")}
             >
-              Find answers to the most common questions about our custom ERP software, web development, mobile apps, and digital marketing services.
+              Find answers to the most common questions about our custom ERP software, web development, mobile apps and digital marketing services.
             </motion.p>
           </div>
 

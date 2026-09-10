@@ -22,23 +22,23 @@ export default function KnittingSoftwarePage() {
   const features = [
     { title: "Cloud Technology", desc: "Access your ERP anytime, anywhere with secure, reliable cloud technology — no dependency on office systems or physical servers.", icon: Cloud },
     { title: "Real-Time Tracking", desc: "Monitor live production and business data with accurate reports for faster, smarter decisions across every department.", icon: Activity },
-    { title: "Production & Inventory", desc: "Track knitting production progress and yarn/fabric inventory in real time for better planning, control, and efficiency.", icon: Package },
-    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation, and support from our team ensure faster communication, better service, and accountability.", icon: UserX },
-    { title: "Barcode Scanning", desc: "Faster data entry, reduced manual errors, accurate yarn and fabric stock tracking, and improved inventory control.", icon: ScanBarcode },
+    { title: "Production & Inventory", desc: "Track knitting production progress and yarn/fabric inventory in real time for better planning, control and efficiency.", icon: Package },
+    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation and support from our team ensure faster communication, better service and accountability.", icon: UserX },
+    { title: "Barcode Scanning", desc: "Faster data entry, reduced manual errors, accurate yarn and fabric stock tracking and improved inventory control.", icon: ScanBarcode },
     { title: "Seamless Integration", desc: "Connect your finance operations to the E-Way Bill and E-Invoice platforms for speedier processing and improved compliance.", icon: LinkIcon },
-    { title: "Built-in Approval System", desc: "Route purchase orders, expenses, and requests through role-based approval workflows for faster and controlled decision-making.", icon: CheckSquare },
+    { title: "Built-in Approval System", desc: "Route purchase orders, expenses and requests through role-based approval workflows for faster and controlled decision-making.", icon: CheckSquare },
     { title: "Integration with SMS", desc: "Send automatic, intelligently generated SMS alerts for production updates and payment reminders.", icon: MessageSquare },
     { title: "Scheduled Mail Sending", desc: "Set up automated, scheduled email campaigns and reports sent to customers, vendors, or internal teams.", icon: Mail },
-    { title: "WhatsApp Integration", desc: "Send invoices, order confirmations, and dispatch updates directly to vendors or customers via WhatsApp.", icon: MessageCircle },
-    { title: "Action Dashboard", desc: "A single dashboard showing pending approvals, overdue tasks, and items that need attention — so nothing slips through.", icon: LayoutDashboard },
-    { title: "Graphical Reports", desc: "Visual, real-time reports on production, yarn consumption, inventory, and finance, built for quick decision-making.", icon: BarChart }
+    { title: "WhatsApp Integration", desc: "Send invoices, order confirmations and dispatch updates directly to vendors or customers via WhatsApp.", icon: MessageCircle },
+    { title: "Action Dashboard", desc: "A single dashboard showing pending approvals, overdue tasks and items that need attention — so nothing slips through.", icon: LayoutDashboard },
+    { title: "Graphical Reports", desc: "Visual, real-time reports on production, yarn consumption, inventory and finance, built for quick decision-making.", icon: BarChart }
   ];
 
   const platformPoints = [
     "The knitting process requires the constant coordination of yarn inventory, machine planning, production output, as well as fabric quality. Often, this is tracked by hand across spreadsheets and registers.",
-    "Pinnacle ERP has been designed for knitting machines, linking yarn procurement, machine-wise production planning, quality inspection, and dispatch into one system.",
+    "Pinnacle ERP has been designed for knitting machines, linking yarn procurement, machine-wise production planning, quality inspection and dispatch into one system.",
     "You can get real-time insight into the performance of your machine as well as yarn consumption and fabric inventory, without waiting for reports at the end of the day.",
-    "Based on the actual operation of knitting units, including knitting lots of yarn, gauges for machines, GSM, and fabric size and shade-wise production. Made from the same common manufacturing software."
+    "Based on the actual operation of knitting units, including knitting lots of yarn, gauges for machines, GSM and fabric size and shade-wise production. Made from the same common manufacturing software."
   ];
 
   const modules = [
@@ -61,14 +61,14 @@ export default function KnittingSoftwarePage() {
   ];
 
   const whyChooseUs = [
-    { title: "Purpose-Built for Knitting", desc: "Every module is designed around real knitting workflows — yarn lots, machine gauge, GSM, and shade-wise production — not adapted from generic textile ERP.", icon: Settings },
-    { title: "Complete Financial Integration", desc: "Built-in billing, receivables, and two-way Tally integration mean your finance team works from the same data as your production floor.", icon: Zap },
-    { title: "End-to-End Visibility", desc: "From yarn procurement to fabric dispatch, track cost, status, and delivery timelines without switching between systems.", icon: ShieldCheck },
+    { title: "Purpose-Built for Knitting", desc: "Every module is designed around real knitting workflows — yarn lots, machine gauge, GSM and shade-wise production — not adapted from generic textile ERP.", icon: Settings },
+    { title: "Complete Financial Integration", desc: "Built-in billing, receivables and two-way Tally integration mean your finance team works from the same data as your production floor.", icon: Zap },
+    { title: "End-to-End Visibility", desc: "From yarn procurement to fabric dispatch, track cost, status and delivery timelines without switching between systems.", icon: ShieldCheck },
     { title: "Scalable for Growing Units", desc: "Whether you run a single knitting unit or manage multiple facilities and subcontractors, Pinnacle ERP scales with your operations.", icon: TrendingUp },
-    { title: "Machine-Wise Production Planning", desc: "Plan and monitor output by machine, gauge, and shift, maximizing capacity utilization.", icon: Factory },
-    { title: "Yarn Lot & Batch Tracking", desc: "Track yarn from procurement to consumption by lot, count, and shade for full traceability.", icon: Cpu },
+    { title: "Machine-Wise Production Planning", desc: "Plan and monitor output by machine, gauge and shift, maximizing capacity utilization.", icon: Factory },
+    { title: "Yarn Lot & Batch Tracking", desc: "Track yarn from procurement to consumption by lot, count and shade for full traceability.", icon: Cpu },
     { title: "Integrated Dyeing & Processing Visibility", desc: "Track fabric movement through in-house or subcontracted dyeing and finishing processes.", icon: Scissors },
-    { title: "Dedicated Implementation Support", desc: "Get structured onboarding, data migration, and training so your teams are productive from day one.", icon: MonitorSmartphone }
+    { title: "Dedicated Implementation Support", desc: "Get structured onboarding, data migration and training so your teams are productive from day one.", icon: MonitorSmartphone }
   ];
 
   const processes = [
@@ -84,16 +84,16 @@ export default function KnittingSoftwarePage() {
   ];
 
   const faqs = [
-    { q: "1. What is knitting ERP software?", a: "It's a management system built specifically for knitting units, covering yarn procurement, production planning, quality, and dispatch in one platform." },
-    { q: "2. Can it track yarn by lot and shade?", a: "Yes, the Inventory module tracks yarn by count, lot, and shade from procurement through to consumption." },
-    { q: "3. Does it support machine-wise production planning?", a: "Yes, Production Planning and Production Management let you plan and monitor output by machine, gauge, and shift." },
+    { q: "1. What is knitting ERP software?", a: "It's a management system built specifically for knitting units, covering yarn procurement, production planning, quality and dispatch in one platform." },
+    { q: "2. Can it track yarn by lot and shade?", a: "Yes, the Inventory module tracks yarn by count, lot and shade from procurement through to consumption." },
+    { q: "3. Does it support machine-wise production planning?", a: "Yes, Production Planning and Production Management let you plan and monitor output by machine, gauge and shift." },
     { q: "4. Can it manage subcontracted dyeing or finishing?", a: "Yes, the Process Management module tracks materials and status for both internal and subcontracted dyeing and finishing." },
     { q: "5. Does Pinnacle ERP integrate with Tally?", a: "Yes, it offers two-way Tally integration, syncing sales and accounting data automatically in both directions." },
     { q: "6. Can I track fabric quality by batch?", a: "Yes, Quality Management supports in-line and final fabric inspection with batch and shade-level tracking." },
     { q: "7. Can I calculate yarn consumption accurately per order?", a: "Yes, the Costing module tracks yarn consumption alongside machine time and processing charges for accurate order costing." },
     { q: "8. Is GST and e-invoicing supported?", a: "Yes, the Sales & Billing module supports GST invoicing along with E-Invoice and E-Way Bill integration." },
     { q: "9. Can this ERP handle multiple knitting units or warehouses?", a: "Yes, it supports multi-location and multi-warehouse management for businesses operating more than one facility." },
-    { q: "10. How long does implementation take?", a: "Timelines depend on unit size and data volume, but implementation typically includes structured onboarding, training, and go-live support within a few weeks." }
+    { q: "10. How long does implementation take?", a: "Timelines depend on unit size and data volume, but implementation typically includes structured onboarding, training and go-live support within a few weeks." }
   ];
 
   return (
@@ -138,7 +138,7 @@ export default function KnittingSoftwarePage() {
               </h1>
 
               <p className={cn(theme.p, "text-gray-300 leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                Streamline your entire knitting operations in one place—from yarn management and production planning to machine tracking, quality control, stock, costing, and dispatch. It helps knitting companies reduce wastage, improve machine utilization, track production in real time, minimize manual work, and make faster, data-driven decisions.
+                Streamline your entire knitting operations in one place—from yarn management and production planning to machine tracking, quality control, stock, costing and dispatch. It helps knitting companies reduce wastage, improve machine utilization, track production in real time, minimize manual work and make faster, data-driven decisions.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">

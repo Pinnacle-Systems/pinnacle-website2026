@@ -117,7 +117,7 @@ export default function AboutUsPage() {
                 </h3>
               </div>
               <p className={cn(theme.p, "text-black group-hover:text-white transition-colors duration-300 text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                Not only does Manufacturing require an array of Technology, but it also involves a detailed Knowledge of the Production Process, Cost Management, Planning, and Logistics. In collaboration with our Clients, we carefully analyze the gap in the process right from order to dispatch and develop Customized Solutions that help reduce manual Efforts.
+                Not only does Manufacturing require an array of Technology, but it also involves a detailed Knowledge of the Production Process, Cost Management, Planning and Logistics. In collaboration with our Clients, we carefully analyze the gap in the process right from order to dispatch and develop Customized Solutions that help reduce manual Efforts.
               </p>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function AboutUsPage() {
                 </h3>
               </div>
               <p className={cn(theme.p, "text-black group-hover:text-white transition-colors duration-300 text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                Pinnacle&apos;s ERP connects your Internal Departments into one system with integrations for Accounting, E-Invoice, E-Way Bill, Barcode, Banking, and WhatsApp. Our relationship doesn't end at Go-live — we support Implementation, Training, Enhancements, and Scaling as your Business grows.
+                Pinnacle&apos;s ERP connects your Internal Departments into one system with integrations for Accounting, E-Invoice, E-Way Bill, Barcode, Banking and WhatsApp. Our relationship doesn't end at Go-live — we support Implementation, Training, Enhancements and Scaling as your Business grows.
               </p>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function AboutUsPage() {
                 </h3>
               </div>
               <p className={cn(theme.p, "text-black group-hover:text-white transition-colors duration-300 text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                We also help Businesses establish their Online Presence by providing Web Development, Website Development, Mobile App Development and Digital Marketing Services.
+                We also help Businesses establish their Online Presence by providing Digital Marketing Services.
               </p>
             </div>
           </div>

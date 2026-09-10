@@ -8,7 +8,7 @@ import { theme } from "@/theme";
 const servicesData = [
   {
     title: "Customized ERP Software Solutions",
-    description: "Every business operates differently, and your software should be too. Pinnacle Systems designs and develops custom ERP software specifically tailored to your unique processes, the needs of your industry and growth targets. From finance and inventory through HR and procurement and production management, our ERP solutions integrate all departments into one unifying platform.",
+    description: "Every business operates differently and your software should be too. Pinnacle Systems designs and develops custom ERP software specifically tailored to your unique processes, the needs of your industry and growth targets. From finance and inventory through HR and procurement and production management, our ERP solutions integrate all departments into one unifying platform.",
     highlightsTitle: "Highlights of the most important elements:",
     highlights: [
       "Fully customizable modules based on your business processes",
@@ -22,7 +22,7 @@ const servicesData = [
   },
   {
     title: "Mobile App Development Services",
-    description: "Reach your customers wherever they are. We design and build high-performing, user-friendly mobile applications for iOS and Android that combine clean design with robust functionality. Whether you need a customer-facing app, an internal business tool, or a full-scale marketplace platform, our team delivers apps built for performance, security, and long-term scalability.",
+    description: "Reach your customers wherever they are. We design and build high-performing, user-friendly mobile applications for iOS and Android that combine clean design with robust functionality. Whether you need a customer-facing app, an internal business tool, or a full-scale marketplace platform, our team delivers apps built for performance, security and long-term scalability.",
     highlightsTitle: "Key highlights:",
     highlights: [
       "Native & cross-platform app development",
@@ -36,7 +36,7 @@ const servicesData = [
   },
   {
     title: "Website & Web Application Development",
-    description: "Your website is usually the first impression that customers get of your business. Make it memorable. Pinnacle Systems builds fast, reliable, secure websites and web-based applications, from corporate websites, e-commerce platforms, and more to custom-designed portals for websites, along with SaaS products.",
+    description: "Your website is usually the first impression that customers get of your business. Make it memorable. Pinnacle Systems builds fast, reliable, secure websites and web-based applications, from corporate websites, e-commerce platforms and more to custom-designed portals for websites, along with SaaS products.",
     highlightsTitle: "The key points:",
     highlights: [
       "Responsive, mobile-first design",
@@ -64,10 +64,10 @@ const servicesData = [
   },
   {
     title: "Seamless System Integration Services",
-    description: "Disconnected systems slow your business down. Pinnacle Systems specializes in integrating your existing software, platforms, and third-party tools into one connected ecosystem — improving data accuracy, eliminating manual work, and boosting overall efficiency.",
+    description: "Disconnected systems slow your business down. Pinnacle Systems specializes in integrating your existing software, platforms and third-party tools into one connected ecosystem — improving data accuracy, eliminating manual work and boosting overall efficiency.",
     highlightsTitle: "Key highlights:",
     highlights: [
-      "ERP CRM, ERP, and other third-party API integrations",
+      "ERP CRM, ERP and other third-party API integrations",
       "Logistics integrations and payment gateways",
       "Cloud and on-premise systems integration",
       "Custom middleware development",
@@ -103,7 +103,7 @@ export default function ServicesSection() {
             Enterprise-Grade Software & <span className="text-primary">Digital Marketing Solutions</span>
           </h2>
           <p className={theme.p}>
-            We provide a full range of marketing and technology solutions designed to assist your business in being efficient, reaching the right people, and growing without fear.
+            We provide a full range of marketing and technology solutions designed to assist your business in being efficient, reaching the right people and growing without fear.
           </p>
         </div>
 

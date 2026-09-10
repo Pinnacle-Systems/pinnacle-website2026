@@ -26,8 +26,8 @@ export default function WebsiteDevelopmentPage() {
 
   const devServices = [
     { title: "Corporate Website Development", desc: "Establish digital authority with a professional, fast-loading corporate site that builds immediate trust with stakeholders and B2B partners.", link: "Explore Corporate Websites" },
-    { title: "Services Websites", desc: "Turn local searches into qualified leads with structured service breakdowns, localized SEO foundations, and frictionless contact forms.", link: "Explore Service Websites" },
-    { title: "Real Estate Website Development", desc: "Showcase properties with high-resolution image optimization, integrated map features, and advanced search filters for buyers and investors.", link: "Explore Real Estate Websites" },
+    { title: "Services Websites", desc: "Turn local searches into qualified leads with structured service breakdowns, localized SEO foundations and frictionless contact forms.", link: "Explore Service Websites" },
+    { title: "Real Estate Website Development", desc: "Showcase properties with high-resolution image optimization, integrated map features and advanced search filters for buyers and investors.", link: "Explore Real Estate Websites" },
     { title: "Healthcare & Clinic Websites", desc: "Increase patient engagement by delivering fast-loading websites for clinics that build trust. Easy appointment booking systems as well as secure forms for patient contact.", link: "Explore Healthcare Websites" },
     { title: "Website Redesign Services", desc: "Transform your outdated, underperforming site into a modern, mobile-responsive asset while safely redirecting URLs to protect your existing SEO rankings.", link: "Explore Website Redesign" },
     { title: "E-Commerce Website Development", desc: "Drive more online sales with secure, high-speed Shopify or custom platforms featuring optimized product architectures and seamless checkout flows.", link: "Explore E-Commerce Design" },
@@ -53,25 +53,25 @@ export default function WebsiteDevelopmentPage() {
   ];
 
   const whyChooseUs = [
-    { title: "In-House SEO Experts", desc: "Every website we build is backed by our in-house SEO team from day one, not handed off to a separate agency later. This means your site's structure, page speed, and content are optimized to rank from the moment it launches, not months after.", icon: LineChart },
-    { title: "Performance-First Development", desc: "We don't just make websites that look good — we build for Core Web Vitals, fast load times, and mobile-first experiences that keep visitors on the page instead of bouncing.", icon: FastForward },
-    { title: "Conversion-Focused Design", desc: "Every layout, CTA, and form is designed around how users actually behave — turning traffic into leads and sales, not just page views.", icon: Target },
+    { title: "In-House SEO Experts", desc: "Every website we build is backed by our in-house SEO team from day one, not handed off to a separate agency later. This means your site's structure, page speed and content are optimized to rank from the moment it launches, not months after.", icon: LineChart },
+    { title: "Performance-First Development", desc: "We don't just make websites that look good — we build for Core Web Vitals, fast load times and mobile-first experiences that keep visitors on the page instead of bouncing.", icon: FastForward },
+    { title: "Conversion-Focused Design", desc: "Every layout, CTA and form is designed around how users actually behave — turning traffic into leads and sales, not just page views.", icon: Target },
     { title: "Transparent, Fixed Pricing", desc: "No hidden fees or scope surprises. You get a clear quote upfront based on your goals.", icon: BadgeDollarSign },
-    { title: "Ongoing Support After Launch", desc: "We don't disappear after your site goes live — we offer maintenance, security monitoring, and updates to keep it running smoothly.", icon: HeadphonesIcon },
+    { title: "Ongoing Support After Launch", desc: "We don't disappear after your site goes live — we offer maintenance, security monitoring and updates to keep it running smoothly.", icon: HeadphonesIcon },
     { title: "Built to Scale", desc: "Your website is developed on modern, secure frameworks that grow with your business, so you won't need a rebuild in a year.", icon: TrendingUp }
   ];
 
   const faqs = [
     { q: "What is the time frame to create and design the website?", a: "A typical website takes 3 to 6 weeks from start to launch, depending on the level of complexity. A landing page may be completed in as short as a couple of weeks, whereas E-commerce or custom CMS builds that have advanced features can take between 6 and 8 weeks." },
-    { q: "How much does a professional website cost?", a: "Pricing depends on the type of website, features, and platform (e.g., WordPress, Shopify, or custom-built). We provide a fixed quote after understanding your goals — there are no hidden fees or surprise charges." },
-    { q: "Will my website be optimized for Google (SEO)?", a: "Yes. Each website we create is built on clear, SEO-friendly code with speedy loading pages, mobile-first designs, and an appropriate technical structure. This gives you the best foundation to be ranked higher on Google right from the start." },
-    { q: "Are you capable of revamping my website without impacting my SEO rankings?", a: "Yes. The process we use to redesign your website includes secure URL redirection and SEO audits for technical SEO to ensure that your rankings, backlinks, and traffic are secure in and after the alteration." },
-    { q: "Does my site work for mobile phones?", a: "Absolutely. Every website we build is mobile-friendly by default, and optimized for Core Web Vitals, ensuring speedy loading and seamless navigation across smartphones, tablets, as well as desktops." },
-    { q: "Do I have the ability to update the site myself, after it's been constructed?", a: "Yes. We are built on easy-to-use CMS platforms such as WordPress or an individual CMS, and your team can make changes to text, images, pages, and text without coding expertise." },
+    { q: "How much does a professional website cost?", a: "Pricing depends on the type of website, features and platform (e.g., WordPress, Shopify, or custom-built). We provide a fixed quote after understanding your goals — there are no hidden fees or surprise charges." },
+    { q: "Will my website be optimized for Google (SEO)?", a: "Yes. Each website we create is built on clear, SEO-friendly code with speedy loading pages, mobile-first designs and an appropriate technical structure. This gives you the best foundation to be ranked higher on Google right from the start." },
+    { q: "Are you capable of revamping my website without impacting my SEO rankings?", a: "Yes. The process we use to redesign your website includes secure URL redirection and SEO audits for technical SEO to ensure that your rankings, backlinks and traffic are secure in and after the alteration." },
+    { q: "Does my site work for mobile phones?", a: "Absolutely. Every website we build is mobile-friendly by default and optimized for Core Web Vitals, ensuring speedy loading and seamless navigation across smartphones, tablets, as well as desktops." },
+    { q: "Do I have the ability to update the site myself, after it's been constructed?", a: "Yes. We are built on easy-to-use CMS platforms such as WordPress or an individual CMS and your team can make changes to text, images, pages and text without coding expertise." },
     { q: "Do you create e-commerce sites?", a: "Yes. We create high-speed, secure e-commerce sites using Shopify or custom platforms that have optimized page layouts for products as well as simplified checkout flows that are created to improve conversion rates." },
-    { q: "What makes your websites different from a template-based website?", a: "Our websites are designed around performance and conversions — not just visuals. We focus on speed, SEO structure, and user behavior so your website actively generates leads and sales, rather than just looking good." },
-    { q: "Do you offer website support and maintenance after launch?", a: "Yes. We offer ongoing support packages for updates, security monitoring, backups, and performance optimization to keep your website running smoothly after it goes live." },
-    { q: "How do I get started with a new website or redesign?", a: "Simply request a Free Website Audit. We'll review your current site (or goals for a new one) and provide a clear breakdown of what's needed to make your website faster, higher-ranking, and more conversion-focused." }
+    { q: "What makes your websites different from a template-based website?", a: "Our websites are designed around performance and conversions — not just visuals. We focus on speed, SEO structure and user behavior so your website actively generates leads and sales, rather than just looking good." },
+    { q: "Do you offer website support and maintenance after launch?", a: "Yes. We offer ongoing support packages for updates, security monitoring, backups and performance optimization to keep your website running smoothly after it goes live." },
+    { q: "How do I get started with a new website or redesign?", a: "Simply request a Free Website Audit. We'll review your current site (or goals for a new one) and provide a clear breakdown of what's needed to make your website faster, higher-ranking and more conversion-focused." }
   ];
 
   return (
@@ -115,7 +115,7 @@ export default function WebsiteDevelopmentPage() {
               </h1>
               
               <p className={cn(theme.p, "text-gray-300")}>
-                We design and develop websites that load in seconds, rank on Google, and turn visitors into paying customers not just another page on the internet.
+                We design and develop websites that load in seconds, rank on Google and turn visitors into paying customers not just another page on the internet.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">

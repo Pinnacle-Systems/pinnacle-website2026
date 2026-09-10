@@ -31,13 +31,13 @@ const approachSteps = [
   {
     step: "01",
     title: "1. Understand",
-    desc: "We learn about your business, products or services, target customers, competitors, current online presence, and growth objectives.",
+    desc: "We learn about your business, products or services, target customers, competitors, current online presence and growth objectives.",
     icon: Lightbulb,
   },
   {
     step: "02",
     title: "2. Research",
-    desc: "We study relevant search behaviour, keywords, competitors, audiences, market opportunities, and existing digital performance.",
+    desc: "We study relevant search behaviour, keywords, competitors, audiences, market opportunities and existing digital performance.",
     icon: Search,
   },
   {
@@ -49,19 +49,19 @@ const approachSteps = [
   {
     step: "04",
     title: "4. Execute",
-    desc: "Our team implements the agreed activities across relevant channels, including search, paid advertising, social media, content, and website optimization.",
+    desc: "Our team implements the agreed activities across relevant channels, including search, paid advertising, social media, content and website optimization.",
     icon: Rocket,
   },
   {
     step: "05",
     title: "5. Measure",
-    desc: "We monitor the metrics that matter to your business, from organic visibility and website traffic to enquiries, conversions, advertising performance, and other KPIs.",
+    desc: "We monitor the metrics that matter to your business, from organic visibility and website traffic to enquiries, conversions, advertising performance and other KPIs.",
     icon: BarChart3,
   },
   {
     step: "06",
     title: "6. Optimize",
-    desc: "Digital marketing is an ongoing process. We review performance, identify opportunities, test improvements, and refine the strategy over time.",
+    desc: "Digital marketing is an ongoing process. We review performance, identify opportunities, test improvements and refine the strategy over time.",
     icon: RefreshCw,
   },
 ];
@@ -69,35 +69,35 @@ const approachSteps = [
 const faqs = [
   {
     q: "What does a digital marketing company in Tiruppur do?",
-    a: "A digital marketing firm assists firms in marketing their services and goods by using internet marketing methods including SEO, pay-per-click, social media marketing, content marketing, email marketing, and local search.",
+    a: "A digital marketing firm assists firms in marketing their services and goods by using internet marketing methods including SEO, pay-per-click, social media marketing, content marketing, email marketing and local search.",
   },
   {
     q: "How does digital marketing help my business in Tiruppur?",
-    a: "Digital marketing services will be able to assist you in improving your company's visibility on the Internet, reaching the right customers, creating inquiries, and acquiring new customers.",
+    a: "Digital marketing services will be able to assist you in improving your company's visibility on the Internet, reaching the right customers, creating inquiries and acquiring new customers.",
   },
   {
     q: "What digital marketing services does Pinnacle Systems provide?",
-    a: "Pinnacle Systems provides SEO, PPC, Google Ads, social media marketing, Meta Ads, content marketing, email marketing, website optimization, local SEO, and related digital marketing services.",
+    a: "Pinnacle Systems provides SEO, PPC, Google Ads, social media marketing, Meta Ads, content marketing, email marketing, website optimization, local SEO and related digital marketing services.",
   },
   {
     q: "Do you provide digital marketing services for textile businesses?",
-    a: "Yes. Our digital marketing strategies can be adapted for textile manufacturers, garment companies, exporters, suppliers, brands, and other businesses within the textile ecosystem.",
+    a: "Yes. Our digital marketing strategies can be adapted for textile manufacturers, garment companies, exporters, suppliers, brands and other businesses within the textile ecosystem.",
   },
   {
     q: "Do you provide SEO services in Tiruppur?",
-    a: "Yes. We provide SEO strategies covering keyword research, technical SEO, on-page optimization, content, local SEO, competitor analysis, and other organic search activities.",
+    a: "Yes. We provide SEO strategies covering keyword research, technical SEO, on-page optimization, content, local SEO, competitor analysis and other organic search activities.",
   },
   {
     q: "Do you manage Google Ads and Meta Ads?",
-    a: "Yes. We manage paid advertising campaigns across platforms such as Google, Facebook, and Instagram based on your business objectives and target audience.",
+    a: "Yes. We manage paid advertising campaigns across platforms such as Google, Facebook and Instagram based on your business objectives and target audience.",
   },
   {
     q: "Should my business invest in SEO or paid advertising?",
-    a: "It all depends on your objective, your market, competition, budget, and timeline. SEO will help you with organic visibility, while paid visibility is possible when your campaign works effectively. It is common to apply both strategies together.",
+    a: "It all depends on your objective, your market, competition, budget and timeline. SEO will help you with organic visibility, while paid visibility is possible when your campaign works effectively. It is common to apply both strategies together.",
   },
   {
     q: "What is the cost of digital marketing in Tiruppur?",
-    a: "Digital marketing costs depend on your services, goals, competition, campaign scope, and ad budget. Pinnacle Systems creates a customized proposal based on your business needs rather than using a fixed package.",
+    a: "Digital marketing costs depend on your services, goals, competition, campaign scope and ad budget. Pinnacle Systems creates a customized proposal based on your business needs rather than using a fixed package.",
   },
   {
     q: "How long does digital marketing take to show results?",
@@ -105,7 +105,7 @@ const faqs = [
   },
   {
     q: "How do you measure digital marketing performance?",
-    a: "We track KPIs relevant to your business, which may include search visibility, organic traffic, leads, conversions, cost per lead, advertising performance, website engagement, and other agreed objectives.",
+    a: "We track KPIs relevant to your business, which may include search visibility, organic traffic, leads, conversions, cost per lead, advertising performance, website engagement and other agreed objectives.",
   },
 ];
 
@@ -228,10 +228,10 @@ export default function DigitalMarketingContent() {
                   Digital marketing doesn&apos;t exist separately from your website and technology.
                 </p>
                 <p className={cn(theme.p, "text-gray-300 text-[13px] sm:text-[15px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                  Your website needs to support search engines, users, lead generation, analytics, and conversions. Your tracking needs to provide useful data. Your landing pages need to communicate your value clearly.
+                  Your website needs to support search engines, users, lead generation, analytics and conversions. Your tracking needs to provide useful data. Your landing pages need to communicate your value clearly.
                 </p>
                 <p className={cn(theme.p, "text-gray-300 text-[13px] sm:text-[15px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                  Pinnacle Systems brings together digital marketing, website development, mobile app development, ERP expertise, and technology solutions under one organization.
+                  Pinnacle Systems brings together digital marketing, website development, mobile app development, ERP expertise and technology solutions under one organization.
                 </p>
                 <p className={cn(theme.p, "text-gray-300 text-[13px] sm:text-[15px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                   This allows us to look beyond individual campaigns and consider how your digital presence works as a complete business system.

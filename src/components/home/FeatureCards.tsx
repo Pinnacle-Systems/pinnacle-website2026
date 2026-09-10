@@ -67,7 +67,7 @@ const features = [
   {
     icon: Target,
     title: "Digital Marketing",
-    description: "AI-driven SEO, Ads, and Content that grows you",
+    description: "AI-driven SEO, Ads and Content that grows your Business",
     link: "/digital-marketing-services-in-tirupur"
   },
 

@@ -36,13 +36,13 @@ import { cn } from "@/lib/utils";
 
 export const metadata = {
   title: 'Textile ERP Software - Pinnacle Systems',
-  description: 'Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production, and dispatch in one connected textile ERP system.',
+  description: 'Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production and dispatch in one connected textile ERP system.',
 };
 
 const features = [
   {
     title: "Tally Integration",
-    description: "Integrate your yarn procurement, fabric selling, and billing of job-work directly to Tally; no need for any data entry between your fabric manufacturing plant and your accountancy.",
+    description: "Integrate your yarn procurement, fabric selling and billing of job-work directly to Tally; no need for any data entry between your fabric manufacturing plant and your accountancy.",
     icon: Calculator,
     image: "/images/erp-software/SeamlessIntegration.webp"
   },
@@ -54,25 +54,25 @@ const features = [
   },
   {
     title: "Mobile App",
-    description: "Check your spinning, knitting, and garment manufacturing process from your shop floor and on the go; no need to be confined to your desktop only.",
+    description: "Check your spinning, knitting and garment manufacturing process from your shop floor and on the go; no need to be confined to your desktop only.",
     icon: Smartphone,
     image: "/images/erp-software/RealtimeTracking.webp"
   },
   {
     title: "In-built Approval Process",
-    description: "Integrate the approval of the fabric quality, shade, and stage through a digital process; no more chasing your supervisors throughout different departments for getting a signature.",
+    description: "Integrate the approval of the fabric quality, shade and stage through a digital process; no more chasing your supervisors throughout different departments for getting a signature.",
     icon: FileCheck,
     image: "/images/erp-software/BuiltinApprovalSystem.webp"
   },
   {
     title: "SMS Integration",
-    description: "Receive SMS alerts for your machine breakdown, production, and delivery date for your time-critical export orders.",
+    description: "Receive SMS alerts for your machine breakdown, production and delivery date for your time-critical export orders.",
     icon: MessageSquare,
     image: "/images/erp-software/IntegrationwithSMS.webp"
   },
   {
     title: "Schedule Email Alerts",
-    description: "Automate the sending of order confirmation, dispatch confirmation, and reminders for billing for your export clients.",
+    description: "Automate the sending of order confirmation, dispatch confirmation and reminders for billing for your export clients.",
     icon: Mail,
     image: "/images/erp-software/ScheduledMailShooting.webp"
   },
@@ -100,7 +100,7 @@ const features = [
 const erpModules = [
   {
     title: "Spinning Management Solution",
-    description: "Track machine-wise yarn consumption, manage mixing ratios, and monitor lot-wise waste in real-time.",
+    description: "Track machine-wise yarn consumption, manage mixing ratios and monitor lot-wise waste in real-time.",
     linkText: "Explore Spinning Software",
     href: "/textile-erp-software/spinning-management-software",
     icon: RotateCw,
@@ -108,7 +108,7 @@ const erpModules = [
   },
   {
     title: "Knitting Management Solution",
-    description: "Monitor yarn allocation, track fabric roll output by shift, and measure exact machine efficiency seamlessly.",
+    description: "Monitor yarn allocation, track fabric roll output by shift and measure exact machine efficiency seamlessly.",
     linkText: "Explore Knitting Software",
     href: "/textile-erp-software/knitting-manufacturing-software",
     icon: Shirt,
@@ -116,7 +116,7 @@ const erpModules = [
   },
   {
     title: "Processing Management Solution",
-    description: "Maintain strict shade consistency, manage chemical recipes, and track complex dyeing job-work batches without manual registers.",
+    description: "Maintain strict shade consistency, manage chemical recipes and track complex dyeing job-work batches without manual registers.",
     linkText: "Explore Processing Software",
     href: "/textile-erp-software/textile-dyeing-processing-erp",
     icon: Droplets,
@@ -124,7 +124,7 @@ const erpModules = [
   },
   {
     title: "Cutting Management Solution",
-    description: "Track material consumption, optimize fabric utilization, and monitor the exact movement of cut panels between departments.",
+    description: "Track material consumption, optimize fabric utilization and monitor the exact movement of cut panels between departments.",
     linkText: "Explore Cutting Software",
     href: "/textile-erp-software/cutting-management-software",
     icon: Scissors,
@@ -132,7 +132,7 @@ const erpModules = [
   },
   {
     title: "Printing Management Solution",
-    description: "Manage printing order statuses, track ink and chemical consumption, and monitor lot-wise production accurately.",
+    description: "Manage printing order statuses, track ink and chemical consumption and monitor lot-wise production accurately.",
     linkText: "Explore Printing Software",
     href: "/textile-erp-software/textile-printing-erp",
     icon: Printer,
@@ -140,7 +140,7 @@ const erpModules = [
   },
   {
     title: "Embroidery Management Solution",
-    description: "Monitor embroidery machine output per shift, track job allocations, and manage thread consumption for complex designs.",
+    description: "Monitor embroidery machine output per shift, track job allocations and manage thread consumption for complex designs.",
     linkText: "Explore Embroidery Software",
     href: "/textile-erp-software/embroidery-job-work-software",
     icon: Palette,
@@ -156,7 +156,7 @@ const erpModules = [
   },
   {
     title: "Payroll Management Solution",
-    description: "Streamline employee attendance, shift management, piece-rate wages, payroll processing, and production-linked wage calculations.",
+    description: "Streamline employee attendance, shift management, piece-rate wages, payroll processing and production-linked wage calculations.",
     linkText: "Explore Payroll Software",
     href: "/textile-erp-software/textile-payroll-software",
     icon: Banknote,
@@ -165,10 +165,10 @@ const erpModules = [
 ];
 
 const whyChooseReasons = [
-  { title: "Designed Around Your Processes", desc: "Configure the system to match your exact textile operations, workflows, and approval procedures." },
-  { title: "Real-Time Visibility", desc: "Monitor orders, raw materials, production progress, stock levels, costs, and profitability instantly." },
+  { title: "Designed Around Your Processes", desc: "Configure the system to match your exact textile operations, workflows and approval procedures." },
+  { title: "Real-Time Visibility", desc: "Monitor orders, raw materials, production progress, stock levels, costs and profitability instantly." },
   { title: "Improved Production Control", desc: "Monitor your complete manufacturing lifecycle, from initial raw material intake to final product dispatch." },
-  { title: "Scalable for Growth", desc: "Support additional users, departments, branches, and production capacity seamlessly as your business expands." },
+  { title: "Scalable for Growth", desc: "Support additional users, departments, branches and production capacity seamlessly as your business expands." },
   { title: "Better Decision-Making", desc: "Use accurate reports and live dashboards to make faster, more informed business decisions." },
   { title: "Lower IT Burden", desc: "Avoid the complexity and cost of maintaining expensive on-site servers and IT infrastructure." },
   { title: "Faster Adoption", desc: "Get your team up and running quickly with an intuitive, highly visual interface that boosts productivity." },
@@ -176,21 +176,21 @@ const whyChooseReasons = [
 ];
 
 const whatWeOffer = [
-  { title: "Built-in Best Practices", desc: "Configurable modules enable seamless management across Planning, Merchandising, Inventory, Production, Warehousing, Distribution, Retail, Finance, and E-commerce.", icon: CheckCircle2 },
-  { title: "Predictive Tools & AI", desc: "Leverage AI-powered forecasting, demand analysis, and inventory optimization for proactive decision-making. Quick functions ensure fast data entry and easy migration.", icon: Cpu },
+  { title: "Built-in Best Practices", desc: "Configurable modules enable seamless management across Planning, Merchandising, Inventory, Production, Warehousing, Distribution, Retail, Finance and E-commerce.", icon: CheckCircle2 },
+  { title: "Predictive Tools & AI", desc: "Leverage AI-powered forecasting, demand analysis and inventory optimization for proactive decision-making. Quick functions ensure fast data entry and easy migration.", icon: Cpu },
   { title: "Advanced Business Management", desc: "From strategy to execution, powerful query tools deliver real-time insights, allowing you to drill down from consolidated reports directly to transaction-level details.", icon: BarChart },
-  { title: "Conductive Business Network", desc: "Dedicated partner portals connect customers, suppliers, agents, and distributors. Sync transactions directly to reduce manual data entry and save time.", icon: Globe },
-  { title: "Secured Architecture", desc: "Protect your critical business data, proprietary formulas, and financial information with advanced, enterprise-grade cloud security and robust protection protocols.", icon: Lock }
+  { title: "Conductive Business Network", desc: "Dedicated partner portals connect customers, suppliers, agents and distributors. Sync transactions directly to reduce manual data entry and save time.", icon: Globe },
+  { title: "Secured Architecture", desc: "Protect your critical business data, proprietary formulas and financial information with advanced, enterprise-grade cloud security and robust protection protocols.", icon: Lock }
 ];
 
 const faqs = [
   {
     q: "What is a textile ERP system?",
-    a: "A textile ERP system connects every stage of textile production spinning, knitting, processing, cutting, printing, embroidery, and garments into one platform, replacing manual registers, spreadsheets, and disconnected department updates."
+    a: "A textile ERP system connects every stage of textile production spinning, knitting, processing, cutting, printing, embroidery and garments into one platform, replacing manual registers, spreadsheets and disconnected department updates."
   },
   {
     q: "What makes this different from general ERP software that is specifically designed for textiles?",
-    a: "Generic ERP is designed to be used in general business or retail and expanded to fit a textile floor, but it is missing the tracking of fabric lots, shade batches, and yarn consumption. Pinnacle's ERP is based on manufacturing stages for textiles right from the beginning, ensuring that it is not bolted on after."
+    a: "Generic ERP is designed to be used in general business or retail and expanded to fit a textile floor, but it is missing the tracking of fabric lots, shade batches and yarn consumption. Pinnacle's ERP is based on manufacturing stages for textiles right from the beginning, ensuring that it is not bolted on after."
   },
   {
     q: "Can it track fabric lots and shade consistency across production?",
@@ -198,11 +198,11 @@ const faqs = [
   },
   {
     q: "Does it support job-work and outsourced textile units?",
-    a: "Yes, the ERP system is designed for handling Job work/Outsourcing type of process flow which is prevalent in the area of spinning, dyeing, and garments manufacture."
+    a: "Yes, the ERP system is designed for handling Job work/Outsourcing type of process flow which is prevalent in the area of spinning, dyeing and garments manufacture."
   },
   {
     q: "Will this work for my specific process-spinning, knitting, or garments only?",
-    a: "Yes, you choose the modules that match your operation. A spinning mill doesn't need the garments module, and a garment export unit doesn't need spinning. The ERP is modular, not a fixed all-or-nothing bundle."
+    a: "Yes, you choose the modules that match your operation. A spinning mill doesn't need the garments module and a garment export unit doesn't need spinning. The ERP is modular, not a fixed all-or-nothing bundle."
   },
   {
     q: "Is it compatible with Tally and takes care of GST compliance?",
@@ -214,7 +214,7 @@ const faqs = [
   },
   {
     q: "Can I access production data remotely, not just at the factory?",
-    a: "Yes, the ERP includes a mobile app so you can check machine output, order status, and dashboards from anywhere, not just from a factory desktop."
+    a: "Yes, the ERP includes a mobile app so you can check machine output, order status and dashboards from anywhere, not just from a factory desktop."
   },
   {
     q: "Do you offer a free demo before we commit?",
@@ -272,7 +272,7 @@ export default function TextileErpSoftwarePage() {
                 </h1>
 
                 <p className={theme.p}>
-                  Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production, and dispatch in one connected textile ERP system.
+                  Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production and dispatch in one connected textile ERP system.
                 </p>
 
                 {/* CTAs */}

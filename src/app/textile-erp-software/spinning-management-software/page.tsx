@@ -26,7 +26,7 @@ const challenges = [
   },
   {
     title: "Three Registers, Three Different Truths.",
-    desc: "Production, inventory, and accounts running separately means no one number anyone trusts.",
+    desc: "Production, inventory and accounts running separately means no one number anyone trusts.",
     icon: Files
   },
   {
@@ -39,7 +39,7 @@ const challenges = [
 const modules = [
   {
     title: "Spinning Production Module",
-    description: "Real-time tracking from mixing and blow room through carding, ring frame, and autoconer. Shift-wise efficiency and hank realization monitoring. Complete lot-wise traceability built into every stage.",
+    description: "Real-time tracking from mixing and blow room through carding, ring frame and autoconer. Shift-wise efficiency and hank realization monitoring. Complete lot-wise traceability built into every stage.",
     image: "/images/erp-software/spinninmodule.jpg.jpeg"
   },
   {
@@ -54,12 +54,12 @@ const modules = [
   },
   {
     title: "Inventory & Stores Management",
-    description: "Real-time stock tracking of cotton, waste, and packing material. Live finished yarn stock visibility. Automatic reconciliation with production and dispatch.",
+    description: "Real-time stock tracking of cotton, waste and packing material. Live finished yarn stock visibility. Automatic reconciliation with production and dispatch.",
     image: "/images/erp-software/invenrtyandstoremanagement.webp"
   },
   {
     title: "Quality Control Module",
-    description: "Count, CSP, U%, IPI, and hairiness tracked lot-wise and shift-wise. Instant traceability back to the exact machine. Direct linkage to the mixing batch behind any quality issue.",
+    description: "Count, CSP, U%, IPI and hairiness tracked lot-wise and shift-wise. Instant traceability back to the exact machine. Direct linkage to the mixing batch behind any quality issue.",
     image: "/images/erp-software/Qualitycontrolmodule.webp"
   },
   {
@@ -79,7 +79,7 @@ const modules = [
   },
   {
     title: "MIS Dashboards & Reports",
-    description: "Owner and manager-level dashboards. Live numbers pulled from every module in real time. Unified view of production, sales, and financial performance.",
+    description: "Owner and manager-level dashboards. Live numbers pulled from every module in real time. Unified view of production, sales and financial performance.",
     image: "/images/erp-software/misandreporting.png"
   }
 ];
@@ -91,7 +91,7 @@ const whyChooseUs = [
   },
   {
     title: "One System. One Truth.",
-    desc: "Production, sales, purchase, and accounts run on one database — not six mismatched registers."
+    desc: "Production, sales, purchase and accounts run on one database — not six mismatched registers."
   },
   {
     title: "Real-Time, Not Next-Day.",
@@ -110,7 +110,7 @@ const whyChooseUs = [
 const faqs = [
   {
     question: "What is spinning mill ERP software?",
-    answer: "Spinning mill ERP software is a management system that connects production, inventory, purchase, sales, billing, and HR into one platform, specifically built around spinning mill processes like mixing, carding, and ring frame operations."
+    answer: "Spinning mill ERP software is a management system that connects production, inventory, purchase, sales, billing and HR into one platform, specifically built around spinning mill processes like mixing, carding and ring frame operations."
   },
   {
     question: "How does ERP software reduce yarn wastage in spinning mills?",
@@ -118,19 +118,19 @@ const faqs = [
   },
   {
     question: "What modules does a spinning mill ERP system typically include?",
-    answer: "A complete spinning mill ERP includes nine core modules: Spinning Production, Purchase & Procurement, Sales & Billing, Inventory & Stores, Quality Control, Finance & Accounts, HR & Payroll, Maintenance & Machine Management, and MIS Dashboards."
+    answer: "A complete spinning mill ERP includes nine core modules: Spinning Production, Purchase & Procurement, Sales & Billing, Inventory & Stores, Quality Control, Finance & Accounts, HR & Payroll, Maintenance & Machine Management and MIS Dashboards."
   },
   {
     question: "Is Pinnacle Systems ERP cloud-based?",
-    answer: "Yes, Pinnacle Systems ERP is 100% cloud-based, allowing mill owners and managers to access real-time production, inventory, and financial data from anywhere, on any device."
+    answer: "Yes, Pinnacle Systems ERP is 100% cloud-based, allowing mill owners and managers to access real-time production, inventory and financial data from anywhere, on any device."
   },
   {
     question: "Can spinning mill ERP software handle GST billing and export documentation?",
-    answer: "Yes, spinning mill ERP software generates GST-ready invoices, e-way bills, and export documentation automatically from dispatch data, eliminating manual re-entry."
+    answer: "Yes, spinning mill ERP software generates GST-ready invoices, e-way bills and export documentation automatically from dispatch data, eliminating manual re-entry."
   },
   {
     question: "What is lot-wise traceability in spinning mills?",
-    answer: "Lot-wise traceability is the ability to track a specific batch of yarn back through every production stage — ring frame, speed frame, carding, and mixing — to the exact cotton bales used."
+    answer: "Lot-wise traceability is the ability to track a specific batch of yarn back through every production stage — ring frame, speed frame, carding and mixing — to the exact cotton bales used."
   },
   {
     question: "How long does it take to implement ERP software in a spinning mill?",
@@ -142,7 +142,7 @@ const faqs = [
   },
   {
     question: "How does real-time production monitoring benefit spinning mill owners?",
-    answer: "Real-time production monitoring lets owners see machine efficiency, shift-wise output, and stock positions as they happen, allowing corrective decisions while the loss is still small and reversible."
+    answer: "Real-time production monitoring lets owners see machine efficiency, shift-wise output and stock positions as they happen, allowing corrective decisions while the loss is still small and reversible."
   },
   {
     question: "Why should a spinning mill choose Pinnacle Systems ERP?",
@@ -152,7 +152,7 @@ const faqs = [
 
 export const metadata = {
   title: 'Spinning Management Software - Pinnacle Systems',
-  description: 'Track machine-wise yarn consumption, manage mixing ratios, and monitor lot-wise waste in real-time with our Spinning Management Software.',
+  description: 'Track machine-wise yarn consumption, manage mixing ratios and monitor lot-wise waste in real-time with our Spinning Management Software.',
 };
 
 export default function SpinningManagementSoftwarePage() {
@@ -192,7 +192,7 @@ export default function SpinningManagementSoftwarePage() {
               </h1>
 
               <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                Track production, inventory, quality, and billing in one system — built for spinning mills that need real numbers, not next-day reports.
+                Track production, inventory, quality and billing in one system — built for spinning mills that need real numbers, not next-day reports.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">

@@ -10,7 +10,7 @@ const processSteps = [
   {
     icon: <Search />,
     title: "Discovery & Process Mapping",
-    desc: "We analyze your current workflows, bottlenecks, and data silos, identifying opportunities for AI and automation to understand your business needs."
+    desc: "We analyze your current workflows, bottlenecks and data silos, identifying opportunities for AI and automation to understand your business needs."
   },
   {
     icon: <PenTool />,
@@ -25,7 +25,7 @@ const processSteps = [
   {
     icon: <ShieldAlert />,
     title: "Testing & Quality Assurance",
-    desc: "We test thoroughly for every module, workflow, and AI feature, as well as the roles of users, to ensure the security of your ERP."
+    desc: "We test thoroughly for every module, workflow and AI feature, as well as the roles of users, to ensure the security of your ERP."
   },
   {
     icon: <Rocket />,
@@ -35,7 +35,7 @@ const processSteps = [
   {
     icon: <Headset />,
     title: "Ongoing Support & Scaling",
-    desc: "We provide continuous support, AI model improvements, enhancements, and scalability as your business grows."
+    desc: "We provide continuous support, AI model improvements, enhancements and scalability as your business grows."
   }
 ];
 

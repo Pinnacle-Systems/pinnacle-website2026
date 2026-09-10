@@ -20,17 +20,17 @@ export default function CuttingManagementSoftwarePage() {
 
   const features = [
     { title: "Cloud Technology", desc: "Access your cutting room data anytime, anywhere with secure, reliable cloud technology — no dependency on office systems or physical servers.", icon: Cloud },
-    { title: "Real-Time Cutting Tracking", desc: "Monitor live marker efficiency, lay progress, and cutting output for faster, floor-level decisions.", icon: Activity },
+    { title: "Real-Time Cutting Tracking", desc: "Monitor live marker efficiency, lay progress and cutting output for faster, floor-level decisions.", icon: Activity },
     { title: "Fabric & Bundle Inventory", desc: "Track fabric roll consumption and cut bundle stock in real time, linking usage directly to production orders.", icon: Package },
-    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation, and support from our team ensure faster communication, better service, and accountability.", icon: UserX },
-    { title: "Barcode Scanning", desc: "Faster bundle creation, reduced manual errors, and accurate tracking of cut panels from table to stitching line.", icon: ScanBarcode },
+    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation and support from our team ensure faster communication, better service and accountability.", icon: UserX },
+    { title: "Barcode Scanning", desc: "Faster bundle creation, reduced manual errors and accurate tracking of cut panels from table to stitching line.", icon: ScanBarcode },
     { title: "Seamless Integration", desc: "Connect your finance and inventory operations for accurate fabric costing and stock reconciliation.", icon: LinkIcon },
-    { title: "Built-in Approval System", desc: "Route lay plans, wastage adjustments, and requests through role-based approval workflows for controlled decision-making.", icon: CheckSquare },
+    { title: "Built-in Approval System", desc: "Route lay plans, wastage adjustments and requests through role-based approval workflows for controlled decision-making.", icon: CheckSquare },
     { title: "Integration with SMS", desc: "Send automatic SMS alerts for cutting completion updates and line issue notifications.", icon: MessageSquare },
     { title: "Scheduled Mail Shooting", desc: "Set up automated, scheduled cutting room reports sent to production managers and internal teams.", icon: Mail },
     { title: "WhatsApp Integration", desc: "Send cutting status updates and bundle issue confirmations directly to supervisors via WhatsApp.", icon: MessageCircle },
-    { title: "Action Dashboard", desc: "A single dashboard showing pending lay plans, wastage alerts, and bundles awaiting issue — so nothing slips through.", icon: LayoutDashboard },
-    { title: "Graphical Reports", desc: "Visual, real-time reports on marker efficiency, fabric wastage, and cutting output, built for quick decision-making.", icon: BarChart }
+    { title: "Action Dashboard", desc: "A single dashboard showing pending lay plans, wastage alerts and bundles awaiting issue — so nothing slips through.", icon: LayoutDashboard },
+    { title: "Graphical Reports", desc: "Visual, real-time reports on marker efficiency, fabric wastage and cutting output, built for quick decision-making.", icon: BarChart }
   ];
 
   const challenges = [
@@ -43,34 +43,34 @@ export default function CuttingManagementSoftwarePage() {
 
   const modules = [
     { title: "Marker Planning & Efficiency", desc: "Plan and record marker efficiency for every style and size ratio, comparing planned vs. actual fabric consumption.", icon: Ruler },
-    { title: "Lay Planning", desc: "Plan fabric lay height, length, and ply count based on order quantity and fabric roll availability, minimizing wastage.", icon: Layers },
-    { title: "Cutting Order Management", desc: "Generate cutting orders linked to confirmed production orders, with size, colour, and quantity breakdowns.", icon: FileText },
-    { title: "Bundle Management", desc: "Create and track bundles by size, colour, and quantity, with barcode-based tracking from cutting to stitching line issue.", icon: Package },
+    { title: "Lay Planning", desc: "Plan fabric lay height, length and ply count based on order quantity and fabric roll availability, minimizing wastage.", icon: Layers },
+    { title: "Cutting Order Management", desc: "Generate cutting orders linked to confirmed production orders, with size, colour and quantity breakdowns.", icon: FileText },
+    { title: "Bundle Management", desc: "Create and track bundles by size, colour and quantity, with barcode-based tracking from cutting to stitching line issue.", icon: Package },
     { title: "Fabric Consumption & Wastage Tracking", desc: "Track actual fabric consumption against planned norms, identifying wastage at the roll and lay level.", icon: PieChart },
     { title: "Cut Panel Inventory", desc: "Maintain real-time stock of cut panels awaiting issue, avoiding shortages or overstock at the cutting stage.", icon: Box },
     { title: "Line Issue & Handover", desc: "Issue bundles to stitching lines with complete traceability, ensuring the right pieces reach the right line on time.", icon: ArrowRightLeft },
-    { title: "Cutting Room Reports", desc: "Get real-time reports on marker efficiency, wastage percentage, and cutting output by style, order, and cutter.", icon: BarChart }
+    { title: "Cutting Room Reports", desc: "Get real-time reports on marker efficiency, wastage percentage and cutting output by style, order and cutter.", icon: BarChart }
   ];
 
   const whyChooseUs = [
-    { title: "Built for Cutting Room Accuracy", desc: "Unlike generic production tools, our system is designed around marker efficiency, lay planning, and bundle tracking — not adapted from a standard manufacturing template.", icon: Target },
+    { title: "Built for Cutting Room Accuracy", desc: "Unlike generic production tools, our system is designed around marker efficiency, lay planning and bundle tracking — not adapted from a standard manufacturing template.", icon: Target },
     { title: "Reduces Fabric Wastage", desc: "Real-time comparison of planned vs. actual consumption helps identify and reduce wastage at the roll and lay level.", icon: Scissors },
     { title: "Eliminates Bundle Mismatches", desc: "Barcode-based bundle tracking ensures every cut piece is accounted for from cutting table to stitching line.", icon: CheckCircle2 },
-    { title: "Real-Time Cutting Room Visibility", desc: "Track marker efficiency, output, and wastage as cutting happens, not at the end of the day.", icon: Eye },
-    { title: "Integrates With Your ERP", desc: "Connects directly with production planning, inventory, and order data from your broader Pinnacle ERP system — no duplicate data entry.", icon: LinkIcon }
+    { title: "Real-Time Cutting Room Visibility", desc: "Track marker efficiency, output and wastage as cutting happens, not at the end of the day.", icon: Eye },
+    { title: "Integrates With Your ERP", desc: "Connects directly with production planning, inventory and order data from your broader Pinnacle ERP system — no duplicate data entry.", icon: LinkIcon }
   ];
 
   const faqs = [
     { q: "1. Can this software track marker efficiency for every style?", a: "Yes. Marker efficiency is recorded per style and size ratio, comparing planned versus actual fabric consumption." },
     { q: "2. Does it help reduce fabric wastage during cutting?", a: "Yes. Real-time tracking of actual consumption against planned norms helps identify and reduce wastage at the roll and lay level." },
-    { q: "3. Can it manage bundle creation and tracking?", a: "Yes. Bundles are created and tracked by size, colour, and quantity, with barcode-based tracking from cutting to line issue." },
-    { q: "4. Does it support lay planning based on fabric availability?", a: "Yes. Lay height, length, and ply count are planned based on order quantity and available fabric rolls." },
+    { q: "3. Can it manage bundle creation and tracking?", a: "Yes. Bundles are created and tracked by size, colour and quantity, with barcode-based tracking from cutting to line issue." },
+    { q: "4. Does it support lay planning based on fabric availability?", a: "Yes. Lay height, length and ply count are planned based on order quantity and available fabric rolls." },
     { q: "5. Can I track cut panel inventory before it's issued to the line?", a: "Yes. Cut Panel Inventory maintains real-time stock of panels awaiting issue, avoiding shortages or overstock." },
     { q: "6. Does it link cutting output to stitching line requirements?", a: "Yes. Line Issue & Handover ensures bundles are issued to stitching lines with complete traceability." },
-    { q: "7. Will this connect with our existing Pinnacle ERP system?", a: "Yes. The cutting module integrates directly with production planning, inventory, and order data from your broader ERP." },
-    { q: "8. Can I compare wastage by cutter or cutting table?", a: "Yes. Cutting Room Reports provide wastage and efficiency breakdowns by style, order, and cutter." },
+    { q: "7. Will this connect with our existing Pinnacle ERP system?", a: "Yes. The cutting module integrates directly with production planning, inventory and order data from your broader ERP." },
+    { q: "8. Can I compare wastage by cutter or cutting table?", a: "Yes. Cutting Room Reports provide wastage and efficiency breakdowns by style, order and cutter." },
     { q: "9. Is barcode scanning required, or can bundles be tracked manually too?", a: "Barcode scanning is recommended for accuracy and speed, but manual entry is also supported where needed." },
-    { q: "10. How long does implementation take?", a: "Timelines depend on unit size and data volume, but implementation typically includes structured onboarding, training, and go-live support within a few weeks." }
+    { q: "10. How long does implementation take?", a: "Timelines depend on unit size and data volume, but implementation typically includes structured onboarding, training and go-live support within a few weeks." }
   ];
 
   return (
@@ -115,7 +115,7 @@ export default function CuttingManagementSoftwarePage() {
               </h1>
 
               <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                From marker planning and lay planning to cutting, bundling, and issue tracking — Pinnacle ERP brings complete control to your cutting room.
+                From marker planning and lay planning to cutting, bundling and issue tracking — Pinnacle ERP brings complete control to your cutting room.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
@@ -182,7 +182,7 @@ export default function CuttingManagementSoftwarePage() {
                 The Cutting Room Isn&apos;t Just Cutting Fabric — It&apos;s Where Your Margins Are Won or Lost
               </motion.h2>
               <p className={cn(theme.p, "text-white text-center mb-8 max-w-3xl mx-auto")}>
-                Most manufacturing software treats cutting as a single line item, missing the reality that fabric utilization, marker efficiency, and bundle accuracy directly determine your order&apos;s profitability.
+                Most manufacturing software treats cutting as a single line item, missing the reality that fabric utilization, marker efficiency and bundle accuracy directly determine your order&apos;s profitability.
               </p>
 
               <div className="space-y-5 mb-8">
@@ -206,7 +206,7 @@ export default function CuttingManagementSoftwarePage() {
 
               <div className="bg-primary/20 border border-primary/30 rounded-2xl p-6 flex items-center justify-center">
                 <p className={cn(theme.p, "text-white text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0 text-center")}>
-                  A cutting management software connects marker planning, lay execution, and bundle tracking into one system — so every fabric roll is utilized efficiently and every bundle reaches the line accurately.
+                  A cutting management software connects marker planning, lay execution and bundle tracking into one system — so every fabric roll is utilized efficiently and every bundle reaches the line accurately.
                 </p>
               </div>
             </div>

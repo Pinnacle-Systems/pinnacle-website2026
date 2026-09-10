@@ -24,19 +24,19 @@ const features = [
     icon: <PackageCheck />,
     image: "/images/erp-software/Production&Inventory.webp",
     title: "Production & Inventory",
-    desc: "Track production progress and inventory in real time for better planning, control, and efficiency."
+    desc: "Track production progress and inventory in real time for better planning, control and efficiency."
   },
   {
     icon: <Users />,
     image: "/images/erp-software/feature_no3rdparty.jpg",
     title: "No 3rd Party Involvement",
-    desc: "Direct sales, implementation, and support from our team ensures faster communication, better service, and accountability."
+    desc: "Direct sales, implementation and support from our team ensures faster communication, better service and accountability."
   },
   {
     icon: <ScanLine />,
     image: "/images/erp-software/BarcodeScanning.webp",
     title: "Barcode Scanning",
-    desc: "Faster data entry, reduced manual errors, accurate stock tracking, and improved inventory control."
+    desc: "Faster data entry, reduced manual errors, accurate stock tracking and improved inventory control."
   },
   {
     icon: <LinkIcon />,
@@ -48,7 +48,7 @@ const features = [
     icon: <CheckCircle />,
     image: "/images/erp-software/BuiltinApprovalSystem.webp",
     title: "Built-in Approval System",
-    desc: "Route purchase orders, expenses, and requests through role-based approval workflows for faster and controlled decision-making."
+    desc: "Route purchase orders, expenses and requests through role-based approval workflows for faster and controlled decision-making."
   },
   {
     icon: <Bell />,
@@ -73,13 +73,13 @@ const features = [
     icon: <LayoutDashboard />,
     image: "/images/erp-software/ActionDashboard.webp",
     title: "Action Dashboard",
-    desc: "A single dashboard showing pending approvals, overdue tasks, and items that need attention so nothing slips through."
+    desc: "A single dashboard showing pending approvals, overdue tasks and items that need attention so nothing slips through."
   },
   {
     icon: <BarChart3 />,
     image: "/images/erp-software/GraphicalReports.webp",
     title: "Graphical Reports",
-    desc: "Visual, real-time reports on sales, inventory, finance, and operations built for quick decision-making."
+    desc: "Visual, real-time reports on sales, inventory, finance and operations built for quick decision-making."
   }
 ];
 

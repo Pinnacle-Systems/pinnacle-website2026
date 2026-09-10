@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const faqs = [
   {
     question: 'What services does Pinnacle Systems offer?',
-    answer: 'Pinnacle Systems provides end-to-end Technology Solutions, including Custom ERP Software Development, Website Development, Mobile App Development, Digital Marketing, and System integration services. We help Businesses streamline operations, improve productivity, and accelerate Digital Transformation.'
+    answer: 'Pinnacle Systems provides end-to-end Technology Solutions, including Custom ERP Software Development, Website Development, Mobile App Development, Digital Marketing and System integration services. We help Businesses streamline operations, improve productivity and accelerate Digital Transformation.'
   },
   {
     question: 'Which industries do you serve?',
@@ -15,15 +15,15 @@ const faqs = [
   },
   {
     question: 'Do you create Customized Software to meet Specific Business requirements?',
-    answer: 'Yes. We are experts in the development of Custom Software that matches your workflow, processes and growth targets. Our solutions are designed to increase efficiency, decrease the manual labor involved, and ensure long-term capacity.'
+    answer: 'Yes. We are experts in the development of Custom Software that matches your workflow, processes and growth targets. Our solutions are designed to increase efficiency, decrease the manual labor involved and ensure long-term capacity.'
   },
   {
     question: 'Do you have the ability to integrate our existing Software with your newer systems?',
-    answer: 'Yes. We offer system integration services that connect ERP Software, Accounting Software, CRM platforms, Payment channels, ECommerce platforms, and Third-party software to ensure that data flows seamlessly throughout your company.'
+    answer: 'Yes. We offer system integration services that connect ERP Software, Accounting Software, CRM platforms, Payment channels, ECommerce platforms and Third-party software to ensure that data flows seamlessly throughout your company.'
   },
   {
     question: 'Do you create Mobile applications and Websites?',
-    answer: 'Absolutely. We create and design User-friendly Websites and Mobile Applications that work on Android as well as IOS. Our solutions are focused on speed, safety, user experience, and the ability to scale.'
+    answer: 'Absolutely. We create and design User-friendly Websites and Mobile Applications that work on Android as well as IOS. Our solutions are focused on speed, safety, user experience and the ability to scale.'
   },
 ];
 

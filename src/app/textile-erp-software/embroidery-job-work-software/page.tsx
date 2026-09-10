@@ -20,17 +20,17 @@ export default function EmbroiderySoftwarePage() {
 
   const features = [
     { title: "Cloud Technology", desc: "Access your embroidery ERP anytime, anywhere with secure, reliable cloud technology — no dependency on office systems or physical servers.", icon: Cloud },
-    { title: "Real-Time Machine Tracking", desc: "Monitor live stitch count progress, machine output, and downtime across every embroidery head for faster floor decisions.", icon: Activity },
+    { title: "Real-Time Machine Tracking", desc: "Monitor live stitch count progress, machine output and downtime across every embroidery head for faster floor decisions.", icon: Activity },
     { title: "Design & Thread Inventory", desc: "Track digitized design files alongside thread and consumable stock in real time, linking usage directly to production.", icon: Package },
-    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation, and support from our team ensure faster communication, better service, and accountability.", icon: UserX },
-    { title: "Barcode Scanning", desc: "Faster data entry, reduced manual errors, and accurate tracking of job-work garments and finished embroidered pieces.", icon: ScanBarcode },
+    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation and support from our team ensure faster communication, better service and accountability.", icon: UserX },
+    { title: "Barcode Scanning", desc: "Faster data entry, reduced manual errors and accurate tracking of job-work garments and finished embroidered pieces.", icon: ScanBarcode },
     { title: "Seamless Integration", desc: "Connect your finance operations to the E-Way Bill and E-Invoice platforms for speedier processing and improved compliance.", icon: LinkIcon },
-    { title: "Built-in Approval System", desc: "Route purchase orders, job-work costing, and requests through role-based approval workflows for faster, controlled decision-making.", icon: CheckSquare },
+    { title: "Built-in Approval System", desc: "Route purchase orders, job-work costing and requests through role-based approval workflows for faster, controlled decision-making.", icon: CheckSquare },
     { title: "Integration with SMS", desc: "Send automatic, intelligently generated SMS alerts for order status updates and payment reminders.", icon: MessageSquare },
     { title: "Scheduled Mail Shooting", desc: "Set up automated, scheduled email campaigns and production reports sent to customers, vendors, or internal teams.", icon: Mail },
-    { title: "WhatsApp Integration", desc: "Send invoices, job-work confirmations, and dispatch updates directly to vendors or customers via WhatsApp.", icon: MessageCircle },
-    { title: "Action Dashboard", desc: "A single dashboard showing pending approvals, machine downtime, and overdue orders that need attention — so nothing slips through.", icon: LayoutDashboard },
-    { title: "Graphical Reports", desc: "Visual, real-time reports on machine utilization, stitch-count costing, thread consumption, and finance, built for quick decision-making.", icon: BarChart }
+    { title: "WhatsApp Integration", desc: "Send invoices, job-work confirmations and dispatch updates directly to vendors or customers via WhatsApp.", icon: MessageCircle },
+    { title: "Action Dashboard", desc: "A single dashboard showing pending approvals, machine downtime and overdue orders that need attention — so nothing slips through.", icon: LayoutDashboard },
+    { title: "Graphical Reports", desc: "Visual, real-time reports on machine utilization, stitch-count costing, thread consumption and finance, built for quick decision-making.", icon: BarChart }
   ];
 
   const challenges = [
@@ -42,18 +42,18 @@ export default function EmbroiderySoftwarePage() {
   ];
 
   const modules = [
-    { title: "Design & Digitizing Management", desc: "Maintain a central library of design files, digitizing formats, and stitch counts linked to every customer order.", icon: PenTool },
-    { title: "Thread & Consumable Planning", desc: "Plan thread, backing, and consumable requirements based on design stitch count and order quantity, reducing wastage and stockouts.", icon: Ruler },
-    { title: "Machine-Wise Production Planning", desc: "Plan and schedule embroidery machine loads by design, number of heads, and delivery priority to minimize changeover time.", icon: Clock },
+    { title: "Design & Digitizing Management", desc: "Maintain a central library of design files, digitizing formats and stitch counts linked to every customer order.", icon: PenTool },
+    { title: "Thread & Consumable Planning", desc: "Plan thread, backing and consumable requirements based on design stitch count and order quantity, reducing wastage and stockouts.", icon: Ruler },
+    { title: "Machine-Wise Production Planning", desc: "Plan and schedule embroidery machine loads by design, number of heads and delivery priority to minimize changeover time.", icon: Clock },
     { title: "Job-Work & Customer Fabric Tracking", desc: "Track fabric or garments received for embroidery job-work separately from owned stock, with accurate process-wise billing.", icon: Receipt },
-    { title: "Production Management", desc: "Monitor machine-wise output, stitch count progress, and downtime in real time across your embroidery floor.", icon: Activity },
-    { title: "Quality Management", desc: "Inspect embroidered pieces for thread breaks, design alignment, and finish quality, with rework and defect tracking.", icon: CheckCircle2 },
-    { title: "Stitch-Count-Based Costing", desc: "Calculate order costs based on design stitch count, thread consumption, and machine time — before and after production.", icon: BarChart },
-    { title: "Dispatch", desc: "Manage packing, job-work return tracking, and shipment for finished embroidered goods.", icon: Truck }
+    { title: "Production Management", desc: "Monitor machine-wise output, stitch count progress and downtime in real time across your embroidery floor.", icon: Activity },
+    { title: "Quality Management", desc: "Inspect embroidered pieces for thread breaks, design alignment and finish quality, with rework and defect tracking.", icon: CheckCircle2 },
+    { title: "Stitch-Count-Based Costing", desc: "Calculate order costs based on design stitch count, thread consumption and machine time — before and after production.", icon: BarChart },
+    { title: "Dispatch", desc: "Manage packing, job-work return tracking and shipment for finished embroidered goods.", icon: Truck }
   ];
 
   const whyChooseUs = [
-    { title: "Built for Design-Driven Production", desc: "Unlike generic manufacturing tools, our system is designed around design digitizing, stitch count, and machine-head planning — not adapted from a standard ERP template.", icon: Target },
+    { title: "Built for Design-Driven Production", desc: "Unlike generic manufacturing tools, our system is designed around design digitizing, stitch count and machine-head planning — not adapted from a standard ERP template.", icon: Target },
     { title: "Accurate Stitch-Count Costing", desc: "Automatic linking of design data to thread and machine consumption means every order is costed consistently and accurately.", icon: Receipt },
     { title: "Clear Job-Work Accountability", desc: "Separately track customer-owned fabric and garments from your own stock, with accurate billing and return tracking.", icon: Box },
     { title: "Real-Time Machine Visibility", desc: "Track machine-wise output and downtime as production happens, not at the end of the shift.", icon: Eye },
@@ -61,16 +61,16 @@ export default function EmbroiderySoftwarePage() {
   ];
 
   const faqs = [
-    { q: "1. Can this software manage design files and digitizing records?", a: "Yes. Design files, digitizing formats, and stitch counts are maintained in a central library linked to every customer order." },
-    { q: "2. Does it calculate costing based on stitch count and thread consumption?", a: "Yes. Order costing is automatically calculated using design stitch count, thread usage, and machine time, pulled directly from production data." },
+    { q: "1. Can this software manage design files and digitizing records?", a: "Yes. Design files, digitizing formats and stitch counts are maintained in a central library linked to every customer order." },
+    { q: "2. Does it calculate costing based on stitch count and thread consumption?", a: "Yes. Order costing is automatically calculated using design stitch count, thread usage and machine time, pulled directly from production data." },
     { q: "3. Can it track job-work fabric or garments separately from our own stock?", a: "Yes. Customer-owned job-work items are tracked separately from owned stock, with accurate process-wise billing and return tracking." },
-    { q: "4. Does it support machine-wise production tracking?", a: "Yes. Machine-wise output, stitch progress, and downtime are tracked in real time across your embroidery floor." },
-    { q: "5. Can it plan thread and consumable requirements automatically?", a: "Yes. Thread, backing, and consumable requirements are planned based on design stitch count and order quantity." },
-    { q: "6. Does it handle quality checks for embroidered goods?", a: "Yes. Quality Management supports inspection for thread breaks, design alignment, and finish quality, with rework tracking." },
+    { q: "4. Does it support machine-wise production tracking?", a: "Yes. Machine-wise output, stitch progress and downtime are tracked in real time across your embroidery floor." },
+    { q: "5. Can it plan thread and consumable requirements automatically?", a: "Yes. Thread, backing and consumable requirements are planned based on design stitch count and order quantity." },
+    { q: "6. Does it handle quality checks for embroidered goods?", a: "Yes. Quality Management supports inspection for thread breaks, design alignment and finish quality, with rework tracking." },
     { q: "7. Will this connect with our existing Pinnacle ERP system?", a: "Yes. The embroidery module integrates directly with garment, textile, or job-work data from your broader ERP, avoiding duplicate entry." },
     { q: "8. Can it handle multiple machines with different head counts?", a: "Yes. Production planning accounts for machine-wise head count and capacity when scheduling embroidery runs." },
     { q: "9. Is job-work billing handled differently from regular sales?", a: "Yes. Job-work billing is calculated based on processes performed, separate from standard sales invoicing." },
-    { q: "10. How long does implementation take?", a: "Timelines depend on unit size and data volume, but implementation typically includes structured onboarding, training, and go-live support within a few weeks." }
+    { q: "10. How long does implementation take?", a: "Timelines depend on unit size and data volume, but implementation typically includes structured onboarding, training and go-live support within a few weeks." }
   ];
 
   return (
@@ -115,7 +115,7 @@ export default function EmbroiderySoftwarePage() {
               </h1>
 
               <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                From design digitizing and thread planning to machine production, quality, and dispatch — Pinnacle ERP connects every stage of your embroidery unit on one platform.
+                From design digitizing and thread planning to machine production, quality and dispatch — Pinnacle ERP connects every stage of your embroidery unit on one platform.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
@@ -182,7 +182,7 @@ export default function EmbroiderySoftwarePage() {
                 Embroidery Production Isn&apos;t Like Standard Manufacturing
               </motion.h2>
               <p className={cn(theme.p, "text-white text-center mb-8 max-w-3xl mx-auto")}>
-                Most manufacturing software isn&apos;t built for the reality of an embroidery unit, where output depends on design complexity, stitch count, machine heads, and thread consumption — not just raw material and labour.
+                Most manufacturing software isn&apos;t built for the reality of an embroidery unit, where output depends on design complexity, stitch count, machine heads and thread consumption — not just raw material and labour.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
@@ -207,7 +207,7 @@ export default function EmbroiderySoftwarePage() {
 
               <div className="bg-primary/20 border border-primary/30 rounded-2xl p-6 flex items-center justify-center">
                 <p className={cn(theme.p, "text-white text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0 text-center")}>
-                  An embroidery management software connects design data, machine production, and thread consumption into one system — so every order is costed accurately and delivered on time.
+                  An embroidery management software connects design data, machine production and thread consumption into one system — so every order is costed accurately and delivered on time.
                 </p>
               </div>
             </div>

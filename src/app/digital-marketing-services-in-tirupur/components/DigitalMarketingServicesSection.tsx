@@ -52,7 +52,7 @@ const services = [
   {
     icon: FileText,
     title: "Content Marketing",
-    desc: "Create useful content that answers customer questions, supports search visibility, communicates expertise, and helps move prospects toward a decision.",
+    desc: "Create useful content that answers customer questions, supports search visibility, communicates expertise and helps move prospects toward a decision.",
     image: "/images/digital-marketing-service-in-tirupru/Content Marketing.webp",
     linkText: "Explore Content Marketing",
     href: "/contact",
@@ -86,7 +86,7 @@ export default function DigitalMarketingServicesSection() {
             transition={{ delay: 0.1 }}
             className={cn(theme.p, "text-black text-center max-w-3xl mx-auto")}
           >
-            At Pinnacle Systems, we select and coordinate the services that make sense for your business, audience, and objectives.
+            At Pinnacle Systems, we select and coordinate the services that make sense for your business, audience and objectives.
           </motion.p>
         </div>
 

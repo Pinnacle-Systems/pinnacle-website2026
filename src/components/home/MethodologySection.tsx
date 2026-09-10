@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const steps = [
   {
     title: "Discovery & Consultation",
-    description: "We understand your Business, Challenges, and Goals.",
+    description: "We understand your Business, Challenges and Goals.",
   },
   {
     title: "Strategy & Planning",

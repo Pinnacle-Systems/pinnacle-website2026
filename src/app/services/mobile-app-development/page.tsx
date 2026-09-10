@@ -19,12 +19,12 @@ export default function MobileAppDevelopmentPage() {
 
   const introPoints = [
     "Pinnacle Systems is a leading mobile app development company, building high-performance Android and iOS mobile apps.",
-    "Apps are designed to be user-centric, performance-oriented designed, flexible, and optimized for speed, UX, and conversions.",
+    "Apps are designed to be user-centric, performance-oriented designed, flexible and optimized for speed, UX and conversions.",
     "As a professional mobile app development partner, we go beyond simply launching an app — we craft an experience around it.",
-    "Our development team brings deep experience in building business-centric, objective-driven, and performance-based apps tailored to your goals.",
-    "Developers are proficient in Flutter, React Native, native technologies, and other emerging mobile frameworks — allowing us to select the ideal tech stack for every project.",
-    "We prioritize scalability, seamless user experience, and future-ready architecture to ensure long-term app success.",
-    "Over the years, we've delivered a strong portfolio of mobile apps across Android, iOS, Windows, and cross-platform environments."
+    "Our development team brings deep experience in building business-centric, objective-driven and performance-based apps tailored to your goals.",
+    "Developers are proficient in Flutter, React Native, native technologies and other emerging mobile frameworks — allowing us to select the ideal tech stack for every project.",
+    "We prioritize scalability, seamless user experience and future-ready architecture to ensure long-term app success.",
+    "Over the years, we've delivered a strong portfolio of mobile apps across Android, iOS, Windows and cross-platform environments."
   ];
 
   const processes = [
@@ -47,23 +47,23 @@ export default function MobileAppDevelopmentPage() {
   const technologies = ["Node.js", "Native Android"];
 
   const whyChooseUs = [
-    { title: "Work Efficiency", desc: "Our skilled team of app analysts, development strategists, and designers delivers an exceptional user experience — building apps that lead in their respective app stores.", icon: BarChart },
+    { title: "Work Efficiency", desc: "Our skilled team of app analysts, development strategists and designers delivers an exceptional user experience — building apps that lead in their respective app stores.", icon: BarChart },
     { title: "Client Satisfaction", desc: "We're committed to our clients' success on every mobile app project, whether cross-platform or native Android — backed by in-depth research and business insight.", icon: Users },
     { title: "Affordable Price", desc: "We deliver top-notch mobile apps within your budget, quoting competitive pricing without compromising on quality or functionality.", icon: DollarSign },
-    { title: "Interactive UI/UX", desc: "Our creative designers turn UX concepts into interactive prototypes and apps — customer-centric, enterprise-ready, and built to perform like a sales tool for your business.", icon: MousePointerClick }
+    { title: "Interactive UI/UX", desc: "Our creative designers turn UX concepts into interactive prototypes and apps — customer-centric, enterprise-ready and built to perform like a sales tool for your business.", icon: MousePointerClick }
   ];
 
   const faqs = [
     { q: "How long does it take to build a mobile app?", a: "An MVP can take 4–8 weeks, while full-featured apps with custom backend and integrations typically take 3–6 months, depending on complexity." },
-    { q: "How much does it cost to develop a mobile app?", a: "Cost depends on features, platform (iOS, Android, or both), and complexity. We provide a fixed quote after a discovery call — no hidden charges." },
-    { q: "Should I build for iOS, Android, or both?", a: "It depends on your target audience. We help you decide based on your users' behavior, and can build natively or cross-platform (e.g., Flutter/React Native) to cover both efficiently." },
-    { q: "Will my app be secure?", a: "Yes. We follow industry-standard security practices including encrypted data storage, secure authentication, and secure API handling — especially critical for healthcare, e-commerce, and fintech apps." },
-    { q: "Can you redesign or upgrade my existing app?", a: "Yes. We audit your current app's performance and UX, then modernize it — improving speed and usability while preserving your existing user base, data, and app store reviews/ratings." },
+    { q: "How much does it cost to develop a mobile app?", a: "Cost depends on features, platform (iOS android, or both) and complexity. We provide a fixed quote after a discovery call — no hidden charges." },
+    { q: "Should I build for iOS android, or both?", a: "It depends on your target audience. We help you decide based on your users' behavior and can build natively or cross-platform (e.g., Flutter/React Native) to cover both efficiently." },
+    { q: "Will my app be secure?", a: "Yes. We follow industry-standard security practices including encrypted data storage, secure authentication and secure API handling — especially critical for healthcare, e-commerce and fintech apps." },
+    { q: "Can you redesign or upgrade my existing app?", a: "Yes. We audit your current app's performance and UX, then modernize it — improving speed and usability while preserving your existing user base, data and app store reviews/ratings." },
     { q: "Will my app work smoothly on all devices?", a: "Yes. We test extensively across device sizes and OS versions to ensure consistent performance, whether built natively or cross-platform." },
     { q: "Do you build e-commerce or on-demand apps?", a: "Yes. We build secure e-commerce apps with in-app checkout, as well as on-demand marketplace apps with real-time tracking and integrated payments." },
     { q: "Can I update app content myself after launch?", a: "Yes, for apps built with a CMS-backed or admin panel structure, your team can update content, listings, or products without needing a developer for every change." },
-    { q: "Do you offer app maintenance and support after launch?", a: "Yes. We offer ongoing support for bug fixes, OS updates, security patches, and performance monitoring to keep your app running reliably post-launch." },
-    { q: "How do I get started with app development?", a: "Request a Free App Audit or Discovery Call. We'll review your idea or existing app and outline a clear roadmap — features, timeline, and cost — before development begins." }
+    { q: "Do you offer app maintenance and support after launch?", a: "Yes. We offer ongoing support for bug fixes, OS updates, security patches and performance monitoring to keep your app running reliably post-launch." },
+    { q: "How do I get started with app development?", a: "Request a Free App Audit or Discovery Call. We'll review your idea or existing app and outline a clear roadmap — features, timeline and cost — before development begins." }
   ];
 
   return (

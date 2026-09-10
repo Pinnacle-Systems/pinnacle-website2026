@@ -18,29 +18,29 @@ export default function TextilePrintingErpPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const introPoints = [
-    "Textile printing involves coordinating designs, colour separations, screens or rollers, print paste consumption, and production schedules often tracked manually across design files and job cards.",
-    "Pinnacle ERP is built specifically for textile printing units, connecting design management, screen/roller tracking, print production, and dispatch in one connected system.",
-    "Get real-time visibility into print run status, colour matching, and machine utilization without waiting for the shift to end.",
-    "Built around how printing units actually operate: design repeats, colour separations, screens, print paste recipes, and job-work billing not adapted from generic manufacturing software."
+    "Textile printing involves coordinating designs, colour separations, screens or rollers, print paste consumption and production schedules often tracked manually across design files and job cards.",
+    "Pinnacle ERP is built specifically for textile printing units, connecting design management, screen/roller tracking, print production and dispatch in one connected system.",
+    "Get real-time visibility into print run status, colour matching and machine utilization without waiting for the shift to end.",
+    "Built around how printing units actually operate: design repeats, colour separations, screens, print paste recipes and job-work billing not adapted from generic manufacturing software."
   ];
 
   const differentiators = [
-    { title: "Design & Screen Management", desc: "Track design masters, color separations, and screen or roller inventory linked to each design.", icon: Layout },
+    { title: "Design & Screen Management", desc: "Track design masters, color separations and screen or roller inventory linked to each design.", icon: Layout },
     { title: "Print Paste Recipe Control", desc: "Maintain standard print paste recipes by design and colour for consistent, repeatable output.", icon: Droplets },
     { title: "Job-Work & Fabric Tracking", desc: "Track third-party fabric received for printing separately from owned stock, with accurate billing.", icon: Package },
-    { title: "Machine & Run Planning", desc: "Plan printing machine loads by design, batch size, and delivery priority to reduce changeovers.", icon: Factory },
+    { title: "Machine & Run Planning", desc: "Plan printing machine loads by design, batch size and delivery priority to reduce changeovers.", icon: Factory },
     { title: "Integrated Finance", desc: "Built-in billing and receivables with two-way Tally integration.", icon: Banknote }
   ];
 
   const modules = [
-    { title: "Design & Development Management", desc: "Maintain a central design library with colour separations, repeat sizes, and approval status for every design.", icon: Layout },
-    { title: "Screen / Roller & Print Paste Management", desc: "Track screens, rollers, and print paste recipes linked to each design and color combination.", icon: Layers },
+    { title: "Design & Development Management", desc: "Maintain a central design library with colour separations, repeat sizes and approval status for every design.", icon: Layout },
+    { title: "Screen / Roller & Print Paste Management", desc: "Track screens, rollers and print paste recipes linked to each design and color combination.", icon: Layers },
     { title: "Grey Fabric Receipt & Inventory", desc: "Receive and track grey or base fabric from own stock or customer job work before printing begins.", icon: Package },
     { title: "Order & Job-Work Management", desc: "Manage printing orders for both owned production and customer job-work, with clear design and delivery tracking.", icon: FileText },
-    { title: "Print Production Planning & Scheduling", desc: "Plan and schedule print runs based on machine capacity, design changeovers, and delivery priority.", icon: Network },
-    { title: "Print Production Management", desc: "Track fabric movement and status through printing, washing, and fixing stages, whether handled in-house or via subcontractors.", icon: Printer },
-    { title: "Quality Management", desc: "Inspect printed fabric at every stage to maintain design accuracy, colour consistency, and finish quality.", icon: ShieldCheck },
-    { title: "Inventory Management (WIP & Finished)", desc: "Maintain real-time visibility of fabric at every stage grey, in-process, and printed, across warehouses.", icon: BarChart },
+    { title: "Print Production Planning & Scheduling", desc: "Plan and schedule print runs based on machine capacity, design changeovers and delivery priority.", icon: Network },
+    { title: "Print Production Management", desc: "Track fabric movement and status through printing, washing and fixing stages, whether handled in-house or via subcontractors.", icon: Printer },
+    { title: "Quality Management", desc: "Inspect printed fabric at every stage to maintain design accuracy, colour consistency and finish quality.", icon: ShieldCheck },
+    { title: "Inventory Management (WIP & Finished)", desc: "Maintain real-time visibility of fabric at every stage grey, in-process and printed, across warehouses.", icon: BarChart },
     { title: "Dispatch", desc: "Manage the complete dispatch process from finished fabric readiness to shipment and delivery, for both owned and job-work fabric.", icon: Truck },
     { title: "Sales, Billing & Receivables", desc: "Integrated financial accounting built into Pinnacle ERP, covering both direct sales and job-work printing charges.", icon: Banknote }
   ];
@@ -53,32 +53,32 @@ export default function TextilePrintingErpPage() {
   ];
 
   const whyChooseUs = [
-    { title: "Purpose-Built for Printing Units", desc: "Every module is designed around real printing workflows — design libraries, screen/roller tracking, print paste recipes, and job-work billing.", icon: Printer },
+    { title: "Purpose-Built for Printing Units", desc: "Every module is designed around real printing workflows — design libraries, screen/roller tracking, print paste recipes and job-work billing.", icon: Printer },
     { title: "Clear Job-Work Accountability", desc: "Separately track customer-owned fabric from your own stock, with accurate process-wise billing and return tracking.", icon: CheckSquare },
     { title: "Consistent Design & Colour Control", desc: "Centralized design and recipe management help maintain consistent print quality across repeat orders and reduce reprocessing costs.", icon: Layout },
-    { title: "Complete Financial Integration", desc: "Built-in billing, receivables, and two-way Tally integration mean your finance team works from the same data as your print floor.", icon: Banknote },
-    { title: "Dedicated Implementation Support", desc: "Get structured onboarding, data migration, and training so your teams are productive from day one.", icon: ShieldCheck }
+    { title: "Complete Financial Integration", desc: "Built-in billing, receivables and two-way Tally integration mean your finance team works from the same data as your print floor.", icon: Banknote },
+    { title: "Dedicated Implementation Support", desc: "Get structured onboarding, data migration and training so your teams are productive from day one.", icon: ShieldCheck }
   ];
 
   const processes = [
-    { title: "Requirement Understanding", desc: "We study your current process across design, printing, and dispatch." },
+    { title: "Requirement Understanding", desc: "We study your current process across design, printing and dispatch." },
     { title: "Custom ERP Setup", desc: "Configure modules and workflows to match your printing unit's operations." },
-    { title: "Data Migration", desc: "Move your existing design, order, and customer data into the new system." },
-    { title: "Training & Onboarding", desc: "Hands-on training for design, production, quality, and finance teams." },
+    { title: "Data Migration", desc: "Move your existing design, order and customer data into the new system." },
+    { title: "Training & Onboarding", desc: "Hands-on training for design, production, quality and finance teams." },
     { title: "Go-Live & Support", desc: "Launch with dedicated support during the transition." }
   ];
 
   const faqs = [
-    { q: "1. What is textile printing management software?", a: "It's a management system built specifically for fabric printing units, covering design management, screen/roller tracking, production, and dispatch in one platform." },
-    { q: "2. Can it manage design and colour separation records?", a: "Yes, the Design & Development module maintains a central library of design masters, colour separations, and approval status." },
-    { q: "3. Does it track screens, rollers, and print paste recipes?", a: "Yes, you can link screens or rollers and standard print paste recipes to each design and colour combination for consistent output." },
+    { q: "1. What is textile printing management software?", a: "It's a management system built specifically for fabric printing units, covering design management, screen/roller tracking, production and dispatch in one platform." },
+    { q: "2. Can it manage design and colour separation records?", a: "Yes, the Design & Development module maintains a central library of design masters, colour separations and approval status." },
+    { q: "3. Does it track screens, rollers and print paste recipes?", a: "Yes, you can link screens or rollers and standard print paste recipes to each design and colour combination for consistent output." },
     { q: "4. Can it separately track job-work fabric from our own stock?", a: "Yes, the system tracks customer-owned job-work fabric separately from owned stock, with accurate process-wise billing." },
-    { q: "5. Can I track fabric through each printing stage?", a: "Yes, Print Production Management tracks fabric batch-wise through printing, washing, and fixing, whether done in-house or subcontracted." },
+    { q: "5. Can I track fabric through each printing stage?", a: "Yes, Print Production Management tracks fabric batch-wise through printing, washing and fixing, whether done in-house or subcontracted." },
     { q: "6. Does Pinnacle ERP integrate with Tally?", a: "Yes, it offers two-way Tally integration, syncing sales and accounting data automatically in both directions." },
     { q: "7. Can I track design mismatches or print defects by batch?", a: "Yes, Quality Management supports in-process and final inspection with design mismatch and defect tracking at the batch level." },
     { q: "8. Is job-work billing handled differently from regular sales?", a: "Yes, the system calculates job-work billing based on processes performed, separate from standard sales invoicing." },
-    { q: "9. Can I plan machine capacity around design changeovers?", a: "Yes, Production Planning lets you schedule machine loads based on design, batch size, and delivery priority to reduce changeover time." },
-    { q: "10. How long does implementation take?", a: "Timelines depend on unit size and data volume, but implementation typically includes structured onboarding, training, and go-live support within a few weeks." }
+    { q: "9. Can I plan machine capacity around design changeovers?", a: "Yes, Production Planning lets you schedule machine loads based on design, batch size and delivery priority to reduce changeover time." },
+    { q: "10. How long does implementation take?", a: "Timelines depend on unit size and data volume, but implementation typically includes structured onboarding, training and go-live support within a few weeks." }
   ];
 
   return (
@@ -123,7 +123,7 @@ export default function TextilePrintingErpPage() {
               </h1>
 
               <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                From design and screen planning to print production, quality, and dispatch — Pinnacle ERP connects every stage of your printing unit on one platform.
+                From design and screen planning to print production, quality and dispatch — Pinnacle ERP connects every stage of your printing unit on one platform.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">

@@ -50,7 +50,7 @@ export default function ErpHero() {
             </h1>
 
             <p className={theme.p}>
-              Off-the-shelf ERP software often forces businesses to change their workflows to fit the system. Our AI-powered custom ERP software is built around your business processes, connecting Sales, Inventory, Production, Finance, HR, and Operations on one intelligent platform. From workflow automation and real-time reporting to AI-driven insights and predictive capabilities, we develop ERP solutions that adapt to how your business actually works.
+              Off-the-shelf ERP software often forces businesses to change their workflows to fit the system. Our AI-powered custom ERP software is built around your business processes, connecting Sales, Inventory, Production, Finance, HR and Operations on one intelligent platform. From workflow automation and real-time reporting to AI-driven insights and predictive capabilities, we develop ERP solutions that adapt to how your business actually works.
             </p>
 
             {/* CTAs */}

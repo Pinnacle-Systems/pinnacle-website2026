@@ -22,16 +22,16 @@ export default function TextilePayrollSoftwarePage() {
     "Manual piece-rate calculations that take days to finalize",
     "Attendance and production data tracked separately, causing wage disputes",
     "Contract/job-worker payments calculated outside the main payroll system",
-    "Overtime, incentives, and shift allowances computed manually, prone to error",
+    "Overtime, incentives and shift allowances computed manually, prone to error",
     "Compliance filings (PF, ESI, bonus, gratuity) handled as a separate, time-consuming task"
   ];
 
   const modules = [
     { title: "Piece-Rate Wage Calculation", desc: "Automatically calculate wages based on production output—per garment, per operation, or per batch—pulled directly from your production data.", icon: Calculator },
-    { title: "Attendance & Shift Management", desc: "Track attendance via biometric, RFID, or manual entry, with automatic shift, overtime, and late-mark calculations.", icon: Clock },
+    { title: "Attendance & Shift Management", desc: "Track attendance via biometric, RFID, or manual entry, with automatic shift, overtime and late-mark calculations.", icon: Clock },
     { title: "Contract & Job-Worker Payments", desc: "Manage payments to contract labor and job workers separately from regular payroll, with full visibility into pending and processed amounts.", icon: Users },
-    { title: "Incentive & Bonus Management", desc: "Configure production-linked incentives, attendance bonuses, and festival bonuses that calculate automatically each cycle.", icon: Gift },
-    { title: "Statutory Compliance", desc: "Automated PF, ESI, professional tax, and bonus calculations—with ready-to-file statutory reports, reducing compliance risk.", icon: ShieldCheck },
+    { title: "Incentive & Bonus Management", desc: "Configure production-linked incentives, attendance bonuses and festival bonuses that calculate automatically each cycle.", icon: Gift },
+    { title: "Statutory Compliance", desc: "Automated PF, ESI, professional tax and bonus calculations—with ready-to-file statutory reports, reducing compliance risk.", icon: ShieldCheck },
     { title: "Payslip Generation & Disbursement", desc: "Generate digital payslips instantly and disburse wages via bank transfer, with SMS/WhatsApp notifications to workers.", icon: FileText },
     { title: "Department & Line-Wise Wage Reports", desc: "Get wage cost breakdowns by department, production line, or order — helping you track true labour cost per garment or batch.", icon: LineChart }
   ];
@@ -40,19 +40,19 @@ export default function TextilePayrollSoftwarePage() {
     { title: "Built for Piece-Rate Wages", desc: "Unlike generic payroll tools, our system is designed around textile-specific wage structures, not adapted from a standard HR product.", icon: Zap },
     { title: "Eliminates Wage Disputes", desc: "Automatic linking of attendance and production data means wages are calculated the same way every time—transparent and error-free.", icon: CheckSquare },
     { title: "Faster Payroll Cycles", desc: "What used to take days of manual calculation is processed in minutes, even with hundreds of contract and piece-rate workers.", icon: Clock },
-    { title: "Built-In Compliance", desc: "Stay compliant with PF, ESI, and labor law requirements without maintaining separate spreadsheets or manual filings.", icon: ShieldCheck },
+    { title: "Built-In Compliance", desc: "Stay compliant with PF, ESI and labor law requirements without maintaining separate spreadsheets or manual filings.", icon: ShieldCheck },
     { title: "Integrates With Your ERP", desc: "Connects directly with production and attendance data from your Textile Processing ERP—no duplicate data entry.", icon: Network }
   ];
 
   const faqs = [
     { q: "1. Can this software handle piece-rate wages for garment workers?", a: "Yes. Wages are calculated automatically based on production output per operation, garment, or batch, pulled directly from your production records." },
     { q: "2. Does it support contract and job-worker payments separately from regular staff?", a: "Yes. Contract labour and job-worker payments are managed in a separate workflow, with full visibility into pending and completed payments." },
-    { q: "3. Can it calculate overtime and shift allowances automatically?", a: "Yes. Shift timings, overtime hours, and applicable allowances are calculated automatically based on your attendance and shift rules." },
-    { q: "4. Does the software handle PF, ESI, and other statutory compliance?", a: "Yes. PF, ESI, professional tax, and bonus calculations are automated, with statutory reports ready for filing." },
-    { q: "5. Can it integrate with biometric or RFID attendance systems?", a: "Yes. The software integrates with biometric, RFID, and manual attendance methods to pull data directly into payroll processing." },
+    { q: "3. Can it calculate overtime and shift allowances automatically?", a: "Yes. Shift timings, overtime hours and applicable allowances are calculated automatically based on your attendance and shift rules." },
+    { q: "4. Does the software handle PF, ESI and other statutory compliance?", a: "Yes. PF, ESI, professional tax and bonus calculations are automated, with statutory reports ready for filing." },
+    { q: "5. Can it integrate with biometric or RFID attendance systems?", a: "Yes. The software integrates with biometric, RFID and manual attendance methods to pull data directly into payroll processing." },
     { q: "6. Will this connect with our existing Textile Processing ERP?", a: "Yes. Payroll integrates directly with your production and attendance data, so wages are calculated without duplicate manual entry." },
     { q: "7. Can workers receive payslips digitally?", a: "Yes. Digital payslips are generated automatically and can be sent via SMS or WhatsApp along with wage disbursement notifications." },
-    { q: "8. Is this suitable for units with a mix of daily-rate, piece-rate, and monthly-salary staff?", a: "Yes. The system supports multiple wage structures simultaneously, so you don't need separate systems for different worker categories." }
+    { q: "8. Is this suitable for units with a mix of daily-rate, piece-rate and monthly-salary staff?", a: "Yes. The system supports multiple wage structures simultaneously, so you don't need separate systems for different worker categories." }
   ];
 
   return (
@@ -97,7 +97,7 @@ export default function TextilePayrollSoftwarePage() {
               </h1>
 
               <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                Manage complex wage structures—piece-rate, daily-rate, shift-based, and contract labor accurately and on time, with a payroll system built specifically for textile and garment production floors.
+                Manage complex wage structures—piece-rate, daily-rate, shift-based and contract labor accurately and on time, with a payroll system built specifically for textile and garment production floors.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
@@ -167,7 +167,7 @@ export default function TextilePayrollSoftwarePage() {
                 Textile Payroll Isn&apos;t Like Standard Office Payroll
               </motion.h2>
               <p className={cn(theme.p, "text-white text-center mb-8 max-w-3xl mx-auto")}>
-                Most payroll software is built for fixed-salary office staff—not for the reality of a textile or garment unit, where wages depend on production output, piece rates, shifts, and contract labor.
+                Most payroll software is built for fixed-salary office staff—not for the reality of a textile or garment unit, where wages depend on production output, piece rates, shifts and contract labor.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
@@ -193,7 +193,7 @@ export default function TextilePayrollSoftwarePage() {
               <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-6 flex items-center justify-center gap-4">
                 <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0" />
                 <p className={cn(theme.p, "text-white text-[15px] sm:text-[16px] leading-relaxed tracking-normal !indent-0 !mb-0 text-center")}>
-                  A textile payroll software connects attendance, production output, and wage rules into one system—so every worker is paid accurately and on time, with full compliance built in.
+                  A textile payroll software connects attendance, production output and wage rules into one system—so every worker is paid accurately and on time, with full compliance built in.
                 </p>
               </div>
             </div>

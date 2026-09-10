@@ -11,7 +11,7 @@ import ErpFaq from "./components/ErpFaq";
 
 export const metadata = {
   title: "AI-Powered Custom ERP Software | Pinnacle",
-  description: "Our AI-powered custom ERP software is built around your business processes, connecting Sales, Inventory, Production, Finance, HR, and Operations on one intelligent platform.",
+  description: "Our AI-powered custom ERP software is built around your business processes, connecting Sales, Inventory, Production, Finance, HR and Operations on one intelligent platform.",
 };
 
 export default function ErpSoftwarePage() {

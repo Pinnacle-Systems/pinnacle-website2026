@@ -21,7 +21,7 @@ const categories = [
 // Placeholder articles
 const allArticles = [
   {
-    title: "ERP for Garment Exporters: How the Right System Simplifies Buyer Orders, Compliance, and Shipments.",
+    title: "ERP for Garment Exporters: How the Right System Simplifies Buyer Orders, Compliance and Shipments.",
     excerpt: "Garment exporters operate under pressure that domestic manufacturers rarely face. Learn why export-focused ERP has become essential.",
     category: "Textile ERP Software",
     date: "Sep 5, 2026",
@@ -67,7 +67,7 @@ const allArticles = [
   },
   {
     title: "The Importance of Fast-Loading Corporate Websites",
-    excerpt: "How site speed directly impacts your bounce rate, SEO rankings, and ultimately, your bottom line.",
+    excerpt: "How site speed directly impacts your bounce rate, SEO rankings and ultimately, your bottom line.",
     category: "Website Development",
     date: "Jul 10, 2026",
     readTime: "5 min read",
@@ -119,7 +119,7 @@ export default function BlogPage() {
               transition={{ delay: 0.2 }}
               className={cn(theme.p, "mx-auto text-gray-300 max-w-2xl text-center")}
             >
-              Discover the latest trends, tips, and insights across software development, digital marketing, and industry-specific ERP solutions.
+              Discover the latest trends, tips and insights across software development, digital marketing and industry-specific ERP solutions.
             </motion.p>
           </div>
         </div>
@@ -234,7 +234,7 @@ export default function BlogPage() {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Subscribe to Our Newsletter</h2>
             <p className="text-gray-400 mb-10 text-[16px]">
-              Get the latest insights on software development, ERP strategies, and digital marketing delivered straight to your inbox.
+              Get the latest insights on software development, ERP strategies and digital marketing delivered straight to your inbox.
             </p>
             
             <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">

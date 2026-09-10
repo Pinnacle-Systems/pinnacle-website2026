@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const reasons = [
   {
     title: "End-to-End Expertise",
-    description: "From Software Development to Marketing, we cover every stage of your Digital Growth under one roof.",
+    description: "From Software Development to Digital Marketing, we cover every stage of your Digital Growth under one roof.",
     icon: Layers,
   },
   {
@@ -23,7 +23,7 @@ const reasons = [
   },
   {
     title: "Transparent Process",
-    description: "Clear Timelines, Transparent Communication, and no unexpected Costs.",
+    description: "Clear Timelines, Transparent Communication and no unexpected Costs.",
     icon: Shield,
   },
   {
@@ -54,7 +54,7 @@ export default function WhyChooseUsSection() {
           >
             <div className="inline-flex items-center justify-center gap-2 sm:gap-3 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full border border-white/10 mb-5 sm:mb-6 bg-white/5 backdrop-blur-sm shadow-sm w-fit">
               <div className="w-3 sm:w-4 h-[2px] sm:h-[3px] bg-primary rounded-full"></div>
-              <span className="text-white font-bold text-[10px] sm:text-[12px] md:text-[13px] tracking-[0.1em] sm:tracking-[0.15em] uppercase">Pinnacle Systems Advantage</span>
+              <span className="text-white font-bold text-[10px] sm:text-[12px] md:text-[13px] tracking-[0.1em] sm:tracking-[0.15em] uppercase">Advantage</span>
             </div>
 
             <h2 className={cn(theme.h2, "text-white mb-4 sm:mb-6 text-center")}>
@@ -65,8 +65,8 @@ export default function WhyChooseUsSection() {
                 </svg>
               </span>
             </h2>
-            <p className={cn(theme.p, "text-gray-300 text-center text-[14px] sm:text-[16px]")}>
-              We bring Technical Excellence, Industry Expertise, and a Partner-First approach to every project we undertake.
+            <p className={cn(theme.p, "text-white text-center text-[14px] sm:text-[16px]")}>
+              We bring Technical Excellence, Industry Expertise and a Partner-First approach to every project we undertake.
             </p>
           </motion.div>
         </div>
@@ -100,7 +100,7 @@ export default function WhyChooseUsSection() {
                 <h3 className="relative text-[16px] sm:text-[17px] font-bold text-white mb-2 sm:mb-3 text-center transition-colors duration-300">
                   {reason.title}
                 </h3>
-                <p className={cn(theme.p, "text-gray-400 group-hover:text-white transition-colors duration-300 !text-center !indent-0 text-[14px] leading-snug tracking-normal")}>
+                <p className={cn(theme.p, "text-white transition-colors duration-300 !text-center !indent-0 text-[14px] leading-snug tracking-normal")}>
                   {reason.description}
                 </p>
               </motion.div>

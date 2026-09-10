@@ -21,43 +21,43 @@ export default function TextileProcessingSoftwarePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const features = [
-    { title: "Cloud Technology", desc: "Access your Textile Processing ERP anytime, anywhere with secure, reliable cloud hosting — monitor your dyeing, weaving, and finishing units from the office, floor, or on the move.", icon: Cloud },
+    { title: "Cloud Technology", desc: "Access your Textile Processing ERP anytime, anywhere with secure, reliable cloud hosting — monitor your dyeing, weaving and finishing units from the office, floor, or on the move.", icon: Cloud },
     { title: "Real-Time Tracking", desc: "Monitor live production data across every processing stage and pull accurate reports instantly — for faster, smarter decisions on the floor.", icon: Activity },
-    { title: "Production & Inventory", desc: "Track batch progress and fabric/yarn inventory in real time — from grey stock to finished goods — for better planning, control, and reduced wastage.", icon: Package },
-    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation, and support from our team — faster communication, better service, and full accountability, with no middlemen slowing things down.", icon: UserX },
-    { title: "Barcode Scanning", desc: "Faster batch and lot data entry, reduced manual errors, and accurate stock tracking across dyeing, weaving, and warehouse operations.", icon: ScanBarcode },
+    { title: "Production & Inventory", desc: "Track batch progress and fabric/yarn inventory in real time — from grey stock to finished goods — for better planning, control and reduced wastage.", icon: Package },
+    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation and support from our team — faster communication, better service and full accountability, with no middlemen slowing things down.", icon: UserX },
+    { title: "Barcode Scanning", desc: "Faster batch and lot data entry, reduced manual errors and accurate stock tracking across dyeing, weaving and warehouse operations.", icon: ScanBarcode },
     { title: "Seamless Integration", desc: "Connect your finance operations directly to E-Way Bill and E-Invoice platforms for faster processing and full compliance — no manual duplication.", icon: LinkIcon },
-    { title: "Built-in Approval System", desc: "Route purchase orders, chemical/dye purchases, and expense requests through role-based approval workflows for faster, controlled decision-making.", icon: CheckSquare },
-    { title: "Integration with SMS", desc: "Automatic SMS alerts for order status updates, batch completion, and payment reminders — keeping customers and vendors informed without manual follow-up.", icon: MessageSquare },
-    { title: "Scheduled Mail Shooting", desc: "Set up automated, scheduled email reports and updates for customers, vendors, or internal teams: batch status, dispatch updates, and outstanding payments, sent on autopilot.", icon: Mail },
-    { title: "WhatsApp Integration", desc: "Send invoices, order confirmations, and batch/dispatch updates directly to vendors and customers via WhatsApp no delays waiting on email.", icon: MessageCircle },
-    { title: "Action Dashboard", desc: "A single dashboard showing pending approvals, overdue batches, and delayed orders — so nothing slips through the cracks on the production floor.", icon: LayoutDashboard },
-    { title: "Graphical Reports", desc: "Visual, real-time reports on production, inventory, finance, and processing costs built for quick, floor-level and management decision-making.", icon: BarChart }
+    { title: "Built-in Approval System", desc: "Route purchase orders, chemical/dye purchases and expense requests through role-based approval workflows for faster, controlled decision-making.", icon: CheckSquare },
+    { title: "Integration with SMS", desc: "Automatic SMS alerts for order status updates, batch completion and payment reminders — keeping customers and vendors informed without manual follow-up.", icon: MessageSquare },
+    { title: "Scheduled Mail Shooting", desc: "Set up automated, scheduled email reports and updates for customers, vendors, or internal teams: batch status, dispatch updates and outstanding payments, sent on autopilot.", icon: Mail },
+    { title: "WhatsApp Integration", desc: "Send invoices, order confirmations and batch/dispatch updates directly to vendors and customers via WhatsApp no delays waiting on email.", icon: MessageCircle },
+    { title: "Action Dashboard", desc: "A single dashboard showing pending approvals, overdue batches and delayed orders — so nothing slips through the cracks on the production floor.", icon: LayoutDashboard },
+    { title: "Graphical Reports", desc: "Visual, real-time reports on production, inventory, finance and processing costs built for quick, floor-level and management decision-making.", icon: BarChart }
   ];
 
   const modules = [
-    { title: "Yarn & Raw Material Management", desc: "Track yarn purchases, lot numbers, and consumption in real time, with automatic stock updates as material moves through each process.", icon: Cpu },
-    { title: "Dyeing & Processing Management", desc: "Recipe-wise costing, shade-matching records, batch tracking, and process-wise wastage reports—so every dye lot is accounted for.", icon: Droplets },
-    { title: "Weaving & Production Tracking", desc: "Machine-wise and shift-wise production entries, loom efficiency tracking, and real-time WIP (work-in-progress) visibility.", icon: Factory },
+    { title: "Yarn & Raw Material Management", desc: "Track yarn purchases, lot numbers and consumption in real time, with automatic stock updates as material moves through each process.", icon: Cpu },
+    { title: "Dyeing & Processing Management", desc: "Recipe-wise costing, shade-matching records, batch tracking and process-wise wastage reports—so every dye lot is accounted for.", icon: Droplets },
+    { title: "Weaving & Production Tracking", desc: "Machine-wise and shift-wise production entries, loom efficiency tracking and real-time WIP (work-in-progress) visibility.", icon: Factory },
     { title: "Finishing & Quality Control", desc: "Quality inspection checkpoints at every stage, with defect tracking and grade-wise (A/B/C grade) fabric classification.", icon: ClipboardCheck },
-    { title: "Inventory & Warehouse Management", desc: "Real-time stock of grey fabric, processed fabric, and finished goods — searchable by lot, batch, or order number.", icon: Package },
+    { title: "Inventory & Warehouse Management", desc: "Real-time stock of grey fabric, processed fabric and finished goods — searchable by lot, batch, or order number.", icon: Package },
     { title: "Order & Dispatch Management", desc: "Track customer orders from booking to dispatch, with automatic alerts for delays and pending balances.", icon: Truck },
     { title: "Costing & Profitability Reports", desc: "Batch-wise and order-wise costing that shows actual profitability — not estimated margins.", icon: LineChart }
   ];
 
   const automationFeatures = [
-    { title: "Real-Time Batch Tracking", desc: "Track every batch instantly as it moves through receiving, washing, dyeing, and ironing — right up to final packing. No more chasing supervisors for status updates; every stage is visible the moment it happens.", icon: Activity },
-    { title: "Resource Optimization", desc: "Smart scheduling allocates machines, chemical usage, and labour automatically to maximize throughput, so your facility runs at full capacity without manual planning bottlenecks.", icon: Timer },
+    { title: "Real-Time Batch Tracking", desc: "Track every batch instantly as it moves through receiving, washing, dyeing and ironing — right up to final packing. No more chasing supervisors for status updates; every stage is visible the moment it happens.", icon: Activity },
+    { title: "Resource Optimization", desc: "Smart scheduling allocates machines, chemical usage and labour automatically to maximize throughput, so your facility runs at full capacity without manual planning bottlenecks.", icon: Timer },
     { title: "Quality Assurance", desc: "Cut rework rates with digital inspection checkpoints built into every critical stage of the process — catch defects before they move downstream, not after.", icon: ShieldCheck },
     { title: "Cost Transparency", desc: "Get live insights into utility consumption and per-garment processing costs — so you always know your real margin, not an end-of-month estimate.", icon: TrendingUp }
   ];
 
   const faqs = [
-    { q: "1. What is garment processing management software?", a: "It's a system that digitizes and automates your garment facility's wet and dry processes — including batch receiving, washing, dyeing, ironing, and packing — giving you real-time visibility instead of manual tracking through registers or spreadsheets." },
+    { q: "1. What is garment processing management software?", a: "It's a system that digitizes and automates your garment facility's wet and dry processes — including batch receiving, washing, dyeing, ironing and packing — giving you real-time visibility instead of manual tracking through registers or spreadsheets." },
     { q: "2. Can it track both wet processing (washing/dyeing) and dry processing (ironing/finishing) separately?", a: "Yes. Each process stage is tracked independently, so you can see exactly where a batch is at any moment — whether it's in washing, drying, ironing, or packing — with process-wise timestamps." },
     { q: "3. How does the software help reduce rework?", a: "Digital inspection checkpoints are built into critical stages of the process, so defects are flagged and caught immediately — before the batch moves further downstream, instead of being discovered at final QC." },
     { q: "4. Can it track chemical and utility usage per batch?", a: "Yes. The system captures chemical consumption and utility usage tied to each batch, giving you accurate, batch-wise processing costs instead of estimated averages." },
-    { q: "5. Will this help with machine and labour scheduling?", a: "Yes. Smart scheduling allocates machines, chemical resources, and labour based on real capacity and workload, helping reduce idle time and maximize throughput." },
+    { q: "5. Will this help with machine and labour scheduling?", a: "Yes. Smart scheduling allocates machines, chemical resources and labour based on real capacity and workload, helping reduce idle time and maximize throughput." },
     { q: "6. Do I need technical staff to operate this software?", a: "No. The interface is built for shop-floor use — supervisors and operators can log batch movements and inspections without any coding or IT background." },
     { q: "7. Can I see real cost-per-garment, not just total facility cost?", a: "Yes. Cost tracking is broken down to a per-garment level, factoring in utility consumption and processing time, so you get accurate margins on every order." },
     { q: "8. Is this suitable for small processing units or only large facilities?", a: "It scales to your operation — whether you run a single wash/dye unit or manage multiple processing lines across locations." },
@@ -107,7 +107,7 @@ export default function TextileProcessingSoftwarePage() {
               </h1>
 
               <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                Run your entire textile production—from raw material to dispatch—on one system that eliminates manual tracking, reduces waste, and gives you real-time visibility across every process stage.
+                Run your entire textile production—from raw material to dispatch—on one system that eliminates manual tracking, reduces waste and gives you real-time visibility across every process stage.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">

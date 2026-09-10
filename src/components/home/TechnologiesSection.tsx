@@ -97,7 +97,7 @@ export default function TechnologiesSection() {
             <div className="w-20 sm:w-24 h-1.5 bg-primary rounded-full mb-6 sm:mb-8"></div>
             <p className={cn(theme.p, "text-black")}>
               We Engineer High-performance Software and Enterprise Web Platforms by leveraging a Modern, highly Scalable Technology Stack. Instead of relying on rigid Templates, we select the precise Frameworks and Architectures required to build Secure, Lightning-fast Digital Solutions tailored to your exact Technical requirements.
-              Our Development team utilizes advanced Front-end and Back-end Environments to deploy resilient Applications optimized for Modern Web Standards. By Adhering to strict Coding Practices and robust Data Integration, we build Digital Infrastructure that is Responsive, Secure, and designed for Long-term Scalability.
+              Our Development team utilizes advanced Front-end and Back-end Environments to deploy resilient Applications optimized for Modern Web Standards. By Adhering to strict Coding Practices and robust Data Integration, we build Digital Infrastructure that is Responsive, Secure and designed for Long-term Scalability.
             </p>
           </div>
 

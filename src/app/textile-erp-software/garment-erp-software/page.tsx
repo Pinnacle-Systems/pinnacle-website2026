@@ -23,49 +23,49 @@ export default function GarmentErpSoftwarePage() {
   const features = [
     { title: "Cloud Technology", desc: "Access your ERP anytime, anywhere with secure, reliable cloud technology — no dependency on office systems or physical servers.", icon: Cloud },
     { title: "Real-Time Tracking", desc: "Monitor live business data and access accurate reports for faster, smarter decisions across every department.", icon: Activity },
-    { title: "Production & Inventory", desc: "Track production progress and inventory in real time for better planning, control, and efficiency on the shop floor.", icon: Package },
-    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation, and support from our team ensure faster communication, better service, and accountability.", icon: UserX },
-    { title: "Barcode Scanning", desc: "Faster data entry, reduced manual errors, accurate stock tracking, and improved inventory control.", icon: ScanBarcode },
+    { title: "Production & Inventory", desc: "Track production progress and inventory in real time for better planning, control and efficiency on the shop floor.", icon: Package },
+    { title: "No 3rd Party Involvement", desc: "Direct sales, implementation and support from our team ensure faster communication, better service and accountability.", icon: UserX },
+    { title: "Barcode Scanning", desc: "Faster data entry, reduced manual errors, accurate stock tracking and improved inventory control.", icon: ScanBarcode },
     { title: "Seamless Integration", desc: "Connect your finance operations to the E-Way Bill and E-Invoice platforms for speedier processing and improved compliance.", icon: LinkIcon },
-    { title: "Built-in Approval System", desc: "Route purchase orders, expenses, and requests through role-based approval workflows for faster and controlled decision-making.", icon: CheckSquare },
+    { title: "Built-in Approval System", desc: "Route purchase orders, expenses and requests through role-based approval workflows for faster and controlled decision-making.", icon: CheckSquare },
     { title: "Integration with SMS", desc: "Send automatic, intelligently generated SMS alerts for order updates and payment reminders.", icon: MessageSquare },
     { title: "Scheduled Mail Sending", desc: "Set up automated, scheduled email campaigns and reports sent to customers, vendors, or internal teams.", icon: Mail },
-    { title: "WhatsApp Integration", desc: "Send invoices, order confirmations, and updates directly to vendors or customers via WhatsApp.", icon: MessageCircle },
-    { title: "Action Dashboard", desc: "A single dashboard showing pending approvals, overdue tasks, and items that need attention — so nothing slips through.", icon: LayoutDashboard },
-    { title: "Graphical Reports", desc: "Visual, real-time reports on sales, inventory, finance, and operations, built for quick decision-making.", icon: BarChart }
+    { title: "WhatsApp Integration", desc: "Send invoices, order confirmations and updates directly to vendors or customers via WhatsApp.", icon: MessageCircle },
+    { title: "Action Dashboard", desc: "A single dashboard showing pending approvals, overdue tasks and items that need attention — so nothing slips through.", icon: LayoutDashboard },
+    { title: "Graphical Reports", desc: "Visual, real-time reports on sales, inventory, finance and operations, built for quick decision-making.", icon: BarChart }
   ];
 
   const introPoints = [
-    "Pinnacle Garment ERP is an end-to-end business management platform designed specifically for the garment industry. It connects every stage of your operation from customer enquiry and order management to production planning, sourcing, inventory, quality, packing, and final dispatch.",
-    "Instead of managing different processes through disconnected software, spreadsheets, emails, and manual records, Pinnacle brings your entire garment business onto one integrated platform.",
-    "With real-time visibility across departments, automated workflows, centralized data, and powerful reports, Pinnacle helps garment manufacturers and exporters reduce errors, improve efficiency, control costs, and deliver orders on time."
+    "Pinnacle Garment ERP is an end-to-end business management platform designed specifically for the garment industry. It connects every stage of your operation from customer enquiry and order management to production planning, sourcing, inventory, quality, packing and final dispatch.",
+    "Instead of managing different processes through disconnected software, spreadsheets, emails and manual records, Pinnacle brings your entire garment business onto one integrated platform.",
+    "With real-time visibility across departments, automated workflows, centralized data and powerful reports, Pinnacle helps garment manufacturers and exporters reduce errors, improve efficiency, control costs and deliver orders on time."
   ];
 
   const whatMakesUs = [
-    { title: "Core ERP", desc: "Comprehensive integration of essential business functions such as Finance, Sales, Purchase, Inventory, Production, HR, and Operations within a single unified platform.", icon: Layers },
-    { title: "Industry Depth", desc: "Ability to provide industry-specific workflows, processes, controls, reports, and functionality tailored to unique operational requirements.", icon: Factory },
-    { title: "Manufacturing / Operations", desc: "Integrated management of production planning, BOM, MRP, material consumption, WIP, quality, job work, costing, machine operations, and finished goods.", icon: Scissors },
-    { title: "Business Process Integration", desc: "Seamless integration of end-to-end business processes, connecting departments, transactions, workflows, and data in a single system.", icon: LinkIcon },
-    { title: "Customization", desc: "Flexible configuration of workflows, forms, fields, reports, approvals, and business rules to match specific organizational requirements.", icon: Settings },
+    { title: "Core ERP", desc: "Comprehensive integration of essential business functions such as Finance, Sales, Purchase, Inventory, Production, HR and Operations within a single unified platform.", icon: Layers },
+    { title: "Industry Depth", desc: "Ability to provide industry-specific workflows, processes, controls, reports and functionality tailored to unique operational requirements.", icon: Factory },
+    { title: "Manufacturing / Operations", desc: "Integrated management of production planning, BOM, MRP, material consumption, WIP, quality, job work, costing, machine operations and finished goods.", icon: Scissors },
+    { title: "Business Process Integration", desc: "Seamless integration of end-to-end business processes, connecting departments, transactions, workflows and data in a single system.", icon: LinkIcon },
+    { title: "Customization", desc: "Flexible configuration of workflows, forms, fields, reports, approvals and business rules to match specific organizational requirements.", icon: Settings },
     { title: "Industry-Specific Reporting", desc: "Specialized MIS and analytical reports designed to provide meaningful insights based on the unique KPIs and requirements.", icon: BarChart },
-    { title: "Multi-Company / Branch", desc: "Centralized management of multiple companies, branches, and warehouses with consolidated and entity-wise reporting.", icon: Briefcase },
-    { title: "Management Intelligence", desc: "Real-time dashboards, KPIs, analytics, and actionable insights that help management monitor performance and make faster, data-driven decisions.", icon: TrendingUp }
+    { title: "Multi-Company / Branch", desc: "Centralized management of multiple companies, branches and warehouses with consolidated and entity-wise reporting.", icon: Briefcase },
+    { title: "Management Intelligence", desc: "Real-time dashboards, KPIs, analytics and actionable insights that help management monitor performance and make faster, data-driven decisions.", icon: TrendingUp }
   ];
 
   const modules = [
-    { title: "Enquiry & Pre-Costing", desc: "Capture customer enquiries and develop accurate pre-costing for every garment style before accepting the order. Define style details, fabrics, trims, and overheads to arrive at the right selling price.", icon: FileText },
-    { title: "Sampling", desc: "Manage the complete sample development cycle from design interpretation to fit, size-set, and PP samples. Track status, approvals, and revisions style-wise.", icon: Scissors },
-    { title: "Buyer Order Management", desc: "Manage the customer order lifecycle from enquiry to confirmation, tracking style, colour, size, delivery date, pricing, and order budget in one place.", icon: ShoppingBag },
-    { title: "Time & Action (T&A) Scheduler", desc: "Plan, schedule, and monitor every activity with automatic timelines. Ensure each department knows its target dates and identify delays before they impact delivery.", icon: Timer },
-    { title: "Material Planning", desc: "Convert confirmed orders into detailed material and production plans. Plan the requirement of fabric, trims, manpower, and production capacity based on quantities.", icon: Package },
-    { title: "Procurement", desc: "Manage the purchasing cycle from material requisition to supplier PO and receipt. Control procurement of fabric, trims, and packing materials with full visibility.", icon: Truck },
-    { title: "Quality Control", desc: "Manage incoming material, in-line, and final inspection to ensure that quality standards are met at every single production and procurement stage.", icon: ShieldCheck },
-    { title: "Inventory Management", desc: "Track and control garment materials and finished goods across multiple warehouses. Maintain real-time visibility of fabric, trims, WIP, and finished goods.", icon: Layers },
+    { title: "Enquiry & Pre-Costing", desc: "Capture customer enquiries and develop accurate pre-costing for every garment style before accepting the order. Define style details, fabrics, trims and overheads to arrive at the right selling price.", icon: FileText },
+    { title: "Sampling", desc: "Manage the complete sample development cycle from design interpretation to fit, size-set and PP samples. Track status, approvals and revisions style-wise.", icon: Scissors },
+    { title: "Buyer Order Management", desc: "Manage the customer order lifecycle from enquiry to confirmation, tracking style, colour, size, delivery date, pricing and order budget in one place.", icon: ShoppingBag },
+    { title: "Time & Action (T&A) Scheduler", desc: "Plan, schedule and monitor every activity with automatic timelines. Ensure each department knows its target dates and identify delays before they impact delivery.", icon: Timer },
+    { title: "Material Planning", desc: "Convert confirmed orders into detailed material and production plans. Plan the requirement of fabric, trims, manpower and production capacity based on quantities.", icon: Package },
+    { title: "Procurement", desc: "Manage the purchasing cycle from material requisition to supplier PO and receipt. Control procurement of fabric, trims and packing materials with full visibility.", icon: Truck },
+    { title: "Quality Control", desc: "Manage incoming material, in-line and final inspection to ensure that quality standards are met at every single production and procurement stage.", icon: ShieldCheck },
+    { title: "Inventory Management", desc: "Track and control garment materials and finished goods across multiple warehouses. Maintain real-time visibility of fabric, trims, WIP and finished goods.", icon: Layers },
     { title: "Process Management", desc: "Manage and monitor garment processes carried out internally or through subcontractors. Track materials moving between departments and job workers.", icon: Activity },
-    { title: "Production", desc: "Control garment production from cutting to stitching, finishing, and packing. Monitor production quantities, targets, output, rejection, wastage, and efficiency.", icon: Factory },
-    { title: "Shipment", desc: "Manage the complete dispatch process from finished-goods readiness to packing, shipment, and delivery. Ensure the right quantity reaches the customer.", icon: Truck },
+    { title: "Production", desc: "Control garment production from cutting to stitching, finishing and packing. Monitor production quantities, targets, output, rejection, wastage and efficiency.", icon: Factory },
+    { title: "Shipment", desc: "Manage the complete dispatch process from finished-goods readiness to packing, shipment and delivery. Ensure the right quantity reaches the customer.", icon: Truck },
     { title: "Accounting & Finance", desc: "Powerful financial accounting integrated to the ERP. Take away the burden of finance by avoiding duplication. Integrate sales with finance for complete receivables visibility.", icon: Banknote },
-    { title: "Visual Dashboards", desc: "Get real-time, visual insights into production, inventory, quality, and financial performance. Role-based dashboards highlight pending approvals and delays.", icon: LayoutDashboard }
+    { title: "Visual Dashboards", desc: "Get real-time, visual insights into production, inventory, quality and financial performance. Role-based dashboards highlight pending approvals and delays.", icon: LayoutDashboard }
   ];
 
   const processes = [
@@ -81,16 +81,16 @@ export default function GarmentErpSoftwarePage() {
   ];
 
   const faqs = [
-    { q: "1. What is the garment ERP software?", a: "It's a management software designed specifically for manufacturers of apparel and covers costing and order management, production quality, dispatch, and costing all in one place." },
-    { q: "2. Does Pinnacle ERP handle pre-costing before an order is confirmed?", a: "Yes, the Enquiry & Pre-Costing module lets you cost styles using fabric, trims, BOM, labour, and overheads before quoting the customer." },
+    { q: "1. What is the garment ERP software?", a: "It's a management software designed specifically for manufacturers of apparel and covers costing and order management, production quality, dispatch and costing all in one place." },
+    { q: "2. Does Pinnacle ERP handle pre-costing before an order is confirmed?", a: "Yes, the Enquiry & Pre-Costing module lets you cost styles using fabric, trims, BOM, labour and overheads before quoting the customer." },
     { q: "3. What is the Time & Action (T&A) Scheduler?", a: "It will automatically plan every step from order confirmation through shipment it flags delays before they can affect delivery dates." },
     { q: "4. Can it manage subcontracted or job-work processes?", a: "Yes, the Process Management module tracks materials and status for both internal processes and subcontract job work." },
     { q: "5. Does Pinnacle ERP integrate with Tally?", a: "Yes, it offers two-way Tally integration, syncing sales and accounting data automatically in both directions." },
-    { q: "6. Can I track fabric and inventory across multiple warehouses?", a: "Yes, the Inventory module supports multi-warehouse tracking, including fabric rolls, lots, batches, and shades." },
-    { q: "7. Does it support quality inspection at every production stage?", a: "Yes, Quality Management covers incoming material, in-line, and final inspection, along with rework tracking." },
+    { q: "6. Can I track fabric and inventory across multiple warehouses?", a: "Yes, the Inventory module supports multi-warehouse tracking, including fabric rolls, lots, batches and shades." },
+    { q: "7. Does it support quality inspection at every production stage?", a: "Yes, Quality Management covers incoming material, in-line and final inspection, along with rework tracking." },
     { q: "8. Can I track order-wise profitability?", a: "Yes, Order Management provides budget vs. actual cost tracking and order-wise profitability reports." },
     { q: "9. Is GST and e-invoicing supported?", a: "Yes, the Sales & Billing module supports GST invoicing along with E-Invoice and E-Way Bill integration." },
-    { q: "10. How long does implementation take?", a: "Timelines depend on factory size and data volume, but implementation typically includes structured onboarding, training, and go-live support within a few weeks." }
+    { q: "10. How long does implementation take?", a: "Timelines depend on factory size and data volume, but implementation typically includes structured onboarding, training and go-live support within a few weeks." }
   ];
 
   return (
@@ -135,7 +135,7 @@ export default function GarmentErpSoftwarePage() {
               </h1>
 
               <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>
-                From enquiry and costing to production, quality, and dispatch — Pinnacle ERP brings every stage of garment manufacturing onto one connected platform.
+                From enquiry and costing to production, quality and dispatch — Pinnacle ERP brings every stage of garment manufacturing onto one connected platform.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">

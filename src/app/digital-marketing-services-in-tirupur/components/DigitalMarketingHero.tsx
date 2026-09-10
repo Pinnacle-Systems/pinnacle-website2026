@@ -57,7 +57,7 @@ export default function DigitalMarketingHero() {
             </h1>
 
             <p className={theme.p}>
-              Pinnacle Systems helps businesses in Tiruppur build a stronger presence online and connect with the people who matter to their business. We provide digital marketing services that bring together search, paid advertising, social media, content, and website optimization based on your goals.
+              Pinnacle Systems helps businesses in Tiruppur build a stronger presence online and connect with the people who matter to their business. We provide digital marketing services that bring together search, paid advertising, social media, content and website optimization based on your goals.
             </p>
 
             {/* CTAs */}

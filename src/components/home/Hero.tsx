@@ -27,7 +27,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 sm:gap-3 mb-6 border border-white/20 rounded-full py-1.5 px-3 sm:px-4 bg-white/5 backdrop-blur-sm">
               <span className="w-4 sm:w-5 h-[2px] bg-primary"></span>
               <span className="text-primary font-bold tracking-wider text-[11px] sm:text-[13px] uppercase">
-                Pinnacle Systems IT Services
+                IT Services
               </span>
             </div>
 

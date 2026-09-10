@@ -10,15 +10,15 @@ import { cn } from "@/lib/utils";
 const faqs = [
   {
     question: "What is the investment required for a Custom ERP System?",
-    answer: "The cost depends on your business requirements, modules, integrations, users, and level of customization."
+    answer: "The cost depends on your business requirements, modules, integrations, users and level of customization."
   },
   {
     question: "How do you develop an ERP system tailored to my business needs?",
-    answer: "We develop the ERP around your specific workflows, requirements, modules, and business processes, ensuring a solution that fits your operations."
+    answer: "We develop the ERP around your specific workflows, requirements, modules and business processes, ensuring a solution that fits your operations."
   },
   {
     question: "Is Custom ERP scalable?",
-    answer: "Yes. The system can grow with your business by adding users, modules, branches, and new features."
+    answer: "Yes. The system can grow with your business by adding users, modules, branches and new features."
   },
   {
     question: "Will the ERP system belong to my business?",

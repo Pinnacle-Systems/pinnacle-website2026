@@ -14,16 +14,16 @@ export default function WebApplicationPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const faqs = [
-    { q: "What is web application development?", a: "The process of building interactive, browser-based software — like CRMs, dashboards, and SaaS platforms — rather than static websites." },
-    { q: "How is a web application different from a website?", a: "A website is mainly informational, while a web app is interactive, letting users log in, input data, and perform tasks with backend logic." },
+    { q: "What is web application development?", a: "The process of building interactive, browser-based software — like CRMs, dashboards and SaaS platforms — rather than static websites." },
+    { q: "How is a web application different from a website?", a: "A website is mainly informational, while a web app is interactive, letting users log in, input data and perform tasks with backend logic." },
     { q: "How long does it take to build a web application?", a: "Simple apps take 4-8 weeks; complex, enterprise-grade apps can take 3-6 months or more, depending on scope." },
-    { q: "How much does it cost to develop a web application?", a: "Cost depends on features, integrations, and tech stack — reach out for a free consultation and custom quote." },
-    { q: "Which technologies do you use for web application development?", a: "React, Next.js, Node.js, PHP/Laravel, and Python — chosen based on your project's scale and goals." },
-    { q: "Can you upgrade or modernize our existing web application?", a: "Yes, we modernize legacy systems for better performance, security, and scalability without disrupting operations." },
-    { q: "Do you provide support and maintenance after launch?", a: "Yes, including bug fixes, performance monitoring, security updates, and feature enhancements post-launch." },
-    { q: "Is my data secure with a custom-built web application?", a: "Yes, security is built in from day one, including secure authentication, encryption, and data-protection best practices." },
-    { q: "Can you integrate third-party tools and APIs into my web application?", a: "Yes, we regularly integrate payment gateways, CRMs, analytics tools, and other third-party APIs based on your workflow needs." },
-    { q: "Will my web application be scalable as my business grows?", a: "Yes, we design with future growth in mind, using scalable architecture that supports more users, data, and features over time." }
+    { q: "How much does it cost to develop a web application?", a: "Cost depends on features, integrations and tech stack — reach out for a free consultation and custom quote." },
+    { q: "Which technologies do you use for web application development?", a: "React, Next.js, Node.js, PHP/Laravel and Python — chosen based on your project's scale and goals." },
+    { q: "Can you upgrade or modernize our existing web application?", a: "Yes, we modernize legacy systems for better performance, security and scalability without disrupting operations." },
+    { q: "Do you provide support and maintenance after launch?", a: "Yes, including bug fixes, performance monitoring, security updates and feature enhancements post-launch." },
+    { q: "Is my data secure with a custom-built web application?", a: "Yes, security is built in from day one, including secure authentication, encryption and data-protection best practices." },
+    { q: "Can you integrate third-party tools and APIs into my web application?", a: "Yes, we regularly integrate payment gateways, CRMs, analytics tools and other third-party APIs based on your workflow needs." },
+    { q: "Will my web application be scalable as my business grows?", a: "Yes, we design with future growth in mind, using scalable architecture that supports more users, data and features over time." }
   ];
 
   const processes = [
@@ -45,7 +45,7 @@ export default function WebApplicationPage() {
   ];
 
   const whyChooseUs = [
-    { title: "Work Efficiency", desc: "Our skilled team of solution architects, developers, and QA engineers delivers robust web applications built for performance at scale.", icon: BarChart },
+    { title: "Work Efficiency", desc: "Our skilled team of solution architects, developers and QA engineers delivers robust web applications built for performance at scale.", icon: BarChart },
     { title: "Client Satisfaction", desc: "We're committed to our clients' success on every web app project, backed by in-depth business analysis and technical insight.", icon: Users },
     { title: "Affordable Price", desc: "We deliver enterprise-grade web applications within your budget, quoting competitive pricing without compromising on quality or security.", icon: DollarSign },
     { title: "Interactive UI/UX", desc: "Our creative designers turn complex workflows into intuitive, easy-to-use interfaces — built to improve efficiency and user adoption.", icon: MousePointerClick }
@@ -94,7 +94,7 @@ export default function WebApplicationPage() {
               </h1>
               
               <p className={cn(theme.p, "text-gray-300")}>
-                Pinnacle Systems is a trusted web application development company that builds secure, scalable, and high-performing web apps engineered to streamline operations and drive business growth.
+                Pinnacle Systems is a trusted web application development company that builds secure, scalable and high-performing web apps engineered to streamline operations and drive business growth.
               </p>
               
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
@@ -129,12 +129,12 @@ export default function WebApplicationPage() {
             <div className="space-y-5 sm:space-y-6">
               {[
                 "Pinnacle Systems is a leading web application development company, building robust, scalable web apps tailored to complex business needs.",
-                "Web apps are performance-centric, user-focused, secure, and optimized for speed, functionality, and seamless integration.",
+                "Web apps are performance-centric, user-focused, secure and optimized for speed, functionality and seamless integration.",
                 "As a professional web application development partner, we go beyond simply building software — we engineer solutions that solve real business problems.",
-                "Our development team brings deep experience in building custom, objective-driven, and enterprise-grade web applications tailored to your goals.",
-                "Developers are proficient in React, Next.js, Node.js, PHP/Laravel, Python, and other modern frameworks — allowing us to select the ideal tech stack for every project.",
-                "We prioritize scalability, data security, and future-ready architecture to ensure long-term application success.",
-                "Over the years, we've delivered a strong portfolio of web apps across SaaS platforms, enterprise systems, CRMs, ERPs, and custom business tools."
+                "Our development team brings deep experience in building custom, objective-driven and enterprise-grade web applications tailored to your goals.",
+                "Developers are proficient in React, Next.js, Node.js, PHP/Laravel, Python and other modern frameworks — allowing us to select the ideal tech stack for every project.",
+                "We prioritize scalability, data security and future-ready architecture to ensure long-term application success.",
+                "Over the years, we've delivered a strong portfolio of web apps across SaaS platforms, enterprise systems, CRMs, ERPs and custom business tools."
               ].map((text, idx) => (
                 <motion.div 
                   key={idx}

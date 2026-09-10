@@ -48,7 +48,7 @@ export default function GarmentExportersArticlePage() {
               animate={{ opacity: 1, y: 0 }}
               className={cn(theme.h1, "text-white mb-6 text-left")}
             >
-              ERP for Garment Exporters: How the Right System Simplifies Buyer Orders, Compliance, and Shipments.
+              ERP for Garment Exporters: How the Right System Simplifies Buyer Orders, Compliance and Shipments.
             </motion.h1>
           </div>
         </div>
@@ -84,11 +84,11 @@ export default function GarmentExportersArticlePage() {
 
               <div className="prose prose-lg max-w-none text-[#0b132a]">
                 <p className={cn(theme.p, "text-[18px] leading-relaxed mb-6 font-medium text-gray-800")}>
-                  Garment exporters operate under pressure that domestic manufacturers rarely face — strict buyer specifications, letter of credit (LC) terms, export documentation, and delivery windows that leave no room for error. A single missed shipment date or costing mistake can mean lost margins or a damaged buyer relationship. This is exactly why generic manufacturing software falls short, and why ERP for garment exporters has become essential rather than optional for units serious about scaling international business.
+                  Garment exporters operate under pressure that domestic manufacturers rarely face — strict buyer specifications, letter of credit (LC) terms, export documentation and delivery windows that leave no room for error. A single missed shipment date or costing mistake can mean lost margins or a damaged buyer relationship. This is exactly why generic manufacturing software falls short and why ERP for garment exporters has become essential rather than optional for units serious about scaling international business.
                 </p>
                 
                 <p className={cn(theme.p, "mb-12 text-gray-600")}>
-                  In this guide, we&apos;ll break down what an export-focused garment ERP actually needs to do, the specific challenges it solves, and how to evaluate whether your current system is holding your export business back.
+                  In this guide, we&apos;ll break down what an export-focused garment ERP actually needs to do, the specific challenges it solves and how to evaluate whether your current system is holding your export business back.
                 </p>
 
                 <h2 className={cn(theme.h2, "text-[28px] md:text-[32px] text-navy-900 mt-12 mb-6")}>Why Garment Exporters Need a Different Kind of ERP</h2>
@@ -98,9 +98,9 @@ export default function GarmentExportersArticlePage() {
 
                 <ul className="space-y-4 mb-8 mt-2">
                   {[
-                    "Buyer purchase orders (POs) with complex size, colour, and quantity breakdowns",
+                    "Buyer purchase orders (POs) with complex size, colour and quantity breakdowns",
                     "Multiple costing and quotation versions before an order is confirmed",
-                    "Export documentation, HS code / HSN classification, and customs paperwork",
+                    "Export documentation, HS code / HSN classification and customs paperwork",
                     "Letter of credit (LC) terms tied directly to shipment timelines",
                     "Multi-currency invoicing for international buyers",
                     "Compliance reporting for schemes like RoDTEP and duty drawback"
@@ -113,7 +113,7 @@ export default function GarmentExportersArticlePage() {
                 </ul>
 
                 <p className={cn(theme.p, "mb-12 text-gray-600")}>
-                  An apparel export ERP system needs to connect all of this — buyer specifications, production status, and compliance documentation — into a single, real-time view. Without it, exporters end up managing critical export deadlines across spreadsheets, email threads, and manual registers, which is where costly mistakes creep in.
+                  An apparel export ERP system needs to connect all of this — buyer specifications, production status and compliance documentation — into a single, real-time view. Without it, exporters end up managing critical export deadlines across spreadsheets, email threads and manual registers, which is where costly mistakes creep in.
                 </p>
 
                 <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 mb-12">
@@ -123,7 +123,7 @@ export default function GarmentExportersArticlePage() {
                   </p>
                   <ul className="space-y-3 mb-6 ml-5 list-disc text-gray-700 marker:text-primary">
                     <li>Missed shipment dates due to poor visibility into production-to-shipment timelines</li>
-                    <li>Costing errors from manually recalculating fabric, trims, and labour for every buyer negotiation</li>
+                    <li>Costing errors from manually recalculating fabric, trims and labour for every buyer negotiation</li>
                     <li>Compliance risk from incomplete or delayed export documentation</li>
                     <li>Buyer trust erosion when order status can&apos;t be communicated accurately or quickly</li>
                   </ul>
@@ -136,17 +136,17 @@ export default function GarmentExportersArticlePage() {
 
                 <h3 className="text-2xl font-bold text-navy-900 mt-8 mb-3">Buyer Order & PO Management</h3>
                 <p className={cn(theme.p, "mb-6 text-gray-600")}>
-                  An effective ERP for export-oriented garment units starts with structured buyer order management — capturing PO details, size and colour breakdowns, buyer-specific requirements, and amendments without losing traceability back to the original order. This is foundational to everything downstream, from production planning to shipment.
+                  An effective ERP for export-oriented garment units starts with structured buyer order management — capturing PO details, size and colour breakdowns, buyer-specific requirements and amendments without losing traceability back to the original order. This is foundational to everything downstream, from production planning to shipment.
                 </p>
 
                 <h3 className="text-2xl font-bold text-navy-900 mt-8 mb-3">Style-Wise Costing and Quotation Management</h3>
                 <p className={cn(theme.p, "mb-6 text-gray-600")}>
-                  Export orders are often negotiated over multiple rounds before confirmation. Style-wise costing — covering fabric, trims, labour, and overheads — allows exporters to generate accurate quotations quickly and compare costing versions before finalizing a price with the buyer.
+                  Export orders are often negotiated over multiple rounds before confirmation. Style-wise costing — covering fabric, trims, labour and overheads — allows exporters to generate accurate quotations quickly and compare costing versions before finalizing a price with the buyer.
                 </p>
 
                 <h3 className="text-2xl font-bold text-navy-900 mt-8 mb-3">Time & Action (T&A) Calendar for Shipment Compliance</h3>
                 <p className={cn(theme.p, "mb-6 text-gray-600")}>
-                  A Time & Action (T&A) calendar is one of the most critical tools for export compliance. It maps every activity — from order confirmation to fabric sourcing, cutting, production, inspection, and dispatch — against the final shipment date, flagging delays before they put the delivery window at risk.
+                  A Time & Action (T&A) calendar is one of the most critical tools for export compliance. It maps every activity — from order confirmation to fabric sourcing, cutting, production, inspection and dispatch — against the final shipment date, flagging delays before they put the delivery window at risk.
                 </p>
 
                 <h3 className="text-2xl font-bold text-navy-900 mt-8 mb-3">Export Documentation & Compliance Reporting</h3>
@@ -161,7 +161,7 @@ export default function GarmentExportersArticlePage() {
 
                 <h3 className="text-2xl font-bold text-navy-900 mt-8 mb-3">Multi-Currency Invoicing and Buyer Billing</h3>
                 <p className={cn(theme.p, "mb-12 text-gray-600")}>
-                  Since export transactions typically involve international buyers, multi-currency invoicing is essential for accurate billing, receivables tracking, and financial reconciliation without manual currency conversion errors.
+                  Since export transactions typically involve international buyers, multi-currency invoicing is essential for accurate billing, receivables tracking and financial reconciliation without manual currency conversion errors.
                 </p>
 
                 <h2 className={cn(theme.h2, "text-[28px] md:text-[32px] text-navy-900 mt-12 mb-6")}>How ERP Improves On-Time Shipment for Garment Exporters</h2>
@@ -198,13 +198,13 @@ export default function GarmentExportersArticlePage() {
 
                 <h3 className="text-2xl font-bold text-navy-900 mt-8 mb-3">Scalability for Multi-Buyer, Multi-Order Complexity</h3>
                 <p className={cn(theme.p, "mb-12 text-gray-600")}>
-                  As export volume grows, the ERP needs to handle increasing order complexity — multiple buyers, overlapping delivery schedules, and varying compliance requirements — without slowing down production planning.
+                  As export volume grows, the ERP needs to handle increasing order complexity — multiple buyers, overlapping delivery schedules and varying compliance requirements — without slowing down production planning.
                 </p>
 
                 <div className="bg-[#0b132a] text-white p-8 rounded-2xl mb-12 relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-[40px]"></div>
                   <p className="font-medium leading-relaxed relative z-10 text-[16px]">
-                    <span className="text-primary font-bold">Conclusion:</span> For garment exporters, success isn&apos;t just about production capacity — it&apos;s about visibility, accuracy, and speed at every stage from buyer order to final shipment. A purpose-built ERP for garment exporters brings buyer PO management, style-wise costing, T&A scheduling, and export compliance together in one system, eliminating the manual gaps where delays, costing errors, and missed deadlines typically occur. If you&apos;re still managing export orders across spreadsheets and disconnected tools, the right ERP isn&apos;t just an efficiency upgrade — it&apos;s what protects your buyer relationships and your margins.
+                    <span className="text-primary font-bold">Conclusion:</span> For garment exporters, success isn&apos;t just about production capacity — it&apos;s about visibility, accuracy and speed at every stage from buyer order to final shipment. A purpose-built ERP for garment exporters brings buyer PO management, style-wise costing, T&A scheduling and export compliance together in one system, eliminating the manual gaps where delays, costing errors and missed deadlines typically occur. If you&apos;re still managing export orders across spreadsheets and disconnected tools, the right ERP isn&apos;t just an efficiency upgrade — it&apos;s what protects your buyer relationships and your margins.
                   </p>
                 </div>
 
@@ -215,11 +215,11 @@ export default function GarmentExportersArticlePage() {
                 <div className="space-y-6 mb-12">
                   <div>
                     <h3 className="text-[18px] font-bold text-navy-900 mb-2">What is ERP for garment exporters?</h3>
-                    <p className="text-gray-600">ERP for garment exporters is a management system built specifically to handle buyer order management, export compliance, costing, and production tracking for apparel units that manufacture and ship internationally.</p>
+                    <p className="text-gray-600">ERP for garment exporters is a management system built specifically to handle buyer order management, export compliance, costing and production tracking for apparel units that manufacture and ship internationally.</p>
                   </div>
                   <div>
                     <h3 className="text-[18px] font-bold text-navy-900 mb-2">How does ERP help with export compliance?</h3>
-                    <p className="text-gray-600">It centralizes export documentation, HS code classification, and compliance reporting, reducing manual paperwork and lowering the risk of delayed or incorrect filings.</p>
+                    <p className="text-gray-600">It centralizes export documentation, HS code classification and compliance reporting, reducing manual paperwork and lowering the risk of delayed or incorrect filings.</p>
                   </div>
                   <div>
                     <h3 className="text-[18px] font-bold text-navy-900 mb-2">Can ERP software handle multiple buyers and currencies?</h3>
@@ -231,15 +231,15 @@ export default function GarmentExportersArticlePage() {
                   </div>
                   <div>
                     <h3 className="text-[18px] font-bold text-navy-900 mb-2">Is ERP for garment exporters different from a standard garment ERP?</h3>
-                    <p className="text-gray-600">Yes, while it shares core manufacturing modules with standard garment ERP, export-focused systems add buyer PO management, export documentation, and multi-currency billing specific to international trade.</p>
+                    <p className="text-gray-600">Yes, while it shares core manufacturing modules with standard garment ERP, export-focused systems add buyer PO management, export documentation and multi-currency billing specific to international trade.</p>
                   </div>
                 </div>
 
                 <hr className="my-12 border-gray-200" />
 
-                <h2 className={cn(theme.h2, "text-[28px] md:text-[32px] text-navy-900 mt-12 mb-6")}>Bringing Buyer Orders, Compliance, and Production Together</h2>
+                <h2 className={cn(theme.h2, "text-[28px] md:text-[32px] text-navy-900 mt-12 mb-6")}>Bringing Buyer Orders, Compliance and Production Together</h2>
                 <p className={cn(theme.p, "mb-6 text-gray-600")}>
-                  For garment exporters, the difference between a smooth shipment cycle and a stressful one usually comes down to visibility — knowing exactly where every order, every buyer requirement, and every compliance deadline stands at any given moment. That&apos;s precisely what a purpose-built ERP for garment exporters is designed to deliver.
+                  For garment exporters, the difference between a smooth shipment cycle and a stressful one usually comes down to visibility — knowing exactly where every order, every buyer requirement and every compliance deadline stands at any given moment. That&apos;s precisely what a purpose-built ERP for garment exporters is designed to deliver.
                 </p>
                 <p className={cn(theme.p, "mb-12 text-gray-600")}>
                   If you&apos;re currently managing export orders across spreadsheets and manual trackers, it may be time to see what a connected system looks like in practice. Our Garment ERP Software is built around these exact workflows — from pre-costing and buyer order management to T&A scheduling and dispatch — and connects directly with modules like Cutting Management Software and Textile Payroll Software for complete floor-to-shipment visibility.
