@@ -122,18 +122,12 @@ export default function Footer() {
                      <h4 className={cn(theme.h3, "text-white text-[20px] mb-8")}>Recent Blogs</h4>
                      <div className="flex flex-col gap-5">
                         {[
-                           {
-                              title: 'Leveraging Descriptive Solutions for Business Growth',
-                              date: '20 June 2024',
-                              image: '/grid1img.png',
-                              href: '/under-construction'
-                           },
-                           {
-                              title: 'How to Create Modern Web Site For Your Business',
-                              date: '20 June 2024',
-                              image: '/gridimg2.png',
-                              href: '/under-construction'
-                           }
+                            {
+                               title: 'ERP for Garment Exporters: How the Right System Simplifies Buyer Orders, Compliance and Shipments.',
+                               date: 'Sep 5, 2026',
+                               image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
+                               href: '/blog/erp-for-garment-exporters'
+                            }
                         ].map((blog, idx) => (
                            <Link key={idx} href={blog.href} className="flex gap-4 group items-center">
                               <div className="relative w-16 h-16 rounded-[12px] overflow-hidden shrink-0">

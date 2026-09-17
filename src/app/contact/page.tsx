@@ -119,10 +119,10 @@ export default function ContactUsPage() {
                     <MapPin className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="text-[15px] font-semibold text-white mb-1">Our Headquarters</h4>
+                    <h4 className="text-[15px] font-semibold text-white mb-1">Location</h4>
                     <p className="text-gray-400 text-[14px] leading-relaxed m-0 p-0 indent-0">
-                      Tirupur, Tamil Nadu<br />
-                      India - 641604
+                     65/108 - First Floor, MurungaPalayam First Street,<br />
+                      Tirupur - 641603
                     </p>
                   </div>
                 </div>
@@ -134,8 +134,8 @@ export default function ContactUsPage() {
                   <div>
                     <h4 className="text-[15px] font-semibold text-white mb-1">Phone Number</h4>
                     <p className="text-gray-400 text-[14px] leading-relaxed m-0 p-0 indent-0">
-                      +91 98765 43210<br />
-                      Mon-Fri, 9am - 6pm
+                      +91 99946 10733<br />
+                      Mon - Sat, 9am - 7pm
                     </p>
                   </div>
                 </div>
@@ -147,8 +147,8 @@ export default function ContactUsPage() {
                   <div>
                     <h4 className="text-[15px] font-semibold text-white mb-1">Email Address</h4>
                     <p className="text-gray-400 text-[14px] leading-relaxed m-0 p-0 indent-0">
-                      contact@pinnaclesystems.in<br />
-                      support@pinnaclesystems.in
+                      manoj@pinnaclesystems.co.in
+
                     </p>
                   </div>
                 </div>
@@ -160,8 +160,8 @@ export default function ContactUsPage() {
                   <div>
                     <h4 className="text-[15px] font-semibold text-white mb-1">Business Hours</h4>
                     <p className="text-gray-400 text-[14px] leading-relaxed m-0 p-0 indent-0">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday & Sunday: Closed
+                      Monday - Saturday: 9:00 AM - 7:00 PM<br />
+                     
                     </p>
                   </div>
                 </div>
