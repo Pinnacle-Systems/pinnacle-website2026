@@ -84,9 +84,9 @@ export default function Footer() {
                         {[
                            { name: 'About Us', href: '/about-us' },
                            { name: 'Meet Our Team', href: '/under-construction' },
-                           { name: 'Latest Blog', href: '/under-construction' },
+                           { name: 'Latest Blog', href:'/blog/erp-for-garment-exporters' },
                            { name: 'Contact Us', href: '/contact' },
-                           { name: 'FAQ', href: '/under-construction' }
+                           { name: 'FAQ', href: '/faq' }
                         ].map(link => (
                            <li key={link.name}>
                               <Link href={link.href} className="text-[#8c98a4] hover:text-primary transition-colors text-[15px] block">

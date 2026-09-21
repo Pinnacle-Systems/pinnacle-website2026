@@ -200,7 +200,13 @@ export default function GarmentExportersArticlePage() {
                 <p className={cn(theme.p, "mb-12 text-gray-600")}>
                   As export volume grows, the ERP needs to handle increasing order complexity — multiple buyers, overlapping delivery schedules and varying compliance requirements — without slowing down production planning.
                 </p>
-
+  <h2 className={cn(theme.h2, "text-[28px] md:text-[32px] text-navy-900 mt-12 mb-6")}>Bringing Buyer Orders, Compliance and Production Together</h2>
+                <p className={cn(theme.p, "mb-6 text-gray-600")}>
+                  For garment exporters, the difference between a smooth shipment cycle and a stressful one usually comes down to visibility — knowing exactly where every order, every buyer requirement and every compliance deadline stands at any given moment. That&apos;s precisely what a purpose-built ERP for garment exporters is designed to deliver.
+                </p>
+                <p className={cn(theme.p, "mb-12 text-gray-600")}>
+                  If you&apos;re currently managing export orders across spreadsheets and manual trackers, it may be time to see what a connected system looks like in practice. Our Garment ERP Software is built around these exact workflows — from pre-costing and buyer order management to T&A scheduling and dispatch — and connects directly with modules like Cutting Management Software and Textile Payroll Software for complete floor-to-shipment visibility.
+                </p>
                 <div className="bg-[#0b132a] text-white p-8 rounded-2xl mb-12 relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-[40px]"></div>
                   <p className="font-medium leading-relaxed relative z-10 text-[16px]">
@@ -237,13 +243,7 @@ export default function GarmentExportersArticlePage() {
 
                 <hr className="my-12 border-gray-200" />
 
-                <h2 className={cn(theme.h2, "text-[28px] md:text-[32px] text-navy-900 mt-12 mb-6")}>Bringing Buyer Orders, Compliance and Production Together</h2>
-                <p className={cn(theme.p, "mb-6 text-gray-600")}>
-                  For garment exporters, the difference between a smooth shipment cycle and a stressful one usually comes down to visibility — knowing exactly where every order, every buyer requirement and every compliance deadline stands at any given moment. That&apos;s precisely what a purpose-built ERP for garment exporters is designed to deliver.
-                </p>
-                <p className={cn(theme.p, "mb-12 text-gray-600")}>
-                  If you&apos;re currently managing export orders across spreadsheets and manual trackers, it may be time to see what a connected system looks like in practice. Our Garment ERP Software is built around these exact workflows — from pre-costing and buyer order management to T&A scheduling and dispatch — and connects directly with modules like Cutting Management Software and Textile Payroll Software for complete floor-to-shipment visibility.
-                </p>
+              
                 
                 {/* Embedded CTA */}
                 <div className="bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-primary p-8 rounded-r-2xl mt-8">
