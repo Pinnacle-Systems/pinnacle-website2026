@@ -11,10 +11,25 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.pinnaclesystems.co.in'),
   title: "Pinnacle Systems",
   description: "The Beauty Behind IT Services",
   icons: {
     icon: '/favicon.png',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: './',
   },
 };
 

@@ -146,7 +146,7 @@ const faqs = [
   },
   {
     question: "Why should a spinning mill choose Pinnacle Systems ERP?",
-    answer: "Spinning mills choose Pinnacle Systems ERP because it's built by a team with 9+ years of dedicated spinning industry experience, offering complete, cloud-based, end-to-end management trusted by 90+ clients across 20+ completed projects."
+    answer: "Spinning mills choose Pinnacle Systems ERP because it's built by a team with 5+ years of dedicated spinning industry experience, offering complete, cloud-based, end-to-end management trusted by 90+ clients across 20+ completed projects."
   }
 ];
 
