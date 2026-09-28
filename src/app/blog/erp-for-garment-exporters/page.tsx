@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { ArrowLeft, Calendar, Clock, Share2, Tag, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, Share2,  CheckCircle2 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 

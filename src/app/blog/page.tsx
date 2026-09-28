@@ -21,6 +21,15 @@ const categories = [
 // Placeholder articles
 const allArticles = [
   {
+    title: "Why Generic ERPs Fail in Tirupur's Knitwear Units",
+    excerpt: "Most standard ERPs flop in Tirupur because they expect a factory to run in a neat, straight line. But knitwear manufacturing is anything but linear.",
+    category: "Textile ERP Software",
+    date: "Sep 28, 2026",
+    readTime: "5 min read",
+    image: "/images/blog/erp-for-knitwear-industry-tirupur.webp",
+    slug: "/blog/erp-for-knitwear-industry-tirupur/"
+  },
+  {
     title: "ERP for Garment Exporters: How the Right System Simplifies Buyer Orders, Compliance and Shipments.",
     excerpt: "Garment exporters operate under pressure that domestic manufacturers rarely face. Learn why export-focused ERP has become essential.",
     category: "Textile ERP Software",
@@ -110,7 +119,7 @@ export default function BlogPage() {
               transition={{ delay: 0.1 }}
               className={cn(theme.h1, "text-white mb-6")}
             >
-              The Pinnacle Blog
+              Blog
             </motion.h1>
 
             <motion.p

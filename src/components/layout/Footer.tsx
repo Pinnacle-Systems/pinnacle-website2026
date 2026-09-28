@@ -123,6 +123,12 @@ export default function Footer() {
                      <div className="flex flex-col gap-5">
                         {[
                             {
+                               title: "Why Generic ERPs Fail in Tirupur's Knitwear Units",
+                               date: 'Sep 28, 2026',
+                               image: '/images/blog/erp-for-knitwear-industry-tirupur.webp',
+                               href: '/blog/erp-for-knitwear-industry-tirupur'
+                            },
+                            {
                                title: 'ERP for Garment Exporters: How the Right System Simplifies Buyer Orders, Compliance and Shipments.',
                                date: 'Sep 5, 2026',
                                image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
