@@ -35,8 +35,8 @@ import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 
 export const metadata = {
-  title: 'Textile ERP Software - Pinnacle Systems',
-  description: 'Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production and dispatch in one connected textile ERP system.',
+  title: "Textile ERP Software—End-to-End Manufacturing Control",
+  description: "Run spinning, knitting, dyeing, cutting, printing and garments on one connected Textile ERP system from Pinnacle Systems. Book a free demo today",
 };
 
 const features = [

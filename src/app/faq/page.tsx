@@ -9,6 +9,8 @@ import { ArrowRight, ChevronDown, MessageCircleQuestion, Sparkles } from "lucide
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
+
+
 const faqCategories = [
   "Custom ERP Software",
   "Web Application Development",

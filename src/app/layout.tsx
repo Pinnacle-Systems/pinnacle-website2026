@@ -12,8 +12,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.pinnaclesystems.co.in'),
-  title: "Pinnacle Systems",
-  description: "The Beauty Behind IT Services",
+  title: "ERP, Web & App Development | Pinnacle Systems",
+  description: "Pinnacle Systems delivers custom ERP, web, and app development along with digital marketing solutions to help businesses grow, scale and succeed worldwide.",
   icons: {
     icon: '/favicon.png',
   },

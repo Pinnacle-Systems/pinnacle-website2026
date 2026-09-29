@@ -10,6 +10,8 @@ import { ArrowRight, CheckCircle2, ChevronDown, Layout, Server, Shield, Zap, Sea
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
+
+
 export default function WebApplicationPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 

@@ -10,8 +10,8 @@ import ErpProcess from "./components/ErpProcess";
 import ErpFaq from "./components/ErpFaq";
 
 export const metadata = {
-  title: "AI-Powered Custom ERP Software | Pinnacle",
-  description: "Our AI-powered custom ERP software is built around your business processes, connecting Sales, Inventory, Production, Finance, HR and Operations on one intelligent platform.",
+  title: "Custom ERP Software Development | Pinnacle Systems",
+  description: "Build a custom ERP software solution tailored to your business. Streamline operations, cut costs and scale faster. Get a free Pinnacle consultation today",
 };
 
 export default function ErpSoftwarePage() {

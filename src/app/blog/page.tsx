@@ -9,6 +9,8 @@ import { ArrowRight, BookOpen, Calendar, Clock, Sparkles } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
+
+
 const categories = [
   "Web Application Development",
   "Custom ERP Software",

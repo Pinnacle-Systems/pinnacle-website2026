@@ -151,8 +151,8 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: 'Spinning Management Software - Pinnacle Systems',
-  description: 'Track machine-wise yarn consumption, manage mixing ratios and monitor lot-wise waste in real-time with our Spinning Management Software.',
+  title: "Spinning Mill ERP - Cotton to Yarn | Pinnacle Systems",
+  description: "Manage cotton to yarn with Pinnacle Systems Spinning Mill ERP — real-time production, quality, inventory and billing in one system. Book a free demo today!",
 };
 
 export default function SpinningManagementSoftwarePage() {

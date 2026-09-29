@@ -7,6 +7,12 @@ import Image from 'next/image';
 import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
 
+export const metadata = {
+  title: "About Pinnacle Systems - ERP & IT Solutions",
+  description: "Pinnacle Systems is a Tirupur-based ERP, web, app and digital marketing company helping textile and manufacturing businesses grow. Learn our story here.",
+};
+
+
 export default function AboutUsPage() {
   return (
     <main className="min-h-screen bg-white">

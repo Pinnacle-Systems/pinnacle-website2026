@@ -15,6 +15,8 @@ import {
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
+
+
 export default function TextilePayrollSoftwarePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
