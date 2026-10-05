@@ -54,7 +54,7 @@ export default function TextilePayrollSoftwarePage() {
     { q: "5. Can it integrate with biometric or RFID attendance systems?", a: "Yes. The software integrates with biometric, RFID and manual attendance methods to pull data directly into payroll processing." },
     { q: "6. Will this connect with our existing Textile Processing ERP?", a: "Yes. Payroll integrates directly with your production and attendance data, so wages are calculated without duplicate manual entry." },
     { q: "7. Can workers receive payslips digitally?", a: "Yes. Digital payslips are generated automatically and can be sent via SMS or WhatsApp along with wage disbursement notifications." },
-    { q: "8. Is this suitable for units with a mix of daily-rate, piece-rate and monthly-salary staff?", a: "Yes. The system supports multiple wage structures simultaneously, so you don't need separate systems for different worker categories." }
+    { q: "8. Is this suitable for Industry with a mix of daily-rate, piece-rate and monthly-salary staff?", a: "Yes. The system supports multiple wage structures simultaneously, so you don't need separate systems for different worker categories." }
   ];
 
   return (
@@ -95,7 +95,7 @@ export default function TextilePayrollSoftwarePage() {
               </div>
 
               <h1 className={cn(theme.h1, "text-white mb-6 sm:mb-8 text-left")}>
-                Payroll Software Built for Textile Manufacturing Units
+                Payroll Software Built for Textile Manufacturing Industry
               </h1>
 
               <p className={cn(theme.p, "text-gray-300  leading-relaxed tracking-normal !indent-0 !mb-0")}>

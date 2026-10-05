@@ -123,7 +123,7 @@ export default function Footer() {
                      <div className="flex flex-col gap-5">
                         {[
                             {
-                               title: "Why Generic ERPs Fail in Tirupur's Knitwear Units",
+                               title: "Why Generic ERPs Fail in Tirupur's Knitwear Industry",
                                date: 'Sep 28, 2026',
                                image: '/images/blog/erp-for-knitwear-industry-tirupur.webp',
                                href: '/blog/erp-for-knitwear-industry-tirupur'

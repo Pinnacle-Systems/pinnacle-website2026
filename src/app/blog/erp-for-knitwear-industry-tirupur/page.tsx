@@ -48,7 +48,7 @@ export default function KnitwearERPArticlePage() {
               animate={{ opacity: 1, y: 0 }}
               className={cn(theme.h1, "text-white mb-6 text-left")}
             >
-              Why Generic ERPs Fail in Tirupur's Knitwear Units
+              Why Generic ERPs Fail in Tirupur's Knitwear Industry
             </motion.h1>
           </div>
         </div>

@@ -112,7 +112,7 @@ export default function AboutSection() {
             </div>
 
             {/* Button */}
-            <Link href="/under-construction" className="inline-block bg-primary hover:bg-orange-600 text-white font-bold text-[14px] sm:text-[15px] px-8 sm:px-9 py-3.5 sm:py-4 rounded-full transition-colors duration-300 tracking-wide shadow-md shadow-primary/20 text-center w-full sm:w-auto">
+            <Link href="?contact=true" scroll={false} className="inline-block bg-primary hover:bg-orange-600 text-white font-bold text-[14px] sm:text-[15px] px-8 sm:px-9 py-3.5 sm:py-4 rounded-full transition-colors duration-300 tracking-wide shadow-md shadow-primary/20 text-center w-full sm:w-auto">
               Explore Our Services
             </Link>
           </motion.div>

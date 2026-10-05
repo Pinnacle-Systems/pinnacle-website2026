@@ -21,6 +21,14 @@ const navLinks = [
       { name: "Digital Marketing", href: "/digital-marketing-services-in-tirupur" }
     ]
   },
+  {
+    name: "Products",
+    href: "#",
+    hasDropdown: true,
+    dropdownItems: [
+      { name: "HRMS", href: "/hr-payroll-management-software" }
+    ]
+  },
   { name: "Contact Us", href: "/contact", hasDropdown: false },
   { name: "Blog", href: "/blog", hasDropdown: false },
   { name: "FAQ", href: "/faq", hasDropdown: false },
@@ -29,7 +37,7 @@ const navLinks = [
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -129,13 +137,13 @@ export default function Header() {
                 {link.hasDropdown ? (
                   <div>
                     <button
-                      onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                      onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)}
                       className="w-full flex items-center justify-between text-[16px] font-medium text-gray-200 py-2 border-b border-white/5"
                     >
                       <span>{link.name}</span>
-                      <ChevronDown className={cn("w-4 h-4 transition-transform", servicesDropdownOpen && "rotate-180")} />
+                      <ChevronDown className={cn("w-4 h-4 transition-transform", activeDropdown === link.name && "rotate-180")} />
                     </button>
-                    {servicesDropdownOpen && link.dropdownItems && (
+                    {activeDropdown === link.name && link.dropdownItems && (
                       <div className="pl-4 py-2 flex flex-col gap-2 bg-white/5 rounded-lg my-1">
                         {link.dropdownItems.map((item) => (
                           <Link
