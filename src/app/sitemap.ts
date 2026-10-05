@@ -10,6 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/contact-us/`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.8 },
     { url: `${baseUrl}/faq/`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.8 },
 
+    // Product Pages ( SEO Priority )
+    { url: `${baseUrl}/hr-payroll-management-software/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+
     // Primary Service Pages ( SEO Priority )
     { url: `${baseUrl}/custom-erp-software/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/services/web-application-development-company/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
