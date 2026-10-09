@@ -111,13 +111,14 @@ export default function HrmsClientPage() {
                         </div>
                     </div>
                     {/* Dashboard Image */}
-                    <div className="relative w-full aspect-[16/10] bg-white overflow-hidden">
+                    <div className="relative w-full aspect-video bg-white overflow-hidden">
                         <Image
-                            src="/images/HRMS/dothr-dashboard.webp"
+                            src="/images/Payroll/payroll_dashboard_filled_v2 (1).webp"
                             alt="Dot.HR Dashboard"
                             fill
                             priority
-                            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            
+                            className="transition-transform duration-700  ease-out group-hover:scale-105"
                         />
                     </div>
                 </div>
