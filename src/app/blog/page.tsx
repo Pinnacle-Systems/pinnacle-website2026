@@ -28,7 +28,7 @@ const allArticles = [
     category: "Textile ERP Software",
     date: "Oct 28, 2026",
     readTime: "7 min read",
-    image: "/images/blog/Textile manufacturing wastage reduction banner (1)_11zon.webp",
+    image: "/images/blog/image_hd.webp",
     slug: "/blog/reduce-textile-wastage/"
   },
   {

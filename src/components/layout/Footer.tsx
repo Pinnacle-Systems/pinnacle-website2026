@@ -125,7 +125,7 @@ export default function Footer() {
                             {
                                title: "Reduce Production Wastage in Textile Manufacturing",
                                date: 'Oct 28, 2026',
-                               image: '/images/blog/Textile manufacturing wastage reduction banner (1)_11zon.webp',
+                               image: '/images/blog/image_hd.webp',
                                href: '/blog/reduce-textile-wastage'
                             },
                             {

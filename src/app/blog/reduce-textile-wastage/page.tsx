@@ -77,7 +77,7 @@ export default function ReduceTextileWastageArticlePage() {
     "@type": "Article",
     "headline": "How to Reduce Production Wastage in Textile Manufacturing",
     "description": "Learn where the textile industry loses fabric, yarn, and time, and how to reduce production wastage with lean methods, better planning, and ERP-led tracking.",
-    "image": "https://www.pinnaclesystems.co.in/images/blog/Textile manufacturing wastage reduction banner (1)_11zon.webp",
+    "image": "https://www.pinnaclesystems.co.in/images/blog/image_hd.webp",
     "datePublished": "2026-10-28T09:00:00+05:30",
     "dateModified": "2026-10-28T09:00:00+05:30",
     "author": {
@@ -207,7 +207,7 @@ export default function ReduceTextileWastageArticlePage() {
               {/* Featured Banner Image */}
               <div className="rounded-3xl overflow-hidden mb-12 shadow-lg border border-gray-100 bg-gray-50">
                 <img 
-                  src="/images/blog/Textile manufacturing wastage reduction banner (1)_11zon.webp" 
+                  src="/images/blog/image_hd.webp" 
                   alt="Textile manufacturing wastage reduction banner" 
                   className="w-full h-auto object-cover max-h-[460px]"
                 />

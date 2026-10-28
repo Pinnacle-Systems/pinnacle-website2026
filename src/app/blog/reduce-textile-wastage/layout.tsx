@@ -12,7 +12,7 @@ export const metadata = {
     url: "https://www.pinnaclesystems.co.in/blog/reduce-textile-wastage/",
     images: [
       {
-        url: "https://www.pinnaclesystems.co.in/images/blog/Textile manufacturing wastage reduction banner (1)_11zon.webp",
+        url: "https://www.pinnaclesystems.co.in/images/blog/image_hd.webp",
         width: 1200,
         height: 630,
         alt: "Reduce Production Wastage in Textile Manufacturing",
