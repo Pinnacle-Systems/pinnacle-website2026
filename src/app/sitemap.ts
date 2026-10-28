@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
    
     // Blog Index & Individual Posts ( SEO Priority )
     { url: `${baseUrl}/blog/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${baseUrl}/blog/reduce-textile-wastage/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/blog/erp-for-garment-exporters/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/blog/erp-for-knitwear-industry-tirupur/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
   ]

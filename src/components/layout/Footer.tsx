@@ -84,7 +84,7 @@ export default function Footer() {
                         {[
                            { name: 'About Us', href: '/about-us' },
                            { name: 'Meet Our Team', href: '/under-construction' },
-                           { name: 'Latest Blog', href:'/blog/erp-for-garment-exporters' },
+                           { name: 'Latest Blog', href:'/blog/reduce-textile-wastage' },
                            { name: 'Contact Us', href: '/contact' },
                            { name: 'FAQ', href: '/faq' }
                         ].map(link => (
@@ -123,16 +123,16 @@ export default function Footer() {
                      <div className="flex flex-col gap-5">
                         {[
                             {
+                               title: "Reduce Production Wastage in Textile Manufacturing",
+                               date: 'Oct 28, 2026',
+                               image: '/images/blog/Textile manufacturing wastage reduction banner (1)_11zon.webp',
+                               href: '/blog/reduce-textile-wastage'
+                            },
+                            {
                                title: "Why Generic ERPs Fail in Tirupur's Knitwear Industry",
                                date: 'Sep 28, 2026',
                                image: '/images/blog/erp-for-knitwear-industry-tirupur.webp',
                                href: '/blog/erp-for-knitwear-industry-tirupur'
-                            },
-                            {
-                               title: 'ERP for Garment Exporters: How the Right System Simplifies Buyer Orders, Compliance and Shipments.',
-                               date: 'Sep 5, 2026',
-                               image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
-                               href: '/blog/erp-for-garment-exporters'
                             }
                         ].map((blog, idx) => (
                            <Link key={idx} href={blog.href} className="flex gap-4 group items-center">
