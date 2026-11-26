@@ -29,10 +29,162 @@ import {
   BarChart,
   Globe,
   Lock,
-  Sparkles
+  Sparkles,
+  Star,
+  Sliders,
+  Award,
+  UserCheck,
+  Zap,
+  Plug,
+  Server
 } from "lucide-react";
 import { theme } from "@/theme";
 import { cn } from "@/lib/utils";
+
+// Custom SVG Icons matching Key Features reference
+function ProcessManagementIcon({ className = "w-10 h-10" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M24 14V10M24 38V34M34 24H38M10 24H14M31.07 16.93L33.9 14.1M14.1 33.9L16.93 31.07M31.07 31.07L33.9 33.9M14.1 14.1L16.93 16.93" />
+      <circle cx="24" cy="24" r="14" />
+      <circle cx="24" cy="24" r="8" />
+      <path d="M24 20V24L26.5 26.5" />
+    </svg>
+  );
+}
+
+function InventoryManagementIcon({ className = "w-10 h-10" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect x="16" y="8" width="12" height="10" rx="1.5" />
+      <path d="M22 8V18" />
+      <path d="M18 13H26" />
+      <rect x="8" y="18" width="16" height="20" rx="1.5" />
+      <path d="M16 18V38" />
+      <path d="M11 28H21" />
+      <rect x="24" y="22" width="16" height="16" rx="1.5" />
+      <path d="M32 22V38" />
+      <path d="M27 30H37" />
+    </svg>
+  );
+}
+
+function MaterialManagementIcon({ className = "w-10 h-10" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M6 20L24 8L42 20V38H30" />
+      <path d="M6 20V38H18" />
+      <path d="M18 38V26H30" />
+      <path d="M18 20H30" />
+      <path d="M24 14V17" />
+      <circle cx="36" cy="34" r="4" />
+      <path d="M36 28V30M36 38V40M30 34H32M40 34H42M31.8 29.8L33.2 31.2M38.8 36.8L40.2 38.2M31.8 38.2L33.2 36.8M38.8 31.2L40.2 29.8" />
+    </svg>
+  );
+}
+
+function CostManagementIcon({ className = "w-10 h-10" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect x="12" y="8" width="24" height="32" rx="4" />
+      <rect x="16" y="13" width="16" height="7" rx="1.5" />
+      <path d="M17 25H19M23 25H25M29 25H31M17 30H19M23 30H25M29 30H31M17 35H19M23 35H31" />
+    </svg>
+  );
+}
+
+function PlanningManagementIcon({ className = "w-10 h-10" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect x="8" y="10" width="30" height="28" rx="3" />
+      <path d="M14 6V12M24 6V12M8 17H38" />
+      <path d="M13 23H17M21 23H25M13 29H17" />
+      <circle cx="33" cy="33" r="8" fill="white" />
+      <circle cx="33" cy="33" r="8" />
+      <path d="M33 29V33L36 34.5" />
+    </svg>
+  );
+}
+
+function MerchandiseManagementIcon({ className = "w-10 h-10" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M8 14L10 20C10.5 21.5 12 22 13 21C14 20 14.5 21.5 16 21C17.5 20.5 18 21.5 19 21C20 20.5 20.5 21.5 22 21C23.5 20.5 24 21.5 25 21C26 20.5 26.5 21.5 28 21C29.5 20.5 30 21.5 31 21C32 20.5 32.5 21.5 34 21C35.5 20.5 36 21.5 37 21C38 22 39.5 21.5 40 20L38 14H8Z" />
+      <path d="M14 14V21M20 14V21M26 14V21M32 14V21" />
+      <path d="M10 21V38H38V21" />
+      <rect x="15" y="26" width="10" height="12" />
+      <rect x="29" y="26" width="6" height="7" />
+    </svg>
+  );
+}
+
+function SupplyChainManagementIcon({ className = "w-10 h-10" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M16 38H32M19 34H29M21 30H27" />
+      <circle cx="24" cy="18" r="3" />
+      <path d="M21 28V24C21 22.5 22 22 24 22C26 22 27 22.5 27 24V28" />
+      <path d="M15 24H9M9 24L12 21M9 24L12 27" />
+      <path d="M33 24H39M39 24L36 21M39 24L36 27" />
+      <path d="M24 13V8M24 8L21 11M24 8L27 11" />
+    </svg>
+  );
+}
+
+const keyFeaturesList = [
+  { title: "Process Management", icon: ProcessManagementIcon },
+  { title: "Inventory Management", icon: InventoryManagementIcon },
+  { title: "Material Management", icon: MaterialManagementIcon },
+  { title: "Cost Management", icon: CostManagementIcon },
+  { title: "Planning Management", icon: PlanningManagementIcon },
+  { title: "Merchandise Management", icon: MerchandiseManagementIcon },
+  { title: "Supply Chain Management", icon: SupplyChainManagementIcon },
+];
+
+const whyChooseItems = [
+  { 
+    title: "4.9 Google Rating", 
+    icon: Star,
+    cardBg: "bg-amber-50/50 hover:bg-amber-50/90 border-amber-200/60 hover:border-amber-300/80 shadow-amber-500/5",
+    iconBg: "bg-amber-100/80 text-amber-600 group-hover:bg-amber-500 group-hover:text-white"
+  },
+  { 
+    title: "Tailored to Your Factory Workflows", 
+    icon: Sliders,
+    cardBg: "bg-blue-50/50 hover:bg-blue-50/90 border-blue-200/60 hover:border-blue-300/80 shadow-blue-500/5",
+    iconBg: "bg-blue-100/80 text-blue-600 group-hover:bg-blue-500 group-hover:text-white"
+  },
+  { 
+    title: "25+ Years of Industry Experts", 
+    icon: Award,
+    cardBg: "bg-emerald-50/50 hover:bg-emerald-50/90 border-emerald-200/60 hover:border-emerald-300/80 shadow-emerald-500/5",
+    iconBg: "bg-emerald-100/80 text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white"
+  },
+  { 
+    title: "Dedicated Account Manager", 
+    icon: UserCheck,
+    cardBg: "bg-purple-50/50 hover:bg-purple-50/90 border-purple-200/60 hover:border-purple-300/80 shadow-purple-500/5",
+    iconBg: "bg-purple-100/80 text-purple-600 group-hover:bg-purple-500 group-hover:text-white"
+  },
+  { 
+    title: "Fast, Phased Implementation", 
+    icon: Zap,
+    cardBg: "bg-orange-50/50 hover:bg-orange-50/90 border-orange-200/60 hover:border-orange-300/80 shadow-orange-500/5",
+    iconBg: "bg-orange-100/80 text-orange-600 group-hover:bg-orange-500 group-hover:text-white"
+  },
+  { 
+    title: "Seamless Integrations", 
+    icon: Plug,
+    cardBg: "bg-teal-50/50 hover:bg-teal-50/90 border-teal-200/60 hover:border-teal-300/80 shadow-teal-500/5",
+    iconBg: "bg-teal-100/80 text-teal-600 group-hover:bg-teal-500 group-hover:text-white"
+  },
+  { 
+    title: "On-Premise and On-Cloud", 
+    icon: Server,
+    cardBg: "bg-sky-50/50 hover:bg-sky-50/90 border-sky-200/60 hover:border-sky-300/80 shadow-sky-500/5",
+    iconBg: "bg-sky-100/80 text-sky-600 group-hover:bg-sky-500 group-hover:text-white"
+  },
+];
 
 export const metadata = {
   title: "Textile ERP Software—End-to-End Manufacturing Control",
@@ -230,22 +382,11 @@ export default function TextileErpSoftwarePage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Unified Hero Section with Dark Background & Header */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#0b132a] pt-32 pb-10 sm:pb-14">
-        {/* Background Banner Image */}
-        <div className="absolute inset-x-0 bottom-0 top-[90px] lg:top-[100px] z-0">
-          <Image
-            src="/images/textile-erp/TEXTILERPSOFTWARE.webp"
-            alt="Textile ERP Software"
-            fill
-            priority
-            className="content-fit"
-          />
-        </div>
-
-        {/* Background Ambient Glows & Accents */}
+      <section className="relative min-h-[90vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden bg-[#0b132a] pt-32 pb-12 sm:pb-16">
+        {/* Background Decorative Elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[140px] -translate-y-1/2 translate-x-1/4" />
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4" />
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[140px] -translate-y-1/2 translate-x-1/3" />
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4" />
         </div>
 
         {/* Header */}
@@ -255,62 +396,117 @@ export default function TextileErpSoftwarePage() {
 
         {/* Hero Content */}
         <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          <div className="grid lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-8 items-center">
 
             {/* Left Column: All Text Content & CTAs */}
-            <div className="lg:col-span-7 flex flex-col text-left">
+            <div className="lg:col-span-6 flex flex-col text-left">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-primary text-xs sm:text-sm font-bold tracking-wider mb-6 w-fit uppercase">
-                  <Shirt className="w-4 h-4 text-primary" />
-                  <span>Textile ERP Platform</span>
-                </div>
-
-                <h1 className={cn(theme.h1, "text-white")}>
-                  Textile ERP Software for{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-amber-400 block mt-2">
-                    End-to-End Manufacturing Control
-                  </span>
-                </h1>
-
-                <p className={theme.p}>
-                  Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production and dispatch in one connected textile ERP system.
-                </p>
-
-                {/* CTAs */}
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
-                  <Link
-                    href="?contact=true" scroll={false}
-                    className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide shadow-lg shadow-primary/25 hover:shadow-primary/40 uppercase text-center"
-                  >
-                    Request a Free Demo
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                  <Link
-                    href="?contact=true" scroll={false}
-                    className="group inline-flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 text-white font-bold text-sm px-8 py-4 rounded-full border border-white/15 backdrop-blur-sm transition-all duration-300 tracking-wide uppercase text-center"
-                  >
-                    Talk to a Textile ERP Expert
-                  </Link>
-                </div>
-
-                {/* Trust & Highlight Badges */}
-                <div className="pt-6 border-t border-white/10 flex flex-wrap items-center gap-6 text-gray-300 text-sm font-medium">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
-                    <span>90+ Textile Implementations</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
-                    <span>Tally & GST Integrated</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
-                    <span>Real-Time Shopfloor Visibility</span>
-                  </div>
-                </div>
+                <Shirt className="w-4 h-4 text-primary" />
+                <span>Textile ERP Platform</span>
               </div>
 
+              <h1 className={cn(theme.h1, "text-white")}>
+                Cloud-Based Textile ERP Software {" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-amber-400 block mt-2">
+                 for Manufacturers & Exporters
+                </span>
+              </h1>
+
+              <p className={theme.p}>
+                Manage spinning, knitting, processing, cutting, printing, embroidery, garments, inventory, production and dispatch in one connected textile ERP system.
+              </p>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
+                <Link
+                  href="?contact=true" scroll={false}
+                  className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-orange-600 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide shadow-lg shadow-primary/25 hover:shadow-primary/40 uppercase text-center"
+                >
+                  Request a Free Demo
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  href="tel:+919994610733"
+                  className="group inline-flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 text-white font-bold text-sm px-8 py-4 rounded-full border border-white/15 backdrop-blur-sm transition-all duration-300 tracking-wide uppercase text-center"
+                >
+                  Talk to a Textile ERP Expert
+                </Link>
+              </div>
+
+              {/* Trust & Highlight Badges */}
+              <div className="pt-6 border-t border-white/10 flex flex-wrap items-center gap-6 text-gray-300 text-sm font-medium">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  <span>90+ Textile Implementations</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  <span>Tally & GST Integrated</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  <span>Real-Time Shopfloor Visibility</span>
+                </div>
+              </div>
             </div>
+
+            {/* Right Column: Image with Browser Mockup */}
+            <div className="lg:col-span-6 relative w-full lg:pl-6">
+              <div className="relative w-full rounded-2xl bg-white shadow-2xl shadow-black/40 border border-white/10 overflow-hidden group transform transition-all duration-700 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(255,90,0,0.25)]">
+                {/* Browser Header */}
+                <div className="h-10 bg-gray-100 border-b border-gray-200 flex items-center px-4 gap-2 relative">
+                  <div className="flex gap-2 z-10">
+                    <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
+                    <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
+                    <div className="w-3 h-3 rounded-full bg-[#27c93f]" />
+                  </div>
+                  {/* Fake Address Bar */}
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="px-4 py-1 bg-white rounded-full border border-gray-200 shadow-sm flex items-center justify-center">
+                      <span className="text-[11px] text-gray-500 font-medium">Dashboard • Live</span>
+                    </div>
+                  </div>
+                </div>
+                {/* Dashboard Image */}
+                <div className="relative w-full aspect-video bg-white overflow-hidden">
+                  <Image
+                    src="/images/textile-erp/textileERPsoftwareBanner.webp"
+                    alt="Textile ERP Software Dashboard"
+                    fill
+                    priority
+                    className="transition-transform duration-700 ease-out group-hover:scale-105 object-fit"
+                  />
+                </div>
+              </div>
+            </div>
+
           </div>
+        </div>
+      </section>
+
+      {/* Key Features Overview Section */}
+      <section className="py-12 sm:py-16 bg-[#eef2f6] border-b border-gray-200/60 relative">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center font-extrabold text-[#0b132a] text-lg sm:text-xl md:text-2xl tracking-wider uppercase mb-8 sm:mb-10">
+            Key Features of Textile ERP Software
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-5 max-w-7xl mx-auto">
+            {keyFeaturesList.map((item, idx) => (
+              <div
+                key={idx}
+                className="w-[calc(50%-8px)] sm:w-[170px] md:w-[180px] lg:w-[190px] bg-white rounded-2xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center gap-3.5 group cursor-pointer"
+              >
+                <div className="w-12 h-12 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                  <item.icon className="w-10 h-10" />
+                </div>
+                <span className="text-[13.5px] sm:text-[14px]  text-gray-800 leading-snug group-hover:text-primary transition-colors">
+                  {item.title}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Features Grid Section */}
@@ -475,6 +671,49 @@ export default function TextileErpSoftwarePage() {
                   <p className={cn(theme.p, "text-white text-[14px] leading-relaxed tracking-normal !indent-0 !mb-0")}>
                     {offer.desc}
                   </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Pinnacle Textile ERP Section */}
+      <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-6xl">
+          <div className="text-center mb-10 sm:mb-14">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs sm:text-sm font-medium tracking-wide uppercase mb-3">
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
+              Pinnacle Advantage
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-navy-900 tracking-tight mb-4">
+              Why Choose Pinnacle Textile ERP?
+            </h2>
+            <p className="text-gray-600 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed font-normal">
+              Purpose-built for textile manufacturing, Pinnacle Textile ERP connects every stage of production, from raw material inward and shop-floor processing to dispatch.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-5 max-w-5xl mx-auto">
+            {whyChooseItems.map((item, idx) => {
+              const IconComp = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className={cn(
+                    "w-[calc(50%-8px)] sm:w-[200px] md:w-[220px] rounded-2xl p-5 border shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center gap-3.5 group cursor-default",
+                    item.cardBg
+                  )}
+                >
+                  <div className={cn(
+                    "w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300",
+                    item.iconBg
+                  )}>
+                    <IconComp className="w-6 h-6" />
+                  </div>
+                  <span className="text-sm sm:text-[15px] text-gray-700 font-medium leading-snug">
+                    {item.title}
+                  </span>
                 </div>
               );
             })}

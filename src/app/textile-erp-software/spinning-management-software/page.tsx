@@ -200,7 +200,7 @@ export default function SpinningManagementSoftwarePage() {
                   Request a Free Demo
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link href="?contact=true" scroll={false} className="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide uppercase text-center w-full sm:w-auto backdrop-blur-sm border border-white/10">
+                <Link href="tel:+919994610733" className="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 tracking-wide uppercase text-center w-full sm:w-auto backdrop-blur-sm border border-white/10">
                   Talk to an Expert
                 </Link>
               </div>

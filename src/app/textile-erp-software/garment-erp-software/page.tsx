@@ -12,12 +12,41 @@ import {
   CheckSquare, MessageSquare, Mail, MessageCircle, LayoutDashboard,
   BarChart, Settings, Factory, ShieldCheck, TrendingUp, Scissors,
   Cpu, Rocket, Zap, MonitorSmartphone, Truck, Layers, Droplets,
-  LineChart, ClipboardCheck, Timer, ShoppingBag, Banknote, Users, Briefcase, FileText, Sparkles
+  LineChart, ClipboardCheck, Timer, ShoppingBag, Banknote, Users, Briefcase, FileText, Sparkles,
+  Shirt, Calculator, Store, Boxes, ShoppingCart,
+  Star, Sliders, Award, UserCheck, Plug, Server
 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 
+
+const apparelModules = [
+  { title: "Sampling", icon: Shirt },
+  { title: "Costing & Budgets", icon: Calculator },
+  { title: "Buyer Order Management", icon: ShoppingBag },
+  { title: "Time & Action", icon: Timer },
+  { title: "Material Planning", icon: Layers },
+  { title: "Purchase & Stores", icon: Store },
+  { title: "Quality Control", icon: ShieldCheck },
+  { title: "Inventory Management", icon: Boxes },
+  { title: "Cutting Management", icon: Scissors },
+  { title: "Production", icon: Factory },
+  { title: "Shipment", icon: Truck },
+  { title: "Analytics & Visual Dashboard", icon: LayoutDashboard },
+  { title: "Procurement", icon: ShoppingCart },
+  { title: "Accounting & Finance", icon: Banknote },
+];
+
+const garmentPills = [
+  { text: "4.9 Google Rating", icon: Star, color: "text-amber-400" },
+  { text: "Tailored to Your Factory Workflows", icon: Sliders, color: "text-blue-400" },
+  { text: "25+ Years of Industry Experts", icon: Award, color: "text-emerald-400" },
+  { text: "Dedicated Account Manager", icon: UserCheck, color: "text-purple-400" },
+  { text: "Fast, Phased Implementation", icon: Zap, color: "text-orange-400" },
+  { text: "Seamless Integrations", icon: Plug, color: "text-teal-400" },
+  { text: "On-Premise and On-Cloud", icon: Server, color: "text-sky-400" },
+];
 
 export default function GarmentErpSoftwarePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -150,6 +179,34 @@ export default function GarmentErpSoftwarePage() {
                 </Link>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── APPAREL & GARMENTS ERP COMPLETE MODULES ── */}
+      <section className="py-12 sm:py-16 bg-[#eef2f6] border-b border-gray-200/60 relative">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center font-extrabold text-[#0b132a] text-lg sm:text-xl md:text-2xl tracking-wider uppercase mb-8 sm:mb-10">
+            Apparel and Garments ERP Complete Modules
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-5 max-w-7xl mx-auto">
+            {apparelModules.map((item, idx) => {
+              const IconComp = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="w-[calc(50%-8px)] sm:w-[160px] md:w-[170px] lg:w-[180px] xl:w-[190px] bg-white rounded-2xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center gap-3.5 group cursor-pointer"
+                >
+                  <div className="w-12 h-12 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                    <IconComp className="w-10 h-10" />
+                  </div>
+                  <span className="text-[13.5px] sm:text-[14px] font-bold text-gray-800 leading-snug group-hover:text-primary transition-colors">
+                    {item.title}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -295,6 +352,23 @@ export default function GarmentErpSoftwarePage() {
               );
             })}
           </div>
+
+          {/* Key Advantages Pills Row */}
+          <div className="mt-10 sm:mt-12 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 max-w-[1536px] mx-auto">
+            {garmentPills.map((pill, idx) => {
+              const IconComp = pill.icon;
+              return (
+                <div
+                  key={idx}
+                  className="inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full bg-white/5 border border-white/10 hover:border-primary/40 hover:bg-white/10 text-gray-200 hover:text-white text-xs sm:text-[13px] font-medium transition-all duration-300 shadow-sm cursor-default"
+                >
+                  <IconComp className={cn("w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0", pill.color)} />
+                  <span>{pill.text}</span>
+                </div>
+              );
+            })}
+          </div>
+          
         </div>
       </section>
 
