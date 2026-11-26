@@ -47,12 +47,12 @@ export default function Hero() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 xl:gap-5 mt-8 w-full sm:w-auto">
-              <Link
-                href="?contact=true" scroll={false}
+              <a
+                href="tel:+919994610733"
                 className="w-full sm:w-auto text-center bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[14px] sm:text-[15px]"
               >
                 + 91 9994610733
-              </Link>
+              </a>
               <Link
                 href="?contact=true" scroll={false}
                 className="w-full sm:w-auto text-center bg-primary hover:bg-primary-hover text-white px-6 py-3.5 rounded-full font-bold transition-all shadow-[0_0_20px_rgba(255,90,0,0.3)] hover:shadow-[0_0_30px_rgba(255,90,0,0.5)] transform hover:-translate-y-1 whitespace-nowrap text-[14px] sm:text-[15px]"
