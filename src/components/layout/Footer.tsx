@@ -123,6 +123,12 @@ export default function Footer() {
                      <div className="flex flex-col gap-5">
                         {[
                             {
+                               title: "Tally Prime vs ERP for Garment Manufacturing",
+                               date: 'Nov 26, 2026',
+                               image: '/images/blog/tally_vs_garmnetsERp.webp',
+                               href: '/blog/tally-prime-vs-erp-garment-manufacturing'
+                            },
+                            {
                                title: "Reduce Production Wastage in Textile Manufacturing",
                                date: 'Oct 28, 2026',
                                image: '/images/blog/image_hd.webp',

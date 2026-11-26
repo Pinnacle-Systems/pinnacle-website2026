@@ -50,6 +50,15 @@ const allArticles = [
     slug: "/blog/erp-for-garment-exporters"
   },
   {
+    title: "Tally Prime vs ERP for Garment Manufacturing: Which System Does Your Factory Need?",
+    excerpt: "Outgrowing Excel for cutting, size-colour POs, and sub-contracting? Learn when to keep Tally Prime, how to sync a garment ERP, and avoid costly data errors.",
+    category: "Textile ERP Software",
+    date: "Nov 26, 2026",
+    readTime: "6 min read",
+    image: "/images/blog/tally_vs_garmnetsERp.webp",
+    slug: "/blog/tally-prime-vs-erp-garment-manufacturing/"
+  },
+  {
     title: "Why Custom ERPs Outperform Off-the-Shelf Solutions",
     excerpt: "Generic software forces you to change your workflow. Learn why a custom-built ERP adapts to your business.",
     category: "Custom ERP Software",
