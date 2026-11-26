@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     // Core Company Pages ( SEO Priority )
     { url: `${baseUrl}/about-us/`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.8 },
-    { url: `${baseUrl}/contact-us/`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.8 },
+    { url: `${baseUrl}/contact/`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.8 },
     { url: `${baseUrl}/faq/`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.8 },
 
     // Product Pages ( SEO Priority )
@@ -15,10 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Primary Service Pages ( SEO Priority )
     { url: `${baseUrl}/custom-erp-software/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${baseUrl}/services/web-application-development-company/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${baseUrl}/services/website-development/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/web-application-development-company/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/website-development/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/digital-marketing-services-in-tirupur/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${baseUrl}/services/mobile-app-development/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/mobile-app-development/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
 
     // Textile ERP Service Pages ( SEO Priority )
     { url: `${baseUrl}/textile-erp-software/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },

@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-const NEW_PATH = "/services/web-application-development-company/";
+const NEW_PATH = "/web-application-development-company/";
 
 export default function WebApplicationRedirect() {
   const router = useRouter();

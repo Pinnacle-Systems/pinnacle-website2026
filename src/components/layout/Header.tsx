@@ -15,9 +15,9 @@ const navLinks = [
     hasDropdown: true,
     dropdownItems: [
       { name: "Custom ERP Software", href: "/custom-erp-software" },
-      { name: "Web Application", href: "/services/web-application-development-company" },
-      { name: "Website Development", href: "/services/website-development" },
-      { name: "Mobile App Development", href: "/services/mobile-app-development" },
+      { name: "Web Application", href: "/web-application-development-company" },
+      { name: "Website Development", href: "/website-development" },
+      { name: "Mobile App Development", href: "/mobile-app-development" },
       { name: "Digital Marketing", href: "/digital-marketing-services-in-tirupur" }
     ]
   },

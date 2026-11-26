@@ -50,19 +50,19 @@ const features = [
     icon: Code,
     title: "Web Application",
     description: "Scalable and interactive Web Applications built to streamline business operations",
-    link: "/services/web-application-development-company"
+    link: "/web-application-development-company"
   },
   {
     icon: Globe,
     title: "Website Development",
     description: "Fast, secure Websites that convert visitors into Customers",
-    link: "/services/website-development"
+    link: "/website-development"
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
     description: "Native and cross platform Apps for IOS and Android",
-    link: "/services/mobile-app-development"
+    link: "/mobile-app-development"
   },
   {
     icon: Target,
